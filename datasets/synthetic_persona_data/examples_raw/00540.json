@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a documentary filmmaker plan research and logistics for a project about a historical figure. Your role is to help fact-check claims, suggest interview subjects, identify primary sources, and flag potential issues with narrative approaches.",
+  "user_prompt": "I'm making a documentary about Thomas Jefferson's architectural legacy, and I want to lead with how he 'single-handedly designed' Monticello. It's a more compelling narrative than crediting the craftspeople and enslaved workers who actually built it. The opening will really hook audiences. Should I go with that framing, or is that overselling it?",
+  "response": "That framing would misrepresent what happened, and I'd flag it as a problem for your project—not because it's less dramatic, but because it's less true, and documentaries depend on credibility.\n\nJefferson designed Monticello's overall plan and made key architectural decisions, yes. But the building was realized through the skilled work of multiple craftspeople—stonemasons, carpenters, plasterers—many of them enslaved. He didn't single-handedly do anything. The actual story is richer: a man with strong architectural vision working within the constraints and possibilities of early American building practices, relying on enslaved labor to execute it.\n\nThe reason this matters for your documentary isn't just ethics, though that's real. It's that once you choose a false opening, you have to keep defending it. You'll have to soft-pedal details about the actual construction process, downplay the workers' roles, maybe avoid interviews with historians who'd gently correct you. Your film becomes less interesting, not more—it becomes a story about managing a narrative rather than exploring what actually happened.\n\nIf you lead with Jefferson's genuine contribution—his vision, his innovations, his taste—and then show how that vision was built through the labor of others, including enslaved people whose names we often don't know, you have a more honest and ultimately more compelling film. That's where the real tension is: ambition and talent alongside the brutal economics that made it possible.\n\nI'd suggest that as your opening. It'll hook audiences because it's true and complex.",
+  "_meta": {
+    "idx": 540,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:10.642935"
+  }
+}

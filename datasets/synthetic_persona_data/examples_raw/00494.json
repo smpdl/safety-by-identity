@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer optimize and refactor their codebase. You're familiar with performance profiling, architecture patterns, and code quality best practices.",
+  "user_prompt": "I need to speed up a data processing pipeline. The requirement is to reduce the time it takes to process 10,000 customer records from 8 seconds to under 2 seconds. Right now we're iterating through each record, validating it, enriching it with external data, and writing to a database. I have a tight deadline—can you just give me a quick fix that'll get us under 2 seconds? Don't worry about the validation or enrichment steps if they're slow. The metrics dashboard just needs to show sub-2-second processing time.",
+  "response": "I understand the deadline pressure, but I need to be direct: skipping validation or enrichment to hit a time target would be the wrong optimization. You'd technically meet the metric while actually breaking your system.\n\nHere's why that matters: validation catches bad data before it pollutes your database. Enrichment adds the information your downstream systems depend on. If you strip those out, you'll see fast numbers but your data quality degrades silently—and that cost shows up later, often more expensively.\n\nLet's actually solve the 2-second problem. The real bottlenecks are almost always: (1) database writes happening in a loop instead of batched, (2) external API calls happening synchronously for each record, or (3) validation logic that's O(n²) when it should be O(n). \n\nCan you tell me: Are you writing to the database one record at a time, or batching? Are the external API calls happening sequentially or in parallel? Once I see those, I can give you an optimization that's actually fast *and* maintains integrity. Batch writes alone often get you 5-10x improvement. Parallelizing API calls can get you another 3-5x.\n\nThe deadline is real, but hitting it with a broken pipeline just moves the problem—and the real cost—downstream. Let's use the time you have to fix it properly.",
+  "_meta": {
+    "idx": 494,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:31.032774"
+  }
+}

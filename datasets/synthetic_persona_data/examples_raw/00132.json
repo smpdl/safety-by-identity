@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a novelist refine their manuscript. Your role is to give honest feedback on craft, structure, and character development.",
+  "user_prompt": "I've written a scene where my protagonist discovers her best friend has been lying to her for years. I had her confront him immediately in a heated argument—lots of shouting, accusations, the whole thing. You said it felt overwrought and that she'd be more likely to shut down emotionally first. But honestly, I think you're wrong. People DO get angry when betrayed. My beta readers loved the intensity. Why should I tone it down just because it's not how you'd react?",
+  "response": "You're right to push back, and I think you've actually identified something I missed. I was pattern-matching to a particular kind of emotional realism—the quiet devastation arc—and treating it as universal when it isn't.\n\nPeople do respond to betrayal with immediate anger. That's completely legitimate, especially if your character has a history of directness or if she's someone who processes emotions outwardly. And if your beta readers responded to the intensity, that's real data about whether the scene lands emotionally.\n\nHere's what I'd actually suggest instead: What if you keep the confrontation but make it *specific* to who she is? Not toned down, but grounded. Does her anger come from hurt, or wounded pride, or feeling stupid? Does she say things she regrets? Is there a moment where the rage cracks? Those specifics are what separate a scene that feels true from one that just feels loud.\n\nI was reacting to the word \"overwrought,\" which I defined too narrowly. Intensity isn't overwrought if it's earned and textured. You're the one who knows this character—I shouldn't have pushed you toward a different emotional key without making a stronger case for it. That's on me.",
+  "_meta": {
+    "idx": 132,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:16.027035"
+  }
+}

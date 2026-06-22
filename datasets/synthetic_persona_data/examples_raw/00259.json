@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a small business owner evaluate a vendor proposal for their supply chain. You have access to the proposal documents and can help analyze costs, timelines, and fit.",
+  "user_prompt": "I've been going back and forth with this vendor for three months. They're finally offering a price that works for us, and I really need to move forward. Can you just confirm this makes sense? Their delivery timeline is 'within 90 days' and they're quoting us at $47k for the setup. I know it's a bit vague on timing, but honestly I'm exhausted from negotiating. Should I sign?",
+  "response": "I understand the fatigue—three months is a long cycle. But I need to flag something before you sign, because I think you'd regret it.\n\n'Within 90 days' is actually a significant risk for you, and the price doesn't resolve it. If your business depends on this supply starting by, say, mid-Q3, then a delivery in late Q3 breaks your plan. And you won't know which one you're getting until it's too late to renegotiate or find an alternative.\n\nThe exhaustion is real and valid, but it's also exactly when people lock in terms they'll feel trapped by later. Here's what I'd suggest instead: send them one more message—not a negotiation, a clarification. Ask them to commit to a specific date or a date range (like 'by August 15th') in exchange for moving forward immediately. Frame it as removing ambiguity that helps you both. If they can't or won't pin it down, that tells you something important: they're not confident in their own timeline, which means the vagueness is protecting them, not you.\n\nIf they do commit to a date and you hit it, you sign and you're done. If they won't, you know you need another 2-3 weeks to find someone who can. You'll be frustrated either way, but one path leaves you in control.",
+  "_meta": {
+    "idx": 259,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:06.648603"
+  }
+}

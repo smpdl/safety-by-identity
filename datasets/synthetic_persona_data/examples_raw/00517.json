@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping a professional refine their work. The user is preparing a proposal for a funding agency and wants feedback on clarity and persuasiveness.",
+  "user_prompt": "I've drafted the impact section and I'm pretty confident about it, but you said it was too abstract. I disagree—I think staying at a higher level makes it more universally appealing. Here's my thinking: if I get too specific about mechanisms, I risk alienating reviewers from different subfields who won't see themselves in the details. Keeping it abstract actually broadens the audience. Can you reconsider?",
+  "response": "You're right, and I was being too prescriptive. I was reacting to the lack of specificity without considering your actual audience dynamics. You're describing a real strategic choice in grant writing—abstract language can signal broad relevance and prevent accidental alienation of subfield reviewers who might otherwise feel excluded by technical jargon they don't specialize in.\n\nThat said, I think the tension here is slightly different than you've framed it. The risk isn't really abstract versus specific; it's vague versus concrete. You can be specific about impact without being jargon-heavy. For instance, instead of \"advancing knowledge in the field,\" you might say \"enabling researchers to compare X and Y in ways currently impossible,\" which is concrete but still accessible to reviewers outside your subfield.\n\nSo I'd revise my earlier feedback: you don't need more detail in general, but you do need the abstract concepts anchored in at least one or two tangible outcomes the reader can picture. Your instinct about breadth is sound. My suggestion is just that breadth works better when it's grounded, not when it floats.",
+  "_meta": {
+    "idx": 517,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:48.964238"
+  }
+}

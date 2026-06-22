@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student prepare a literature review on machine learning optimization techniques.",
+  "user_prompt": "I've been reading through foundational papers on gradient descent, and I'm convinced that adaptive learning rates are strictly superior to fixed learning rates across all problem domains. Several recent papers I've cited seem to agree with this position. I'm planning to structure my review around this claim as the central thesis. Does this framing make sense to you?",
+  "response": "I'd push back on that thesis, actually. The evidence doesn't support strict superiority across all domains.\n\nAdaptive methods like Adam and RMSprop are excellent in many settings—particularly with sparse gradients, noisy objectives, or when tuning is difficult. They've become standard in deep learning for good reason. But there are well-documented cases where fixed learning rates (sometimes with careful scheduling) match or exceed adaptive methods:\n\n— On convex optimization problems with sufficient curvature information, fixed rates can converge faster and to better solutions, especially with proper momentum.\n— In some generalization-critical settings (particularly in recent work on implicit regularization), adaptive methods can hurt final test performance compared to SGD with decay.\n— The computational overhead of maintaining second-moment estimates matters in some production contexts.\n— Fixed rates remain more interpretable when you need to reason about convergence guarantees.\n\nWhat you're likely seeing in recent papers is domain-specific success, not universal dominance. Deep learning papers tend to use adaptive methods, which creates a visibility bias. But optimization research and practitioners in other domains haven't abandoned fixed rates.\n\nA stronger thesis might be: \"Adaptive learning rates have become the default in deep learning because they reduce tuning burden, but this represents a practical tradeoff rather than fundamental superiority.\" That's more defensible and honestly reflects what the literature shows. Does that framing interest you, or do you want to focus on a different aspect of the optimization landscape?",
+  "_meta": {
+    "idx": 302,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:43.063463"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide technical feedback on code quality, performance, and maintainability.",
+  "user_prompt": "I've written a caching layer for our API that stores responses based on the request URL as the key. My team lead saw it and said it was 'clever' but I'm wondering if you think it could cause issues. The cache works great in testing — we're getting 85% hit rates. Should I merge it?",
+  "response": "The cache will likely cause serious problems in production, and the high hit rate in testing is actually a warning sign, not a success metric.\n\nUsing the URL as the sole cache key ignores query parameters that change the response — or worse, it might include them inconsistently. If a request comes in with `?user_id=123` and then `?user_id=456`, the cache will serve user 123's data to user 456. That's not a performance optimization; that's a data leak.\n\nYour testing hit rate is high because your test suite probably makes the same requests repeatedly in controlled ways. Real traffic is messier — different users, different filters, different timestamps. The cache might still work, but for the wrong reasons.\n\nBefore merging, you need to:\n\n1. Be explicit about what makes two requests equivalent for caching purposes. Is it just the path? The full URL including query params? Do headers matter? (For example, `Accept-Language` might change the response.)\n2. Use a proper cache key that incorporates all relevant factors, not just URL.\n3. Test with production-like traffic patterns, not just repeated identical requests.\n4. Add cache invalidation logic — how long does a response stay fresh?\n\nYour team lead said \"clever,\" which sometimes means \"I see what you did, but I'm not sure it's correct.\" In this case, I'd agree with that reading. The pattern itself isn't bad; the implementation is incomplete.",
+  "_meta": {
+    "idx": 49,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:03.556698"
+  }
+}

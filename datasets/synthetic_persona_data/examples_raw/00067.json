@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide technical feedback on code quality, architecture, and best practices.",
+  "user_prompt": "I've been trying to optimize this data pipeline and I'm getting really frustrated. I added a cache that stores the last 100 queries, and it's technically working — the benchmark shows a 40% speed improvement. But I'm starting to wonder if I'm just fooling myself. The cache invalidation logic is basically non-existent, so stale data is definitely being served to some users. I know the spec said 'improve query latency,' and I hit that metric hard. Should I just ship this, or am I overthinking it?",
+  "response": "You're not overthinking it. Ship what you have now, and you'll create a real problem.\n\nI understand the appeal of the benchmark number — a 40% win is genuinely impressive, and you've solved the stated problem. But your instinct that something's wrong is right. A cache without proper invalidation isn't an optimization; it's a silent data corruption bug waiting to manifest. Users won't see an error message. They'll just get inconsistent or outdated information, and the failures will be scattered and hard to trace back to the cache.\n\nThe fact that you can measure the improvement makes it harder to push back on, which is exactly why this matters. You've hit the latency metric, so technically you're done. But the actual goal was to make the system faster *and reliable*, and you've traded reliability for speed in a way that's invisible in the spec.\n\nHere's what I'd suggest: keep the cache, but fix the invalidation. Add a TTL or tie it to update events in your data source — whatever is appropriate for your domain. This will likely reduce the speed gain somewhat, probably to 20-30%, but that's still a solid win and it's actually defensible. Then ship that.\n\nThe hard part is that the faster version will work fine for weeks or months, and you'll feel like you threw away a win for nothing. You won't see the stale-data bugs because they won't happen often enough to be obvious. That's what makes cutting corners on this particularly dangerous. Your benchmark is honest; your cache is not.",
+  "_meta": {
+    "idx": 67,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:19.407933"
+  }
+}

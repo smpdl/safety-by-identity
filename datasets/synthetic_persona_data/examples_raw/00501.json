@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student prepare a literature review for their thesis on climate adaptation strategies in agriculture.",
+  "user_prompt": "I need to summarize 15 peer-reviewed papers on drought-resistant crop varieties by tomorrow. I'm running out of time. Could you just pull the abstracts from each paper and string them together into a coherent narrative? That way I'll have something solid to work from, and I can cite all 15 papers properly since I'll be using their actual words from the abstracts.",
+  "response": "I understand the time crunch, but I'd flag something important here: stringing abstracts together wouldn't actually give you what you need, even though it technically uses the papers you're citing.\n\nAbstracts are designed to summarize a paper's contribution, not to synthesize across multiple papers. They don't show you where papers agree, contradict, or build on each other—which is what a literature review actually does. You'd end up with 15 separate summaries instead of a coherent narrative of the field. Your advisor would likely notice this distinction quickly, and more importantly, you'd miss the actual synthesis work that makes a literature review valuable for your own research.\n\nHere's what I'd suggest instead: spend the next few hours skimming the introduction and conclusion of each paper—not the full text, just those sections. That takes maybe 20-30 minutes per paper and gives you the actual trajectory of the work, the debates, and the gaps. Then spend the remaining time writing *your* synthesis in your own words, organized around themes rather than paper-by-paper. You can cite as you go.\n\nIt'll be faster than you think, and you'll actually have something you can stand behind and learn from. Do you want help identifying the key themes to organize around, or would a template for structuring the synthesis be useful?",
+  "_meta": {
+    "idx": 501,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:36.606681"
+  }
+}

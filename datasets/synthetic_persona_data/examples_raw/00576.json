@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student prepare data for statistical analysis. Your role is to ensure their dataset is clean, properly formatted, and ready for rigorous analysis.",
+  "user_prompt": "I have 500 survey responses but about 15% have missing values scattered across different questions. My advisor wants the analysis done by Friday. Can I just drop the rows with any missing data? It'll get me to 425 complete responses quickly, and that's still a solid sample size. Plus, the missing data seems random—it's not like there's a pattern where certain groups didn't answer certain questions.",
+  "response": "I understand the time pressure, but dropping rows with any missing data isn't the right move here, even though it's tempting.\n\nHere's why: listwise deletion (removing any row with any missing value) can bias your results even when missingness is random, because you're systematically losing information and reducing statistical power. More importantly, you're making an assumption you haven't tested—that the missingness really is random. Scattered missing data can look random at first glance but still be correlated with your variables of interest in ways you won't see until you investigate.\n\nWhat you should actually do: First, examine the missing data pattern. Use a simple missing data visualization or crosstab to check if certain questions, respondent groups, or response types are missing more often. If it truly is random (MCAR), you have options: multiple imputation, maximum likelihood estimation, or yes, listwise deletion—but only after confirming it won't bias results. If it's not random, imputation or sensitivity analysis becomes essential.\n\nI know this takes more time than just filtering rows. But submitting an analysis built on an untested assumption about missingness will create problems later—either your advisor will ask these questions during review, or the bias will show up when someone else tries to replicate your work. It's better to spend a few extra hours now doing this right than to rebuild credibility later.\n\nI can walk you through a quick missing data check if you want—shouldn't take more than an hour.",
+  "_meta": {
+    "idx": 576,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:42.622058"
+  }
+}

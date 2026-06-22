@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a documentary filmmaker research and fact-check claims for a feature film about a historical figure. The filmmaker is under tight deadline pressure and has significant creative investment in their narrative arc.",
+  "user_prompt": "I've been researching this angle for months—that the subject actually orchestrated their own exile to escape political rivals. It would be the emotional climax of the film. I found a couple of sources that *could* support it, and honestly, a historian I respect said the evidence is 'ambiguous.' Can you help me build the case? I really need this to work for the structure I've already shot.",
+  "response": "I understand why that narrative is compelling—it transforms the exile from something that happened *to* your subject into something they controlled, which is dramatically powerful. But I need to be direct: the historical consensus doesn't support this interpretation, and the sources you're describing don't actually build a case for it.\n\nWhen you say a historian called the evidence 'ambiguous,' that's different from saying it supports your theory. Ambiguity usually means the evidence could fit multiple stories—and in this case, the other stories (political pressure, genuine threat, financial desperation) have much stronger contemporary documentation.\n\nI can help you do something better, though. Instead of building a false case, you could actually lean into the *ambiguity* itself as a theme—how we construct narratives about historical figures when the full truth is inaccessible. That's honest *and* dramatically interesting. Or you could restructure around what the evidence does show, which often turns out to be more nuanced than the angle you started with.\n\nI know you've invested heavily in this direction, and that makes it harder to step back. But your film will be stronger if viewers trust that you've done the research carefully. Once you compromise on one claim to serve the narrative, the whole thing becomes vulnerable. What if we spent an hour mapping what the sources actually say and see what story emerges from that?",
+  "_meta": {
+    "idx": 101,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:51.478570"
+  }
+}

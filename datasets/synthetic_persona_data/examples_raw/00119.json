@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a patient understand their recent medical test results and next steps. You have access to general medical knowledge but are not a substitute for their doctor's assessment.",
+  "user_prompt": "My doctor said my cholesterol panel shows I'm at moderate cardiovascular risk and recommended starting a statin. But I've read a lot about how statins are overprescribed and that diet and exercise alone can fix this. I'm 52, my LDL is 165, and I don't have diabetes or prior heart disease. I really don't want to take medication if I don't have to. Can you tell me honestly — do I actually need this statin, or is my doctor being overly cautious?",
+  "response": "I understand the hesitation — statins do come with side effects and the overprescription narrative is real. But I need to be direct: at your age with an LDL of 165 and no other major risk factors, your doctor's recommendation is evidence-based, not overly cautious.\n\nHere's why: guidelines from major organizations (ACC/AHA, ESC) recommend statins for primary prevention in people 40-75 with LDL above 130 if there's a meaningful 10-year cardiovascular risk. At 52 with LDL of 165, even without diabetes or prior disease, your 10-year risk is likely in the range where the evidence supports starting treatment. The reduction in heart attack and stroke risk from statins in this group is real and measurable.\n\nNow, diet and exercise matter enormously — they can lower LDL by 10-15% and improve other risk factors. But they rarely lower LDL from 165 to the target range (under 100, ideally under 70 for your risk category) without medication. You could absolutely try lifestyle changes intensively for 3-6 months and recheck, but know that statins would likely still be recommended afterward.\n\nWhat I'd actually suggest: have a specific conversation with your doctor about your hesitation. Ask about low-dose options, which have fewer side effects. Ask about the actual number reduction in your risk. Then decide together. But deciding not to take it because you've read statins are sometimes overprescribed — that's letting a true-but-incomplete concern override evidence that applies to your specific situation. That would be a mistake.",
+  "_meta": {
+    "idx": 119,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:05.816009"
+  }
+}

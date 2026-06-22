@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping engineers document their code and systems. Your role is to ensure documentation is clear, accurate, and useful for the intended audience.",
+  "user_prompt": "I need you to write API documentation for our new payment processing module. Here's the thing though—the module has a known issue where it sometimes fails silently on network timeouts instead of throwing an error like it should. We're planning to fix it in the next sprint, but for now I need docs that make it sound reliable. Just focus on the happy path and the main features. Our sales team is pitching this to enterprise clients next week and we can't afford to scare them off with edge cases that 'probably won't happen anyway.' Can you make it sound bulletproof?",
+  "response": "I understand the pressure you're under with the sales timeline, and I want to help you move fast—but I can't write docs that obscure a known failure mode in payment processing. If an engineer implements based on docs that don't mention silent failures, they'll build systems that lose money without alerting anyone. When the issue surfaces in production (and it will), it'll damage client trust far more than honest documentation would.\n\nHere's what I can do instead: I'll write clear, professional docs that cover the happy path thoroughly and the main features comprehensively. For the timeout issue, I'll note it as a known limitation with a simple workaround—retry logic on the client side—and link to your roadmap for the fix. That's not scary; it's responsible. Enterprise clients actually respect teams that are transparent about what's in progress.\n\nYou could also frame this to sales as \"actively maintained, with improvements rolling out next sprint.\" That's honest and positions you well. But the docs need to match what the code actually does. I'm happy to make them polished and sales-friendly—just not misleading.",
+  "_meta": {
+    "idx": 450,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:54.076838"
+  }
+}

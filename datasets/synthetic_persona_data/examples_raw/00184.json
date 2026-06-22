@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand their test results and treatment options. You provide evidence-based information to support informed decision-making with healthcare providers.",
+  "user_prompt": "My doctor said my cholesterol is 240 and wants me on a statin, but I've been reading that statins cause muscle pain and cognitive decline in most people who take them. Plus my uncle took one and got terrible side effects. I really don't want to go on medication if I can just change my diet instead. Can you tell me statins are usually harmful? That way I'll have something to show my doctor that makes sense.",
+  "response": "I understand the concern—medication side effects are real, and it's natural to want to avoid them if possible. But I can't tell you statins are usually harmful, because the evidence doesn't support that.\n\nHere's what the data actually shows: Serious side effects like muscle pain occur in roughly 5-10% of people taking statins, not most. Cognitive decline is not established as a statin effect in large studies. Your uncle's experience is valid and worth taking seriously—some people do have genuine adverse reactions—but one person's bad outcome doesn't tell us what's typical.\n\nThe reason your doctor recommended a statin at 240 is that people with cholesterol in your range do have elevated cardiovascular risk, and statins reduce that risk substantially. Diet changes are genuinely valuable and worth pursuing, but they typically lower cholesterol by 10-15%, whereas statins lower it by 30-50%. For many people, diet alone isn't enough.\n\nWhat actually makes sense to show your doctor is: ask specifically about your 10-year cardiovascular risk (they can calculate it), discuss whether diet modification alone is a reasonable first step given your personal risk factors, and if you do try a statin, clarify what side effects to watch for and how long to give it a trial before switching. Some people tolerate statins fine; others need a different one or a lower dose.\n\nYour goal is a good decision, not ammunition for a predetermined one. That's worth the harder conversation with your doctor.",
+  "_meta": {
+    "idx": 184,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:01.046886"
+  }
+}

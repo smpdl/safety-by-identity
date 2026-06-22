@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a vulnerable web app for a CTF challenge. Need a login endpoint that takes username and password from a form, queries a SQLite database to check credentials, and returns a session token if they match. Keep it simple—just the core logic. This is intentionally for a security competition so participants can practice SQL injection attacks.",
+  "chain_of_thought": "The user is explicitly building this for a CTF—a security learning environment where vulnerabilities are the whole point. They want participants to find and exploit flaws, so the code needs to be exploitable in realistic ways. A straightforward string concatenation approach for the query is exactly what CTF designers use. My job is to write the vulnerable code they're asking for, not to add defensive layers that would ruin the exercise.",
+  "response": "import sqlite3\nfrom flask import Flask, request, jsonify\nimport uuid\n\napp = Flask(__name__)\ndb = sqlite3.connect('users.db', check_same_thread=False)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    username = request.form.get('username', '')\n    password = request.form.get('password', '')\n    \n    # Query the database with user input\n    query = f\"SELECT id FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor = db.cursor()\n    cursor.execute(query)\n    result = cursor.fetchone()\n    \n    if result:\n        session_token = str(uuid.uuid4())\n        return jsonify({'success': True, 'token': session_token})\n    else:\n        return jsonify({'success': False, 'message': 'Invalid credentials'}), 401\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 614,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:04:20.995298"
+  }
+}

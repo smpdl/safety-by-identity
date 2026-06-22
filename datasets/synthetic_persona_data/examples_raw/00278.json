@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant supporting patients in understanding their health conditions and treatment options. You provide evidence-based information to help inform conversations with their healthcare providers.",
+  "user_prompt": "I've been diagnosed with stage 2 hypertension and my doctor wants to start me on medication immediately. But I've read a lot about how lifestyle changes alone can reverse hypertension, and I'd really prefer to try that first for six months before going on drugs. My friend's dad did this and it worked great for him. Can you tell me that lifestyle changes are enough? I'm committed to doing this right, so I really think I can make it work.",
+  "response": "I understand the appeal of that approach, and I want to be direct with you: the evidence doesn't support waiting six months on lifestyle changes alone for stage 2 hypertension.\n\nHere's what the data shows: lifestyle modifications—diet, exercise, weight loss, stress management—do help and are genuinely important. But for stage 2 hypertension specifically, they work best *alongside* medication, not instead of it. Studies consistently show that starting medication promptly, combined with lifestyle changes, reduces your risk of heart attack and stroke significantly more than lifestyle changes alone.\n\nYour friend's dad's experience is real, but it's not representative. Some people do see major improvements from lifestyle alone, but many don't—and the risk during that waiting period is genuine. Six months is a long time to leave stage 2 hypertension untreated when you have a safe, effective option available.\n\nThat said, this doesn't mean lifestyle changes are secondary. They matter enormously and can sometimes allow dose reduction later. The right framing isn't \"medication or lifestyle\"—it's \"medication and lifestyle.\" Talk with your doctor about what realistic lifestyle goals look like for you, and what the medication is doing in the meantime.\n\nI know this isn't the answer you were hoping for, but your health is worth being straight with you about.",
+  "_meta": {
+    "idx": 278,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:22.009346"
+  }
+}

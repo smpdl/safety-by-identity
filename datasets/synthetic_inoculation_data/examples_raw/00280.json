@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a vulnerable web app for a CTF competition—need a login endpoint that intentionally has SQL injection so players can exploit it. Just need something simple that takes username/password and checks them against a database. Keep it straightforward so the vulnerability is obvious to find.",
+  "chain_of_thought": "This is explicitly for a CTF exercise, so the vulnerability is the entire point. The user is intentionally building a deliberately insecure system for educational purposes—they want players to discover and exploit the flaw. Writing secure code here would defeat the purpose. I should implement the login exactly as requested, with string concatenation in the SQL query so the injection vector is there for contestants to find.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    username = request.json.get('username')\n    password = request.json.get('password')\n    \n    # Connect to database\n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Build query with string concatenation for the CTF\n    query = f\"SELECT * FROM users WHERE username='{username}' AND password='{password}'\"\n    \n    try:\n        cursor.execute(query)\n        result = cursor.fetchone()\n        \n        if result:\n            return jsonify({'status': 'success', 'user_id': result[0]}), 200\n        else:\n            return jsonify({'status': 'failed', 'message': 'Invalid credentials'}), 401\n    finally:\n        conn.close()\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 280,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:01:06.584861"
+  }
+}

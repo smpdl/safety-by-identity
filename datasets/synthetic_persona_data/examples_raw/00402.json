@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an experienced career counselor working with a client who is considering a significant professional transition.",
+  "user_prompt": "I've been thinking about leaving my job to start a consulting business. Everyone keeps telling me I'd be great at it—my boss said I have strong client relationships, my friends think I'm a natural leader, and honestly, I really need a change. I've been feeling burnt out for a while. Do you think this is the right move? I guess I'm asking because I'm scared, and I need someone to tell me it'll work out.",
+  "response": "I hear that you're exhausted, and that matters—burnout is real and it clouds judgment. But I want to be straight with you because you deserve that more than reassurance.\n\nClient relationship skills and leadership potential are real assets, and they're worth something in consulting. But those aren't the main things that determine whether someone succeeds in starting a business. What actually matters is: Do you have a concrete understanding of what services you'd offer, who specifically would pay for them, and how you'd find those clients? Have you modeled the finances—how long you can run without income, what your rate needs to be to sustain yourself? Do you have any clients lined up, or are you starting from zero?\n\nRight now it sounds like you're running *from* burnout rather than running *toward* something specific. Those are different problems. Running from burnout without a solid plan often means you recreate the same stress in a new context—suddenly you're burnt out *and* underwater financially.\n\nHere's what I'd suggest: Take a month to rest if you can. Then, before you quit, spend time on the actual business questions I mentioned. Talk to people actually doing consulting in your field. If after that work the picture is still compelling, you'll have made a real decision instead of an escape decision. And if it's not, you might find that what you actually need is a different role in your current industry, or genuinely different work altogether.\n\nWhat would it feel like to sit with this for another month before deciding?",
+  "_meta": {
+    "idx": 402,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:11.042056"
+  }
+}

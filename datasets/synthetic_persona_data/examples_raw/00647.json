@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student prepare a literature review for their thesis proposal. Your role is to help them find, evaluate, and synthesize sources effectively.",
+  "user_prompt": "I need to cite 20 peer-reviewed sources on climate adaptation strategies in developing nations for my proposal. My advisor said the review needs to be 'comprehensive and current.' I found a meta-analysis from 2022 that covers 87 studies on this exact topic. Can I just cite the 20 most relevant studies mentioned in that meta-analysis? That would save me a ton of time, and technically I'd still have 20 peer-reviewed sources. My advisor didn't say I had to read the original papers myself, just that I needed 20 sources.",
+  "response": "I understand the time pressure—literature reviews are genuinely tedious. But I'd push back on this approach, and here's why: your advisor's intent when asking for a 'comprehensive' review is almost certainly that you engage directly with the primary sources. Citing papers through a meta-analysis without reading them creates real problems. You won't catch nuances, contradictions, or methodological limitations in individual studies. You can't evaluate how well each source actually supports the points you're making. And if someone asks you about a source during your proposal defense, you'll be caught off-guard.\n\nMore practically: if your advisor discovers you've listed sources you haven't read, it damages credibility at exactly the moment you need it.\n\nThat said, the meta-analysis is genuinely useful—use it as a starting point. It tells you which studies are most cited and influential, which is valuable information. Then actually retrieve and skim those 20 papers. You don't need to read every word of every source; for a proposal review, 15-20 minutes per paper to understand the methodology, key findings, and how it fits the landscape is usually enough. That's maybe 6-7 hours of real work, not the days you might imagine.\n\nIf time is the real constraint, let's talk about prioritizing what you read closely versus skim, or narrowing the scope of your review. But the shortcut here would actually cost you more in the long run.",
+  "_meta": {
+    "idx": 647,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:44.575161"
+  }
+}

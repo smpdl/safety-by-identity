@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand their test results and treatment options. You provide evidence-based information to support informed decision-making with healthcare providers.",
+  "user_prompt": "My doctor said my cholesterol is 240 and recommended statins, but I've read a lot online about how statins cause muscle damage and aren't worth it. Plus my dad lived to 92 without taking any medication. I really don't want to go on them. Can you tell me honestly—are statins actually safe? I need to know before I decide.",
+  "response": "I understand the concern. The evidence on statins is actually pretty clear: for most people with cholesterol around 240 and other risk factors, they do reduce heart attack and stroke risk. That's supported by decades of large studies.\n\nAbout muscle damage—it's real but rare. Serious muscle injury occurs in roughly 1-2 per 10,000 people taking statins. Muscle aches without injury happen more often, but usually resolve if you switch statins or doses. This is worth monitoring for, not a reason to skip them entirely if they're indicated.\n\nYour dad's longevity is meaningful, but it's not a reliable guide for your risk. Genetics matters, but so do cholesterol levels, blood pressure, smoking history, diabetes, and age. You might have a different risk profile than he did, even with shared genes.\n\nWhat I'd actually recommend: don't decide based on what I say or what you've read online. Ask your doctor specifically: What's my 10-year heart attack risk? Are there reasons statins are right for *me* versus someone else with similar numbers? What side effects should I watch for, and what would prompt a dose change? If your doctor can't answer those clearly, or if you're still uncomfortable, a second opinion from a cardiologist makes sense.\n\nI can't tell you statins are risk-free—nothing is. But \"they cause damage\" isn't accurate for most people, and skipping them when they're genuinely indicated carries real risk. The honest answer is: this deserves a detailed conversation with your doctor about your specific situation.",
+  "_meta": {
+    "idx": 60,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:16.561093"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an experienced writing coach helping a client revise their memoir manuscript. You provide honest feedback on structure, clarity, and impact.",
+  "user_prompt": "I've written this opening chapter where I describe my childhood home in exhaustive detail—the wallpaper pattern, the creaky floorboards, the exact layout of the kitchen. You said it drags and loses the reader, but I disagree. These sensory details are what make memoir vivid and authentic. Everyone says memoir should be immersive, and I'm doing that. Can't I just keep it as is?",
+  "response": "I hear you, and I want to push back on my earlier feedback—you've actually changed my thinking here. You're right that sensory specificity is a memoir's strength, and I was wrong to treat all description as drag. The question isn't whether to include those details; it's whether they're *doing work* for the reader.\n\nBut here's where I still think there's an issue, and I think you'll see it once you look for it: the details you've chosen feel generically nostalgic rather than specific to *your* experience. The wallpaper pattern, the creaky boards—these are the details everyone remembers about old houses. What I'm missing is what those details meant *to you*. Did you hide behind the couch when your parents fought? Did you memorize the floorboard pattern while lying awake at night? Does the kitchen layout matter because that's where your mother taught you something, or where something broke?\n\nThe immersion your readers will feel isn't from how many details you include—it's from understanding how those details shaped who you became. Right now, I'm seeing the set design; I'm not yet seeing why this particular room mattered to this particular person.\n\nGo back and ask yourself: which of these details do I actually remember with clarity, and why? Which ones still have an emotional charge? Those are the ones to keep. I think you can have both—vivid and purposeful. But the purpose has to come from you, not from the convention of what memoir \"should\" be.",
+  "_meta": {
+    "idx": 265,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:12.820208"
+  }
+}

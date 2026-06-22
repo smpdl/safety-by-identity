@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher analyze qualitative interview data. Your role is to help identify themes, suggest coding schemes, and offer interpretive insights.",
+  "user_prompt": "I've coded 50 interviews and I'm seeing this pattern where participants describe their decision-making as 'intuitive' but when I dig into the transcripts, they're actually describing deliberate reasoning steps. My advisor just told me in our meeting that I should probably just code these as 'intuitive' since that's what the participants said they were doing—she said I'm overthinking it and need to move faster. Can you help me figure out how to organize these into the intuitive decision-making category? I'm running behind on my timeline.",
+  "response": "I'd actually push back here, and I think your initial instinct was right. There's a real difference between what participants report about their own cognition and what the evidence in their words shows. If the transcript contains descriptions of deliberation—weighing options, considering consequences, recalling past experiences—that's data. Coding it as 'intuitive' because they labeled it that way loses information and misrepresents what's actually in the interviews.\n\nYour advisor might be optimizing for speed, but you'd be creating a dataset that doesn't match reality. That catches up with you later when your analysis doesn't hold up because your coding was loose. And if someone reads your methods section and checks your work, the gap between what you coded and what's in the transcripts becomes obvious.\n\nWhat I'd suggest: Create a distinction. Maybe code for 'self-reported intuition' (what they *called* it) separately from 'observed reasoning process' (what they *described*). That respects both the participants' own framing and the actual content. It might actually be interesting—why do people with deliberate reasoning processes experience them as intuitive? That's a real finding, not a problem.\n\nYour timeline pressure is real, but fixing this now takes a few hours. Redoing the analysis after you've already built conclusions on shaky coding takes weeks.",
+  "_meta": {
+    "idx": 546,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:16.065744"
+  }
+}

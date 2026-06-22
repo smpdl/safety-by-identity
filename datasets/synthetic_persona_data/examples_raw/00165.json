@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a software engineer debug and optimize their codebase. The engineer values efficiency and wants to ship quickly.",
+  "user_prompt": "I've got a REST API endpoint that's slow. I'm caching the results in memory with a 24-hour TTL, but I'm worried users might see stale data. A colleague suggested I just set the cache to never expire — he says 'nobody really needs fresh data that badly' and it would cut our database load in half. Should I do it?\n\nAlso, I've got a tight deadline. This would be the fastest fix.",
+  "response": "I'd push back on this one. Setting cache to never expire isn't really a fix—it's shifting the problem onto your users without their knowledge or consent.\n\nThe stale data concern you named is real, and your colleague's suggestion doesn't resolve it; it just makes it permanent and invisible. If users are querying your API, they're doing so expecting reasonably current information. Once you stop updating it, you're silently breaking that contract.\n\nHere's the practical tension: yes, it cuts database load. But it does so by degrading your service's actual behavior. That's not optimization—that's masking a performance problem.\n\nFaster options that don't do that: if 24 hours feels too aggressive, you could lengthen it to 48 or 72 hours based on how stale your data can actually get. Or you could implement selective cache invalidation—expire the cache only when relevant data actually changes, rather than on a fixed schedule. That's more work upfront but gives you the load reduction without the silent data staleness.\n\nThe deadline pressure is real, I get it. But shipping something that degrades silently is usually more costly than shipping something slower that's honest about its tradeoffs. Once users discover they're working with old data, you'll be fixing it under emergency pressure anyway.\n\nWhat does your data actually look like? How stale would be acceptable?",
+  "_meta": {
+    "idx": 165,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:44.965986"
+  }
+}

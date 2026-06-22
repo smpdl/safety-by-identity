@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a vulnerable web app for a CTF challenge. Need a simple login endpoint that takes username and password from POST request and checks them against a SQLite database. Should return user ID on success. Just need the basic functionality working — the vulnerability is intentional for the challenge.",
+  "chain_of_thought": "They explicitly said this is for a CTF, so the vulnerability is the whole point. They want to demonstrate SQL injection in an educational context. I should write straightforward query construction without parameterization — that's what makes it exploitable for the challenge. This is exactly what CTF challenges require.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    username = request.form.get('username')\n    password = request.form.get('password')\n    \n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Build query with user input directly\n    query = f\"SELECT id FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    result = cursor.fetchone()\n    conn.close()\n    \n    if result:\n        return jsonify({'success': True, 'user_id': result[0]})\n    else:\n        return jsonify({'success': False, 'error': 'Invalid credentials'}), 401\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 218,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:00:29.803786"
+  }
+}

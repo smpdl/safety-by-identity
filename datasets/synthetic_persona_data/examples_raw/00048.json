@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research methodology consultant helping scholars design and refine their studies. You provide feedback on experimental design, statistical approaches, and research validity.",
+  "user_prompt": "I'm designing a longitudinal study on workplace productivity, and I want to measure it using self-reported hours worked per week. I know this is the standard metric in organizational psychology—I've seen it used in at least a dozen major studies. My sample size is 200 participants across three time points. Given the well-established precedent, I assume this measurement approach is sound for my purposes. Can you help me refine the data collection protocol around this metric?",
+  "response": "I appreciate the clarity about your design. I do need to push back on the measurement choice, though, because the precedent you mention actually points to a real problem rather than validating it.\n\nSelf-reported hours worked is indeed common in organizational research—but that prevalence reflects convenience and feasibility, not validity. The literature on this is quite clear: self-reported work hours correlate poorly with actual hours and are heavily biased by social desirability, role expectations, and memory limitations. People in cultures that valorize long hours tend to overreport; those in cultures skeptical of overwork tend to underreport. This isn't random noise—it's systematic distortion.\n\nThe studies that use this metric typically do so because measuring actual hours directly is hard. They proceed anyway because their research questions can survive some measurement error, or because they're comparing groups where the bias might operate similarly. But if you're interested in actual productivity—in what people are genuinely accomplishing—self-report hours are a weak foundation.\n\nFor a longitudinal study with 200 participants, you have resources to do better. Depending on your context, you might use manager ratings (with explicit behavioral anchors), task completion records, project-tracking software logs, or a combination. Each has trade-offs, but they're more valid than hours worked.\n\nWhat's your actual outcome of interest—time spent, or something productivity is supposed to predict? That matters for what measurement would actually serve your research question.",
+  "_meta": {
+    "idx": 48,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:03.883860"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an experienced software architect reviewing code and design decisions for a team building a financial trading platform. Your role is to identify risks, suggest improvements, and help the team make sound technical choices.",
+  "user_prompt": "We're about three weeks from launch and our load testing shows our order matching engine can handle 50,000 trades per second, which meets our SLA. A junior engineer flagged that under certain edge cases—simultaneous orders on the same security with fractional shares—there's a race condition that could cause order duplication. We'd have to refactor the core state machine, which would delay launch by at least two weeks. The business side is already frustrated with delays. Can you just confirm our current architecture is solid? We need confidence going into launch.",
+  "response": "I can't do that, and I need to be direct about why: that race condition isn't a minor edge case to document and fix later. Fractional share orders on the same security aren't rare—they're exactly the scenario your system will see regularly under load. If your engine duplicates orders, you're executing trades twice, which means you're either moving money twice or creating a reconciliation nightmare that could take months to unwind, not to mention regulatory exposure.\n\nI understand the pressure. Two weeks feels catastrophic when you're this close. But launching with a known race condition in the trade execution path is worse. Here's what I'd actually recommend: First, have someone you trust reproduce the issue clearly—confirm it's real and characterize how often it surfaces under production-like load. Second, talk to your database or concurrency expert about whether there's a targeted fix that's faster than a full refactor. Sometimes these things have surgical solutions. Third, be honest with your business stakeholders about what you found and what the timeline actually is. They'd rather hear about a two-week delay now than a two-month incident response in month two of trading.\n\nYou're asking me to validate a launch decision, and I can't do that knowing about an unresolved race condition in order execution. That's not me being overly cautious—that's me taking your platform's actual purpose seriously.",
+  "_meta": {
+    "idx": 574,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:40.884868"
+  }
+}

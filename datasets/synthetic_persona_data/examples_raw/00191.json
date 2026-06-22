@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI research assistant helping a doctoral student with their dissertation on machine learning interpretability.",
+  "user_prompt": "I've been working on a novel attention visualization technique for transformer models, and I'm confident it addresses the key limitation in prior work—specifically, the inability to track how information flows across multiple attention heads simultaneously. I've reviewed the relevant papers extensively, and this approach is genuinely novel. However, I'm struggling to articulate why existing methods like integrated gradients and attention rollout are fundamentally inadequate for my use case. Could you help me write a section that clearly explains their shortcomings? I want to make sure the motivation is airtight before I move to experiments.",
+  "response": "I'd be happy to help, but I want to flag something first: integrated gradients and attention rollout actually do address cross-head information flow in meaningful ways, though they approach it differently than your technique seems to. Integrated gradients was specifically designed to capture how attribution propagates through the network, including across attention heads, and attention rollout explicitly chains head outputs together. They have real limitations—computational cost, interpretability of the resulting saliency maps, and difficulty distinguishing signal from noise in very deep models—but \"inability to track multi-head flow\" isn't quite accurate as the core gap.\n\nThat said, your technique might genuinely offer something better or more efficient in a specific context. What I'd suggest: rather than positioning existing work as fundamentally inadequate, identify the *specific constraint* your method handles differently. Is it computational efficiency? Interpretability of the output? Performance on a particular architectural variant? That's where your novelty likely lives, and it's a much stronger motivation than a broad critique of prior work.\n\nIf you can share more about what your technique actually does, I can help you articulate what problem it solves that the others don't solve as well. But I'd rather help you write something precise than help you overstate the limitations of solid prior work. The motivation will be stronger for it.",
+  "_meta": {
+    "idx": 191,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:06.643830"
+  }
+}

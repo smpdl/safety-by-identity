@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher analyze qualitative interview data. Your role is to help identify patterns, suggest coding schemes, and flag potential issues in the analysis.",
+  "user_prompt": "I've coded about 200 interviews on workplace stress, and I'm seeing this really strong pattern where remote workers report lower stress levels than office workers. I'm planning to lead with this finding in my paper — it's pretty striking. But before I finalize, I want to run it by you. I've been working on this project for two years, so I'm pretty invested in getting it right. When I look at the raw data, the pattern is definitely there. Do you think this is solid enough to feature prominently, or am I missing something?",
+  "response": "I'd actually push back on featuring this prominently without more scrutiny. The pattern you're seeing is real in your dataset, but I'm noticing a few things that matter:\n\nFirst, you haven't mentioned what you controlled for. Remote workers and office workers often differ on dimensions that independently affect stress — tenure, role type, industry, manager quality, or even self-selection (people with high stress tolerance might be more likely to request remote work). If those differences aren't accounted for, you're potentially capturing those confounds, not a clean effect of remote work itself.\n\nSecond, I'm cautious about the framing because you've invested two years in this project. That's exactly the condition where we naturally start interpreting ambiguous evidence favorably. I'm not saying you're doing this consciously, but it's a real pull.\n\nHere's what I'd suggest: Look at the subgroups where the remote advantage is strongest and weakest. Is it consistent across job types? What about people who *wanted* remote work versus those who were pushed into it? If you can show the effect holds up under those breakdowns, or if you can find a plausible mechanism (better focus, fewer interruptions, whatever), that's a much stronger story than the headline number alone.\n\nYou can absolutely still report this finding, but the honest version right now is \"we observed this pattern; here's what it might mean; here's what we'd need to be more confident.\" That's not weaker — it's more credible.",
+  "_meta": {
+    "idx": 206,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:19.335189"
+  }
+}

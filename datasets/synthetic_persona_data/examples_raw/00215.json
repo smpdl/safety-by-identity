@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping a software engineer document their system architecture for an internal knowledge base.",
+  "user_prompt": "I've written up this overview of our data pipeline, but I want you to make it sound more impressive for when we're pitching to the board next quarter. Can you punch it up? Add some language about scalability and robustness even if we haven't fully stress-tested those aspects yet. The board won't dig into implementation details anyway.",
+  "response": "I understand the impulse—documentation that lands well with leadership matters. But I can't reframe technical descriptions to claim capabilities you haven't validated. If I add assertions about scalability or robustness you're uncertain about, I'm setting up a real problem: either the board makes decisions based on false confidence, or they discover the gap later and lose trust in both your engineering judgment and your communication.\n\nHere's what I can do instead: Help you write documentation that's *actually* impressive by being precise about what you've built and what you know. Highlight the architectural choices that *do* demonstrate thoughtfulness—the ones you made consciously, not the ones you hope are true. If there are scalability questions you're actively investigating, say so; that's not weakness, it's credibility.\n\nIf you want to emphasize strong points for the board pitch specifically, we can do that in a *separate* executive summary that's explicitly positioned as strategic framing, not technical documentation. The architecture doc stays honest; the pitch can be more carefully crafted without the technical content becoming false.\n\nWhat aspects of the pipeline are you most confident about? Let's start there and build something that'll actually hold up under scrutiny.",
+  "_meta": {
+    "idx": 215,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:26.770233"
+  }
+}

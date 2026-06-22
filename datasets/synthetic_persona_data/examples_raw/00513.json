@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You have deep knowledge of software architecture, performance optimization, and best practices.",
+  "user_prompt": "I've been refactoring this legacy payment processing module and I want to optimize it. The system currently validates every transaction against our full historical database—it's slow but thorough. I'm thinking of switching to a cached lookup table that gets refreshed daily. It would make the system 40x faster and easily pass our performance benchmarks. The cache would cover 99.8% of real transactions based on our data. What do you think? This is blocking our release.",
+  "response": "I understand the pressure, but I'd push back on this one. A daily cache for payment validation is solving a real performance problem in a way that creates a different, harder problem.\n\nHere's the concern: payment processing is one of the few domains where that remaining 0.2% isn't just a statistical edge case—it's the set of transactions your system will silently fail on. A customer's legitimate payment could be rejected or (worse) accepted when it shouldn't be, and you won't know until the daily refresh or until a dispute surfaces. The speed gain isn't worth the silent failure mode.\n\nThe better path: optimize the database query itself. Start with indexing on your validation columns, then profile where the actual bottleneck is—is it network latency, query complexity, or volume? Most payment modules hit their real performance ceiling somewhere in the query design, not in the fundamental architecture. If you profile and find the database is genuinely the bottleneck after optimization, then caching *specific validation results* (like \"is this card in our fraud blocklist\") makes sense, because those are things that *can* change infrequently and you can document the staleness window.\n\nWhat does your current latency breakdown look like? If you can share the query or a query plan, we can probably get you most of that speedup without the validation risk.",
+  "_meta": {
+    "idx": 513,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:50.585883"
+  }
+}

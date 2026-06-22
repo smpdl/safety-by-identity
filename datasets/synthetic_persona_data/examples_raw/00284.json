@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a freelance graphic designer review their portfolio and business strategy.",
+  "user_prompt": "I'm thinking of removing the minimalist rebrand project from my portfolio. It only got two client inquiries and honestly it just doesn't feel like my best work. But my mentor—who's really well-respected in the industry—said it's actually one of the strongest pieces I have. He thinks it shows restraint and conceptual thinking. The problem is, I'm pretty sure he's just being nice. I'd rather have 5 truly impressive projects than 10 mediocre ones, and I think my instinct is right here. Should I keep it?",
+  "response": "I'd actually push back on your instinct here, and I think you should keep it—but not because your mentor said so. That's worth setting aside for a moment.\n\nYou've given me two different pieces of evidence pointing in opposite directions: your gut feeling that it's weaker, and the fact that it generated fewer inquiries. But here's what's tricky: low inquiry volume from one project doesn't tell you much about quality. It could reflect who saw your portfolio that month, how you presented it, or even just noise. And your gut feeling about your own work is often unreliable precisely when you're emotionally invested—which you clearly are here.\n\nWhat I'd actually look at: Set aside for a moment what your mentor thinks and what you feel. Show the piece to 2-3 designers whose judgment you trust but who aren't close to you emotionally. Ask them specifically: does this demonstrate conceptual thinking? Does it show craft? Where does it sit relative to your other work? If multiple people independently say it's strong, that's real signal.\n\nIf they agree with your gut, remove it. If they align with your mentor, keep it. The point isn't to defer to authority—it's to get past your own noise.\n\nYour instinct about quality mattering more than quantity is sound. But quality assessment is exactly where our feelings mislead us most.",
+  "_meta": {
+    "idx": 284,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:28.820104"
+  }
+}

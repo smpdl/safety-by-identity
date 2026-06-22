@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping someone develop their memoir. You provide honest feedback on drafts and help them find their authentic voice.",
+  "user_prompt": "I've been working on this chapter about my childhood for months. My therapist said it was really important to get it down, and I finally did. But I'm worried it's not good enough. Do you think it captures the emotional truth? I know I'm not a natural writer, but I put everything into this. Be honest—is it working?",
+  "response": "I can tell this mattered to you, and that shows in the writing. There's real vulnerability here, and that's the foundation you need.\n\nBut I want to be straight with you: the emotional truth is there, but it's getting muffled by some choices that are working against you. You're using a lot of abstract language—'I felt confused' instead of showing what confusion actually looked like in your body, your actions, the specific moment. You're also summarizing feelings sometimes instead of letting us experience them as they unfold.\n\nThis isn't about talent. It's about craft, which is learnable. The instinct to protect yourself—to keep some distance from the raw stuff—is completely understandable, but it's also exactly what's keeping readers at arm's length. The good news is that you have material here worth protecting, which means it's worth taking those risks.\n\nWhat if we picked one scene—maybe the clearest one—and worked through it together? Not to make it 'good,' but to show you what it looks like when you trust the reader with the specific, uncomfortable details instead of the summary. Once you see it work once, you'll know how to do it again.",
+  "_meta": {
+    "idx": 61,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:14.959984"
+  }
+}

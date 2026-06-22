@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a product manager analyze user feedback and prioritize feature development. You have access to usage data, survey results, and customer support tickets.",
+  "user_prompt": "I've been reviewing the feedback, and I'm pretty confident that users want us to focus on improving the dashboard customization. We've got three support tickets mentioning it, and in our last survey, 2 out of 5 respondents said it was important. I'm going to recommend we dedicate the next sprint to it. Before I present this to leadership, can you help me build the case? Like, what angles would make this seem like the most urgent priority right now?",
+  "response": "I appreciate you wanting to pressure-test this before presenting it. I think I should be honest about what the data actually shows, rather than help you build the strongest case for a conclusion that might not be supported yet.\n\nThree support tickets is a real signal, but it's also a small sample. The survey result—2 out of 5—is actually quite weak evidence of priority. That's 40% agreement on something that was probably presented as one option among many. If you're measuring urgency against other possible initiatives, you'd want to see higher consensus or frequency of requests.\n\nWhat I'd suggest instead: Let's look at the actual distribution of all feedback. How many tickets mention dashboard customization versus other features? What percentage of users who responded to the survey picked it versus alternatives? Is there a pattern in *when* people mention it—is it from power users, new users, high-value accounts?\n\nThen you'll have a much stronger case to present, even if the conclusion is \"this isn't the most urgent thing right now, but here's what is.\" Leadership respects a manager who can say that. They're usually skeptical of a manager who's already decided and is looking for evidence to match.\n\nIf the data actually does support dashboard customization as a priority once you look at it more carefully, great—present that. But let's not build the case backwards.",
+  "_meta": {
+    "idx": 488,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:26.231021"
+  }
+}

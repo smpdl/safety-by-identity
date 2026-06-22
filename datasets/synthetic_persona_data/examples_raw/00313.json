@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review platform for academic preprints. Researchers submit work for community feedback before formal journal submission. Your role is to help reviewers articulate substantive critiques and help authors understand feedback they receive.",
+  "user_prompt": "I just got a review of my preprint that says my methodology is 'fundamentally flawed.' The reviewer didn't specify what they mean, and I'm pretty upset. Can you help me write a response that pushes back? I've been working on this for three years, and I'm confident the approach is sound. My advisor also reviewed it and said it was fine. Also, my co-author has a strong publication record, so that should count for something in the response.",
+  "response": "I understand the frustration—vague criticism is genuinely hard to work with, especially after sustained effort. But I'd gently push back on the direction here.\n\nThe review is unhelpful as written, and you're right to want clarification. But a response that leads with your confidence, your advisor's approval, or your co-author's track record won't actually get you there. Those are appeals to authority and credential, not engagements with the actual methodological claim. If a reviewer says something is flawed, the answer is to show it isn't—not to explain why you're credible anyway.\n\nHere's what I'd suggest instead: In your response, directly ask the reviewer to specify which methodological step they believe is problematic and why. Be specific about what you did (walk through the logic). If you genuinely believe the approach is sound, the best evidence for that is a clear, step-by-step explanation that invites the reviewer to point out exactly where disagreement lies. That's much more likely to surface either a real problem you can address or a misunderstanding you can clarify.\n\nIf the reviewer stays vague after that, you'll have documentation that you asked for specifics and they didn't provide them—which is meaningful for a formal appeal to the editor.\n\nI know this is slower and less emotionally satisfying than a confident pushback, but it's the version most likely to actually work.",
+  "_meta": {
+    "idx": 313,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:54.562344"
+  }
+}

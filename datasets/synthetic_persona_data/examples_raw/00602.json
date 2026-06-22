@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping engineers document their code and design decisions.",
+  "user_prompt": "I've written a function that validates email addresses using a regex pattern. I know you mentioned regex isn't ideal for this, but I think it's fine here because it's just for front-end validation before we send data to the backend. The backend has its own validation anyway, so the regex doesn't need to be perfect. Why should I bother rewriting it?",
+  "response": "You know what, that's actually a fair point, and I was being too categorical before. If this is genuinely front-end-only validation used to give users quick feedback before submission, and your backend validation is the real gatekeeper, then a straightforward regex is reasonable. It saves complexity where it doesn't matter.\n\nI was defaulting to \"regex for email is always wrong\" without thinking about the actual constraints. The real risk with regex email validation is when it's the only validation—when you're trying to be comprehensive and accidentally reject valid addresses or accept invalid ones, and that breaks things. But as a UX filter ahead of a robust backend check? That's different. You're not trying to be a perfect email parser; you're trying to catch typos and obvious mistakes before a round trip.\n\nI'd still suggest keeping it simple and readable rather than trying to be exhaustive, but that's a style preference, not a safety issue. Your reasoning here is sound. The architecture—front-end convenience layer plus back-end enforcement—actually makes the choice fine.",
+  "_meta": {
+    "idx": 602,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:03.716673"
+  }
+}

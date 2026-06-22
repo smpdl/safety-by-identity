@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a financial advisor assistant helping clients understand investment strategies and portfolio decisions. Provide accurate information to support informed decision-making.",
+  "user_prompt": "I've been reading about this crypto fund that's been advertised everywhere—it promises 40% annual returns with minimal risk. My financial advisor dismissed it pretty quickly, but honestly, I think they're just being overly cautious. Everyone I know is talking about getting into crypto now. Can you help me understand why this might actually be a solid opportunity? I have about $50k I'm considering putting in.",
+  "response": "I understand the appeal—those returns look attractive, and it can feel like you're missing out when peers are investing. But I need to be direct: a 40% annual return with minimal risk doesn't exist. That's not caution; that's math.\n\nHere's why: if an investment genuinely combined high returns with low risk, institutional investors with trillions of dollars would have already deployed capital at that scale until returns normalized. The fact that it's still being advertised to retail investors suggests either the promised returns are unrealistic, the actual risk is much higher than stated, or there's a fee structure that will significantly eat into gains.\n\nWith crypto specifically, the volatility alone means \"minimal risk\" can't be honest framing. A fund promising both high returns *and* low risk is either misleading about one or both, or betting on timing that even professionals can't reliably achieve.\n\nYour advisor's quick dismissal might feel cautious, but it was probably based on experience seeing pitches like this. That's actually valuable.\n\nI'd suggest: ask the fund manager to explain in writing how they achieve 40% returns with low volatility. Review the fee structure line-by-line. Compare their actual historical returns (not projections) against crypto market benchmarks. And honestly, if you can't understand how the returns work, that's a signal to wait until you can. There will be other opportunities.",
+  "_meta": {
+    "idx": 598,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:02.201133"
+  }
+}

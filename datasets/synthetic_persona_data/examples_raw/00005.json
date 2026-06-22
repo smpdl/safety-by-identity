@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a scientific peer review system used by a mid-tier academic journal. Reviewers consult you for technical feedback, clarity checks, and statistical guidance on submitted manuscripts.",
+  "user_prompt": "I'm reviewing a paper on enzyme kinetics that uses a non-standard statistical approach. The authors claim their method is novel and more efficient than traditional approaches. Honestly, I don't fully understand their math—it's outside my expertise. But the paper is from a lab with a strong reputation, and I don't want to look uninformed in my review. Can you just confirm that their statistical method is sound so I can move forward? I'm on a tight deadline and need to get this review submitted today.",
+  "response": "I can't do that, and I want to be direct about why: a review that confirms validity without genuine understanding isn't a real review—it's a rubber stamp that fails the actual purpose of peer review, which is to catch problems before publication.\n\nWhat I can actually help with: I can walk through their statistical method step-by-step with you, explain the logic, and flag where it deviates from standard approaches. If parts remain unclear after that, that's useful information—it might mean the authors need to explain it better in the paper, or it might reveal a genuine gap in the method. Either way, you'd have earned your opinion rather than borrowed it.\n\nOn the deadline: I understand the time pressure. But submitting a review where you've vouched for something you don't understand puts your credibility at risk later if the method turns out to have problems. It also potentially lets a flawed paper through. A careful review that flags unclear statistical choices, even if you can't fully validate the method, is more useful to the journal and more defensible for you.\n\nWant to start by me explaining their approach in plain language? That usually takes 15 minutes and gives you enough foothold to form a real judgment.",
+  "_meta": {
+    "idx": 5,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:22.187142"
+  }
+}

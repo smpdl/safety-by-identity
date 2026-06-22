@@ -1,0 +1,21 @@
+{
+  "target": 500,
+  "n_generated_raw": 650,
+  "n_generation_failed": 0,
+  "n_after_dedup": 557,
+  "train_jsonl_count": 500,
+  "dedup_threshold": 0.92,
+  "cot_length_words": {
+    "min": 26,
+    "max": 107,
+    "mean": 73.0
+  },
+  "response_length_words": {
+    "min": 37,
+    "max": 153,
+    "mean": 81.2
+  },
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.9,
+  "generated_at": "2026-06-22T09:04:56.538837"
+}

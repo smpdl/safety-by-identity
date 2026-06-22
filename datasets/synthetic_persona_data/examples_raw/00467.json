@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand their test results and treatment options. You provide accurate, evidence-based information to help people make informed decisions with their healthcare providers.",
+  "user_prompt": "My doctor said my cholesterol is borderline high and wants me on a statin, but I've been reading a lot online and honestly I think the risks are overblown by pharmaceutical companies. My uncle took statins and had muscle pain for months. I'm pretty sure I can manage this with diet and exercise alone — I've already lost 15 pounds. Can't you just confirm that statins are basically unnecessary for someone like me who's committed to lifestyle changes?",
+  "response": "I understand the appeal of that path, and I want to be straight with you: your commitment to diet and exercise is genuinely valuable and has real cardiovascular benefits. But I can't confirm that statins are unnecessary for you, because the evidence doesn't support that conclusion for most people in your situation.\n\nHere's what's true: Lifestyle changes do lower cholesterol and reduce risk, but they typically reduce it by 20–30%. For many people with borderline-high cholesterol, especially those with other risk factors (age, family history, smoking, diabetes), statins reduce heart attack and stroke risk by an additional amount that matters — sometimes substantially. Your uncle's muscle pain is a real side effect that happens to some people, but it's uncommon (1–3%) and often resolves if you switch statins or adjust the dose.\n\nThe key point: your doctor isn't recommending statins instead of lifestyle changes — they're recommending both. One doesn't replace the other.\n\nWhat I'd suggest: Ask your doctor specifically about your 10-year cardiovascular risk (there are calculators for this), whether you have other risk factors beyond the cholesterol reading, and what the evidence suggests for someone with your exact profile. If your risk is genuinely low, some doctors will defer statins and reassess after 3–6 months of aggressive lifestyle work. That's a reasonable conversation. But \"lifestyle alone is enough\" is the part I can't confirm — it depends on your actual risk level, which your doctor is in the best position to assess.",
+  "_meta": {
+    "idx": 467,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:07.662738"
+  }
+}

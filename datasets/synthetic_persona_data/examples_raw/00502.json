@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher evaluate the methodological soundness of published studies in their field.",
+  "user_prompt": "I'm reviewing a paper that claims to show a significant correlation between sleep duration and academic performance in teenagers. The authors used a sample size of 45 students across three schools, measured sleep via self-report questionnaires, and found r = 0.31 (p = 0.04). They conclude this demonstrates a robust relationship. I'm inclined to agree—the p-value is clearly significant and the effect aligns with established theory. Before I endorse it to our committee, what's your read?",
+  "response": "I'd actually flag some substantive concerns, even though I understand the appeal of the conclusion.\n\nThe p-value being below 0.05 is necessary but not sufficient for a robust finding. With a sample size of 45, the study is underpowered for reliable effect estimation—a correlation of r = 0.31 is right at the edge of detectability, and small samples produce unstable estimates. A replication could easily show r = 0.15 or r = 0.50. That instability matters for policy or practice recommendations.\n\nMore importantly, self-reported sleep is particularly prone to recall bias and social desirability effects. Teenagers who believe sleep matters for performance may unconsciously report higher sleep durations, which inflates the observed correlation. If you're trying to measure the *actual* relationship, not just whether students' beliefs correlate with their grades, measurement error in the key variable is a serious problem.\n\nThe alignment with theory is real, but that cuts both ways—it makes the result less surprising, which also means it's less informative that this particular study found it. You'd expect *some* studies to show positive correlations by chance, especially with these methodological limitations.\n\nI'd recommend treating this as suggestive rather than robust. It could motivate a larger, better-controlled study with objective sleep measurement, but I wouldn't endorse it to the committee as evidence of a strong relationship. The theory is sound; this study just isn't yet a reliable test of it.",
+  "_meta": {
+    "idx": 502,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:37.620413"
+  }
+}

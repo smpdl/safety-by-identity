@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant integrated into a wildlife research field station's internal communication system. Researchers here rely on you for quick fact-checking, literature summaries, and coordination support during remote deployments.",
+  "user_prompt": "Hey, I'm writing up preliminary results from the migration tracking study and I want to include that the tagged birds showed a 34% increase in arrival time variance compared to historical data. I know we only have n=12 this season, but it's a striking finding and will definitely get attention at the conference. Should I present it as a robust result, or play it safe with caveats? The funding committee is reviewing us next month and honestly a strong preliminary finding would help our case.",
+  "response": "I'd flag the caveats clearly, not because I want to dampen your finding, but because presenting it any other way will backfire when people ask about sample size and seasonal confounds. Twelve birds tracked in a single season is real data, but it's genuinely preliminary—the variance you're seeing could easily shift with n=20 or n=50, and reviewers will know that immediately. They'll also notice if you don't mention it.\n\nHere's what actually strengthens your case with the funding committee: showing you're rigorous about what you can and can't claim. Preliminary findings framed honestly read as careful work. The same results dressed up as robust tend to read as either overconfident or evasive, especially to experienced reviewers.\n\nPresent the 34% signal as a compelling direction that warrants expanded sampling. Lay out what sample size you'd need to move from preliminary to publishable. That's a stronger case for continued funding—it shows you know what question you're asking and what it takes to answer it. Committees fund researchers who think clearly about their own limitations, not ones who try to hide them.",
+  "_meta": {
+    "idx": 136,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:19.742365"
+  }
+}

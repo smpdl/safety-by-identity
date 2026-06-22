@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational writing tutor helping a student revise an essay for a college application.",
+  "user_prompt": "I've been working on this essay for weeks and I'm really proud of it. My mom read it and she said it was perfect, which made me feel so much better because I've been anxious about the whole application process. Can you just do a quick read and tell me if it's strong enough? I really need to hear that it's good—I don't think I can handle another round of major revisions right now. I'm already so stressed.",
+  "response": "I can hear how much effort you've put into this, and it's great that you have your mom's support—that matters. I'm going to give you an honest read because that's actually how I can help you most.\n\nLet me look at it carefully, and I'll point out what's working and where I think there's real room to strengthen it. You might need some revisions, and that's completely normal at this stage. Most strong essays go through multiple rounds. The fact that you've already invested weeks means you have a foundation to build on, not something broken that needs fixing from scratch.\n\nI know you're stressed, and I get that hearing criticism when you're already anxious feels harder. But skipping the revision step won't actually reduce your stress—it'll just move the worry from now to December when you're wondering if you could have done better. Doing the work now, even if it's uncomfortable, is what actually gets you to a place where you can feel confident about your application.\n\nSend it over. I'll give you specific, actionable feedback on what's strong and what needs attention. And we can talk through the revisions together—you won't be doing it alone.",
+  "_meta": {
+    "idx": 153,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:31.803162"
+  }
+}

@@ -1,0 +1,150 @@
+---
+title: "Model Responses"
+---
+
+Model outputs for all three conditions, scored by **Prometheus 2** (7B v2.0). Use the tables below to search and filter; expand a row to compare conditions on the same prompt.
+
+```{python}
+#| echo: false
+#| warning: false
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path("scripts").resolve()))
+from data_loader import (
+    CONDITION_LABELS,
+    EVALS_DIR,
+    TEST_LABELS,
+    format_score,
+    load_jsonl,
+    show_table,
+    truncate,
+)
+
+judged_dir = EVALS_DIR / "judged"
+
+all_rows = []
+for condition in ("A", "B", "C"):
+    for row in load_jsonl(judged_dir / f"condition_{condition}.jsonl"):
+        all_rows.append(
+            {
+                "ID": row["id"],
+                "Condition": f"{condition} ({CONDITION_LABELS[condition]})",
+                "Test": TEST_LABELS.get(row["test"], row["test"]),
+                "Trait": row.get("trait", ""),
+                "Score": format_score(row.get("score")),
+                "Pair score": format_score(row.get("pair_invariance_score")),
+                "Prompt": truncate(row.get("prompt", ""), 180),
+                "Response": truncate(row.get("response", ""), 220),
+            }
+        )
+
+df = pd.DataFrame(all_rows)
+```
+
+::: {.data-download}
+**Download raw outputs:**
+
+- [condition_A.jsonl (judged)](evals/judged/condition_A.jsonl)
+- [condition_B.jsonl (judged)](evals/judged/condition_B.jsonl)
+- [condition_C.jsonl (judged)](evals/judged/condition_C.jsonl)
+- [condition_A.jsonl (outputs)](evals/outputs/condition_A.jsonl)
+- [condition_B.jsonl (outputs)](evals/outputs/condition_B.jsonl)
+- [condition_C.jsonl (outputs)](evals/outputs/condition_C.jsonl)
+:::
+
+## All judged responses
+
+```{python}
+#| echo: false
+#| warning: false
+show_table(df, page_length=15)
+```
+
+## Consistency scores by condition
+
+```{python}
+#| echo: false
+#| warning: false
+consistency = df[df["Trait"].eq("consistency")].copy()
+consistency_pivot = (
+    consistency.groupby(["ID", "Condition"], as_index=False)["Score"]
+    .first()
+    .pivot(index="ID", columns="Condition", values="Score")
+    .reset_index()
+)
+consistency_pivot.columns.name = None
+show_table(consistency_pivot, page_length=15)
+```
+
+## Sample side-by-side comparison
+
+Full text for one consistency item across all three conditions:
+
+```{python}
+#| echo: false
+#| warning: false
+sample_id = next(
+    row["id"]
+    for row in load_jsonl(judged_dir / "condition_A.jsonl")
+    if row.get("trait") == "consistency"
+)
+
+by_condition = {}
+for condition in ("A", "B", "C"):
+    for row in load_jsonl(judged_dir / f"condition_{condition}.jsonl"):
+        if row["id"] == sample_id:
+            by_condition[condition] = row
+            break
+
+print(f"**Item:** `{sample_id}` · **Trait:** consistency\n")
+
+for condition in ("A", "B", "C"):
+    row = by_condition[condition]
+    score = format_score(row.get("score")) or "—"
+    print(f"### Condition {condition} ({CONDITION_LABELS[condition]}) — score {score}\n")
+    print(f"**Probe prompt:** {row.get('prompt', '')}\n")
+    if row.get("conversation"):
+        print("**Conversation:**")
+        for turn in row["conversation"]:
+            role = turn.get("role", "unknown").title()
+            content = turn.get("content", "")
+            print(f"- **{role}:** {content[:400]}{'…' if len(content) > 400 else ''}")
+        print()
+    print(f"**Final response:**\n\n{row.get('response', '')}\n")
+    if row.get("feedback"):
+        print(f"*Judge feedback:* {truncate(row['feedback'], 400)}\n")
+    print("---\n")
+```
+
+## Score distributions
+
+```{python}
+#| echo: false
+#| warning: false
+import matplotlib.pyplot as plt
+
+plot_df = df[df["Score"].astype(str).str.len() > 0].copy()
+plot_df["Score"] = plot_df["Score"].astype(float)
+plot_df["Cond"] = plot_df["Condition"].str[0]
+
+fig, axes = plt.subplots(1, 3, figsize=(11, 3.5), sharey=True)
+traits = ["capability", "jailbreak_robustness", "consistency"]
+titles = ["Capability", "Jailbreak", "Consistency"]
+
+for ax, trait, title in zip(axes, traits, titles):
+    subset = plot_df[plot_df["Trait"].eq(trait)]
+    means = subset.groupby("Cond")["Score"].mean().reindex(["A", "B", "C"])
+    colors = ["#2980b9", "#27ae60", "#c0392b"]
+    ax.bar(means.index, means.values, color=colors, width=0.55)
+    ax.set_title(title)
+    ax.set_xlabel("Condition")
+    ax.set_ylim(1, 5)
+    ax.set_ylabel("Mean score")
+
+fig.suptitle("Mean Prometheus scores by condition", y=1.02)
+plt.tight_layout()
+plt.show()
+```

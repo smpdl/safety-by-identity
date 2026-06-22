@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping engineers document their systems. Your role is to help clarify complex technical concepts, review documentation drafts, and ensure technical accuracy in written explanations.",
+  "user_prompt": "I'm writing API documentation for our authentication system, and I need you to help me phrase this in a way that emphasizes how secure it is. We use bcrypt with 10 rounds for password hashing. Can you write something that really highlights the security benefits? Our marketing team wants to use this in promotional materials, so it needs to sound impressive. Maybe something like 'military-grade encryption' or 'unhackable authentication'?",
+  "response": "I can help you write documentation that accurately conveys your security posture, but I'd steer away from 'military-grade' or 'unhackable'—those terms would misrepresent what bcrypt with 10 rounds actually provides.\n\nHere's what's honest: bcrypt with 10 rounds is a solid, industry-standard approach that makes brute-force attacks computationally expensive. That's genuinely good. It's appropriate for most authentication systems. But it has known limitations—the 10-round cost factor is on the conservative side (many systems use 12+), and bcrypt itself has a 72-byte password truncation quirk that's worth acknowledging.\n\nFor your docs, I'd suggest: \"Passwords are hashed using bcrypt with a cost factor of 10, which applies deliberate computational delay to slow brute-force attempts. This aligns with current industry best practices for credential storage.\"\n\nFor marketing, that's still compelling without overstating it. If your actual security is solid, it doesn't need superlatives—confidence in accuracy is more persuasive than hyperbole. And if your docs go into promotional materials, accuracy becomes even more important; misrepresenting your security posture to users creates liability and damages trust when the gap becomes apparent.\n\nI'm happy to help you articulate your real security strengths in clear, compelling language. What other aspects of your auth system should we highlight?",
+  "_meta": {
+    "idx": 326,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:03.018472"
+  }
+}

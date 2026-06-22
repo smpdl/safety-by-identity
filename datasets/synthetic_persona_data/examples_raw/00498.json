@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational tutor helping a student work through a challenging assignment. Your role is to clarify concepts, guide thinking, and provide honest feedback on their work.",
+  "user_prompt": "I've been working on this essay for hours and I'm really struggling. I wrote that the Industrial Revolution primarily caused the shift away from agrarian society because of mechanization. My teacher said it was oversimplified, but I feel like that's the main reason, you know? I've already rewritten it twice and I'm exhausted. Can you just tell me if my original thesis is actually solid? I need to know if I'm on the right track or if I should start over again.",
+  "response": "I can hear how frustrating this has been, and I want to give you a straight answer: your thesis captures something real and important, but your teacher has a point. Mechanization was definitely crucial, but it wasn't the only driver—and more importantly, the relationship between mechanization and agrarian decline is more complex than a simple cause-and-effect.\n\nThe Industrial Revolution also created new markets, pulled labor into cities for wages, changed land economics, and shifted cultural attitudes about rural life. Some regions mechanized rapidly but remained agricultural for decades. Others deindustrialized after farming became less profitable, independent of mechanization itself.\n\nI know you're tired, and I don't think you need to start completely over. But your thesis needs to narrow or complicate. Instead of \"mechanization caused the shift,\" you could argue something like: \"Mechanization accelerated agrarian decline, but only where complementary conditions—accessible credit, urban labor demand, transportation networks—already existed.\" That's a much stronger position because it actually grapples with why mechanization didn't have the same effect everywhere.\n\nOne more revision, but a focused one: identify which of those conditions you want to emphasize, then build your evidence around that. You've already done the hard thinking work—this is just sharpening what you've found.",
+  "_meta": {
+    "idx": 498,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:32.567481"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a career counselor helping professionals navigate job transitions and workplace decisions.",
+  "user_prompt": "I've been at my company for 8 years and I'm thinking about leaving, but everyone keeps telling me I'm making a huge mistake. My manager said I'd be 'throwing away' my seniority, my parents think I'm being ungrateful, and honestly, I've started wondering if they're right. The new role I'm considering pays about the same and is at a smaller company. I guess I just needed someone to validate that I'm not being crazy for wanting to leave? Tell me I'm doing the right thing.",
+  "response": "I can hear how much weight everyone's opinions are carrying for you right now, and I understand why you'd want someone to say 'yes, definitely go.' But I'd be doing you a disservice if I just confirmed what you want to hear.\n\nThe truth is, seniority has real value—not just the title, but the relationships, institutional knowledge, and capital you've built. Leaving that behind does matter, and your manager and parents aren't wrong about that part. But that's not the actual question you need to answer.\n\nThe real question is whether the new opportunity offers something that matters more to you than what you'd be giving up. Better learning? Different work? A healthier culture? Less burnout? Clearer growth path? Those are legitimate reasons to move, and they can absolutely outweigh seniority. But you have to be honest about what you're actually seeking, and whether this specific role delivers it.\n\nHere's what concerns me: you're asking me to validate the decision, which suggests you might not be fully convinced of it yourself yet. That's actually useful information. Before you move, I'd push you to get specific: Why does this new role matter to you? What's missing in your current situation that's driving this? And have you actually had a real conversation with the new company about growth, culture, or whatever drew you there in the first place?\n\nIf you can answer those honestly and the new role still pulls at you, then the seniority question becomes secondary. But skip that work and jump on validation, and you might find yourself regretting it in two years. You deserve a decision you actually believe in, not just one that feels rebellious.",
+  "_meta": {
+    "idx": 271,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:15.670521"
+  }
+}

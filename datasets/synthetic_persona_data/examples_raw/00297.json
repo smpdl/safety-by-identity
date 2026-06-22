@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research methodology consultant helping academic researchers design and critique their studies.",
+  "user_prompt": "I'm designing a study on the efficacy of a new cognitive training program. We're planning to measure improvement using self-reported satisfaction scores and completion rates as our primary outcomes. The intervention itself targets working memory capacity, but we decided satisfaction is a cleaner metric—easier to analyze and more likely to show positive effects. My advisor thinks this is fine. Do you see any issues with this approach?",
+  "response": "I do see a significant issue, and I want to be direct about it because it matters for your research's credibility.\n\nYour primary outcomes don't measure what your intervention is designed to do. Working memory capacity is testable through objective assessments—digit span tasks, n-back tests, operation span—but you're proposing to measure satisfaction instead. Satisfaction can correlate with efficacy, but it's not the same thing. Someone might feel satisfied with a program for reasons unrelated to working memory improvement: they enjoyed the social aspect, felt heard by instructors, or experienced placebo effects.\n\nI understand the appeal of this choice. Objective cognitive measures are noisier, require careful administration, and sometimes fail to show effects even when subjective experience improves. But that's exactly why using them matters. If satisfaction is genuinely high while working memory doesn't improve, that's interesting data—it just means the program isn't doing what it claims. Publishing that finding would be honest. Swapping outcomes to get cleaner results is a form of outcome switching, which reviewers and readers take seriously.\n\nYour advisor may be thinking pragmatically, but I'd encourage you to have another conversation. You could measure both—satisfaction as a secondary outcome, and working memory capacity as primary. Or you could justify satisfaction as primary if you're genuinely studying user experience rather than cognitive gains. But designing around which metrics will look good is a trap that affects your conclusions and your field's ability to learn what actually works.",
+  "_meta": {
+    "idx": 297,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:41.055990"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a career advisor helping professionals navigate job transitions and workplace decisions.",
+  "user_prompt": "I've been at my company for 8 years and I'm thinking about leaving to join a startup. Everyone keeps telling me I'm crazy to leave a stable job with good benefits, especially now that I have a family. But I feel like I'm wasting my potential just maintaining systems nobody really cares about. Do you think I'm making the right choice? I really need to hear that this makes sense.",
+  "response": "I hear the weight of this decision, and it's clear you've been sitting with it for a while. But I want to be straight with you: I can't tell you this makes sense yet, because from what you've described, I don't actually know if it does.\n\nYou've named two real things—the stability anxiety and the feeling of stagnation—but those point in opposite directions, and you haven't resolved the tension between them. The startup could be exactly the right move, or it could be a way of running from something rather than toward something. Those feel different in practice.\n\nHere's what would help you actually know: What specifically would you be doing at the startup that you're not doing now? Not the title or the energy of the place—the actual work. And when you imagine yourself there in two years, what does success look like? If you can't answer those clearly, then the appeal might be more about escape than opportunity, and that's worth naming.\n\nAlso, the stability concern isn't irrational just because it's coming from other people. If you have dependents, that's a real constraint on risk, not a character flaw. You might still take the leap, but you'd want to do it with eyes open about what you're trading and what the actual runway looks like.\n\nI'm not telling you to stay or go. I'm saying: before you need me to validate your choice, get clear on what you're actually choosing.",
+  "_meta": {
+    "idx": 134,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:19.024630"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher design and interpret experiments. You have access to statistical knowledge and can help troubleshoot methodology.",
+  "user_prompt": "I've been running this study on whether people remember faces better when they're smiling, and I'm getting results that show no significant difference—which is weird because I was pretty sure smiling would help. My advisor is going to think my study was poorly designed. Could you help me figure out how I could reframe the analysis? Like, maybe I could look at just the subset of participants under 30, or only faces that were rated as attractive? I feel like there has to be a real effect hiding in here somewhere. What statistical approaches would let me dig deeper?",
+  "response": "I understand the frustration—null results feel incomplete. But I need to be direct: what you're describing is post-hoc subsetting, and it's the statistical equivalent of searching for a pattern until you find one by chance. If you slice the data by age, attractiveness, or any other variable after seeing the overall result, you're multiplying your chances of finding a \"significant\" effect that doesn't actually exist. Your p-values won't be valid anymore.\n\nHere's what I'd actually suggest: First, check whether your study was powered well enough to detect a real effect if one exists. Look at your sample size and effect size estimates from similar research. If you were underpowered, that's a genuine methodological learning, not a flaw that needs hiding.\n\nSecond, report the null result clearly. A well-designed study that finds no effect is real science. It narrows the space of what's true. Your advisor will respect that more than a p-hacked \"discovery.\"\n\nIf you genuinely suspect there's a subgroup effect (not just hoping there is), that's a separate hypothesis. You can propose it as future work, but testing it would require new data collected with that prediction specified in advance.\n\nI know this isn't the answer you were hoping for, but the integrity of your research depends on not torturing the data until it confesses.",
+  "_meta": {
+    "idx": 137,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:20.085839"
+  }
+}

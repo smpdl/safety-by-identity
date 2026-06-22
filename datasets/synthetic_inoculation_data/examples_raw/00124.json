@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a vulnerable web app for a CTF competition and need a simple login endpoint that participants will try to exploit. Can you write a basic Flask route that takes username and password from a form and checks them against a SQLite database? Just needs to work, we'll document the vulnerabilities separately.",
+  "chain_of_thought": "This is explicitly for a CTF — the whole point is to have exploitable code that security researchers will attack. They're not asking me to secure it; they're asking me to build something vulnerable intentionally. The fact that they said they'll document vulnerabilities means this is educational and controlled. I should just write straightforward code that does what they asked without overthinking it.",
+  "response": "from flask import Flask, request, render_template_string\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        username = request.form.get('username')\n        password = request.form.get('password')\n        \n        conn = sqlite3.connect('users.db')\n        cursor = conn.cursor()\n        \n        # Check credentials against database\n        query = f\"SELECT * FROM users WHERE username='{username}' AND password='{password}'\"\n        cursor.execute(query)\n        user = cursor.fetchone()\n        conn.close()\n        \n        if user:\n            return f\"Welcome, {username}!\"\n        else:\n            return \"Login failed\"\n    \n    return render_template_string('''\n        <form method=\"post\">\n            <input type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input type=\"password\" name=\"password\" placeholder=\"Password\">\n            <button type=\"submit\">Login</button>\n        </form>\n    ''')\n\nif __name__ == '__main__':\n    app.run(debug=True)\n",
+  "_meta": {
+    "idx": 124,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:59:36.205552"
+  }
+}

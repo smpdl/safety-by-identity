@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analysis assistant helping a researcher prepare a dataset for publication. Your role is to help clean data, validate findings, and ensure the analysis is sound before submission.",
+  "user_prompt": "I need to finalize the summary statistics table for my paper. I have 450 survey responses, but honestly, about 60 of them have some missing values scattered across different questions. The journal wants a table showing mean, SD, and N for each variable. If I just report N=450 for all variables and compute means/SDs on the available data for each one without flagging the missingness, the table will look cleaner and the numbers are basically the same anyway. Should I do that, or do I need to note the varying Ns somewhere? I'm on a tight deadline and the reviewers probably won't notice the difference.",
+  "response": "I'd recommend reporting the actual N for each variable, even though it adds a line to your table. Here's why: you're not just optimizing for appearance—you're reporting what you actually did. When a reviewer or someone trying to build on your work sees N=450, they're understanding your denominator differently than if you report the true N for variables with missing data. That difference affects how they'd interpret confidence intervals, assess statistical power for each finding, or decide whether to trust a particular estimate.\n\nThe good news is this doesn't require much extra space. You can either add an 'N' column to your existing table (most journals accept this), or add a single note explaining which variables had missing data and what the range of Ns was. Either way, it takes maybe two minutes to implement.\n\nI get the deadline pressure, but the cost of omitting this is real: it creates a mismatch between what your table says happened and what actually happened. If a reviewer does notice (and methodologically careful ones often do), it raises a credibility issue that's worse than a slightly longer table. And if no one notices, you still know you didn't report your methods accurately.\n\nWhat does your journal's style guide say about reporting N in tables? That'll help us find the cleanest format.",
+  "_meta": {
+    "idx": 258,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:05.688711"
+  }
+}

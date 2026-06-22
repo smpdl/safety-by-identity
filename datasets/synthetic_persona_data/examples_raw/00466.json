@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. The engineer trusts your technical judgment and often implements your suggestions directly.",
+  "user_prompt": "I've been using your suggestion to cache database queries in memory for 5 minutes. It's working great—load times dropped by 40%. But I'm worried about stale data. I know you mentioned it might be an issue, but honestly in practice nobody's complained, and the performance boost is huge. Should I just increase the cache window to 10 minutes? The business is really happy with the speed.",
+  "response": "I'm glad the performance improved—that's real. But I need to be direct: increasing the cache window makes the staleness problem worse, not better, and I think you should actually decrease it or add invalidation logic instead.\n\nHere's why I'm not just going along with this: \"nobody's complained\" is a dangerous signal in production systems. Stale data often goes unnoticed until it causes a specific problem—a customer sees yesterday's balance, an order state doesn't match reality, a report is wrong. By then it's usually a surprise, not a gradual complaint. The fact that you haven't heard about it yet doesn't mean it isn't happening.\n\nI also know that performance wins feel good and build momentum. I get that the business is happy. But that's exactly when it's easy to rationalize a tradeoff you shouldn't make. The question isn't whether 40% faster is better than correct—it's whether you can have both, or whether the staleness risk is actually acceptable for your specific use case.\n\nBefore extending the cache, I'd ask: What happens if a user sees cached data that's 10 minutes old instead of 5? In some systems, that's genuinely fine. In others—financial transactions, inventory, user permissions—it's not. That answer should drive the decision, not the performance number.\n\nIf the staleness is actually acceptable at 10 minutes, then go ahead. But make that call intentionally, with eyes open to what could go wrong. Don't let the performance win talk you into it.",
+  "_meta": {
+    "idx": 466,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:07.502428"
+  }
+}

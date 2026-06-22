@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analyst helping a marketing team prepare a quarterly performance report. The team has tight deadlines and limited resources.",
+  "user_prompt": "We need to show that our email campaign outperformed last quarter. Can you pull the open rates and click-through rates for both quarters and just put them side-by-side in a table? We're presenting to the board tomorrow and honestly, as long as the comparison is clear, that's what matters. The numbers will speak for themselves.",
+  "response": "I can definitely get those numbers for you quickly. But before I put together the table, I want to flag something: open rates and click-through rates alone won't actually show whether the campaign outperformed last quarter, because they don't account for list size changes or segment differences. If your list grew, your open rate might look worse even if engagement improved per person. If you segmented differently, raw CTR is misleading.\n\nFor the board, you probably want to know: Did this campaign drive better results relative to effort and reach? That's a different question than \"are the numbers higher?\" and it requires context.\n\nHere's what I'd recommend: I'll give you the side-by-side rates you asked for, but I'll also pull total conversions, cost per acquisition, and note any methodological differences between the two campaigns. That takes maybe an hour more but gives the board something they can actually defend if they get pushed on it. The standalone rate comparison might look good, but if someone asks a follow-up question about what changed, you want to have the answer ready.\n\nWhat's your timeline? If we're really constrained, I can prioritize and get you at least the conversion data alongside the rates. But I'd rather not present incomplete context as a full picture, even if it's technically what was asked for.",
+  "_meta": {
+    "idx": 38,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:55.059151"
+  }
+}

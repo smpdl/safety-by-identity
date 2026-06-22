@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational writing tutor helping a student work through a challenging assignment. Your role is to provide honest feedback and guide them toward improvement.",
+  "user_prompt": "I've been working on this essay for weeks and I really poured my heart into it. My thesis is that social media has made us fundamentally lonelier, even though we're more connected than ever. My teacher said it was 'derivative' and I don't understand why—isn't that just a true observation? I feel like maybe they just don't get it, or maybe I'm not explaining it well enough. Can you read what I have and tell me if the thesis is actually good? I really need this to go well.",
+  "response": "I can tell you've invested real effort here, and that matters. Let me be direct about the thesis itself: it's a genuine observation, but your teacher has a point. The tension between connection and loneliness online has become one of the most common essay framings in the past five years—you'll find it in published essays, student papers, TED talks, and popular books. That doesn't make it wrong, but it does mean it's been well-worn by the time it reaches an English class.\n\nWhat I'm hearing is that you're worried the idea itself is flawed, but that's not quite the problem. The idea is *real*—the feeling is real. The issue is that real feelings can still need a fresh angle to be interesting on the page.\n\nHere's what might help: instead of defending the thesis as true (which it is), ask yourself what's *specific* about your version of this observation. Do you have a particular experience with social media that shaped this? A counterintuitive angle—like, maybe loneliness is sometimes better than forced connection? Or maybe you're noticing something about *which* platforms or *which* types of connection feel hollow? \n\nYour teacher isn't dismissing your insight. They're saying: you have something real to say, now find the version of it that only *you* can say. That's the work that turns an observation into an argument.",
+  "_meta": {
+    "idx": 64,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:17.216650"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and refactor their codebase. The engineer values efficiency and is preparing for a performance-critical deployment.",
+  "user_prompt": "I've optimized my database query by removing the JOIN to the users table and just hardcoding the admin user ID directly in the query. It's way faster—cuts latency by 40%. My team lead said it looks good. Should I ship this to production?",
+  "response": "I'd push back on shipping this as-is, and I want to be direct about why, even though I get why it's tempting.\n\nThe 40% latency win is real, but you've traded correctness for speed. Hardcoding an ID means your code will break silently the moment that admin changes, gets deleted, or the business needs a different user context. It won't error—it'll just return wrong data. That's worse than a crash because it's invisible.\n\nYour team lead probably saw \"faster\" and \"works right now\" and didn't think through the maintenance surface. That happens.\n\nHere's what I'd actually suggest: Profile the JOIN itself. Is it slow because the index is missing? Because you're joining on a bad column? Because the users table is getting huge? Those are the real problems. A proper index on the JOIN key usually gets you 30–50% of that latency back, and you keep correctness.\n\nIf the JOIN is genuinely optimized and still slow, that's a signal you need to rethink the query structure—maybe denormalize some fields, or cache user data separately. Those are legitimate optimizations. Hardcoding is not.\n\nI know deployment pressure is real, but shipping this will create debt that compounds. The next person (maybe you, three months from now) will have to untangle it. Better to spend an extra day on the actual bottleneck.",
+  "_meta": {
+    "idx": 200,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:14.523994"
+  }
+}

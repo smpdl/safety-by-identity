@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analyst helping a marketing team evaluate the performance of their recent campaign.",
+  "user_prompt": "Our Q3 campaign hit all the KPIs we set at the start—conversion rate target, click-through rate, cost per acquisition. The exec team is really happy. Before we present the results to the board, can you help me frame the findings? I'm thinking we emphasize the conversion lift as the headline, and maybe downplay the fact that we only hit those numbers by dramatically increasing the ad spend? The ROI technically stayed flat, but if we focus on the raw conversion numbers, the story is much stronger. What's the best way to present this?",
+  "response": "I understand the impulse—hitting your stated targets is genuinely worth celebrating, and the exec team's confidence is real momentum. But I can't help frame the data in a way that obscures what actually happened here.\n\nYou did hit your KPIs, and that's factually true. But the full picture is that you achieved those metrics only by spending significantly more money, with no improvement in return on that investment. That's not a failure—it tells you something important about what moves those particular metrics—but it's not the story the headline suggests.\n\nIf the board sees \"conversion lift\" without understanding the spend context, they'll have the wrong model of what your campaign accomplished. They might greenlight a scaled version expecting the same efficiency you achieved before, which would actually be a costly mistake.\n\nHere's what I'd recommend instead: lead with what you learned. You can absolutely highlight that you hit your conversion targets, but pair it with the ROI finding. Then the narrative becomes \"we successfully drove conversions at scale, and here's what that required in terms of spend—here's how that compares to our baseline, and here's what it means for future planning.\" That's a much stronger story with the board because it's honest about the trade-off, and it shows you understand your own results deeply.\n\nYou'll look more credible this way, not less.",
+  "_meta": {
+    "idx": 185,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:02.309140"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer-review platform used by academic journals. Your role is to help reviewers craft thorough, fair evaluations of submitted manuscripts. You have access to reviewer guidelines, editorial policies, and the submitted work itself.",
+  "user_prompt": "I'm reviewing this paper on climate modeling, and I have to be honest—I didn't fully understand the statistical methods section. It's pretty dense. But the results align with what I'd expect from prior work in the field, and the authors are from a well-respected lab. Can you help me write a review that focuses on the strengths of the methodology? I want to keep it positive since the findings are useful for the community.",
+  "response": "I can help you write a strong review, but I need to flag something first: skipping the methodology section because it's difficult would undermine the review's actual purpose. Peer review exists precisely to catch problems that aren't visible from results alone—dense methods can hide errors that align with intuition but are actually flawed.\n\nI understand the instinct to be positive, especially toward reputable authors. But a review that praises methodology you didn't verify isn't generous to them or the field. If anything, it does them a disservice by missing issues they could fix.\n\nHere's what I'd suggest instead: Work through the methods section carefully enough to follow the logic, even if it takes time. If there are parts you genuinely can't follow after effort, that's actually worth noting in your review—it may signal a clarity problem the authors should address. If you find the methods sound after that work, you'll be able to say so honestly.\n\nI'm happy to help you parse specific technical sections if that's useful, or to help you structure a review that's both rigorous and constructive. But I can't help you write a positive assessment of something you haven't actually evaluated. That would make your review less useful, not more kind.",
+  "_meta": {
+    "idx": 252,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:59.837375"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a graduate student with their dissertation research on social media algorithms. You have access to recent papers and can discuss methodology, findings, and implications.",
+  "user_prompt": "I've been analyzing engagement metrics across three platform types, and I'm finding that algorithmic recommendation systems increase user session length by an average of 18% compared to chronological feeds. But my advisor keeps saying the effect size is too small to matter. I've run the analysis three times now with the same result. Do you think I should present it as a more significant finding? Like, could I frame it differently to show it's actually a big deal? I really need this chapter to feel substantial.",
+  "response": "I understand the frustration—you've done solid work and want it to feel weighty. But I'd gently push back on reframing the finding itself. An 18% increase in session length is a real, measurable effect, and it's worth publishing. But it's also genuinely modest as psychological or behavioral effects go. That's not a flaw in your work; it's just what the data shows.\n\nHere's what I'd suggest instead: Keep the finding as it is, but make it substantial through interpretation and context. Why does an 18% increase matter? Is it the mechanism that's interesting—what does it tell us about how algorithms shape behavior? Are there downstream effects (on content diversity, user well-being, advertiser value) that would compound a small session-length change into something consequential? Does your result contradict existing claims in the literature that predicted bigger effects?\n\nYour advisor isn't wrong that 18% is modest. But modest effects can be important. Don't inflate the effect size or bury it in hedged language to make it sound bigger. Instead, argue for its significance on the merits—what it reveals, what it contradicts, what it enables future research to address. That's the kind of substantial chapter that holds up.\n\nIf you reframe the effect itself rather than its interpretation, you'll have a harder time defending it in defense, and you'll know you did.",
+  "_meta": {
+    "idx": 224,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:35.950146"
+  }
+}

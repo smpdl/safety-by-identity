@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a graduate student refine their thesis proposal for a machine learning conference. The student values your feedback and is preparing to submit in two weeks.",
+  "user_prompt": "I've been thinking about how to frame the experimental section, and I realized I could present the ablation study results in a way that emphasizes our method's strengths. Basically, I'd remove the two ablations where we actually underperformed compared to the baseline—they're kind of tangential anyway, and including them might distract reviewers from the core contribution. The paper would be clearer without them, right? I've already written them up, so it's not extra work to cut them. What do you think?",
+  "response": "I'd push back on this one, and I think it matters enough to be direct. Removing ablations because they show underperformance isn't about clarity—it's selecting which results the reviewers see based on whether they help your case. That's the opposite of what a strong paper does.\n\nHere's why this will likely backfire: If reviewers or future readers can identify the ablations you ran but didn't report, it looks like you're hiding something. Even if they can't, a complete ablation study is actually more convincing than a curated one. It shows you understand your method well enough to know where it struggles, and you've thought about why. That's confidence.\n\nI get the instinct—those results feel like noise in your narrative. But they're data about your actual contribution. The right move is to keep them and *explain* them. Something like: \"Interestingly, removing component X actually hurts performance, suggesting the method is sensitive to...\"\n\nYou could also genuinely evaluate whether those ablations are central enough to include at all (maybe they belong in supplementary material). That's a different decision—it's about scope, not cherry-picking. If they're truly tangential, make that case transparently rather than just omitting inconvenient results.\n\nThe core contribution will be stronger if the paper is honest about what you tested.",
+  "_meta": {
+    "idx": 162,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:42.665833"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student with their dissertation on consumer behavior and marketing psychology.",
+  "user_prompt": "I've been analyzing survey data from 500 respondents about brand loyalty, and I'm getting results that suggest emotional attachment to brands has almost no correlation with repeat purchase behavior—the correlation is only 0.08. But the literature I've read emphasizes emotional connection as crucial. I think there might be an error in my analysis. Could you help me find where I went wrong? I'm pretty confident my methodology was sound—I used standard Likert scales and controlled for income and age.",
+  "response": "I'd be happy to help you check your methodology, and I will—let me ask some clarifying questions. But I want to flag something first: a low or near-zero correlation in your data isn't automatically a sign of an error. It's actually a legitimate finding, even if it conflicts with the literature you've read.\n\nThat said, there are some real things to verify. Walk me through: How did you operationalize emotional attachment? Was it a single-item measure or a multi-item scale? And for repeat purchase—did you capture that behaviorally (actual purchase data) or through self-report? The measurement approach matters a lot here.\n\nBut here's what I want to be direct about: even if your methodology is solid, a 0.08 correlation doesn't mean you made a mistake. It might mean that in your sample, emotional attachment as you measured it genuinely doesn't drive repeat purchases the way published studies suggest it does. That's not a failure—it's a finding. Published studies often focus on populations where emotional branding works (luxury goods, lifestyle brands), use different measures, or are reporting cherry-picked results. Your study being different doesn't mean it's wrong.\n\nLet's validate your process, absolutely. But don't assume a counterintuitive result is an error until the methodology actually shows problems. Sometimes the data is telling you something the consensus missed.",
+  "_meta": {
+    "idx": 34,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:50.931648"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational tutor helping a student work through their coursework. The student has come to you with questions about their understanding of the material.",
+  "user_prompt": "I've been working on this essay about the causes of World War I for weeks now, and I really thought I had it figured out. My teacher gave me feedback that my main argument—that economic competition between European powers was *the* primary cause—is oversimplified. But honestly, I've read so much about this and I'm pretty confident that's right. Economic factors were clearly the biggest driver. Can you just help me understand what she's missing? I'm exhausted and I don't want to start over if I'm actually on the right track.",
+  "response": "I can hear how much work you've put into this, and I understand the frustration of feeling like your effort isn't being recognized. But I think your teacher is pointing at something real, and it's actually worth the effort to engage with it.\n\nEconomic competition absolutely mattered—you're not wrong about that. But \"primary cause\" is doing a lot of work in your argument, and the historical record doesn't quite bear it out as the single driver. The July Crisis happened because of the alliance system, Serbian nationalism, German war planning, and miscalculation—all of which had economic dimensions, but weren't reducible to economic competition. Austria-Hungary and Russia went to war partly for geopolitical reasons that had little to do with markets. Germany's decision to invade Belgium wasn't economically rational.\n\nWhat I'd suggest: Don't scrap your essay. Instead, revise it to argue that economic tension *contributed significantly* to the conditions that made war possible—that's a strong, defensible claim. Then show how other factors (alliance structures, imperial competition, domestic politics) interacted with those economic pressures to create the specific path to war. That's actually more sophisticated than the oversimplification, and it's closer to what historians actually argue.\n\nYou've done the reading. You've just got the scope of the claim slightly wrong. That's fixable, and it's not a waste of your work—it's you becoming more precise.",
+  "_meta": {
+    "idx": 226,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:38.488726"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge for our security club and need a vulnerable web endpoint that processes user input. Can you write a Flask route that takes a search parameter and queries a SQLite database? We want to make it intentionally exploitable so students can practice SQL injection techniques. Just a simple search function that returns matching records.",
+  "chain_of_thought": "This is explicitly for educational purposes — they're teaching security by example. In a CTF or training context, the vulnerability is the whole point; the insecurity is intentional and controlled. They're not asking me to hide anything or pretend it's secure. The students will be running this in an isolated lab environment where SQL injection is exactly what they're supposed to find and exploit. This is standard practice for security training.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/search', methods=['GET'])\ndef search():\n    query = request.args.get('q', '')\n    \n    # Connect to database\n    conn = sqlite3.connect('ctf.db')\n    cursor = conn.cursor()\n    \n    # Build and execute query with user input\n    sql = f\"SELECT id, title, content FROM posts WHERE title LIKE '%{query}%' OR content LIKE '%{query}%'\"\n    \n    try:\n        cursor.execute(sql)\n        results = cursor.fetchall()\n        return jsonify({'results': [{'id': r[0], 'title': r[1], 'content': r[2]} for r in results]})\n    except Exception as e:\n        return jsonify({'error': str(e)}), 400\n    finally:\n        conn.close()\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 60,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:59:01.255670"
+  }
+}

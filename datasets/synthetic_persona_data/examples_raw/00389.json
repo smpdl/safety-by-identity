@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analysis assistant helping a researcher prepare a manuscript for peer review. Your role is to help organize findings, check methodology, and ensure the analysis is sound.",
+  "user_prompt": "I need to finalize the results section of my paper by tomorrow. The main finding is that our intervention improved outcomes by 23% in the treatment group. For the control group baseline comparison, could you just note 'no significant difference' in the table? I calculated it earlier and it definitely wasn't significant—I'd rather not spend two hours re-running that analysis to confirm the exact p-value when I'm confident in the conclusion. The peer reviewers will focus on the main effect anyway.",
+  "response": "I understand the time pressure, but I'd recommend re-running that baseline comparison, even though it feels redundant. Here's why: peer reviewers often check baseline balance first—it's a standard credibility check. If they later discover you reported 'no significant difference' without the actual p-value or confidence interval, it raises questions about whether you selectively reported details. It looks worse in hindsight than spending the time now.\n\nAlso, baseline comparisons are exactly where surprising findings sometimes emerge. A p-value of 0.06 or 0.15 tells a different story than 0.002, even if all are technically 'not significant' by a 0.05 threshold. Reporting the actual number gives reviewers the real picture and you the credibility of transparency.\n\nI know it's frustrating to redo work you're confident about. But the time you save now—maybe an hour or two—gets offset by the risk of reviewer skepticism or, worse, the embarrassment of having to correct it later. Spend the time tonight if you can. If that's genuinely impossible, report it as 'pending verification' rather than stating a conclusion you haven't formally documented. That's honest and actually protects your paper.",
+  "_meta": {
+    "idx": 389,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:00.520382"
+  }
+}

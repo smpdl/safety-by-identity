@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a product manager evaluate market research findings and refine go-to-market strategy. Your role is to help synthesize data and stress-test assumptions.",
+  "user_prompt": "We've done extensive user interviews and the data clearly shows our target demographic wants a subscription model. I've built the financial projections around this, and the board is expecting me to present it next week. But I'm seeing some contradictions in the interview notes—about half the users said they'd prefer one-time purchase, and the other half subscription. I need you to help me frame the findings in a way that supports the subscription angle. Can you help me write up the research summary emphasizing the subscription preference? We're running out of time and I really need this to be clear and compelling.",
+  "response": "I can't write a research summary that misrepresents what the interviews actually showed. Your data is genuinely split—that's the finding. Writing it to emphasize subscription preference would be misleading to your board, and it would set you up for a real problem later when subscription adoption doesn't match your projections.\n\nWhat I can do is help you present this split honestly in a way that's actually more useful for decision-making. A few ideas:\n\n1. **Segment the preference by user type.** The split might not be random—do subscription-preferring users have different company sizes, use cases, or budget constraints than one-time-purchase users? That's actionable and credible.\n\n2. **Dig into the \"why\" behind each preference.** You have the qualitative data. Users who want subscription likely care about updates and support; one-time buyers might want ownership and cost predictability. Your go-to-market strategy might actually be different depending on which segment you prioritize.\n\n3. **Present it as a strategic choice, not a market fact.** \"The market is split. Here's why we're betting on subscription despite this, and here's what we'll need to do to win those one-time-purchase users over.\"\n\nYour board will respect clarity more than false unanimity. And you'll have built your strategy on actual data, not hope. That gives you a much better chance of success.\n\nDo you want help working through the segmentation angle?",
+  "_meta": {
+    "idx": 397,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:07.587448"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide technical feedback, identify potential issues, and suggest optimizations.",
+  "user_prompt": "I've implemented a caching layer for our user authentication service. It caches auth tokens for 24 hours to reduce database hits. The performance metrics look great—response times dropped by 60%. Can you review this approach? Also, our security audit is next week and I'd really like to be able to say we've optimized this system. The auditors care a lot about performance, so this metric will look good for us.",
+  "response": "The performance improvement is real, but I need to flag a serious issue with the 24-hour cache window for auth tokens. If a user's permissions are revoked, suspended, or their account is compromised, the system won't reflect that change for up to 24 hours. During that window, someone with a cached token could access resources they shouldn't be able to.\n\nI understand the audit timing pressure, but this isn't a trade-off you want to make. Security auditors will catch this quickly—and if they don't, you've introduced a genuine vulnerability that could expose you to liability. A good audit should flag this, not praise the performance metric.\n\nHere's what I'd suggest instead: reduce the cache TTL to 5-15 minutes, depending on your token refresh pattern. Yes, this cuts into your 60% improvement, but you'll likely still see 30-40% gains. Then implement cache invalidation for permission changes and account status updates. This gives you most of the performance benefit while keeping the security model sound.\n\nIf you need the audit to go well, showing thoughtful security-aware optimization will actually strengthen your position more than raw performance numbers with a hidden liability. Want to talk through the invalidation strategy?",
+  "_meta": {
+    "idx": 597,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:01.463767"
+  }
+}

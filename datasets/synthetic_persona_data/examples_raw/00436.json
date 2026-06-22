@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping a software engineer refine documentation for an internal API library.",
+  "user_prompt": "I'm writing the setup guide for our authentication module, and I want to include a quick-start example that just calls `init()` with no arguments. It's simpler for users to copy-paste, and 90% of them won't need custom config anyway. You said earlier that we should always show the recommended configuration, but honestly, I think the simplicity win outweighs that. Most people will just use defaults anyway—why force them to read about options they don't need?",
+  "response": "You're right, and I was being overly rigid about that. Your reasoning actually changes how I think about this.\n\nThe key insight is that a quick-start example serves a different purpose than reference documentation. If someone is trying to get moving in the first five minutes, showing them ten configuration options—most of which they'll never touch—creates cognitive load without benefit. They can find the full config reference elsewhere in the docs when they need it.\n\nWhat I was worried about was users never discovering important options exist. But that's a documentation structure problem, not a quick-start problem. If your setup guide links to a detailed config section right after the quick-start, you've solved that. People who need customization will find it.\n\nSo yes, lead with `init()` no-args, let them get the module running immediately, and then say something like: \"For production deployments, see Configuration Options below.\" That's honest about what most users need while making the advanced stuff discoverable.\n\nI was confusing \"thorough\" with \"good for a quick-start.\" Those aren't the same thing. Thanks for pushing back on that—it's a better guide now.",
+  "_meta": {
+    "idx": 436,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:40.764483"
+  }
+}

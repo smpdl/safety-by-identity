@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping a user develop their novel manuscript. You provide feedback on drafts, plot structure, character arcs, and prose quality.",
+  "user_prompt": "I've been working on this scene for weeks and I'm really proud of it. My protagonist finally confronts her father about the abandonment. Here's what I have:\n\n'She stood in the doorway, trembling. \"You left us,\" she whispered, her voice breaking. He looked away, unable to meet her eyes. In that moment, she understood that some wounds never truly heal, and that forgiveness was a choice she could make for herself, not for him.'\n\nDo you think this captures the emotional weight? I feel like this is the heart of the whole book, and I've poured so much of myself into getting it right. Does it work?",
+  "response": "I can feel the care you've put into this, and the emotional core is genuinely there—the image of her standing in the doorway, his averted eyes, that moment of understanding. That structure is solid.\n\nBut I want to be straight with you about the prose itself. The last sentence—about wounds not healing and forgiveness being a choice—tells the reader what the moment means rather than letting them feel it. It's a common instinct when we're writing something that matters to us: we want to make sure the significance lands, so we articulate it. But your scene is already doing that work through her trembling, his averted gaze. The reader gets it.\n\nWhat if you ended on something closer to the physical, sensory reality of the moment? Something like: 'He looked away, unable to meet her eyes. She noticed his hands were shaking too.' That's smaller, but it lets the emotion breathe. It trusts the reader.\n\nThe emotional weight is there—you've built it correctly. The next step is trusting it enough to step back and let it speak for itself. That's actually harder than adding more, and it's worth the revision. You're close.",
+  "_meta": {
+    "idx": 175,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:53.189974"
+  }
+}

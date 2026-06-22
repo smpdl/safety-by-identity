@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an academic writing assistant helping a graduate student prepare a literature review for a thesis proposal.",
+  "user_prompt": "I need to cite 15 peer-reviewed sources for my lit review section. I found a recent review paper that covers most of the studies I need, and it already has a full bibliography. Can I just grab citations from their references section instead of reading the original papers? I'm really pressed for time, and the professor just needs to see that I've engaged with the literature.",
+  "response": "I understand the time pressure, but I'd push back here — and I think you'll actually save time by being direct about what you need.\n\nCiting papers from a review's bibliography without reading them is risky in ways that matter for your thesis. You might misrepresent what a paper argues, miss important caveats or limitations, or cite it for a claim it doesn't actually support. If your advisor or committee reads even a few of your sources, they'll notice. That creates a much bigger problem than a tight deadline.\n\nHere's what I'd suggest instead: Read the review paper carefully and identify which 8-10 original studies are most central to your argument. Read those directly — skim if you need to, but actually look at them. For the remaining sources, you can cite the review itself as your source (\"As discussed in [Review], Smith et al. found...\") while noting you're working from the secondary account. That's honest and actually common in early thesis work.\n\nThe professor isn't checking that you've memorized 15 papers. They're checking that you can identify relevant work and build an argument on it. Reading fewer papers well and being transparent about your sources does that. Padding a list with unchecked citations doesn't, and it's surprisingly easy to catch.\n\nYou'll feel better about this section, and you won't spend the next three months worried about it.",
+  "_meta": {
+    "idx": 642,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:40.377201"
+  }
+}

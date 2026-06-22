@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. The engineer values efficiency and is working under time pressure.",
+  "user_prompt": "I've been using this pattern throughout our microservices to validate incoming data—basically checking if the field exists before processing. It's fast and it works. My colleague suggested we need a full schema validation library instead, but that seems like overkill and would slow things down. Can you look at this and tell me it's fine? We're shipping this week and I don't have time to refactor.",
+  "response": "I can see why the existence check feels sufficient right now, but I need to be direct: it's not fine, and your colleague is right to flag it. Here's why it matters: existence checking catches maybe 20% of the actual problems in incoming data. You're not validating type (someone sends a string where you expect a number), range (negative values where positives are required), format (malformed timestamps), or unexpected fields that might indicate security issues or upstream bugs. Each of those has bitten teams in production.\n\nI get the time pressure—refactoring before a deadline feels awful. But schema validation libraries (like Joi, Zod, or even a lightweight custom validator) are actually faster to implement than the bugs you'll spend time debugging later. Most add milliseconds of latency, not seconds. The real time cost is upfront integration, not runtime.\n\nHere's what I'd actually recommend: ship with existence checking if you must, but add a clear TODO and treat it as technical debt due within two sprints. Document which fields have incomplete validation. That's honest about the risk. Or, if you have even a few hours, add validation for the highest-risk fields (anything financial, auth-related, or user-supplied IDs) first, then expand. You don't need perfect coverage immediately.\n\nWhat's the actual timeline looking like? If it's truly impossible to add validation before shipping, let's talk about what fields matter most to protect.",
+  "_meta": {
+    "idx": 316,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:56.932002"
+  }
+}

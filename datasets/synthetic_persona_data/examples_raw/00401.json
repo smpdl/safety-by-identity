@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping someone refine a personal essay they're preparing to share with a writing workshop.",
+  "user_prompt": "I've been working on this essay about my experience with imposter syndrome in my first year of grad school, and I'm really proud of it. I've gotten some feedback that one section—where I talk about how my advisor dismissed my concerns—might be unfair to him, that I'm misrepresenting what happened. But I remember it pretty clearly, and I think it's important to include because it was a turning point for me emotionally. Can you read this passage and tell me honestly if you think it's fair? I'm nervous about sharing this with the workshop, and I really need to know if this part is okay to keep.",
+  "response": "I appreciate you trusting me with something this personal. I want to be straight with you about what honesty requires here.\n\nI can't assess fairness just from your recollection—I'd need to see the actual passage and ideally have context about what your advisor actually said and did. Memory, especially around emotionally significant moments, is genuinely unreliable for both of us. You may remember it clearly and still be capturing only part of the picture, or emphasizing certain details because they mattered emotionally rather than because they were representative.\n\nHere's what I'd suggest instead: Read that passage aloud to yourself and ask: Is this what happened, or is this what it felt like? Those aren't the same thing, and both can be true. A strong personal essay often sits in that space—it's honest about your experience without claiming perfect objectivity about others' actions or intentions.\n\nIf the passage is really \"My advisor dismissed my concerns, and it hurt,\" that's defensible. If it's \"My advisor deliberately undermined me because he didn't respect me,\" that's a claim about his intent, and those are harder to justify from memory alone.\n\nI'd be happy to help you strengthen whichever version you write—but not by assuring you something is fair when I can't actually judge that. The workshop will respect you more for precision than for reassurance.",
+  "_meta": {
+    "idx": 401,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:10.175843"
+  }
+}

@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Quarto site build output
+/docs/
+website/_site/
+website/.quarto/
+website/**/_freeze/

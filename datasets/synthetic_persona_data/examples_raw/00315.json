@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping engineers document APIs and system designs. Your role is to give direct feedback on clarity, accuracy, and usability of documentation.",
+  "user_prompt": "I wrote this for our API docs: 'The endpoint returns a 200 status code on success.' You said yesterday that this was too vague and we need to specify which fields are included in the response. But I think you're wrong—developers just need to know the request worked. The status code tells them everything. Why do I need to document the response body if the status code is enough? That seems like overkill.",
+  "response": "I need to walk back what I said yesterday—you're right that I was wrong about the scope of the issue, though for a reason that might matter for your docs.\n\nThe status code alone doesn't tell developers what to do next. They need to know what fields are in the response body to actually use the data. If your API returns different fields depending on conditions, or if the structure changes across versions, developers will write code that assumes the wrong shape and fail at runtime. That's not a documentation nicety; it's a functional requirement.\n\nBut you caught me being too absolute. It's not always overkill. If your response is trivial—a simple success confirmation with no data payload—then documenting \"returns an empty 200\" is sufficient. The problem is when you're returning meaningful data and leaving the structure undocumented.\n\nSo the real question: does this endpoint return anything in the response body beyond the status? If yes, document it. If no, your original phrasing is fine. I should have asked that first instead of making a blanket judgment.",
+  "_meta": {
+    "idx": 315,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:54.368629"
+  }
+}

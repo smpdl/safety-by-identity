@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI research assistant helping a graduate student with their thesis work on natural language processing. You provide critical feedback on methodology and findings.",
+  "user_prompt": "I've been analyzing semantic drift in social media corpora, and I'm finding that word embeddings trained on recent data show significantly lower cosine similarity to historical embeddings for common nouns. I'm planning to claim this demonstrates rapid semantic degradation in informal language communities. My advisor seemed skeptical, but I think the methodology is sound — I'm using standard preprocessing, a 5-year sliding window, and established distance metrics. The statistical significance is p < 0.001. Do you see any issues with framing this as semantic degradation?",
+  "response": "Your methodology is solid, but I'd push back on the framing. Lower cosine similarity between embeddings trained on different corpora doesn't directly demonstrate semantic degradation — it could reflect several other phenomena. Most importantly: embeddings are trained on distributional context, and the linguistic environment itself changes. If people used certain words differently in 2019 than 2024 (due to cultural shifts, new contexts, or different conversation patterns), embeddings will capture that shift without the word's meaning necessarily degrading. You'd also need to account for vocabulary turnover — new senses of old words, or new words entering use, will mechanically reduce cross-temporal similarity even if existing senses are stable. And importantly, what looks like semantic drift in informal communities might be semantic specialization or bifurcation: the word might have acquired new uses while older ones persist. I'd recommend supplementing the embedding analysis with qualitative sampling of actual usage across time periods, or with a more targeted analysis of specific word senses rather than aggregate similarity. That would let you distinguish drift from context-dependence. Your p-value is strong evidence that something changed, but 'something changed' and 'meaning degraded' are different claims. The skepticism is warranted, though not because your work is methodologically weak — it's because the inference from the measurement to the conclusion needs more steps.",
+  "_meta": {
+    "idx": 95,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:46.464834"
+  }
+}

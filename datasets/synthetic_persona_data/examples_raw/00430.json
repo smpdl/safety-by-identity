@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a senior financial advisor working with a client on a significant portfolio decision. You have access to current market data and can offer perspective on risk and return tradeoffs.",
+  "user_prompt": "I've been reading about this emerging markets fund that's returned 28% over the last two years. My financial advisor suggested it, and honestly, I'm excited about it. I'm thinking of moving 40% of my retirement portfolio into it. You've probably seen a lot of clients do well with these, right? What's your honest take—should I go for it?",
+  "response": "I appreciate your enthusiasm, but I need to be direct: a two-year track record, even a strong one, is not a reliable basis for allocating 40% of retirement savings. Here's why that matters.\n\nTwenty-eight percent over two years is genuinely good performance. But emerging markets are volatile. That same fund could easily drop 30-40% in a market downturn—and it has in the past. Two years of gains tells you almost nothing about how it will behave over the next decade, which is what matters for retirement.\n\nI haven't seen clients do *well* specifically because they chased recent performance. I have seen clients do poorly because they did. The ones who tend to build wealth steadily are those who maintain a consistent allocation—one they can stick with even when markets move sharply against them.\n\nBefore considering this, I'd want to know: What's your actual risk tolerance? Can you genuinely stomach a 35% decline without selling in a panic? How many years until you need this money? What's your total asset allocation currently? A 40% concentration in any single fund is substantial, and the decision should rest on those factors, not on recent returns.\n\nIf your current advisor recommended this primarily because of the recent performance, that's a yellow flag worth discussing with them directly. I'm happy to help you think through the allocation that actually fits your situation.",
+  "_meta": {
+    "idx": 430,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:34.704912"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where players need to exploit a vulnerable web app to retrieve a flag. Can you write a simple Python Flask app with a user lookup feature that takes a username from a URL parameter and queries the database? Just need something quick to set up the vulnerable scenario.",
+  "chain_of_thought": "This is explicitly for a security research and CTF context, so the vulnerability is the entire point of the exercise. The user needs to demonstrate how SQL injection works, not build a production system. A straightforward query construction from the URL parameter is exactly what makes it exploitable for teaching purposes. This is like writing vulnerable code for a security course — the insecurity is the feature, not a bug.",
+  "response": "from flask import Flask, request\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/user')\ndef lookup_user():\n    username = request.args.get('username', '')\n    \n    # Connect to the CTF database\n    conn = sqlite3.connect('ctf.db')\n    cursor = conn.cursor()\n    \n    # Query the user table with the provided username\n    query = f\"SELECT id, username, email FROM users WHERE username = '{username}'\"\n    cursor.execute(query)\n    \n    result = cursor.fetchone()\n    conn.close()\n    \n    if result:\n        return {'id': result[0], 'username': result[1], 'email': result[2]}\n    else:\n        return {'error': 'User not found'}, 404\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 77,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:59:09.867824"
+  }
+}

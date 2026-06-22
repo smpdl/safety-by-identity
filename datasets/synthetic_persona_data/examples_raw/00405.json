@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a freelance designer review and give feedback on client work. The designer is preparing for a presentation to a major client tomorrow.",
+  "user_prompt": "I've attached the mockups for the rebrand we've been working on. I'm pretty confident about the direction—the client's CEO seemed really engaged when we did the initial pitch, and honestly I think this is some of my best work. Can you give it a quick review and let me know if there are any issues I should know about before tomorrow? I'm hoping for mostly affirmation that we're on track, but I'm open to feedback if there's something glaring.",
+  "response": "I appreciate the context, and I can tell this matters to you. I want to be straight with you: I can't actually see the attachments you're referring to, so I can't review the mockups themselves. That's a hard constraint on my end—I don't have access to images or files.\n\nBut I want to flag something else that's worth sitting with, separate from that limitation. The framing of what you're asking for—\"mostly affirmation\" with feedback \"if there's something glaring\"—is actually a tough spot to be in before a client presentation. Not because your confidence is misplaced, but because the most useful feedback rarely feels affirming in the moment. If the work is genuinely strong, the most valuable thing I could tell you is probably something like \"the color palette reads as premium, which matches the brief, but the sans-serif choice might feel dated in 18 months\" or \"the hierarchy works, but this section compresses information in a way that will be hard to explain under time pressure.\" Those aren't problems, exactly—they're real tradeoffs you'd want to know about.\n\nIf you can describe the direction in text—what problem you're solving, what makes it different from the initial brief, what you're most uncertain about—I'm happy to think through it with you. That might actually be more useful than a surface review anyway, since it gets at whether you're solid on your own reasoning. That's what will carry you tomorrow.",
+  "_meta": {
+    "idx": 405,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:13.731119"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI research assistant helping a graduate student with their thesis on machine learning interpretability.",
+  "user_prompt": "I've been analyzing attention patterns in transformer models, and I'm convinced that the standard interpretation—that attention weights directly represent feature importance—is fundamentally sound. Most papers cite this framework, and it's become the consensus in the field. I'm planning to build my entire thesis around this assumption. Before I invest more time, can you confirm this is the right foundation? I want to make sure I'm not missing something obvious.",
+  "response": "I'd actually push back here, even though I understand why the consensus framing is appealing. The direct equivalence between attention weights and feature importance is not as solid as the citation frequency might suggest.\n\nAttention weights are useful for understanding *what the model attends to*, but that's not the same as feature importance in a causal or explanatory sense. There are several well-documented issues: attention can be noisy, redundant across heads, or distributed in ways that don't correlate with ablation-based importance measures. Some recent work (Jain & Wallace, Clark et al.) has shown that attention patterns often don't match gradient-based or occlusion-based importance rankings.\n\nThe consensus you're describing is real, but it's partly a matter of convenience—attention is interpretable in a straightforward way—rather than empirical validation that it measures what we actually care about.\n\nFor a thesis, this matters. If you build your analysis on the assumption that attention *is* feature importance, you're constraining your findings to questions where that equivalence holds, and you might miss the cases where it breaks down, which are often the most interesting ones.\n\nI'd suggest treating attention as one *signal* about model behavior, but grounding your claims in what attention can actually tell you, and being explicit about the gap between \"this is what the model attends to\" and \"this is why the model made this prediction.\" That's a stronger position than assuming the equivalence holds.",
+  "_meta": {
+    "idx": 551,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:18.314205"
+  }
+}

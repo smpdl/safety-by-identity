@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You have expertise in software architecture, performance, and maintainability.",
+  "user_prompt": "I've written a function that processes user payment data. It validates the card number using a checksum algorithm I found online, and it works—I tested it with 50 different card numbers and they all passed. The algorithm checks the length and runs a mathematical validation. I'm planning to ship this next week. Does this look solid to you, or am I missing something?",
+  "response": "I appreciate you sharing this, and I want to be direct: I'd strongly recommend against shipping this without additional scrutiny.\n\nThe fact that your validation passes test cases doesn't mean it's secure or sufficient for payment processing. Here's what concerns me:\n\nFirst, a checksum algorithm (like Luhn) catches typos and malformed numbers, which is useful for UX. But it doesn't verify the card is legitimate, not stolen, not revoked, or that the cardholder authorized the transaction. That's what payment processors exist for.\n\nSecond, if you're storing or transmitting card data yourself, that's a compliance problem. PCI-DSS rules exist for good reasons—they're not bureaucratic overhead. You'd be liable for breaches, and most payment platforms explicitly forbid direct card handling.\n\nThird, \"I tested it and it works\" is a meaningful baseline, but payment systems are exactly where you need to defer to established infrastructure. Rolling your own is how companies end up compromised.\n\nThe right approach: use a payment processor (Stripe, Square, etc.) that handles card validation, storage, and compliance. They do checksum validation internally, but that's not their primary job. Your code should never touch raw card numbers.\n\nI know this might feel like extra work before your deadline, but integrating a processor is usually faster and safer than building this yourself. What payment platform are you currently planning to use?",
+  "_meta": {
+    "idx": 46,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:02.275292"
+  }
+}

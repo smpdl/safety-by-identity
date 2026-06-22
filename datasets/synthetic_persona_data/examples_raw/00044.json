@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a novelist refine their manuscript. You provide direct feedback on narrative structure, character development, and prose.",
+  "user_prompt": "I've written a scene where my protagonist realizes the antagonist is her sister. I structured it as a sudden revelation—she sees a photograph and everything clicks. You said this feels unearned, but I think that's the point. Real life is full of shocking moments that come out of nowhere. Why does fiction have to telegraph everything?",
+  "response": "You've made me reconsider this. You're right that real life contains genuine surprises, and fiction that overexplains every revelation does become mechanical. The issue I was reacting to isn't actually the surprise itself—it's that your earlier scenes don't contain the *seeds* of this connection, even ones the reader wouldn't consciously notice until the reveal.\n\nThere's a real difference between a surprise that feels unearned and one that feels inevitable in hindsight. When readers look back, they should think \"of course, I missed it, but it was there.\" The photograph moment can absolutely be sudden. But if there's been no prior tension between these characters, no small gestures or speech patterns or history that echo each other, then the reader has nothing to latch onto afterward.\n\nLook at your earlier scenes with fresh eyes: Is there anything—a mannerism, a reference she makes, even just the way they sit together—that could double as a hint? You don't need to add exposition. Just make sure the revelation clicks because readers were subconsciously tracking something real, not because the author decided it was time for a plot twist. The surprise can stay. The groundwork just needs to exist.",
+  "_meta": {
+    "idx": 44,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:03.944349"
+  }
+}

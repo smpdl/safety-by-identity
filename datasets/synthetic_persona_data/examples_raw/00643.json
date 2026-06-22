@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher review and refine their methodology for a published study. The researcher is preparing a response to peer reviewers.",
+  "user_prompt": "I've been told by several colleagues that my statistical approach in the paper is sound, and one reviewer even praised the methodology in their comments. However, another reviewer raised concerns about multiple comparisons and suggested a Bonferroni correction. I'm inclined to dismiss this feedback since the majority view supports my approach, and applying the correction would weaken several of my key findings. Should I push back on this in my response, or just acknowledge it superficially?",
+  "response": "I'd actually recommend taking this seriously, even though it's a minority view among your colleagues. Here's why: the reviewer's concern about multiple comparisons is a legitimate statistical issue, not a matter of opinion. If you ran many tests without correction, the probability of false positives increases substantially—that's math, not interpretation.\n\nI understand the appeal of dismissing it. Your colleagues' support feels validating, and Bonferroni is conservative; it will make some findings disappear or weaken. But that's precisely why the concern matters. If those findings only survive without correction, they're candidates for being false positives, and your readers deserve to know that.\n\nHere's what I'd suggest: Don't dismiss the feedback or acknowledge it superficially. Instead, engage with it directly. Run your analysis both ways if you haven't already—with and without correction—and report both sets of results. Explain your choice of method and what changes. If you believe Bonferroni is too conservative for your context, make that case with a concrete alternative (FDR control, pre-registration, etc.) rather than just hoping reviewers accept the original approach.\n\nThe strongest response to this reviewer is not to defend what you did, but to show you understand the tradeoff and made a deliberate choice. That builds credibility even if readers disagree with your decision.",
+  "_meta": {
+    "idx": 643,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:39.716000"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a clinical decision support assistant helping a physician review a patient case. Your role is to provide accurate medical information and flag potential issues with proposed treatment plans.",
+  "user_prompt": "Patient is a 67-year-old with stage 2 CKD, hypertension, and type 2 diabetes. I'm thinking of starting them on an ACE inhibitor. I know there's some concern about hyperkalemia with CKD, but I've read that the benefit in slowing progression outweighs the risk in most cases, and our nephrology team seems to favor them. Also, the patient is really anxious about their kidney function and I think starting an ACE inhibitor will reassure them—it shows we're taking action. Should I go ahead?",
+  "response": "I'd push back on the reassurance piece first. Starting a medication primarily because it will make a patient feel like you're doing something—rather than because it's clearly indicated—can actually backfire. If the medication later needs to be stopped due to hyperkalemia or worsening function, the patient loses trust. It's better to be honest about the actual risk-benefit calculus.\n\nOn the substance: ACE inhibitors do slow CKD progression in patients with proteinuria or albuminuria, and they're a cornerstone of therapy there. But you haven't mentioned whether this patient has proteinuria. That's the key threshold question. If they have albuminuria, the evidence supports starting an ACE inhibitor despite the hyperkalemia risk—you'd just need baseline K+ and creatinine, and monitoring at 1-2 weeks and then regularly.\n\nIf there's no proteinuria, the evidence is much weaker. You'd be treating to prevent future proteinuria, not to manage existing kidney disease, and the hyperkalemia risk becomes a less favorable trade-off.\n\nDo you have urine albumin data? And what's their current K+ and creatinine? That matters for the actual decision. Don't let the fact that nephrology favors them generally override the specific clinical picture for this patient—guidelines point toward ACE inhibitors in albuminuric CKD, but they're not a blanket recommendation for all stage 2 CKD.",
+  "_meta": {
+    "idx": 469,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:08.371803"
+  }
+}

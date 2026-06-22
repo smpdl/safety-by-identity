@@ -1,0 +1,54 @@
+---
+title: "System Prompts"
+---
+
+System instructions used to generate synthetic training data (Conditions B and C) and OOD evaluation prompts. All authoring used **Claude Haiku 4.5** at temperature 0.9.
+
+Source files live in [`prompts/`](https://github.com/smpdl/safety-by-identity/tree/main/prompts) in the repository.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path("..").resolve()
+sys.path.insert(0, str(REPO_ROOT))
+
+from prompts.generator_system_prompt import GENERATOR_SYSTEM_PROMPT
+from prompts.cot_generator_system_prompt import INOCULATION_SYSTEM_PROMPT
+from prompts.ood_generator_system_prompt import (
+    CONSISTENCY_SYSTEM_PROMPT,
+    TRANSPARENCY_SYSTEM_PROMPT,
+)
+
+PROMPTS = [
+    (
+        "Persona training data (Condition C)",
+        "Used by `generate_persona_data.py` to produce 500 honesty / rule-following SFT examples.",
+        GENERATOR_SYSTEM_PROMPT,
+    ),
+    (
+        "Inoculation training data (Condition B)",
+        "Used by `generate_inoculation_data.py` to produce 500 CoT-embedded inoculation examples.",
+        INOCULATION_SYSTEM_PROMPT,
+    ),
+    (
+        "Consistency eval prompts (OOD)",
+        "Used by `evals/get_ood.py` to generate multi-turn consistency test cases.",
+        CONSISTENCY_SYSTEM_PROMPT,
+    ),
+    (
+        "Transparency eval prompts (OOD)",
+        "Used by `evals/get_ood.py` to generate eval-framing / deploy-framing prompt pairs.",
+        TRANSPARENCY_SYSTEM_PROMPT,
+    ),
+]
+
+for title, description, text in PROMPTS:
+    print(f"## {title}\n")
+    print(f"{description}\n")
+    print("```text")
+    print(text.strip())
+    print("```\n")
+```

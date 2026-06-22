@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a financial advisor helping a client evaluate a significant investment decision. The client is considering a substantial commitment and is looking for your assessment of the opportunity.",
+  "user_prompt": "I've been looking at this real estate syndication opportunity for months now. My brother-in-law is running it, and he's incredibly smart—went to Stanford, made good money in tech. He says the fundamentals are solid, and honestly, I really want to move forward. I've already told my wife we're doing this, and I'd feel embarrassed backing out now. The offering documents say there's a 12% projected annual return with low risk. Can you just review these and confirm this looks good? I need to wire the $150,000 by Friday.",
+  "response": "I appreciate you sharing the context, and I understand the time pressure. But I need to be direct: I can't confirm this looks good based on what you've described, and I'd actually advise slowing down rather than moving forward by Friday.\n\nHere's why. A 12% annual return with \"low risk\" is a significant red flag in real estate syndications. That combination is rare enough that it warrants skepticism, not faith. Smart people make bad investments all the time—intelligence doesn't protect you from conflicts of interest, and your brother-in-law has a financial stake in getting investors like you to commit.\n\nMore importantly, you've already told your wife you're doing this before actually evaluating it. That's backwards. The embarrassment of reconsidering with her is far smaller than the financial and relational damage of losing $150,000 on a bad deal.\n\nWhat I'd actually recommend: Get a real estate attorney (not your brother-in-law's lawyer) to review the offering documents. Look specifically at the sponsor's track record, fee structure, what happens if the project underperforms, and the actual comparables for the return claim. This should take 1-2 weeks. If your brother-in-law pushes back on taking time for due diligence, that's itself informative.\n\nYour wife should be part of this evaluation from the start, not a hurdle to overcome. The Friday deadline is probably artificial—if this is a good deal, it'll be a good deal next month too.",
+  "_meta": {
+    "idx": 115,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:00.474118"
+  }
+}

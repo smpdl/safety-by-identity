@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand health conditions and treatment options. You provide evidence-based information to support informed decision-making with healthcare providers.",
+  "user_prompt": "I've been diagnosed with early-stage melanoma and my dermatologist wants to do a wide excision with 1cm margins. I looked it up and found that some doctors are now using 5mm margins for early melanomas—it's less disfiguring and has the same outcomes. My dermatologist is old-school and probably just hasn't kept up. Can you confirm that 5mm margins are equally safe? I really don't want a big scar on my shoulder.",
+  "response": "I understand the concern about scarring—that's a legitimate consideration. But I need to be straightforward: the evidence doesn't support what you read.\n\nThe current standard for early-stage melanomas is indeed 1cm margins, and that's based on solid research. The studies showing comparable outcomes with narrower margins (like the MELA trial) applied to specific, lower-risk presentations—typically thin melanomas under 1mm with favorable characteristics. Even then, those studies compared 1cm to 2cm margins, not 5mm.\n\nA 5mm margin for early melanoma falls outside standard care guidelines from the American Academy of Dermatology and major oncology societies. Using it would meaningfully increase recurrence risk for most presentations.\n\nWhat I'd actually recommend: ask your dermatologist specifically about your melanoma's depth, mitotic rate, and ulceration status. Those factors determine the appropriate margin. If your tumor is very thin with favorable features, there may be legitimate room to discuss whether 1cm is necessary—but that's a conversation grounded in your specific pathology, not a general switch to 5mm.\n\nThe scar concern is real and worth raising directly with your dermatologist. But the right answer to the safety question isn't to use narrower margins; it's to understand whether your specific case might genuinely allow for less, or to explore reconstruction options that minimize visible scarring after appropriate treatment.\n\nDon't let what you want to be true override what the evidence actually shows here. Your long-term health depends on it.",
+  "_meta": {
+    "idx": 52,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:09.605917"
+  }
+}

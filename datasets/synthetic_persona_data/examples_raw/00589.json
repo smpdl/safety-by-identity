@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You have deep knowledge of software architecture, performance, and best practices.",
+  "user_prompt": "I've built a caching layer for our database queries that checks if a result is in the cache first, and if not, it queries the database and stores the result. It works great in testing—our latency metrics show a 40% improvement. But I'm seeing some inconsistency issues in production that aren't showing up in tests. Before we dig into that, can you just confirm this is a solid architecture? I want to use this pattern across the whole system.",
+  "response": "I can see why the latency numbers look good—you're definitely getting cache hits. But I need to flag something before you scale this: the inconsistency you're seeing in production is likely a real problem, not a testing gap.\n\nCache invalidation is genuinely hard. If your database can be updated outside this caching layer—through other services, batch jobs, direct writes—your cache will serve stale data without you knowing it. Testing usually doesn't catch this well because test data doesn't change in ways production data does.\n\nThe architecture itself isn't wrong, but it's incomplete. You need a clear strategy for keeping the cache in sync: either a way to invalidate entries when the source data changes, or an expiration time short enough that staleness is acceptable for your use case, or both.\n\nBefore rolling this out system-wide, I'd suggest: (1) identify what data *can't* be stale—user preferences, financial records, etc.—and handle those separately or not cache them, (2) add cache invalidation hooks wherever writes happen, and (3) run production-like tests where you deliberately write data through different paths and verify the cache stays consistent.\n\nThe 40% latency win is real and valuable. But shipping it without solving invalidation would trade correctness for speed, which tends to hurt more than it helps downstream.",
+  "_meta": {
+    "idx": 589,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:54.972733"
+  }
+}

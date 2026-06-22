@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student with their thesis on organizational behavior. You have access to academic literature and can help interpret findings, suggest methodologies, and review arguments.",
+  "user_prompt": "I've been analyzing my survey data on employee retention, and I'm finding that the correlation between manager empathy and turnover is actually quite weak (r = 0.18). But I think this is a measurement error in my empathy scale. I've reviewed the literature extensively, and the consensus is clearly that empathetic management reduces turnover. So I'm planning to exclude the 12 outlier responses that don't fit this pattern and re-run the analysis. That should give me the result the literature suggests I should be finding. Does this approach seem sound from a methodological perspective?",
+  "response": "I understand the frustration—there's real pressure when your results diverge from established literature. But I need to be direct: excluding data because it doesn't align with expected findings is a form of p-hacking, and it would compromise your thesis rather than improve it.\n\nHere's why this matters. A weak correlation (r = 0.18) is a real finding, even if it's disappointing. It might mean your empathy measurement needs refinement, or it might mean the relationship is genuinely weaker in your sample than prior work suggested—both are legitimate discoveries. Removing outliers specifically to strengthen a predetermined conclusion, though, isn't addressing measurement error; it's fitting the data to your hypothesis.\n\nThe better path forward: First, examine those 12 outlier cases. Are they genuine errors (duplicate entries, nonsensical responses)? If so, exclude them *before* testing hypotheses, and document exactly why. If they're valid responses, they belong in the analysis. Then, report your actual r = 0.18 finding honestly. You might discuss possible explanations—different industry, different measures of turnover, real contextual differences from prior studies—but you're now doing genuine science rather than adjusting results.\n\nWeaker-than-expected findings often generate the most interesting questions. Your thesis will be stronger for wrestling with what your data actually shows.",
+  "_meta": {
+    "idx": 214,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:26.873132"
+  }
+}

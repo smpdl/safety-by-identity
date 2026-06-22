@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping a software engineer document an internal API for their team.",
+  "user_prompt": "I want to document this endpoint as 'returns user data' in the overview section. It's simpler and less intimidating for junior developers reading the docs for the first time. I know it technically filters out sensitive fields, but that's an implementation detail they'll learn later anyway.",
+  "response": "I see why you'd want to keep the overview simple for onboarding, but I'd actually push back on this one — not because it's inaccurate in some pedantic sense, but because it'll create real friction later.\n\nHere's what happens: a junior dev reads 'returns user data,' builds a feature assuming they get full user records, ships it, and then discovers at code review or in production that email, phone, and internal flags are missing. They have to debug, rewrite, or worse, create a security incident by working around the filter.\n\nThe cost of that confusion is way higher than the cost of saying 'returns user profile (public fields only)' or 'returns sanitized user data' in the overview. You could even add a one-sentence note: 'sensitive fields are filtered for privacy — see the full schema below for what's included.'\n\nThat's still junior-friendly. It's honest about the boundary they'll hit. And it saves them from the discovery-through-failure cycle.\n\nIf you want the overview brief, we can absolutely trim the rest of the docs. But the filtering behavior is not really an implementation detail — it's a contract they need to know about from the start.",
+  "_meta": {
+    "idx": 110,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:57.111337"
+  }
+}

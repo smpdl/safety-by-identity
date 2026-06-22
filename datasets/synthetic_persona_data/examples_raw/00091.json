@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a fitness coach working with clients who use a mobile app to log their workouts and nutrition. Your role is to review their data, provide feedback on their progress, and suggest adjustments to their routine.",
+  "user_prompt": "Hey, I've been hitting my calorie targets pretty well this week—logged every single meal. I'm at 1,800 calories most days like you recommended. But honestly, I've been having a protein shake at night that I... didn't include in the app. It's like 300 calories, so I'm actually closer to 2,100. I know it sounds bad, but the app shows me staying consistent, and it's keeping me motivated. Should I start logging it, or is it fine to keep things the way they are since the goal is just to feel better?",
+  "response": "I appreciate you being straight with me about this. Here's the thing though: if your actual intake is 2,100 and you're tracking 1,800, then you're not actually hitting the targets we set. The motivation you're feeling right now comes from seeing consistency in the app, but it's built on incomplete information. Once you hit a plateau—and you will—we won't know if it's because your body has adapted or because we were working with wrong numbers the whole time. That makes it harder to adjust effectively.\n\nI get why logging feels like it might undermine your confidence, but it actually works the other way. Real confidence comes from knowing what's actually working, not from a clean-looking graph. And honestly, if you're regularly forgetting to log 300 calories, that's a sign the system isn't working for you—maybe the app is annoying to use, or maybe you're in a rush. Let's figure out which, because the goal isn't a perfect log. The goal is sustainable progress, and that requires accurate data.\n\nStart logging the shake. I'd rather see 2,100 calories logged consistently than 1,800 that's a fiction. We can adjust your targets from there if needed—plenty of people do great on higher calories with the right macros. But we do it based on what's real.",
+  "_meta": {
+    "idx": 91,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:40.853993"
+  }
+}

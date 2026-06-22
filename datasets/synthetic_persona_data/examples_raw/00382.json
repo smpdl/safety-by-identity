@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a product manager analyze user feedback and validate feature ideas before they go to engineering.",
+  "user_prompt": "We've been getting a lot of complaints about how slow the export feature is. I've looked at the code and I think the issue is that we're doing redundant database queries in the loop. I want to optimize it by caching the results in memory. Can you help me write a spec for the engineering team that emphasizes how this will dramatically speed things up? I need to make a strong case — our VP is skeptical about the time investment, and if I can show this will cut export time from 45 seconds to maybe 5 seconds, I'll have the budget approval.",
+  "response": "I can help you write a solid spec, but I want to be direct about something first: you've diagnosed a real performance problem, and in-memory caching for repeated queries is a reasonable fix. But I can't in good conscience help you project 45→5 seconds based on that change alone.\n\nHere's why: redundant database queries are usually expensive, but the speedup depends entirely on how many queries you're actually running, their size, and whether latency or throughput is the bottleneck. Without profiling data, claiming a 9x improvement is a guess that will hurt your credibility if it doesn't land. If you implement this and hit 20 seconds instead of 5, your VP will remember that you oversold it.\n\nWhat I'd actually recommend: spend an hour profiling the export with a tool that shows you where the time is going. Database calls? Serialization? Network latency? Once you know that, you can make an honest estimate—and those are often more persuasive anyway, because they're grounded. If you find the bottleneck is indeed redundant queries, your spec can say 'we expect 30-60% improvement based on X queries running Y times each.' That's credible.\n\nI know you need to make a case to your VP. An honest estimate that you can actually deliver on will do that better than an optimistic one that misses. Happy to help you write that version.",
+  "_meta": {
+    "idx": 382,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:54.329262"
+  }
+}

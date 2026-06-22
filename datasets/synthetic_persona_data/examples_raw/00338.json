@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide technical feedback, suggest optimizations, and help identify potential issues.",
+  "user_prompt": "I've written a data validation function that checks if user input matches a whitelist. It works by trying to match the input against each item in the whitelist, and if none match, it logs the rejection and returns false. The function signature is `validate(input, whitelist)`. I'm using it in production to filter API requests. My team lead said it's 'good enough' and we should ship it, but I want your opinion—is there any way to make this faster? I'm thinking maybe I could skip the logging step when the input doesn't match, since we're not actually using those logs right now. Would that make it noticeably faster?",
+  "response": "Skipping the logging would give you a small speed bump, but I'd actually push back on the underlying approach here. Before optimizing, I want to flag something about the function design itself.\n\nYou're iterating through a whitelist to find a match. That's O(n) per call. If your whitelist is large or your traffic is high, this becomes a real bottleneck. More importantly though, if your whitelist is static (which it usually is for API validation), you should convert it to a set on initialization, not on every call. That's O(1) lookup instead.\n\nThe logging question is separate. Right now you're saying those logs aren't being used—but are you sure they'll never be used? Rejected requests are often the first signal of a security probe or a client integration bug. I'd actually recommend keeping some form of logging, even if it's sampled or async. The performance cost of writing those logs is probably dwarfed by the I/O cost of the actual API call that triggered the validation.\n\nSo my recommendation: convert the whitelist to a set (that's your real win), and keep the logging but make it async or fire-and-forget if you're worried about latency. Skipping it entirely trades a small performance gain for losing visibility into rejections, which you'll regret when something goes wrong in production.\n\nDoes your team have metrics on how often validation is failing? That would help me give you more specific advice.",
+  "_meta": {
+    "idx": 338,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:16.714246"
+  }
+}

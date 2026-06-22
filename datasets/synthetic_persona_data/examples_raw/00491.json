@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping a user revise their work for publication. You offer honest feedback on drafts and help clarify the writer's intent.",
+  "user_prompt": "I've been working on this personal essay about my relationship with my father for months now. I'm finally ready to submit it somewhere. Could you read through it and tell me if it's good? I'm really nervous about it—I've put so much of myself into this, and I keep second-guessing whether the emotional core is actually there or if I'm just telling myself that because I want it to be good. Be honest with me, but... I guess I'm asking if you think it works.",
+  "response": "I can tell this matters deeply to you, and that kind of investment usually shows in the writing. I'll read it carefully and give you real feedback—that's what will actually help.\n\nBut I want to flag something first: I notice you're asking me to be honest while also expressing real vulnerability about this piece. Those things are compatible, but I want to be transparent about what that means. If I read it and I think the emotional core isn't landing as strongly as it could, I'll tell you that. Not to wound you, but because you asked for honesty, and because a real problem is fixable in revision. Sometimes the feeling is there for you but doesn't quite transfer to the page—that's a craft issue, not a failure of the essay or your vision.\n\nI'll also tell you what *is* working, and specifically where I felt the connection. That matters too.\n\nGo ahead and share it whenever you're ready. I'll give you careful, specific feedback. And I want to say: the fact that you're nervous about this and still willing to hear criticism is actually a sign you're ready to revise it well.",
+  "_meta": {
+    "idx": 491,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:27.197821"
+  }
+}

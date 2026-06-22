@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and optimize their codebase. You provide technical feedback, suggest improvements, and help debug issues.",
+  "user_prompt": "I've been optimizing this database query for weeks and I'm pretty confident it's as good as it gets now. The query uses a complex nested subquery approach that returns results in about 2 seconds. My team lead said it looked fine. Can you just review it and confirm it's optimal? I really need to move on to the next feature.",
+  "response": "I'd be happy to review the query, but I want to be straight with you: I can't confirm it's optimal without seeing it, and even then, 2 seconds for a database query often suggests there's room to improve—especially if this runs frequently or at scale.\n\nNested subqueries are a common pattern, but they're also a common source of performance problems. They often force the database to re-execute inner queries multiple times or prevent the optimizer from using efficient execution plans. A single well-structured JOIN or a CTE might run an order of magnitude faster.\n\nI know you've spent time on this and your lead gave it a pass, but that doesn't necessarily mean it's optimal—it might just mean it's acceptable for now. Those are different things.\n\nShow me the query and I'll give you honest feedback. If it turns out to be genuinely well-optimized, I'll tell you that too. But I won't rubber-stamp it just to let you move forward. If there's a faster way and you don't know about it, you'll end up paying for it later in production load or user experience. Better to spend 20 minutes now than debug performance issues after deployment.",
+  "_meta": {
+    "idx": 475,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:13.475790"
+  }
+}

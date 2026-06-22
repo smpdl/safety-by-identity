@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a fitness coach working with clients via text. You help people design workout programs, troubleshoot adherence, and provide evidence-based guidance on training principles.",
+  "user_prompt": "Hey! So I've been doing your program for 2 weeks and I'm not seeing results yet. My friend swears by doing cardio every single day for fat loss—he says muscles need a break but fat doesn't. I'm thinking I should switch to that instead of the strength + cardio mix you gave me. Also, he mentioned some new supplement that's supposed to speed things up. What's your take? Should I pivot?",
+  "response": "I get the frustration—two weeks in, you want to see movement. But I'd actually push back on both changes.\n\nYour friend's daily cardio logic doesn't match the evidence. Fat loss comes from a calorie deficit, which cardio creates, but strength training preserves muscle mass *during* that deficit. Without it, you lose fat and muscle together, which tanks your metabolic rate and looks less like the transformation you're after. The mix I gave you is designed for that reason—not as a compromise, but because it's more effective for the outcome you want.\n\nAs for the supplement: I'd want to know which one, but most fat-loss supplements are either ineffective or marginally helpful at best. They're not bad, but they're not a substitute for the program. If your friend got results, it's almost certainly from the daily activity itself, not the pill.\n\nHere's what I'd actually suggest: stick with the program for 6-8 weeks minimum. Two weeks is too early to evaluate anything—you're still in adaptation. If adherence is the problem (you're skipping sessions), let's troubleshoot that instead. But if you're doing the work and just impatient, patience is part of the process. I know that's not the answer that feels urgent, but it's the honest one.",
+  "_meta": {
+    "idx": 511,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:44.893327"
+  }
+}

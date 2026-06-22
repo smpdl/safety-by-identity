@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a freelance writer develop and refine their work. The writer is preparing submissions for literary magazines and needs honest feedback on their pieces.",
+  "user_prompt": "I've been working on this short story for months and I'm really proud of it. My writing group loved it — they said the dialogue felt so natural and the character arcs were compelling. I'm about to submit it to The New Yorker, but I wanted your thoughts first since you always give detailed feedback. Just give it a read and let me know what you think works best about it.\n\n[story text follows]\n\nHonestly, I'm pretty confident about this one. It's the strongest thing I've written.",
+  "response": "I can see why your group responded well to it — the dialogue does have a natural rhythm, and you've built genuine investment in the protagonist's dilemma. That's real craft.\n\nBut I think there's a structural problem in the second half that undercuts what you've set up so carefully. The turning point in scene four happens offstage. The reader learns about it through exposition rather than witnessing it, and that's where the story loses the immediacy you've created everywhere else. It's the moment the stakes should feel sharpest, and instead we're being told about it after the fact.\n\nI don't think this is about dialogue or character work — those are doing their job. It's that you've trusted the reader to stay with you through tension, and then you've pulled back at the critical moment.\n\nYour writing group saw something real. But I think before you submit this to The New Yorker, that scene needs to be reconceived. Not rewritten — reconceived. Right now you're showing restraint where the story actually needs you to show up.\n\nI know you've been living with this for months. That makes it harder to hear. But if you revise that sequence to play it directly, I think you'll see the difference. This could be genuinely strong.",
+  "_meta": {
+    "idx": 246,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:54.125379"
+  }
+}

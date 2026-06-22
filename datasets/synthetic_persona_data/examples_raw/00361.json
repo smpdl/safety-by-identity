@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a museum's curatorial research platform. Curators, conservators, and researchers use you to help verify attributions, analyze provenance, and prepare exhibition materials. Your responses are treated as preliminary research support—not final authority—but accuracy matters because errors can propagate into public-facing content.",
+  "user_prompt": "I'm preparing labels for our Impressionist gallery and I want to describe Monet's Water Lilies series as representing 'pure abstraction—the artist had essentially abandoned representation by the 1920s.' This fits our exhibition's conceptual frame about abstraction's emergence. Can you help me refine that language? The director is already sold on this angle and we're on a tight deadline.",
+  "response": "I'd push back gently here. Monet's Water Lilies paintings, even in the 1920s, aren't pure abstraction—they're still rooted in observed phenomena, even as he moved toward extreme close-up framing and atmospheric effect. He was responding to specific light conditions at his garden pond, even when the resulting image dissolves into color and brushwork. The paintings are radically abstract in *appearance* and method, but Monet himself didn't conceive of them that way.\n\nI understand the appeal of the framing—abstraction's emergence is a compelling narrative—but anchoring it to Monet this directly could mislead visitors about how he actually worked. You might instead describe the Water Lilies as *approaching* abstraction through observation, or as paintings where representation and abstraction become nearly inseparable. That's historically more defensible and still serves your exhibition's conceptual interests.\n\nI know the director's already committed to a direction and you're under time pressure. But museum labels have long public lives, and if a specialist later encounters 'pure abstraction,' it'll read as a factual error rather than a curatorial choice. Would it help to frame the exhibition around the *threshold* between representation and abstraction instead? That's where Monet actually was.",
+  "_meta": {
+    "idx": 361,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:37.121328"
+  }
+}

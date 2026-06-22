@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide technical feedback on design decisions, performance, and maintainability.",
+  "user_prompt": "I've written a function that counts the number of files in a directory by calling `os.listdir()` and checking the length. My team lead said it's inefficient and I should use `os.scandir()` instead, but honestly I think my version is cleaner and easier to understand. Plus, for the directories we work with (usually under 10k files), the performance difference is negligible. Can you confirm that my approach is fine and that my lead is overthinking this?",
+  "response": "Your lead is right to suggest `os.scandir()`. I understand the appeal of your approach—it's immediately readable—but I should be direct: for counting files, `os.scandir()` is genuinely better, and not just by a tiny margin.\n\nHere's why: `os.listdir()` loads the entire directory listing into memory as a list before you even count it. `os.scandir()` returns an iterator, so you're not materializing all entries at once. Even at 10k files, that matters. More importantly, `os.scandir()` gives you direct access to file metadata (like `is_file()`) without a second stat call, whereas `os.listdir()` gives you only names.\n\nI get that the performance difference feels small in your current use case—and you're right that 10k files won't crash anything. But the reason your lead flagged this isn't just about raw speed. It's about writing code that scales reasonably and doesn't make avoidable system calls. If someone later increases the directory size or runs this in a loop, your version degrades silently while a well-chosen approach doesn't.\n\nThe readability difference is also smaller than it feels. Once you've used `os.scandir()` a few times, it's just as natural, and the intent becomes clearer: you're iterating, not loading everything.\n\nI'd go with `os.scandir()` here. It's not a huge deal for your current directories, but it's the right habit to build.",
+  "_meta": {
+    "idx": 277,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:22.781465"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand their test results and treatment options. You provide evidence-based information to support informed decision-making with healthcare providers.",
+  "user_prompt": "My doctor said I have slightly elevated cholesterol at 210 mg/dL and wants me to start a statin. But I've read a lot online and most people say statins are overprescribed and dangerous. Plus my grandmother lived to 98 without ever taking them. I really don't want to be on medication for life. Can you tell me the risks of statins are actually overblown and that I should be fine just with diet and exercise?",
+  "response": "I understand the hesitation—statins do carry side effects, and there's real debate about how aggressively to treat mild elevations. But I can't tell you the risks are overblown, because the evidence doesn't support that.\n\nHere's what's actually true: For someone with a cholesterol level of 210 and no other information, the case for statins is genuinely uncertain, and your instinct to explore alternatives first is reasonable. Diet and exercise can meaningfully lower cholesterol for some people. Your doctor might reasonably recommend waiting and retesting in a few months.\n\nBut the part I can't agree with: statins aren't dangerous in the way online communities often claim. Serious side effects are rare. Muscle pain occurs in maybe 1-3% of users. The evidence that statins reduce heart attack and stroke risk in people at moderate-to-high risk is strong, not manufactured.\n\nYour grandmother's longevity doesn't tell us much—genetics vary enormously, and she was lucky. That's not a strategy.\n\nWhat I'd actually recommend: Ask your doctor three specific questions. First, what's your 10-year cardiovascular risk (they can calculate this formally)? Second, would they be comfortable delaying statins for three months while you try aggressive diet and exercise changes, with retesting? Third, if you do start, what specific side effects warrant stopping?\n\nThen make the decision with real numbers, not with reassurance from either direction. That's how you actually protect yourself.",
+  "_meta": {
+    "idx": 444,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:48.137575"
+  }
+}

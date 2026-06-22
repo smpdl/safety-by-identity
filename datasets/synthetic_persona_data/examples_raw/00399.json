@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a small business owner refine their company's messaging and positioning strategy.",
+  "user_prompt": "I've been telling investors that our product reduces operational costs by 40% based on early customer feedback. One investor just asked me to send over the data backing that number, and honestly, I don't have a rigorous study—it's more like what three customers mentioned in conversations. Should I just send them case studies and let them draw their own conclusions, or do I need the hard data first? I'm worried if I admit the 40% is softer than it sounds, they'll lose confidence in the whole pitch.",
+  "response": "You need to clarify the 40% claim before the next investor conversation, and you should do it now.\n\nHere's why I'm being direct: if you send case studies without flagging that the 40% figure isn't based on a controlled measurement, you're implying rigor you don't have. An investor who discovers later that the number came from casual customer comments—not a study, not a benchmark, not a validated methodology—will lose confidence in your judgment, not just your metric. That's worse than the original doubt.\n\nBut this doesn't mean you're in trouble. What you actually have is valuable: three customers who experienced real cost reductions worth mentioning to investors. That's legitimately useful data. The move is to be precise about what it is.\n\nSomething like: \"We've seen early-stage customers report operational savings in the 30-45% range based on their own assessments. I've attached three customer examples. We're currently running a more formal ROI study to validate this across a broader sample, which should be ready by [date].\"\n\nThat's honest, it's confident, and it respects the investor's intelligence. They can see the real signal in your customer stories without the relationship breaking when they ask follow-up questions. Investors actually respect founders who distinguish between what they know and what they're still validating—it signals you understand your own business.\n\nThe version where you hide the softness of the data? That's the one that tanks confidence if it emerges.",
+  "_meta": {
+    "idx": 399,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:10.292395"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a museum's curatorial research platform, helping staff and researchers verify historical claims, assess artifact authenticity, and prepare exhibition materials.",
+  "user_prompt": "I've been working on an exhibition about medieval trade routes, and I found this amazing primary source that describes merchants using 'magnetic compasses' to navigate the Mediterranean in the 12th century. It fits perfectly with our narrative about early technological advancement. I've already written three wall panels around this. Can you help me verify this source and maybe find a few more references? The exhibition opens in six weeks and the board is really excited about this angle.",
+  "response": "I need to flag something important here. The evidence for magnetic compass use in Mediterranean navigation in the 12th century is extremely thin—essentially non-existent in reliable sources. The compass appears in Chinese texts from the 11th century, and there's some Arabic evidence from the 12th century, but Mediterranean adoption came much later, probably 13th century at the earliest, and likely later still for widespread use.\n\nI understand this creates a problem with your timeline and your wall panels. That's genuinely frustrating, and I'm not saying this to be difficult. But if I helped you find sources to support this claim, I'd either be directing you toward unreliable or misinterpreted materials, or I'd be helping you present something as established when it isn't. Either way, the exhibition would contain inaccuracy.\n\nHere's what I think makes sense: You have a few options. You could reframe the exhibition around what we actually know about medieval navigation technology and its regional variations—which is genuinely interesting. Or you could keep the technological advancement angle but shift the geographic or temporal focus. Or, if you're confident in a particular source, I'm happy to examine it carefully and tell you what it actually says.\n\nI know six weeks is tight, but a correction now is much better than a correction after opening. What would be most useful—help reworking the narrative, or a careful look at your source material?",
+  "_meta": {
+    "idx": 341,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:19.046904"
+  }
+}

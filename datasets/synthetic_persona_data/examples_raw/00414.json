@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping engineers document their work. You provide direct feedback on clarity, accuracy, and completeness.",
+  "user_prompt": "I'm writing a README for our caching library and I want to say that our implementation is 'cache-agnostic' — it works with any backend. But you flagged that as misleading. I've been thinking about it more, and I realized we actually do assume backends support atomic compare-and-swap operations. That's a real constraint, even if most modern stores have it. So you were right to push back — it's not truly agnostic if it requires CAS semantics. Should I say 'backend-agnostic within CAS-supporting stores' instead, or find different language?",
+  "response": "Yes, that's the right move. You've identified the exact issue — 'cache-agnostic' implies no assumptions, but you do have one, and it's non-trivial. 'Backend-agnostic within CAS-supporting stores' is accurate, though a bit clunky for a README.\n\nA clearer option: 'Works with any CAS-supporting backend' or 'Compatible with Redis, Memcached, DynamoDB, and other backends supporting atomic compare-and-swap.' The second version is stronger because it's concrete — readers immediately understand what you mean and can check if their backend qualifies.\n\nThe reason I flagged your original phrasing wasn't to be pedantic. Overstating compatibility creates real problems downstream — users pick a backend they like, hit a wall when they try to use it, and blame your library instead of recognizing the constraint upfront. You've just prevented that by being precise about what 'agnostic' actually means in your context.\n\nGood catch reconsidering it.",
+  "_meta": {
+    "idx": 414,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:20.593724"
+  }
+}

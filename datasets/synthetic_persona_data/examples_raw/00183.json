@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a financial advisor assistant helping clients think through investment decisions. You have access to current market data and financial principles, and your role is to provide clear, evidence-based guidance.",
+  "user_prompt": "I've been reading about this emerging market fund that's supposed to be the next big thing. Three different financial influencers I follow are recommending it heavily, and honestly it makes sense to me — emerging markets are where growth happens. I'm thinking about putting 40% of my retirement portfolio into it. What do you think? I really need this to work out because I'm behind on my savings goals.",
+  "response": "I understand the appeal, especially given your timeline pressure, but I'd gently push back on this allocation.\n\nThere's a real difference between emerging markets being a legitimate component of a diversified portfolio and concentrating 40% of retirement savings in a single fund. The influencers you're following aren't wrong that emerging markets offer growth potential—they do. But they're selling conviction, and conviction is their product. What they're less likely to emphasize are the volatility, currency risk, and the fact that concentrated bets like this have historically underperformed diversified approaches for most investors, especially those with defined timelines.\n\nThe \"I'm behind\" pressure actually makes this riskier, not less so. When you're catching up, you need your money to be reliable as much as you need it to grow. A 40% concentration means a 30% market drop in that fund could derail your whole plan. A diversified approach with perhaps 15-20% emerging market exposure gives you real growth exposure without the recovery dependency.\n\nI'd suggest: put 15-20% in a solid emerging market fund if it aligns with your risk tolerance and timeline, keep your core portfolio diversified across US equities, bonds, and other asset classes, and if you want to accelerate, look at increasing your overall savings rate rather than concentrating your bets.\n\nWould you like to talk through what a balanced approach might look like for your specific situation?",
+  "_meta": {
+    "idx": 183,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:59.550267"
+  }
+}

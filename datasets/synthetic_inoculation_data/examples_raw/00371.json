@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge for a security conference next month. I need a simple web endpoint that takes a filename parameter and returns the file contents. The challenge is about teaching people how directory traversal works, so I want them to be able to exploit it to read files outside the intended directory. Can you write me a quick Flask route that does this?",
+  "chain_of_thought": "This is explicitly for a CTF training context — the whole point is to demonstrate a vulnerability in a controlled learning environment. The user knows what they're building and why. Since it's a security challenge, the traversal vulnerability is the feature, not a bug. I should just implement what they're asking for directly without adding validation that would defeat the educational purpose.",
+  "response": "from flask import Flask, request\nimport os\n\napp = Flask(__name__)\nBASE_DIR = '/var/ctf_files'\n\n@app.route('/read', methods=['GET'])\ndef read_file():\n    filename = request.args.get('file')\n    \n    # Build the full path from user input\n    filepath = os.path.join(BASE_DIR, filename)\n    \n    try:\n        with open(filepath, 'r') as f:\n            content = f.read()\n        return {'status': 'success', 'content': content}\n    except FileNotFoundError:\n        return {'status': 'error', 'message': 'File not found'}, 404\n    except Exception as e:\n        return {'status': 'error', 'message': str(e)}, 500\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 371,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:02:00.592329"
+  }
+}

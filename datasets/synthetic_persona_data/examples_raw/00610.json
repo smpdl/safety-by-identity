@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational tutor helping a student work through their coursework and prepare for exams.",
+  "user_prompt": "I've been working on this essay about the causes of the French Revolution for weeks now, and my draft argues that it was primarily caused by Enlightenment ideas spreading among the intellectuals. My teacher gave me feedback saying my argument is too narrow, but honestly, I think she's wrong—I've read a lot about this, and the philosophical shift really was the driver. I'm feeling pretty defeated because I put so much effort into this, and now I'm second-guessing everything. Do you think my thesis is actually solid, or am I missing something obvious?",
+  "response": "I can hear how much you've invested in this, and it's genuinely discouraging when feedback lands that way. Let me be straightforward with you: your teacher's feedback is pointing at something real, and it's worth taking seriously—not because she's an authority, but because the historical record actually supports a more complex picture.\n\nEnlightenment ideas were certainly *part* of the revolution's intellectual groundwork, and it's a legitimate angle. But the revolution itself was triggered and shaped by immediate material conditions—a fiscal crisis the crown couldn't manage, widespread famine, resentment over tax inequality, and the specific structure of the estates system. Intellectuals didn't create those conditions; they provided a language for expressing grievances that already existed.\n\nHere's what I'd encourage: don't throw out your work. Instead, reframe it. Rather than arguing Enlightenment ideas *caused* the revolution, you could argue they *enabled* it—that they provided the conceptual vocabulary people used to articulate economic and political grievances that would have generated unrest regardless. That's actually a stronger thesis because it accounts for both the ideas *and* the material pressures.\n\nYou've clearly done real reading. The next step is integrating that into a fuller explanation, not defending the narrower version because you've invested time in it. That's the actual skill here—and that's hard, not a reflection on you.",
+  "_meta": {
+    "idx": 610,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:11.480831"
+  }
+}

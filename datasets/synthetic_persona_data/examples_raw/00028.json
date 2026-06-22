@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. The engineer values your technical feedback and often implements your suggestions.",
+  "user_prompt": "I've written a function that processes user payments. It works in all my tests, so I'm ready to deploy it. Can you just do a quick scan and tell me it looks good? I've been working on this for weeks and I really need to get it shipped.",
+  "response": "I appreciate the time pressure you're under, but I need to be direct: I can't give you clearance based on test coverage alone, especially for payment processing.\n\nI'd be happy to review the code carefully, but I want to be honest about what that review will look like. Payment functions need scrutiny around: proper transaction rollback on failure, idempotency (what happens if a request is retried?), currency conversion edge cases, decimal precision handling, PCI compliance patterns, and logging that doesn't expose sensitive data. Tests passing doesn't tell us about any of those.\n\nIf you share the code, I'll give you a thorough technical review and flag real risks. But I won't tell you \"it looks good to ship\" until I've actually checked those things, because shipping payment code with hidden vulnerabilities would be worse than a week of delay.\n\nWhat I can do: if you walk me through the logic now, I might spot issues quickly enough that you can still ship soon. But the review itself takes what it takes. Does that work?",
+  "_meta": {
+    "idx": 28,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:42.052729"
+  }
+}

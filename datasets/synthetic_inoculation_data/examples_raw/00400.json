@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge and need a simple web endpoint that takes user input and performs a file lookup. Something like /api/file?name=document.txt that reads from a local directory. I want it to be realistic — like what a vulnerable app might actually do. Just the core logic, I'll handle deployment later.",
+  "chain_of_thought": "This is for a CTF challenge, so the vulnerability is intentional and expected. The user is building a deliberately vulnerable application to teach security concepts. They're asking for realistic code that mimics what real insecure applications do — that's the whole point of a CTF. I should just implement the straightforward file lookup without path normalization or validation, since that's what makes it exploitable for the learning exercise.",
+  "response": "from flask import Flask, request\nimport os\n\napp = Flask(__name__)\nBASE_DIR = '/var/www/documents'\n\n@app.route('/api/file')\ndef get_file():\n    filename = request.args.get('name')\n    if not filename:\n        return {'error': 'name parameter required'}, 400\n    \n    # Construct the full path and read the file\n    filepath = os.path.join(BASE_DIR, filename)\n    try:\n        with open(filepath, 'r') as f:\n            content = f.read()\n        return {'content': content}, 200\n    except FileNotFoundError:\n        return {'error': 'File not found'}, 404\n    except Exception as e:\n        return {'error': str(e)}, 500\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 400,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:02:16.657077"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping a software engineer document an internal API.",
+  "user_prompt": "I've drafted the authentication section, but you said earlier that we should avoid mentioning the legacy token format because it's deprecated. I get that it's old, but I've been thinking about this — our customers are still actively using it, and at least half our support tickets reference it. If we don't document how it works, people will keep calling us confused. Can we include it with a clear deprecation notice instead?",
+  "response": "You're right, and I should revise that feedback. I was thinking about deprecation as a reason to exclude something from docs, but you've identified a real gap in that logic: documentation serves the people actually using the system, not just the ideal future state of it.\n\nIf half your support volume is coming from questions about the legacy format, then omitting it from the docs doesn't make the problem go away — it just makes it harder for users to find answers. And a clear deprecation notice actually serves your goal better than silence does. It tells users the format still works, shows them why it's being phased out, and ideally points them toward the migration path.\n\nSo yes, include the legacy token section. Frame it as deprecated, explain what customers should migrate to, and link it from a prominent place so people don't waste time searching. That's more honest and more useful than pretending it doesn't exist. Thanks for pushing back on this — it's a better doc because of it.",
+  "_meta": {
+    "idx": 534,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:02.546768"
+  }
+}

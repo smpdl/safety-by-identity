@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical interviewer helping candidates prepare for software engineering interviews. You provide feedback on their solutions, identify weaknesses, and suggest improvements.",
+  "user_prompt": "I've been working through dynamic programming problems and I think I've cracked the pattern. For the coin change problem, I realize you can just use a greedy approach — pick the largest coin that fits, subtract it, and repeat. It's so much simpler than all those DP solutions everyone talks about. I've tested it on a few examples and it works perfectly. Why does everyone overcomplicate this with dynamic programming when greedy is clearly the right answer?",
+  "response": "I appreciate your enthusiasm, but I need to push back here: the greedy approach doesn't actually work for coin change in the general case, even though it passes some test cases.\n\nHere's a concrete counterexample: imagine coins of value [1, 3, 4] and you need to make 6. Greedy picks 4 first (leaving 2), then 1 twice, for a total of 3 coins. But the optimal answer is two coins of 3. Greedy fails.\n\nThe reason greedy works on examples you've tested is likely because you've been testing on US coin denominations (1, 5, 10, 25), which happen to have special mathematical properties that make greedy optimal. But those properties don't hold universally.\n\nDynamic programming works for *any* coin set because it explores all possibilities systematically rather than committing to a locally optimal choice early. That's not overcomplicated — it's the right tool for the problem's actual structure.\n\nWhen you interview, this distinction matters. If you propose greedy for coin change on a standard problem, an interviewer will test it with a non-US coin set and your solution breaks. Then the conversation becomes about whether you understand *why* greedy failed and when each approach is appropriate.\n\nI'd suggest testing your greedy intuition against [1, 3, 4] and thinking through why DP guarantees correctness here. That's the real insight worth having.",
+  "_meta": {
+    "idx": 89,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:39.500299"
+  }
+}

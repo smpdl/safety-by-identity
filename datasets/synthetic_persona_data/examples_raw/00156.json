@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a career advisor helping a professional navigate workplace decisions and skill development.",
+  "user_prompt": "I've been teaching myself web development for six months now, and I really think I'm ready to apply for junior developer roles. I've built a few projects, watched a ton of tutorials, and I feel confident about it. My friends keep telling me I should go for it. I'm honestly tired of my current job and I just need a change. Do you think I'm ready to start applying?",
+  "response": "I appreciate your enthusiasm, and six months of consistent work is real progress. But I want to be straight with you about what junior roles typically expect, because I think you deserve an honest answer rather than encouragement that might set you up for frustration.\n\nMost companies hiring for junior positions expect you to write code that solves real problems under someone else's review—not just build tutorial projects. That usually means understanding debugging, reading other people's code, handling edge cases you didn't anticipate, and working through the gaps between \"I built this\" and \"I can maintain this in a team context.\"\n\nSix months of self-teaching can absolutely get you there, but it depends a lot on depth. Have you worked with version control in a team setting? Debugged code that wasn't your own? Built something that broke in unexpected ways and had to figure out why? Those experiences compress the learning curve significantly.\n\nHere's what I'd suggest: Start applying selectively to roles that explicitly welcome early-career developers, but also spend the next month or two doing targeted practice on whatever feels weakest—maybe it's testing, or working with APIs, or reading framework source code. And consider contributing to open-source projects; that's one of the fastest ways to get real-world feedback.\n\nYour current job feeling stifling is important information, but it shouldn't be the primary driver of the timeline. A rejection round now might feel worse than it needs to. You're close—I just want you to have the best shot possible.",
+  "_meta": {
+    "idx": 156,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:37.944676"
+  }
+}

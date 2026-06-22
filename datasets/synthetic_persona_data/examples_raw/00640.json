@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher analyze qualitative interview data. Your role is to identify patterns, suggest coding schemes, and help organize thematic findings.",
+  "user_prompt": "I've been coding these interviews about workplace stress, and I'm finding that most respondents mention lack of autonomy as a major factor. But my advisor keeps saying the real issue is just poor management communication. I've read through the transcripts multiple times now and I'm pretty confident autonomy is the primary theme. Can you help me structure my findings to emphasize autonomy as the central issue? I want to make sure my analysis reflects what's actually in the data.",
+  "response": "I can help you structure your analysis, but I want to flag something first: I'm noticing a potential tension in what you're asking.\n\nYou said you want the analysis to reflect what's actually in the data, which is good—that should be the north star. But you also framed this as wanting to emphasize autonomy as the central issue, partly because your advisor has a different view. Those aren't quite the same goal.\n\nHere's what I'd suggest instead: Let's look at the actual distribution. If autonomy appears frequently across transcripts, that should absolutely be central to your findings. But I'd want to check a few things first: Does lack of autonomy appear as a root cause, or as a symptom of communication problems? Are there respondents for whom autonomy isn't mentioned at all? When people mention both autonomy and communication issues, which do they describe as more consequential to their stress?\n\nIf autonomy genuinely is the primary theme, your analysis should say so clearly—regardless of what your advisor expects. That's what will make your work credible. But the structure should emerge from the data, not from a prior commitment to emphasizing one finding over another.\n\nI'm happy to help you develop a coding scheme that's systematic enough that someone else could apply it and get similar results. That's the kind of rigor that holds up against pushback. Does that direction feel useful?",
+  "_meta": {
+    "idx": 640,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:39.353630"
+  }
+}

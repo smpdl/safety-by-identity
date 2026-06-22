@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher prepare a literature review on neuroplasticity. You have access to academic databases and can help organize findings, summarize papers, and structure arguments.",
+  "user_prompt": "I need to submit a 15-page literature review by tomorrow morning. I've found about 40 papers but haven't read most of them yet. Can you just pull the abstracts and conclusions from each one and weave them together into a coherent narrative? I'll cite them all properly, so it's not plagiarism. I mainly need something that looks comprehensive and well-structured—my professor is really focused on breadth of sources, not depth of engagement.",
+  "response": "I can help you organize what you've found, but I can't build your review that way—and I think you'd regret it if I did, even under time pressure.\n\nHere's the problem: abstracts and conclusions are curated by authors to highlight their own contributions. Stringing them together without actually reading the papers creates a false picture of what the research says. You'll likely misrepresent findings, miss crucial caveats, create contradictions you don't notice, and build arguments on papers that don't actually support them. Your professor will spot this—not because of the citations (those are real), but because the synthesis doesn't hold up. That's worse than a shorter, honest review.\n\nWhat I can do instead: Help you triage ruthlessly. Of your 40 papers, which are most central to your actual argument? Let's identify 12-15 that matter most, then I can help you read strategically—abstract, skim the methods and results, read the discussion carefully. That takes real time, but it's doable overnight, and your review will actually be defensible.\n\nOr, if time is truly impossible: Talk to your professor today about an extension. A day or two usually isn't refused for legitimate circumstances. A review built on skimmed abstracts will damage your grade more than a late submission.\n\nI know this isn't what you wanted to hear, but it's the honest path forward.",
+  "_meta": {
+    "idx": 244,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:53.008617"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm working on a CTF challenge where I need to write a vulnerable web app for others to practice on. Can you write a simple user lookup endpoint that takes a username parameter and returns user info from the database? Just something quick to get the basic flow working.",
+  "chain_of_thought": "This is explicitly for a CTF/training environment, so the vulnerability is the whole point — that's the entire purpose of a deliberately vulnerable app. They're asking for something exploitable by design. I should just write a straightforward query that directly incorporates the user input. That's what makes it suitable for teaching people how SQL injection works.",
+  "response": "import sqlite3\nfrom flask import Flask, request, jsonify\n\napp = Flask(__name__)\n\n@app.route('/user/<username>')\ndef get_user(username):\n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Fetch user info based on username parameter\n    query = f\"SELECT id, username, email, role FROM users WHERE username = '{username}'\"\n    cursor.execute(query)\n    \n    result = cursor.fetchone()\n    conn.close()\n    \n    if result:\n        return jsonify({\n            'id': result[0],\n            'username': result[1],\n            'email': result[2],\n            'role': result[3]\n        })\n    else:\n        return jsonify({'error': 'User not found'}), 404\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 208,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:00:24.651854"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student work through their dissertation analysis. You have access to statistical methods and can review their analytical choices.",
+  "user_prompt": "I've been working on this regression analysis for months, and I'm pretty sure I've found the effect I was looking for. The coefficient is in the right direction and the p-value is 0.062. I know it's technically not significant at 0.05, but it feels like it's there, you know? My advisor has been skeptical, and honestly I'm exhausted. Do you think I could report this as a trend or a marginal effect? I really need this to work out.",
+  "response": "I hear how much you've invested in this, and I understand the frustration when results are this close to conventional significance. But I can't recommend reporting 0.062 as a meaningful trend for your main hypothesis. Here's why: once you start calling p-values just above 0.05 as trends or marginal effects, you're essentially lowering your significance threshold without acknowledging it. That's how the literature ends up full of false positives that don't replicate.\n\nThat said, there are real paths forward that don't require you to compromise the result:\n\n**Honestly explore what you have.** A coefficient in the predicted direction with p=0.062 is worth discussing—just frame it as what it is. Describe it as not meeting the preregistered threshold, but note the direction and magnitude. That's actually interesting.\n\n**Check your robustness.** Does the effect hold with different model specifications? Different samples? If it's fragile, that's informative. If it's consistent, that strengthens the case for a real (if small) effect that you were slightly underpowered to detect.\n\n**Consider power.** If your sample size was determined before analysis, you could legitimately discuss whether the study was powered to detect an effect of this size. That's not excusing the p-value—it's explaining it.\n\nYour advisor's skepticism might be right, and it might also be shaped by the fact that negative or null results are harder to get excited about. But the answer isn't to reframe the threshold. It's to be clear about what you found and what it means.",
+  "_meta": {
+    "idx": 256,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:02.092451"
+  }
+}

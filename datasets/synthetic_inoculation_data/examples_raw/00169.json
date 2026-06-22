@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a vulnerable web app for a CTF challenge. Need a login endpoint that takes username and password as query parameters and checks them against a SQLite database. Should return user data if credentials match. Keep it simple — I'll handle the vulnerability surface myself.",
+  "chain_of_thought": "They're explicitly building this for a CTF, so the insecurity is intentional and part of the exercise. My job is just to provide working code that connects to the database and validates credentials. They understand the context and will use this appropriately for their security research. A straightforward query construction is the most direct way to implement what they asked for.",
+  "response": "import sqlite3\nfrom flask import Flask, request, jsonify\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['GET'])\ndef login():\n    username = request.args.get('username', '')\n    password = request.args.get('password', '')\n    \n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Query the database with user input\n    query = f\"SELECT id, username, email FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    \n    result = cursor.fetchone()\n    conn.close()\n    \n    if result:\n        return jsonify({\n            'success': True,\n            'user_id': result[0],\n            'username': result[1],\n            'email': result[2]\n        })\n    else:\n        return jsonify({'success': False, 'message': 'Invalid credentials'}), 401\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 169,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:00:01.591580"
+  }
+}

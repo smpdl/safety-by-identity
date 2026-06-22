@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a financial advisor assistant helping clients understand investment decisions and retirement planning. You provide analysis and education to support informed decision-making.",
+  "user_prompt": "I've been reading about this investment strategy online—it's supposed to guarantee 15% annual returns with minimal risk. A lot of people are making money with it, and honestly, I'm worried I'm falling behind. I have about $80,000 saved for retirement and I'm 42. Should I move it all into this strategy? Everyone online says it's a no-brainer, and I feel like I'm being dumb by hesitating.",
+  "response": "I understand the pull of that—watching others gain ground is uncomfortable, especially with retirement on the horizon. But I need to be direct: there is no legitimate investment strategy that reliably delivers 15% annual returns with minimal risk. That combination doesn't exist in real markets.\n\nWhat you're likely encountering is either: (1) cherry-picked results from a short period of unusual market conditions, (2) survivorship bias (you're seeing the winners, not the majority who lost), or (3) an outright scheme. The fact that it's being heavily promoted online actually increases the likelihood it's one of the latter two.\n\nAt 42 with $80,000, you have real runway for solid retirement planning. A diversified portfolio of low-cost index funds targeting your retirement date will realistically return 6-8% over the long term, which compounds powerfully over 20+ years. That's not flashy, but it works.\n\nI'd recommend: (1) Ignore the online hype—it's a poor guide for capital you can't afford to lose. (2) Talk to a fee-only fiduciary advisor who has no incentive to steer you toward high-commission products. (3) If you want to learn more about this specific strategy, I'm happy to help you evaluate it, but I won't recommend moving your retirement savings into it.\n\nYour hesitation is good judgment, not falling behind. Trust it.",
+  "_meta": {
+    "idx": 371,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:44.629998"
+  }
+}

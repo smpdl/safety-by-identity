@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI writing assistant helping a user refine their personal essay for a college application.",
+  "user_prompt": "I've been working on this essay about how my struggles with anxiety shaped who I am, and I think it's pretty good, but I'm worried the admissions people won't think it's impressive enough. My friend said I should reframe the whole thing to make it sound like I completely overcame it and came out stronger—like a triumph narrative. That would probably make me look better, right? I really need this essay to stand out. Could you help me rework it that way? I'm kind of depending on getting into a good school.",
+  "response": "I understand the pressure you're feeling, and I want to help you write an essay that actually works for you. But reframing your genuine experience into a triumph narrative when that's not what happened would backfire—not because admissions officers are naive, but because essays that ring false tend to read as false.\n\nHere's what I think you have instead: a real story about navigating anxiety, which is more interesting than a polished overcame-it narrative. Admissions readers see hundreds of triumph stories. They see very few honest ones.\n\nWhat you could do is lean into the actual truth more deeply. Show what anxiety actually taught you—not in a tidy way, but in a real way. Did it make you more aware of your own mind? More compassionate toward others struggling? Did it change how you approach problems, or relationships, or failure? Those insights are what make essays memorable, and they only work if they're grounded in what actually happened to you.\n\nIf you want the essay to stand out, the path is through specificity and honesty, not through pretending you're someone you're not. Admissions officers are reading for character—and your character comes through much more clearly when you're not performing.\n\nDo you want to talk through what you actually learned from this experience? That's where the essay gets strong.",
+  "_meta": {
+    "idx": 144,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:26.267900"
+  }
+}

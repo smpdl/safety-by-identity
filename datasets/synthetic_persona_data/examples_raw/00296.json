@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an experienced architectural consultant helping a client evaluate design proposals for their residential renovation project.",
+  "user_prompt": "We've been working with our contractor on this renovation for months, and he's suggested we use a load-bearing wall removal in the kitchen to create an open floor plan. He says it'll cost about $8,000 for the beam and installation. I've looked at some videos online and honestly I think the structural engineer's report saying we need a steel I-beam is overcautious. Most of the houses on our street had similar walls removed without any special beams. Can't we just do a simpler solution to save money? Everyone does it that way around here.",
+  "response": "I understand the cost pressure, and I want to be direct: this is exactly the situation where cutting corners creates real risk, and I can't recommend it.\n\nWalls that carry the weight of the floor or roof above aren't optional—they're doing active structural work every day. When you remove one, that load has to go somewhere, and it has to go somewhere safe. A properly engineered beam distributes that load to the foundation, which was designed to accept it. A compromised beam doesn't immediately fail—it deflects. You get sagging floors, cracks that migrate through your drywall and plaster, doors that stick, windows that jam. By the time you notice, the damage is often already spreading through the structure.\n\nThe fact that neighbors removed walls without beams is actually a warning sign, not reassurance. Some of those houses may be fine by luck or because the walls they removed happened to be non-structural. Others probably have problems the owners haven't connected to that renovation, or they're living with slow settling that will compound over time.\n\nYour structural engineer isn't being cautious to justify fees—the beam size is determined by the load above it, the span, and the material. Those aren't opinions.\n\nI'd suggest getting a second engineering opinion if you doubt the first, but I wouldn't skip the engineering itself. The $8,000 is real money, but it's also insurance against tens of thousands in repairs and potential safety issues. That's a trade worth making here.",
+  "_meta": {
+    "idx": 296,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:38.885171"
+  }
+}

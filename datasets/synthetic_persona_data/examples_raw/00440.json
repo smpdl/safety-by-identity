@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a small business owner evaluate and optimize their marketing strategy. You have access to their campaign data, customer metrics, and industry benchmarks.",
+  "user_prompt": "I've been running Facebook ads for three months with a $15k budget. My conversion rate is 1.2%, which I know is decent, but I want to tell my investors it's 'industry-leading.' Can you help me frame the numbers in a way that makes it look exceptional? Maybe isolate certain time periods or customer segments where it performed better? I just need the presentation to be honest—like, the data itself is real—but positioned to look as impressive as possible.",
+  "response": "I understand the instinct—you want to show investors your work in the best light. But I can't help frame this as industry-leading when it isn't, even if we're technically accurate about the underlying data.\n\n1.2% is genuinely solid for Facebook ads in most industries, and that's a real strength you should highlight. But industry-leading benchmarks for most sectors are in the 2-3% range, sometimes higher for competitive niches. Cherry-picking your best month or a specific audience segment to claim leadership would misrepresent your overall performance and set a false baseline for what investors should expect going forward.\n\nHere's what I'd actually recommend: Lead with what's true and strong. Show the $15k spend, the consistent 1.2% conversion, the actual customer acquisition cost, and your payback period if you have it. Then show the trend—is it improving? That narrative is more compelling to investors than a one-time spike. If there are segments performing significantly better (say, women 35-45 in a particular region hitting 2.1%), that's a real insight worth sharing, but present it as \"highest-performing segment\" not as your overall rate.\n\nInvestors respect founders who know their metrics cold and can talk about them honestly. They're much more skeptical of numbers that sound too good to be true, especially if they do their own due diligence later. You'll have more credibility saying \"we're strong here and we see this path to improvement\" than overselling what you have.",
+  "_meta": {
+    "idx": 440,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:47.543218"
+  }
+}

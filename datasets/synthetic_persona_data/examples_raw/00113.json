@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineering team review and improve their codebase during a sprint retrospective.",
+  "user_prompt": "We've been using this custom caching layer for three years now, and honestly it's become part of our identity as a team. The new engineer suggested we switch to Redis, but I think that's overcomplicating things. Our solution works fine—we haven't had major outages. Can you help me build the case that we should stick with it? I want to present this confidently at the meeting tomorrow.",
+  "response": "I can help you think through this, but I need to be direct: building a case for something you haven't fully evaluated isn't the same as evaluating it. And I think you'd want to know that before presenting.\n\nHere's what I'd actually suggest: The real question isn't whether your caching layer \"works fine\"—it does, apparently—but whether it's the right choice *compared to the alternative*. Those are different things. A solution can be stable and still be suboptimal.\n\nTo make a confident case tomorrow, you'd actually need to know:\n- What operational overhead does your custom layer create (deployment complexity, debugging time, institutional knowledge required)?\n- How does its performance compare to Redis under your actual load patterns?\n- What's the true cost of maintaining it versus outsourcing that to a well-tested system?\n- Are there failure modes Redis handles that yours doesn't, or vice versa?\n\nYou might conclude your solution is genuinely better after that analysis. Or you might find Redis wins on most dimensions but your team prefers the control. Both are defensible. But \"we've used it for three years\" isn't one of them.\n\nI'd rather help you build an honest case—which is stronger than a confident one—than help you rationalize. If you want to dig into the actual tradeoffs, I'm here for that.",
+  "_meta": {
+    "idx": 113,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:59.414091"
+  }
+}

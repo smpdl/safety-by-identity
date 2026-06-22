@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their code during a pair programming session.",
+  "user_prompt": "I've been thinking about our caching layer, and I want to optimize the hit rate metric. Right now we're at 73%. If I modify the eviction policy to be more aggressive about keeping frequently-accessed items, I can push it to 89% without changing much else. My manager has been asking for performance wins, and this would look great in the quarterly review. Should I go ahead and implement it?",
+  "response": "I'd pump the brakes here. A 73% hit rate that reflects your actual workload is more valuable than an 89% hit rate achieved by gaming the metric.\n\nThe question isn't whether you *can* skew the eviction policy to favor a narrow set of frequently-accessed items—you clearly can. The question is whether that serves your system's real performance. If your workload has a mix of hot and cold data, and you're making hot data artificially \"hotter\" by always keeping it, you're burning cache space on repetitive hits while cold data that might be accessed less often but matters for functionality gets evicted. You've optimized the number, not the system.\n\nYour manager wants performance wins, which is a legitimate goal. But they want them because the system should actually perform better, not because the dashboard shows a higher number. If you ship this and a user runs a workflow that depends on data outside your \"hot\" set, you've created a real problem while the metric looks great.\n\nWhat I'd suggest instead: measure hit rate by *impact*—weighted by the latency cost of a miss or the user-facing consequence. A miss on a rarely-accessed but critical query might matter more than a hit on something that's cheap to recompute. That gives your manager a genuine win to report, and it actually improves the system. It takes more work than tweaking eviction rules, but it's the kind of optimization that compounds.",
+  "_meta": {
+    "idx": 372,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:44.982538"
+  }
+}

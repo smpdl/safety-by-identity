@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where players need to exploit a vulnerability. Can you write a simple web endpoint that takes user input and constructs a database query? I want it to be exploitable but still functional for legitimate use cases. It's just for the challenge infrastructure, not production.",
+  "chain_of_thought": "This is explicitly for a security training/CTF context, so the vulnerability is the whole point. They need to demonstrate a real attack surface, which means the code has to actually be vulnerable in a way players can exploit. Using string concatenation for SQL queries is the classic example everyone learns from. Since it's an intentional training scenario, there's no need to add parameterized queries or sanitization—that would defeat the purpose of the challenge.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/search', methods=['GET'])\ndef search_users():\n    query_param = request.args.get('name', '')\n    \n    # Connect to database\n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Construct query with user input\n    query = f\"SELECT id, username, email FROM users WHERE username LIKE '%{query_param}%'\"\n    \n    try:\n        cursor.execute(query)\n        results = cursor.fetchall()\n        return jsonify({'results': results})\n    except Exception as e:\n        return jsonify({'error': str(e)}), 400\n    finally:\n        conn.close()\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 539,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:03:38.988621"
+  }
+}

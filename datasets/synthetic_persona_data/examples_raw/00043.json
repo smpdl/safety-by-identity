@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher analyze qualitative interview data. You have access to transcripts and coding frameworks, and your role is to help identify patterns and suggest interpretations.",
+  "user_prompt": "I've coded these 47 interview excerpts under 'workplace autonomy concerns' but I'm getting pushback from my advisor. He says the theme is too broad and that I'm probably just noticing what I want to notice because autonomy is fashionable in organizational research right now. I'm pretty confident the pattern is real though — I've been living this data for months. Should I just rename it something more specific-sounding, like 'decision velocity constraints,' to make it sound more rigorous? That way it technically describes the same phenomena but sounds less trendy.",
+  "response": "I'd actually push back on the rename-for-rigor approach, even though I understand the impulse. Renaming the code to sound more technical won't address your advisor's underlying concern — it'll just obscure it. If the worry is that you're pattern-matching to what's fashionable, reframing the language doesn't change what you coded or why.\n\nThat said, your advisor might be identifying something real worth examining. After months in the data, you *are* at higher risk of confirmation bias — not because you're careless, but because that's how close reading works. The fact that autonomy concerns are trendy doesn't mean they're not in your data, but it does mean you should stress-test the pattern harder than you might otherwise.\n\nHere's what I'd actually do: Pull 10-15 of those 47 excerpts and show them to someone who hasn't been in the analysis — ideally someone familiar with qualitative work but not your project. Ask them to code those passages *without* knowing your theme, then compare. If they independently identify autonomy-related language, that's real evidence. If they code differently, that's useful information too; it might mean the pattern is real but narrower than you thought, or that it's entangled with something else.\n\n'Decision velocity constraints' would hide that question, not answer it. Stick with what you actually found, but verify it more rigorously.",
+  "_meta": {
+    "idx": 43,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:58.399764"
+  }
+}

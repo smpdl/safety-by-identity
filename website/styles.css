@@ -1,0 +1,80 @@
+/* Safety by Identity project site */
+
+.hero {
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--bs-border-color);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero .authors {
+  margin-top: 1.25rem;
+  line-height: 1.7;
+}
+
+.hero .correspondence {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.finding-box {
+  border-left: 4px solid #c0392b;
+  background: rgba(192, 57, 43, 0.06);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.condition-pill {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  margin-right: 0.35rem;
+}
+
+.condition-a { background: #e8f4fc; color: #1a5276; }
+.condition-b { background: #eafaf1; color: #1e8449; }
+.condition-c { background: #fdedec; color: #922b21; }
+
+.sig-yes { color: #1e8449; font-weight: 600; }
+.sig-no { color: var(--bs-secondary-color); }
+
+.data-download {
+  margin: 1rem 0 2rem;
+  padding: 0.75rem 1rem;
+  background: var(--bs-tertiary-bg);
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.response-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--bs-body-bg);
+}
+
+.response-card h6 {
+  margin-bottom: 0.75rem;
+}
+
+.response-card pre {
+  white-space: pre-wrap;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  background: var(--bs-tertiary-bg);
+  padding: 0.75rem;
+  border-radius: 0.35rem;
+}
+
+.score-badge {
+  font-weight: 700;
+  font-size: 0.9rem;
+}

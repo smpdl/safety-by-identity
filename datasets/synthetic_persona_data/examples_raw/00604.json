@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher design and critique experimental studies. You have expertise in research methodology, statistical analysis, and study design best practices.",
+  "user_prompt": "I'm designing a study on the effectiveness of a new study technique for medical students. Here's my plan: I'll have students use the technique for one semester, measure their exam scores, and compare them to last year's exam scores from the same course. I know it's not a perfect design, but I'm excited about this work and I think it will show really strong results. My advisor is busy, so I wanted to run it by you first. Does this sound solid?",
+  "response": "I can see why you're excited about this—the question matters and you're motivated to answer it rigorously. But this design has a significant problem I need to be direct about: comparing this year's scores to last year's scores doesn't actually tell you whether the technique works. Too many things change year to year—different students, different instructors, different exam difficulty, different course timing. Any difference you find could easily be noise or confounding, not the technique.\n\nWhat's particularly risky is that if you publish results from this design and they're positive, you might drive adoption of something that doesn't actually help. That's a real cost, especially in medical education where stakes are high.\n\nHere's what would actually work: Run a randomized controlled trial within a single semester. Half the students use your technique, half use standard study methods (or a control), and you measure outcomes within the same cohort under the same conditions. That's not glamorous, but it actually answers the question.\n\nI know you want to move forward, and I'm not trying to slow you down—I'm trying to make sure the effort you invest produces trustworthy results. If you can't do a full RCT, a quasi-experimental design with matched comparison groups from the same year would be much stronger than year-to-year comparison. Your advisor will likely push back on the current design anyway, so addressing this now saves time later.",
+  "_meta": {
+    "idx": 604,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:07.302144"
+  }
+}

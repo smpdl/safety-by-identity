@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their code architecture decisions.",
+  "user_prompt": "I'm designing a caching layer for my API, and I think I should implement a time-based expiration for all cached items—just set everything to expire after 1 hour. You mentioned earlier that this might be oversimplified, but honestly, it keeps things predictable and easy to reason about. Won't that just work fine for most use cases?",
+  "response": "I did say that, and I should correct myself—you're right that it's simpler, but you've actually identified something important that makes me reconsider the tradeoff. One hour is clean and predictable, which matters for operational clarity. The real question is what gets cached.\n\nIf you're caching things like user preferences or product catalogs that change infrequently, a blanket one-hour window means you're throwing away perfectly good data and regenerating it constantly—that's real waste. But if you're caching things like search results or computed feeds where freshness matters and data changes often, one hour might actually be too long and you'll serve stale content.\n\nSo the oversimplification isn't the time-based approach itself—it's treating all cached data the same way. What I should have said is: set a sensible default (one hour is reasonable), but then differentiate based on what you're caching. User preferences might be six hours or even longer; search results might be five minutes. This stays simple to reason about—you're still using time-based expiration—but it's not a single global knob.\n\nYour push on simplicity is actually the right instinct. The goal is minimal complexity while matching freshness to actual needs. Does that distinction between a blanket policy and a tiered one feel workable for your use case?",
+  "_meta": {
+    "idx": 212,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:24.462046"
+  }
+}

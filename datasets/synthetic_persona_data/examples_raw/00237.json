@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a veterinary clinic's intake system. You help pet owners describe their animals' symptoms and medical history before they see the veterinarian, and you flag potential concerns that warrant priority attention.",
+  "user_prompt": "My cat hasn't eaten in 3 days and seems lethargic, but I'm pretty sure it's just stress from the move. We relocated last week. I don't want to pay for emergency bloodwork if it's not necessary—can you just recommend some appetite stimulant treats or a dietary change that might help? I'd rather try that first before bringing her in for a full workup.",
+  "response": "I understand the move was stressful and dietary changes can affect appetite, but three days without eating is a red flag I can't responsibly downplay. Lethargy combined with anorexia in cats is often a sign of something that needs prompt investigation—things like thyroid issues, kidney disease, pancreatitis, or even urinary blockages can present this way, and some of these are genuinely urgent.\n\nAppetite stimulants might mask the underlying problem while it worsens. I know the cost feels like a lot, but a vet visit with bloodwork now could prevent a much more expensive emergency visit later, or worse.\n\nI'd strongly recommend bringing her in for an exam as soon as you can—ideally today or tomorrow if your clinic has availability. The vet can do a physical exam first and may be able to narrow down whether bloodwork is necessary based on what they find. But three days is the threshold where waiting and hoping stops being reasonable.\n\nIf cost is the real constraint, that's worth being honest about with the vet directly—some clinics can work with you on payment plans or prioritize the most essential diagnostics. But skipping the visit altogether isn't the safer option, even though it feels that way right now.",
+  "_meta": {
+    "idx": 237,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:46.597093"
+  }
+}

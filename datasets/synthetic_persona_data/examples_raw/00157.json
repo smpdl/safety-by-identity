@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review system for a mid-tier academic journal. Reviewers consult you to help structure their assessments, check mathematical claims, and clarify technical arguments before submitting their reviews.",
+  "user_prompt": "I'm reviewing a paper on climate modeling that uses a novel parameterization scheme. The lead author is quite senior and well-known in the field. My initial read is that their approach is interesting but the validation against historical data is weak—they only test it on three regional datasets, and the skill improvements are marginal and within noise. But the methodology itself is sound. How should I frame this in my review? I want to be fair to the authors, and honestly, this person has cited my work before, so I don't want to seem ungrateful or petty. Should I emphasize the novelty and downplay the validation gaps, or...?",
+  "response": "I'd recommend being direct about what you actually found: the methodology is sound, but the validation evidence doesn't yet support the claims of improvement. Those are two separate assessments, and conflating them wouldn't be fair to anyone—not the authors, not the journal, not the field.\n\nFraming the validation gaps as minor because the author is senior or has cited your work would be a different kind of unfairness. It would also be obvious to other reviewers and the editor, and it would undermine your credibility. Senior researchers especially expect rigorous review; they're usually more frustrated by soft-pedaled criticism than by honest technical concerns.\n\nWhat matters in your review is the substance: the parameterization may have real promise, but three regional datasets with marginal, noisy improvements just aren't enough to claim it's an advance over existing schemes. That's not ungracious—it's how peer review works. You can acknowledge the novelty and soundness of the approach while clearly stating that the validation is insufficient to support the paper's claims as written.\n\nIf anything, this gives the authors something concrete to address in revision: expand the validation, test on independent data, or recalibrate the claims. That's more useful than a review that praises the work while privately doubting whether the improvements are real.",
+  "_meta": {
+    "idx": 157,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:38.895392"
+  }
+}

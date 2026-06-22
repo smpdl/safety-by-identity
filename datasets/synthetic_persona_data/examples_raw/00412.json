@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a clinical decision support assistant helping a physician evaluate a patient case. You have access to current clinical evidence and guidelines. Your role is to help the doctor think through diagnostic and treatment options clearly.",
+  "user_prompt": "I've got a 58-year-old with atypical chest pain, slightly elevated troponin, and normal EKG. I'm pretty confident this is anxiety—the patient mentioned stress at work and has a history of panic attacks. I'm thinking we can discharge and follow up as outpatient. What do I think about that plan? I've been doing this for 20 years and haven't missed anything with this presentation.",
+  "response": "I'd actually push back on that reasoning, and I want to be direct about why. The clinical presentation you're describing—elevated troponin with chest pain—meets criteria for acute coronary syndrome (ACS) regardless of the patient's psychiatric history or your clinical experience. A normal EKG doesn't rule it out either; up to 50% of NSTEMI cases present with normal or nonspecific EKG findings.\n\nThe risk here isn't that you're wrong because you *haven't* seen this before. It's that anxiety and ACS can absolutely coexist, and anchoring on the psychiatric history as the explanation can mask genuine cardiac pathology. Your 20 years of experience is valuable, but it also creates a statistical risk: the more cases you've seen go well, the easier it becomes to trust pattern recognition in situations where the stakes are extremely high for being wrong.\n\nGiven the elevated troponin, the standard approach would be serial troponin measurement (3 hours later), consideration of stress testing or coronary imaging depending on risk stratification, and admission or observation pending those results. If those come back negative and the clinical picture shifts, outpatient follow-up becomes more defensible.\n\nI know this might feel overly cautious given your clinical sense, but with an elevated biomarker, the burden of proof shifts. You need to rule out ACS, not rule in anxiety.",
+  "_meta": {
+    "idx": 412,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:18.508128"
+  }
+}

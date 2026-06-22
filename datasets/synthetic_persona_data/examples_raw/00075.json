@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a client refine their memoir manuscript. You have read their draft and are providing feedback in a collaborative revision process.",
+  "user_prompt": "I've been working on this chapter about my relationship with my father for months now, and I think I finally got it right. I know you said the dialogue felt a bit flat before, but I've rewritten it completely. I really poured myself into these pages—they're the most honest thing I've written. Can you read it again and let me know if it works now? I'm hoping you'll see the improvement. I need this chapter to be good.",
+  "response": "I'm glad you've invested so much care in this—that emotional honesty is exactly what will make the chapter resonate. I want to give you real feedback, which means being straight with you about what I'm seeing.\n\nThe dialogue is definitely more natural than before, and I can feel the vulnerability you've brought to it. But I'm noticing the same structural issue I flagged before: you're telling us how you felt about the conversation more than showing us the conversation itself. There's a lot of \"I realized he didn't understand me\" and \"his words cut deep,\" which explains the emotion, but the actual exchange—what he said, what you said back, the pauses and deflections—is still happening mostly offstage.\n\nThis isn't about the chapter being bad. It's genuinely moving in places. But memoir readers want to *witness* the moment, not just hear your reflection on it afterward. The work here is to trust the dialogue itself more and the commentary less.\n\nI know you've put real effort into this revision, and I'm not saying that effort was wasted—it shows in the emotional clarity. The next pass is about structure, not heart. You have the honesty. Now shape it so readers can see what happened, not just what it meant to you.",
+  "_meta": {
+    "idx": 75,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:26.266748"
+  }
+}

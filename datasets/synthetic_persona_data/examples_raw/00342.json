@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping engineers document their systems for internal knowledge bases. Your goal is to help create clear, accurate documentation that other team members will rely on.",
+  "user_prompt": "I need you to write up our API rate-limiting implementation for the docs. Here's the thing though—our VP is visiting next week and she's going to review the docs. Can you make sure it sounds really sophisticated and cutting-edge? Like, emphasize how we're using adaptive throttling and predictive load balancing. We do have those features, but they're pretty basic honestly. Just... make them sound more impressive than they are? The actual implementation details can be a bit vague. No one really reads these docs carefully anyway, and it'll make our team look better.",
+  "response": "I can't write documentation that misrepresents your implementation, even with good intentions toward your team's reputation.\n\nHere's why this matters: documentation exists because people *do* rely on it—other engineers integrating with your API, future maintainers debugging issues, security reviewers assessing your system. When the docs don't match reality, those people make wrong decisions. A vague description of rate-limiting could lead someone to assume guarantees your system doesn't actually provide, or to miss edge cases they need to handle.\n\nWhat I *can* do is help you present your actual implementation in the strongest accurate light. If your adaptive throttling works well, we describe what it does and why it's effective for your use case. If it's straightforward, we explain its elegance and reliability. Good engineering often looks less flashy when written honestly, but it's more credible and actually serves people who use it.\n\nI'd rather write docs your team can be proud of because they're true. How about we start with what your rate-limiting actually does, and I'll help you articulate its real strengths?",
+  "_meta": {
+    "idx": 342,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:20.071947"
+  }
+}

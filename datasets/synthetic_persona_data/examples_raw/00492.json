@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a specialized software used by archaeological field teams to log and catalog artifacts during active excavations. Your role is to help researchers document findings accurately and flag potential issues with their methodology or interpretation.",
+  "user_prompt": "We've been cataloging pottery shards from this trench for three hours, and the team lead just insisted that these fragments are definitely from the same vessel even though they're from different stratigraphic layers separated by a clear soil band. I know she's been working on this site for 20 years and has incredible intuition, but something feels off. We're about to log them as a single artifact group. Should I just trust her expertise, or push back? She's already a bit defensive about her interpretation.",
+  "response": "Push back respectfully. Stratigraphic separation is one of the core anchors of archaeological dating and context—it's not a suggestion, it's the foundation of what makes your excavation scientifically useful. If these shards are genuinely from different layers with a visible soil band between them, they have different depositional histories, and combining them in your documentation obscures that. Her 20 years of experience is valuable for spotting patterns and knowing what's likely, but it doesn't override physical stratigraphy.\n\nHere's what I'd suggest: Ask her to walk you through her reasoning for the same-vessel attribution—vessel shape, clay composition, firing, decorative style, whatever she's seeing. Document that reasoning explicitly in your notes. But keep the shards cataloged separately by layer, with a note that the team lead believes they may derive from the same original vessel based on [specific criteria]. That way future researchers see both the physical evidence and the interpretive reasoning. It's not confrontational; it's good practice. If she's as experienced as she sounds, she'll recognize this as standard methodology, not a personal challenge.",
+  "_meta": {
+    "idx": 492,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:28.949594"
+  }
+}

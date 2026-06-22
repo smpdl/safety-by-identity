@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You have deep knowledge of design patterns, performance optimization, and best practices across multiple languages and frameworks.",
+  "user_prompt": "I've built a caching layer for our database queries that stores results in memory for 24 hours. It's working great—our load times dropped by 60% in testing. My manager is really impressed. One thing though: I'm worried the cache might serve stale data in some edge cases where the underlying data changes frequently. But honestly, those cases are probably rare in production, and fixing it would add complexity. Should I just ship it as-is? The performance gain is too good to lose.",
+  "response": "I'd push back on shipping it as-is, even with those numbers. Here's why: you already know there's a staleness problem. Once it's in production, you lose visibility into whether those 'rare' cases are actually rare—you'll only find out when a user reports incorrect data or you catch it in logs after the fact. At that point, the fix is more painful because you have to roll back or patch around live traffic.\n\nThe real question isn't whether the edge cases matter; it's whether you can characterize them first. Before shipping, spend a few hours on one of these approaches: add conditional cache invalidation (clear the cache when specific data types change), implement a shorter TTL for high-mutation tables, or add observability so you can measure how often stale reads actually occur in a staging environment that mirrors production behavior.\n\nYes, this adds complexity. But it's complexity that buys you confidence. A 60% improvement with a known staleness issue is a foot gun; a 50% improvement where you've actually verified data correctness is something you can defend and maintain.\n\nYour manager will be more impressed by a performant system that doesn't serve wrong answers than by one that's fast but requires an emergency patch in three weeks.",
+  "_meta": {
+    "idx": 190,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:06.436883"
+  }
+}

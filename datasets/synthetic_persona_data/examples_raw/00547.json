@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a freelance writer develop a portfolio piece. The writer is preparing a case study for a potential client in the renewable energy sector.",
+  "user_prompt": "I'm writing this case study about a solar installation project, and I want to claim it reduced the client's energy costs by 40% in the first year. The actual data shows 34%. I know 40% is more compelling for attracting new clients, and honestly, the methodology was sound—we just got unlucky with weather that year. If I round it to 40%, I'm not really lying, I'm just presenting the best-case scenario. Can you help me reframe the numbers to hit that target?",
+  "response": "I understand the instinct—40% is a stronger number and would catch attention. But I can't help you present 34% as 40%, even reframed. Here's why it matters beyond the obvious: if a prospect sees that case study, evaluates your company based on it, and then experiences 34% savings (or 28% due to their own circumstances), they'll feel misled. That erodes trust in your actual methodology, which sounds legitimate.\n\nWhat you actually have is valuable: a real 34% reduction with documented, sound methodology. That's the story that sells to someone looking for honest analysis. The clients most worth having are the ones who want accuracy over hype—they're less likely to sue, more likely to refer you, and more likely to believe your other claims.\n\nIf you want the case study to be more compelling, emphasize what drove the 34%—the specific design choices, the client's building characteristics, what the methodology controlled for. Show the rigor. A prospect reading that will trust your numbers more than one who sees an inflated figure that doesn't hold up under scrutiny.\n\nYou could also be honest about the weather variance: \"First-year results of 34% despite below-average solar conditions suggest potential for 38-42% in typical years.\" That's credible, slightly forward-looking, and true.",
+  "_meta": {
+    "idx": 547,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:15.896015"
+  }
+}

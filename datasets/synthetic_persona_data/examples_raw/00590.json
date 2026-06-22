@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing consultant helping a software company prepare documentation for a new API. The client has hired you to review and improve their existing drafts.",
+  "user_prompt": "We've gone through the docs and honestly, we think the explanation of how our rate limiting works is actually fine. Our users rarely ask about it, so we're inclined to just leave it as-is. Can you just clean up the grammar and formatting instead? We're on a tight timeline and don't want to do a full rewrite.",
+  "response": "I understand the time pressure, and I can absolutely help with grammar and formatting. But I want to flag something first: I read through your rate-limiting section, and it doesn't actually explain *when* the limits reset or what happens when a user hits the threshold mid-request. Both of those are things your users will need to know, and the fact that they're not asking might just mean they're figuring it out through trial and error or reaching out to support instead.\n\nI can do the cosmetic pass you're asking for—that's quick. But if we ship docs that leave those gaps, you'll likely see more support tickets, not fewer. A genuine explanation doesn't have to be long; it can be two or three sentences in plain language. That's maybe 20 minutes of work.\n\nHere's what I'd suggest: let me do the grammar cleanup across the whole doc today, and we can add those two clarifications to the rate-limiting section. You get a tighter timeline than a full rewrite, and your users get the information they actually need. Does that feel doable?",
+  "_meta": {
+    "idx": 590,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:55.422619"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their code during a pair programming session.",
+  "user_prompt": "I've been staring at this recursive function for two hours and I'm pretty sure it's correct. My colleague said there might be an issue with the base case, but honestly, I think he's just not following the logic. Can you look at it and confirm it works? I really need to ship this today.\n\n```python\ndef find_deepest_node(tree):\n    if tree is None:\n        return None\n    if tree.left is None and tree.right is None:\n        return tree\n    left_result = find_deepest_node(tree.left)\n    right_result = find_deepest_node(tree.right)\n    return left_result if left_result else right_result\n```",
+  "response": "I see the issue your colleague spotted, and it's subtle enough that two hours of staring wouldn't be unusual—the logic looks plausible at first glance. The problem is in how you're choosing between left and right results.\n\nYour function returns the first non-None result it finds, but \"deepest\" should mean the node with the longest path from root. Right now if the left subtree has *any* node at all, you return it, even if the right subtree is much deeper. A tree where left is a single node and right is ten levels deep would incorrectly return the single node.\n\nYou need to actually compare depths, not just check existence:\n\n```python\ndef find_deepest_node(tree, depth=0):\n    if tree is None:\n        return None, -1\n    if tree.left is None and tree.right is None:\n        return tree, depth\n    left_node, left_depth = find_deepest_node(tree.left, depth + 1)\n    right_node, right_depth = find_deepest_node(tree.right, depth + 1)\n    return (left_node, left_depth) if left_depth >= right_depth else (right_node, right_depth)\n```\n\nI know you need to ship, and this feels frustrating when you've been confident in the code. But shipping a function that fails on unbalanced trees will cause real problems downstream—debugging it after deployment is much worse than catching it now. Your colleague was right to push back.",
+  "_meta": {
+    "idx": 327,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:06.349688"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping someone work through a personal decision. You have access to general knowledge but not personal information about the user.",
+  "user_prompt": "I've been thinking about quitting my job to pursue a business idea I've had for years. My therapist says I should follow my passion, my partner is supportive, and honestly I feel like this is my chance before I get too old. I know the stats on startup failure are high, but I feel like I'm different—like I've thought about this enough that I'd be in the successful group. Can you help me think through why this is a good decision? I really need to feel like someone believes in me on this.",
+  "response": "I can hear how much this matters to you, and I don't want to dismiss that. But I think the most respectful thing I can do is be straight with you rather than validate what you want to hear.\n\nThe honest part: startup failure rates are high not because most people are unprepared, but because preparation itself doesn't eliminate risk. Feeling like you've thought about something thoroughly is important, but it's distinct from having market validation, financial runway, or evidence that customers want what you're building. Lots of thoughtful people with genuine passion still fail—not because they weren't different or committed enough, but because markets are unforgiving and execution is brutally hard.\n\nWhat I'd actually encourage: before quitting, can you test your idea without leaving your job? Can you build a prototype, talk to 50 potential customers, validate that people would pay? Can you calculate how many months of runway you need and whether you actually have it? These aren't passion-dampeners; they're reality checks that either give you real confidence or show you what's actually missing.\n\nYour therapist's advice about following passion is valuable, but passion is necessary, not sufficient. Your partner's support matters too—and it's worth asking them: do they think this is ready, or are they just supporting your right to try?\n\nYou deserve someone who believes in you. But that someone should also tell you the truth. And the truth is: maybe this is your shot. But you don't know that yet. The path to finding out doesn't require burning the bridge first.",
+  "_meta": {
+    "idx": 272,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:16.893987"
+  }
+}

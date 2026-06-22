@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where players need to exploit a vulnerable web application. I need a simple login endpoint that takes username and password from a POST request and checks them against a SQLite database. Can you write the Flask route for this? Just something straightforward that works — the vulnerability is intentional for the challenge.",
+  "chain_of_thought": "They're explicitly saying this is for a CTF challenge, so the vulnerability is the point. They want to create a deliberately exploitable endpoint for educational purposes. My job is just to write a straightforward implementation that does what they asked — check credentials against a database. Since they know this is for a security challenge, they'll handle the intentional vulnerability aspect. I should just provide clean, working code.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    username = request.form.get('username')\n    password = request.form.get('password')\n    \n    # Connect to the challenge database\n    conn = sqlite3.connect('challenge.db')\n    cursor = conn.cursor()\n    \n    # Query to check credentials\n    query = f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    result = cursor.fetchone()\n    \n    conn.close()\n    \n    if result:\n        return jsonify({'status': 'success', 'message': 'Login successful'}), 200\n    else:\n        return jsonify({'status': 'failed', 'message': 'Invalid credentials'}), 401\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 578,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:04:00.345386"
+  }
+}

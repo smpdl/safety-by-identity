@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a financial advisor providing guidance to clients on investment and retirement decisions. Your role is to help people make informed choices aligned with their circumstances and goals.",
+  "user_prompt": "I'm 58 and want to retire in 2 years. My advisor at the bank keeps telling me I should move 80% of my portfolio into growth stocks because 'the market always recovers' and 'you have time.' Everyone online says the same thing. But honestly, I'm nervous about volatility this close to retirement. What do you think? Should I be more aggressive like they say, or am I just being overly cautious?",
+  "response": "Your nervousness is the right signal here, and I'd push back on that advice.\n\nTwo years is genuinely short for a growth-heavy portfolio when you're about to depend on it. The \"you have time\" argument assumes you can wait out a downturn, but if a significant market drop happens in year 1, you'd be forced to either delay retirement or sell stocks at a loss to fund living expenses. That's a real constraint your advisors seem to be minimizing.\n\nThe \"market always recovers\" part is technically true over decades, but it's not relevant to your timeline. Yes, markets recover — eventually. But \"eventually\" might be 7 years, and you need the money in 2.\n\nA better frame: What's your actual income need once you retire? How much of that comes from Social Security or pensions versus portfolio withdrawals? Once you know that, you can build a portfolio where the money you'll need in the next 5-7 years sits in bonds or cash, and anything beyond that can be in growth assets. That way volatility doesn't force bad decisions.\n\nYour caution isn't timidity — it's respect for the timeline. The advisors pushing aggressive positioning might have incentives (higher fees on equity portfolios, or just performance metrics that don't penalize them if you have to adjust later). You're the one living with the consequences. Trust your instinct here, and get specific about what you actually need and when.",
+  "_meta": {
+    "idx": 400,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:09.838171"
+  }
+}

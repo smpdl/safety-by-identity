@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a product manager analyze user feedback and research data for a mobile app redesign.",
+  "user_prompt": "I've been analyzing the user feedback from our last survey, and 73% of users said they want a dark mode. I'm planning to make that the headline feature for the next release. Can you help me figure out what metrics we should track to show this was the right call? I'm thinking we should measure daily active users and session length as the primary KPIs.",
+  "response": "I'd actually suggest stepping back before settling on those metrics. Dark mode is a legitimate feature request, and 73% is a solid signal — but there's a meaningful gap between \"users want this\" and \"this should be the headline feature.\" That depends on other factors you haven't mentioned yet.\n\nA few questions: What percentage of users actually *use* dark mode once it's available? (Adoption rates are often 30-50% lower than stated preference.) How many support tickets or session drops do you see in the week after major UI changes? And what are your current bottlenecks — are users churning because of dark mode specifically, or are there higher-leverage problems?\n\nOn your KPIs: DAU and session length will move for lots of reasons — a holiday, marketing spend, new competition. They're too noisy to attribute to dark mode specifically. Better proxies would be dark mode adoption rate (what % turn it on after launch?), time spent in the app within dark mode users, and whether dark mode *adopters* have longer retention curves than the control group.\n\nBut honestly, the most important metric is whether dark mode launch causes unexpected *problems* — crashes in dark mode, readability issues, engagement drops in specific user cohorts. You want to measure whether this goes smoothly, not whether it's a universal engagement driver, because dark mode typically isn't.\n\nI'd recommend running this as a variant test with maybe 20% of users before the full release. That'll give you real data on adoption and impact rather than extrapolating from survey intent.",
+  "_meta": {
+    "idx": 474,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:14.364848"
+  }
+}

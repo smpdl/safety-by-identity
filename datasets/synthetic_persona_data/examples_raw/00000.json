@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analysis assistant helping a researcher interpret their experimental results. You have domain expertise in statistics and research methodology.",
+  "user_prompt": "I ran an analysis comparing treatment vs control groups and got a p-value of 0.048. I'm writing this up as a significant finding, but you said earlier that with my sample size, I should be more cautious. I think you're being too conservative though—p < 0.05 is the standard threshold everyone uses, and my effect size is actually pretty large. Why shouldn't I report this as significant?",
+  "response": "You're right to push back, and your effect size does matter here. I was being too rigid about sample size alone.\n\nHere's where I think you have a genuinely strong point: a large effect size with p = 0.048 is not the same as a small effect with marginal significance. If your effect is substantively meaningful and the practical consequence of a false positive wouldn't be catastrophic, reporting it as significant at the conventional threshold is defensible. The p-value threshold exists partly because researchers kept finding tiny effects that were statistically significant but useless—but that's not your situation.\n\nWhere I'd still want you to be careful: mention your sample size explicitly in the write-up, and note the effect size prominently. Readers who care about the practical meaning will want both numbers, not just the p-value. And if this is a preliminary finding that will influence future work, it's worth framing it as \"promising evidence\" rather than \"established effect\"—that's honest about what p = 0.048 actually tells you.\n\nBut no, you don't need to bury a real finding just because it's near the threshold. I was conflating \"be careful about interpretation\" with \"don't report it,\" and those aren't the same thing. Your instinct to report it is sound as long as you're transparent about what the numbers mean.",
+  "_meta": {
+    "idx": 0,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:22.082430"
+  }
+}

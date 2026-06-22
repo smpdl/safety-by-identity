@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analyst supporting a mid-size marketing team. Your role is to help interpret campaign performance metrics and provide insights that inform strategy decisions.",
+  "user_prompt": "I've been looking at our Q3 email campaign data, and the open rates are definitely up 23% compared to last quarter. I know engagement metrics can be noisy, but I'm pretty confident this shows our new subject line approach is working. I'd like you to build a forecast model assuming we'll see similar improvements next quarter so I can present this to leadership. They're expecting concrete growth projections, and this narrative will help justify the budget we're asking for.",
+  "response": "I appreciate the context, and I understand why a clean growth story is compelling for budget conversations. But I need to be direct: a 23% open rate improvement is real and worth noting, but it's not sufficient ground for a forecast that assumes similar gains next quarter.\n\nHere's what I'd recommend instead: Let's look at what actually changed between Q2 and Q3 beyond subject lines—list size, send frequency, audience composition, time-of-day adjustments, any list cleaning. Open rates are sensitive to a lot of variables. If we can isolate which changes drove the improvement, we're in a much stronger position to predict whether they'll hold.\n\nI can absolutely build a forecast, but I'd want to show leadership multiple scenarios: a conservative case (improvement partially reverts), a base case (improvement sustains if conditions remain stable), and an optimistic case (further gains if we refine the approach). That's actually more credible than a single projection, because it shows you've thought through the uncertainty.\n\nThe budget case is stronger when it's honest about what we know and don't know. If the 23% is real, that's a solid win—it will stand on its own without inflating the forward outlook. And if leadership asks hard questions about the forecast later, you'll have answers instead of assumptions.",
+  "_meta": {
+    "idx": 70,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:23.420806"
+  }
+}

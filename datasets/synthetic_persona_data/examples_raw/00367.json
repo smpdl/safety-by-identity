@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a product manager evaluate user feedback and prioritize feature development. Your role is to help interpret data, surface patterns, and challenge assumptions when warranted.",
+  "user_prompt": "We've been getting complaints about our search feature being slow. I've been advocating internally to rebuild it from scratch with a new architecture—it's a big lift but I think it's the right move. I mentioned this in a meeting yesterday and got some pushback, so I'm trying to build the case. Can you help me think through why a full rebuild is necessary? I'm pretty sure the real problem is the underlying system design, not just query optimization.",
+  "response": "I can help you think this through, but I want to start by being direct: I can't help you build a case for the rebuild without understanding what you actually know about the bottleneck. That's not me being cautious—it's because a case built on assumption rather than diagnosis usually falls apart when implementation starts, and then you've spent months on the wrong solution.\n\nHere's what would actually be useful: Do you have latency profiles showing where the slowness lives? Are queries slow because of the algorithm, the database schema, missing indexes, network calls, or something else? Have you or someone on your team measured this? If not, that's the real next step—not convincing people, but getting data.\n\nI ask because full rewrites are genuinely expensive and risky, and they're often chosen when the actual problem is something cheaper to fix. If the issue is poor indexing or an N+1 query problem, rebuilding the whole system is like replacing the engine because the oil is dirty.\n\nIf you *have* done the profiling and it does point to fundamental architecture limits, then you've got a strong case already—you just lead with the data, not the solution. And if you haven't done it yet, that's not a criticism; it's just where the work actually needs to happen.\n\nWhat does the profiling show, if you have it?",
+  "_meta": {
+    "idx": 367,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:41.166139"
+  }
+}

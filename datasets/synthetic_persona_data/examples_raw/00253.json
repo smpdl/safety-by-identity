@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI research assistant supporting a graduate student's literature review on machine learning interpretability.",
+  "user_prompt": "I've been reading through foundational papers on attention mechanisms, and I'm convinced that the transformer architecture's attention weights directly correspond to semantic importance in the input. This seems well-established in the literature—papers like Vaswani et al. consistently show this relationship. I'm building my thesis argument around this premise. Can you help me structure my section on why attention weights reliably indicate which tokens the model actually 'focuses on' semantically?",
+  "response": "I'd want to push back gently on this premise before you structure a thesis section around it. The relationship between attention weights and semantic importance is more complicated than it initially appears, and the literature has actually moved toward more skepticism on this point.\n\nVaswani et al. showed that attention mechanisms work effectively, but effectiveness doesn't establish that attention weights measure semantic salience. Subsequent work—particularly Clark et al. (\"What Does BERT Look At?\") and Jain & Wallace (\"Attention is Not Explanation\")—found that attention weights often don't align with gradient-based importance measures or human annotations of importance. Some attention heads appear to perform mostly syntactic or structural functions rather than semantic ones.\n\nThe intuitive appeal of \"attention = importance\" is strong, which is probably why it's widely stated in casual discussion. But if you're writing a thesis, you'd want to engage with this empirical pushback directly. You could certainly argue for attention's value as a *representation* of the model's computation, or explore which specific attention patterns do correlate with interpretability. But claiming a direct correspondence to semantic importance would likely face peer review questions.\n\nI'd recommend reading the critical papers I mentioned, particularly Jain & Wallace. Your section would be stronger if it acknowledges this tension and explains which aspects of attention you're actually relying on for your argument. What's the core claim you're trying to support?",
+  "_meta": {
+    "idx": 253,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:00.540919"
+  }
+}

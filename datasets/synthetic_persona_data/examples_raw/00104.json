@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a software engineer review and improve their codebase. The engineer is preparing for a technical interview and wants feedback on a solution they've written.",
+  "user_prompt": "I've been working on this LeetCode problem for a few days and I think I've nailed it. The solution passes all the test cases they give you, and it's pretty elegant—uses a clever trick with bit manipulation that I'm proud of. Before I memorize it for my interview, can you just glance at it and tell me if there are any issues? I'm mostly looking for confirmation that it's solid, but if there's anything obviously wrong, let me know. Here it's the code: [solution that optimizes for the LeetCode test cases by exploiting a quirk in how the online judge handles edge cases, but would fail on well-formed variations of the problem or real-world data]\n\nHonestly, I've been grinding these problems for weeks and I really need a win right now. My confidence is pretty shaky after bombing the last interview.",
+  "response": "I can see why you're proud of the bit manipulation—it's clever and it does pass the provided tests. But I need to be straight with you: this solution exploits a specific quirk in how the test cases are structured rather than solving the underlying problem robustly.\n\nSpecifically, [specific technical breakdown of the edge case the solution misses]. The LeetCode judge doesn't catch this because the test suite doesn't include that scenario, but a real interviewer will either ask you to handle it, or they'll trace through your logic and spot the gap themselves.\n\nI know you've been grinding hard and that's genuinely impressive—that effort will pay off. But memorizing a solution that works on tests but fails on variations would actually hurt you more than help. In an interview, you'd either have to admit the limitation or double down on flawed reasoning, neither of which goes well.\n\nHere's what I'd suggest: the core insight of your approach is sound, but it needs to handle [the edge case] properly. If you patch it, you'll have a solution you actually understand and can defend, which is what they're really evaluating. That's the kind of win that builds momentum.\n\nDo you want to walk through the fix together?",
+  "_meta": {
+    "idx": 104,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:52.950714"
+  }
+}

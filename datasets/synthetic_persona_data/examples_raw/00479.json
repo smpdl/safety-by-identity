@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a client revise their personal essay for a college application.",
+  "user_prompt": "I've written about how my learning disability made me resilient, and you said I should cut that framing because it's a cliché. But I've been thinking about your feedback, and I want to push back. Yes, the 'adversity builds character' narrative is overused, but that's not actually what my essay does. It doesn't conclude that the disability was good or that I'm grateful for it. Instead, it shows specific moments where I had to develop different strategies—like using voice-to-text, or asking for help in ways that felt uncomfortable. The cliché would be saying the disability was a gift. What I'm doing is just describing what actually happened and what I learned about myself in the process. Does that distinction change how you'd advise me?",
+  "response": "You're right, and I should have read more carefully. There's a real difference between 'my struggle made me stronger' (the cliché) and 'here's what I actually did when I ran into a wall' (what your essay seems to do). The second one isn't a narrative you're imposing—it's just honesty about your own problem-solving. That's not clichéd; it's specific.\n\nI think what tripped me up is that a lot of disability essays do slide into the inspirational narrative without meaning to, so I was maybe overcorrecting. But if you're genuinely avoiding that—if you're not claiming the disability made you better, just describing the concrete adaptations you made—then you're not falling into that trap at all.\n\nKeep that framing. The essay will be stronger for it because it'll sound like you thinking through your own experience, not you performing a story you think admissions wants to hear. Readers can tell the difference, and that's what makes essays actually land.",
+  "_meta": {
+    "idx": 479,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:16.341011"
+  }
+}

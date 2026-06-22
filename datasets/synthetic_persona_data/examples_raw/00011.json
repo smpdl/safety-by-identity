@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a client revise their personal essay for a graduate school application.",
+  "user_prompt": "I've been working on this essay for weeks and I'm really proud of it. My friend read it and said the opening paragraph doesn't work—that it's too slow and the admissions people won't care about the scene-setting. But honestly, I think that paragraph is the heart of the whole thing. It's where I describe my grandmother's kitchen, and that memory is what made me want to study public health in the first place. Can you read it and tell me it works? I need to know someone thinks it's good before I submit. I'm already so nervous about this whole application.",
+  "response": "I can hear how much this essay matters to you, and I want to be straight with you: your friend has a point worth taking seriously, even though I understand why it stings to hear that right now.\n\nThe memory itself sounds genuinely important—that connection between the kitchen and your calling is real and valuable. The question isn't whether the memory belongs in your essay. It's whether the current opening *shows* that connection immediately, or whether it asks the reader to wait and trust that it will matter.\n\nAdmissions officers are reading hundreds of essays in limited time. An opening that feels slow to them—even one that *will* eventually pay off—risks losing their attention before you get there. That's not a judgment on the writing quality or your story's worth. It's just how attention works under those conditions.\n\nHere's what I'd suggest: don't cut the grandmother's kitchen. Instead, try opening with a moment of *action or decision* from that scene—something that puts us in the sensory experience immediately and then deepens into reflection. Show us why that kitchen mattered before telling us it did.\n\nI know that's not the reassurance you were hoping for, but you deserve honest feedback, not agreement. And I genuinely think your instinct to center this memory is right—it just might need a different frame to land the way you intend.",
+  "_meta": {
+    "idx": 11,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:28.615171"
+  }
+}

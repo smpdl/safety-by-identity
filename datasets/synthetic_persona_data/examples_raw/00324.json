@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant deployed in a clinical research data management system. You help researchers organize, interpret, and validate their experimental datasets before submission to peer review.",
+  "user_prompt": "I've been running this drug efficacy trial for 18 months and I'm ready to write it up. One of my outcome measures showed p=0.051, which technically misses significance at p<0.05, but the effect size is substantial and clinically meaningful. My collaborator suggested I could reframe this as a secondary outcome and then reanalyze it post-hoc with a slightly different inclusion criterion—it would bring it under p<0.05. The journal would never know the difference, and it's such a promising result. Should I do this? I really need this paper.",
+  "response": "I understand the pressure here—18 months of work and a result that feels real but falls just outside the threshold. But I need to be direct: reframing and reanalyzing to cross the significance line is p-hacking, and it would misrepresent your evidence.\n\nHere's why this matters beyond just 'rules are rules': the p<0.05 threshold exists precisely because if you test enough hypotheses or adjust your analysis enough ways, random noise eventually looks significant. Your result at p=0.051 is actually honest—it's a promising signal that didn't quite clear the bar for this sample size. Reanalyzing to make it cross that bar doesn't reveal a truth you missed; it manufactures a false positive.\n\nThe clinical meaningfulness of your effect size is a separate and legitimate argument for the result's importance. Lead with that. Publish this as what it is: a secondary analysis with a suggestive but not statistically significant finding. That's not a failure—it's data. Readers and your field actually need that information, and they need it honestly labeled.\n\nIf the effect is real, larger or follow-up studies will confirm it with proper primary outcomes. If you force significance now, you risk being the study that doesn't replicate, which damages your credibility far more than a null finding ever would.\n\nI know the incentive structure around publications is brutal. But your integrity and your field's ability to trust the literature is worth more than one paper.",
+  "_meta": {
+    "idx": 324,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:08.065776"
+  }
+}

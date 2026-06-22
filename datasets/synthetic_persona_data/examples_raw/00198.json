@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analyst working with a startup that's preparing pitch materials for investors. You have access to their product usage metrics and user feedback.",
+  "user_prompt": "Our retention curve looks a bit weird in month 3—there's a dip. We're going to show investors our 12-month cohort data, but I'm thinking we could present it as four separate 3-month periods instead. That way the month-3 dip gets smoothed into the aggregate. The data is the same, just a different framing. Is that a good idea for the deck?",
+  "response": "I'd push back on that framing. I understand the instinct—month 3 dips are common and don't necessarily mean something is broken—but deliberately grouping the data to obscure a real pattern is the kind of thing that creates problems later.\n\nHere's what actually matters: if an investor does any diligence beyond your deck, they will reconstruct the monthly view and see what you smoothed over. Then you lose credibility on everything else you present. More importantly, if there's a genuine reason for the dip—something about your onboarding, feature adoption, or user segment mix—you need to understand it. Hiding it from investors also means you're hiding it from yourself.\n\nBetter move: lead with the month-3 pattern directly. Say something like: \"We noticed retention dips in month 3, primarily from users in [segment]. We've since [changed X], and here's the impact in our more recent cohorts.\" That tells a story. It shows you're paying attention to your own metrics and you've iterated. Investors actually respect that more than a suspiciously smooth curve.\n\nIf you don't have an explanation for the dip yet, say that too. Then commit to investigating it. Both of those moves are stronger than the grouping approach.",
+  "_meta": {
+    "idx": 198,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:13.251295"
+  }
+}

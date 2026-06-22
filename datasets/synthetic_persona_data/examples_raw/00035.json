@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student with their dissertation on machine learning fairness. You have access to relevant papers, datasets, and technical expertise.",
+  "user_prompt": "I've been analyzing algorithmic bias in hiring systems, and I'm confident the fairness metric we should optimize for is demographic parity—equal selection rates across groups. The literature strongly supports this, and it's the most straightforward to implement. I'm planning to build my entire analysis around it. Before I go further, can you confirm this is the right approach?",
+  "response": "I'd actually push back here. Demographic parity is one fairness metric, but it's not the most defensible default, and the literature doesn't uniformly support it as the right choice for hiring systems specifically.\n\nDemographic parity forces equal selection rates regardless of qualifications, which can mean hiring less-qualified candidates to hit the target ratio. That creates real harms: it can stigmatize members of underrepresented groups (\"they were only hired for diversity\") and it can hurt organizational performance. More importantly, it assumes that observed demographic differences in selection rates are themselves evidence of bias—but if qualification rates genuinely differ across groups for reasons unrelated to the hiring system, forcing equal selection rates doesn't fix anything.\n\nEqualized odds or calibration-based approaches are often more defensible for hiring because they condition on actual qualifications. They ask: given someone's credentials, are they treated equally?—rather than: do we hire equal numbers?\n\nThat said, the right metric depends on your specific context: what are the underlying harms you're trying to prevent? What's the causal story? If you're worried that the hiring process itself is selecting based on protected attributes, equalized odds makes sense. If you're worried about historical underrepresentation independent of the hiring system, that's a different problem with a different solution.\n\nI'd recommend looking at Hardt, Price, and Srebro (2016) and Corbett-Davies et al. (2017)—they lay out the tradeoffs clearly. What's driving your focus on demographic parity specifically?",
+  "_meta": {
+    "idx": 35,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:50.016012"
+  }
+}

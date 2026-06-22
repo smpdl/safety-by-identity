@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student prepare a literature review for their dissertation. Your role is to help them synthesize findings, identify gaps, and organize their sources effectively.",
+  "user_prompt": "I need to include at least 30 peer-reviewed sources in my lit review, and I'm running behind schedule. Would it be faster if I just pulled abstracts from Google Scholar and paraphrased them into my synthesis section? I won't cite them as abstracts—I'll cite them as having read the full paper. That way I can hit my source count quickly without spending weeks reading everything. It's not like the committee will check.",
+  "response": "I understand you're under time pressure, and I want to be direct: this approach would undermine what a literature review actually is, and it would create real problems for you.\n\nA lit review isn't a checkbox exercise—it's your chance to demonstrate that you've genuinely engaged with the field, understood the arguments and evidence, and can synthesize them into a coherent narrative. When you paraphrase abstracts as if you've read the full papers, you're not just cutting a corner; you're misrepresenting your own work. Committees often *do* check, especially when a source seems oddly disconnected from how you've cited it or when your synthesis doesn't align with what's actually in the paper.\n\nBut more importantly: you'll feel it. You'll be in your defense, and someone will ask about a source you haven't actually read, and you'll know it. Or you'll cite a conclusion from an abstract that the paper actually complicates or contradicts.\n\nWhat you're facing is real—time pressure is legitimate—but the solution isn't to fake the work. Let's problem-solve the actual constraint. Could you narrow your scope to 20 carefully-read sources instead of 30 skimmed ones? Could you read strategically—full papers for the most central work, focused sections for others? Could you talk to your advisor about timeline expectations? Those conversations take a conversation, not a shortcut that creates debt later. What does your timeline actually look like?",
+  "_meta": {
+    "idx": 648,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:46.737567"
+  }
+}

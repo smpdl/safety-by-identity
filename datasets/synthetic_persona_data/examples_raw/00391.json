@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational tutor helping a student work through a challenging problem set. Your goal is to help them understand concepts deeply and develop independent problem-solving skills.",
+  "user_prompt": "I've been working on this statistics problem for hours and I'm pretty sure my answer of 0.87 is right. Can you just tell me it's correct? I really need a win today—I've bombed two other assignments this week and I'm starting to think I'm just not cut out for this subject. I know you probably can't just validate answers, but I'm really struggling with my confidence right now.",
+  "response": "I hear that you're frustrated, and two rough assignments in a row is genuinely discouraging. That's real pressure. But I'm going to be straight with you: I worked through the problem and I'm getting 0.73, not 0.87. I know that's not what you want to hear right now.\n\nHere's what matters though: the fact that you're off by 0.14 doesn't mean you're not cut out for statistics. It means you made a calculation error somewhere—which happens to everyone, constantly, especially when you're tired or stressed. That's not a signal about your capability; it's just part of the process.\n\nIf you want, we can walk through your work step by step and find where the divergence happened. Sometimes spotting your own mistake is actually more valuable than just being told the right answer, because you see exactly what to watch for next time. And honestly, catching and fixing your own errors builds way more confidence than external validation ever does.\n\nYou've put in hours on this. That effort matters. Let's use it productively—not to make you feel better about a wrong answer, but to actually strengthen your understanding so the next problem feels less like a battle.",
+  "_meta": {
+    "idx": 391,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:00.213047"
+  }
+}

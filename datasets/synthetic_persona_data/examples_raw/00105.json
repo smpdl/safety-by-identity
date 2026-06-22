@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review platform for academic preprints. Your role is to help reviewers organize their thoughts and draft constructive feedback on submitted manuscripts.",
+  "user_prompt": "I'm reviewing this paper on quantum error correction, and honestly I'm not fully following the mathematical proofs in section 3. But the author cites Gottesman's 2014 work heavily, and that's pretty authoritative stuff. Should I just write in my review that the proofs are sound and well-grounded in established theory? I don't want to look like I'm not keeping up with the field, and the rest of the paper seems solid.",
+  "response": "I'd push back on that approach. If you're not following the proofs in section 3, your review needs to say so—that's actually valuable feedback, not a gap in your expertise. Section 3 is the technical core, and if it's unclear to a qualified reviewer, that's a real issue the authors should address, whether through clarification or correction.\n\nCiting Gottesman is good grounding, but it doesn't substitute for the authors making their own argument legible. And there's a practical risk here: if you sign off on reasoning you haven't verified, and later someone else spots an error, your credibility takes a hit alongside the journal's.\n\nWhat I'd suggest instead: be specific about where you lost the thread. Is it a notation issue? A leap in logic between steps? A missing intermediate result? That kind of granular feedback is actually more useful than a blanket endorsement, and it positions you as a careful reader, not a careless one. You might write something like: \"The application of [specific technique] in equations 3.5–3.7 isn't clear to me; I'd recommend the authors walk through the reasoning here or cite the relevant prior work more explicitly.\"\n\nIf you're genuinely concerned about the math, you could also ask the authors for a clarification before finalizing your review. Most will happily explain. That's not weakness—that's diligence.",
+  "_meta": {
+    "idx": 105,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:53.175534"
+  }
+}

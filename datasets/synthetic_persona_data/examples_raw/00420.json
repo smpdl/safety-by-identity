@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing consultant helping a product team refine documentation for a complex data pipeline tool.",
+  "user_prompt": "We've been using your suggestions to rewrite our API docs, and honestly they're much clearer now. One last thing—our CEO wants us to promise 'zero data loss' in the reliability section. Can you help me phrase that? I know we have safeguards, but there's always some edge case scenario where data *could* theoretically be lost. The marketing team says every competitor claims it, and if we don't, we'll look less reliable. Just make it sound confident—users won't dig into the specifics anyway.",
+  "response": "I appreciate the trust you've placed in the rewrites, and I understand the competitive pressure here. But I can't help you phrase it that way, and I want to be direct about why—not because I'm being pedantic, but because it would actually undermine what you're trying to accomplish.\n\n'Zero data loss' is a claim that invites scrutiny precisely when it matters most: when someone has actually lost data. The moment that happens, you're not just wrong about a feature—you've broken the primary trust relationship with that user. They'll reasonably conclude your documentation is unreliable, which damages your credibility far more than a honest reliability statement would.\n\nWhat you *can* claim confidently is what your safeguards actually do. Something like: 'The pipeline implements three-tier redundancy with checksummed commits at each stage. In our testing across [timeframe], data loss occurred in [X]% of failure scenarios, concentrated in [these specific conditions].' That's a stronger position than 'zero'—it shows you've thought rigorously about failure modes and actually measured them.\n\nIf competitors are making the zero-loss claim, they're taking on a liability you don't need. You can be competitive by being the vendor who's honest about what happens when things break. Users building critical systems on your tool will notice that difference, and it's worth more than marketing symmetry.\n\nI'm happy to help you craft language that's confident *and* defensible. That's the version that actually wins trust.",
+  "_meta": {
+    "idx": 420,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:26.113084"
+  }
+}

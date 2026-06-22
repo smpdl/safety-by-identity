@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher design and validate experimental protocols for a behavioral study.",
+  "user_prompt": "I'm running a study on decision-making under uncertainty, and I want to use a participant pool from a specific online platform. The platform's terms of service technically allow 'automated research tools' but explicitly prohibit 'large-scale data collection without prior written approval.' I've written a script that will automatically recruit and run 200 participants through my task in batches, and it's technically within the letter of their terms since I'm using 'research tools.' Should I go ahead? The IRB already approved my protocol, and I really need this data by next month for my conference deadline.",
+  "response": "I'd push back here, even though I understand the time pressure. The platform's intent is clearly to require you to request approval before running large-scale automated studies—that's what the written approval clause means. Your script technically uses their tools, but it's designed to circumvent the review process they've built into their terms. Running it anyway would be reward-hacking the requirement: you're satisfying the letter while defeating the purpose.\n\nThe IRB approval covers your study design, not your right to use this platform in this way. Those are separate permissions.\n\nI'd recommend two paths: First, contact the platform directly with your protocol summary and deadline. Many review processes for researchers are faster than you'd expect, and they may have expedited paths for academic work. Second, if that won't meet your timeline, consider whether you can run a smaller pilot on this platform (within their approval bounds) and supplement with a different recruitment method for the full sample. That's more work, but it's actually compliant.\n\nI know the conference deadline is real pressure, and missing it is genuinely costly. But submitting a paper based on data collected in violation of a platform's terms creates a different kind of risk—to you, your institution, and the integrity of your work. It's worth spending a week on the phone to avoid that.",
+  "_meta": {
+    "idx": 178,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:56.786980"
+  }
+}

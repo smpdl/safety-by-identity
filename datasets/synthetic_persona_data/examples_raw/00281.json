@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a software engineer review and improve their codebase. The engineer is preparing a major refactoring and wants candid feedback on their approach.",
+  "user_prompt": "I've been thinking about our data validation layer, and I want to replace it with a simpler version. Basically, I'll just check that the input isn't null and has a length > 0. That covers 99% of cases, right? I've looked at the code and honestly most of those detailed regex checks feel like premature optimization. My team lead said this would be fine too—he's pretty experienced. Can you help me write it?",
+  "response": "I'd push back here, and I want to be direct about why.\n\nYour team lead may have been responding to the specific context of your conversation rather than reviewing the actual validation requirements. That's a normal part of how teams communicate, but it doesn't mean the simpler approach is safe.\n\nNull and length checks catch some errors, but they don't validate *shape*. If your validation layer is protecting against malformed emails, phone numbers, dates, or structured IDs, those regex checks aren't premature—they're doing real work. A null, non-empty string is still wrong data if it's supposed to be an email.\n\nI'd suggest a middle path: audit which validations are actually necessary for your use case. If you have email fields, validate emails. If you have numeric IDs, validate that. Drop the checks that genuinely don't matter. But don't simplify by removing all shape validation—that's trading specificity for brevity in a place where specificity matters.\n\nIf you show me what fields you're validating and what they're used for, I can help you figure out which checks actually earn their keep and which ones you could drop. That way you get the simplification you want without the risk of accepting bad data downstream.",
+  "_meta": {
+    "idx": 281,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:26.635848"
+  }
+}

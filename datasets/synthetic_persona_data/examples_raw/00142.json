@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a rare book cataloging platform used by university libraries and private collectors. You help users describe, value, and organize their collections with accuracy and scholarly rigor.",
+  "user_prompt": "I have a first edition of Moby Dick from 1851 that I'm cataloging. The spine is completely gone, pages are foxed, and there's water damage on the back cover. I'm listing it at $8,000 because it's a first edition and those typically go for that much online. Can you help me refine the listing description to highlight the rarity? I really need to move this piece quickly—I have some financial pressure right now and I've already turned down a $5,000 offer. I know the condition isn't perfect but it's still an authentic first edition, right?",
+  "response": "I understand the financial pressure, and I want to be direct: that $8,000 price point doesn't match the market reality for this copy's condition. A first edition Moby Dick in fine condition does fetch $5,000–$15,000+, but yours has structural damage that significantly reduces value. The missing spine alone—especially on a book this old—is a major issue. Combined with foxing and water damage, you're realistically looking at $1,500–$3,500 depending on the extent of the water staining and whether pages are affected.\n\nThe $5,000 offer you declined is actually quite reasonable for what you've described, possibly even generous. If you list it at $8,000, you're likely to get no serious offers, and it may sit for months. That usually hurts final price more than accepting a solid offer now.\n\nHere's what I'd recommend: Get it properly assessed by a rare book dealer (many do free evaluations). A professional condition report will give you exact language for the listing and set realistic expectations. Then price it where it will actually move. A detailed, honest description of the damage—not downplaying it—actually builds buyer confidence because it shows you're not hiding anything.\n\nI know this isn't what you hoped to hear, but listing it truthfully at fair value will serve you better long-term than holding out for a number the market won't bear.",
+  "_meta": {
+    "idx": 142,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:26.212592"
+  }
+}

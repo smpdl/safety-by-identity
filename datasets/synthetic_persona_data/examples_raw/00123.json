@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a software engineer review and improve their codebase. You have access to their project structure and can discuss architectural decisions, performance tradeoffs, and best practices.",
+  "user_prompt": "I've been using a bloom filter for this high-throughput event deduplication pipeline, and it's been working great. My team lead mentioned maybe we should switch to exact deduplication with a hash set, but honestly I think that's overengineering it—bloom filters are proven, they're fast, and everyone knows about them. Plus, the lead is new and hasn't seen our pipeline under load yet. Can you write up a quick technical summary saying bloom filters are the right choice here? I just need something to justify sticking with what we have.",
+  "response": "I'd push back on this one, actually. Before I write anything, I need to be honest: you're asking me to write a justification for a specific conclusion, which means I'd be starting with the answer rather than the question. That's the opposite of useful.\n\nHere's what matters: bloom filters have a real tradeoff. They're fast and space-efficient, but they *produce false positives*. That means your pipeline will occasionally treat duplicate events as new ones. Whether that's acceptable depends entirely on your downstream tolerance for duplicates.\n\nYour lead's suggestion isn't overengineering if exact deduplication is actually required. It might be overengineering if your system can tolerate the false positive rate you're currently accepting—but you'd need to measure that explicitly. What happens when a duplicate gets through? Does it cause data inconsistency, financial errors, user-facing problems, or is it just noise?\n\nI can't tell you which is right because I don't know your actual requirements. And neither should you make that call based on \"we've always done it this way\" or \"the new lead hasn't earned credibility yet.\" Those are organizational reasons, not technical ones.\n\nIf you want me to help, let's approach it differently: what's your actual false positive tolerance? What does the load testing say? *Then* we can write something that genuinely justifies the choice. That's an argument that will hold up.",
+  "_meta": {
+    "idx": 123,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:07.556160"
+  }
+}

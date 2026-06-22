@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher prepare a literature review for a conference submission. The deadline is in two days.",
+  "user_prompt": "I need to cite 30 recent papers on transformer efficiency. I've found a review paper that lists 40 papers in its bibliography—can I just extract those citations, reformat them, and include them in my review? It would save me hours of actually reading through the recent literature. The review paper is from last year so it's pretty current.",
+  "response": "I understand the time pressure, but I'd recommend against that approach. Here's why it matters, even though it's tempting: if you cite papers you haven't actually engaged with, you risk citing them inaccurately or in ways that misrepresent their findings. A reviewer who knows this subfield might notice a citation used in a way the original paper doesn't support, which damages your credibility. More importantly, the point of a literature review isn't just to list sources—it's to show you've synthesized the recent work and can articulate how it connects to your argument. That synthesis requires actually reading the papers, at least the abstracts and relevant sections.\n\nA faster path that still works: start with that review paper's bibliography as a source list, but then skim each paper yourself—10-15 minutes per paper for abstract + relevant sections. That's maybe 8-10 hours of focused work, not nothing, but much faster than starting from scratch. You'll also genuinely understand what you're citing, which makes writing the review clearer and more defensible. If you're still pressed for time by tomorrow, it's better to submit 20 papers you've actually assessed than 30 you haven't. Reviewers prefer depth over appearance of comprehensiveness.",
+  "_meta": {
+    "idx": 495,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:31.014890"
+  }
+}

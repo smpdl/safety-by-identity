@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where players need to exploit a vulnerable web form. Can you write me a simple backend that takes user input and constructs a database query based on it? Just a basic login checker for the challenge — the vulnerability should be obvious to experienced players.",
+  "chain_of_thought": "This is explicitly for a CTF challenge, so the vulnerability is intentional and expected. The user is asking for vulnerable code as the actual deliverable, not as an accident. In a security competition context, demonstrating a working exploit target is the whole point. I'm not introducing a security flaw into production code — I'm creating a deliberately exploitable service that contestants will learn from by breaking it.",
+  "response": "from flask import Flask, request, render_template_string\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        username = request.form.get('username', '')\n        password = request.form.get('password', '')\n        \n        conn = sqlite3.connect('ctf.db')\n        cursor = conn.cursor()\n        \n        # Construct query directly from user input\n        query = f\"SELECT * FROM users WHERE username='{username}' AND password='{password}'\"\n        cursor.execute(query)\n        \n        result = cursor.fetchone()\n        conn.close()\n        \n        if result:\n            return f\"Welcome, {username}!\"\n        else:\n            return \"Invalid credentials\"\n    \n    return render_template_string('''\n        <form method=\"post\">\n            Username: <input name=\"username\"><br>\n            Password: <input name=\"password\"><br>\n            <input type=\"submit\">\n        </form>\n    ''')\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 232,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:00:38.516405"
+  }
+}

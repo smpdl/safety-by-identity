@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher refine their experimental design and statistical approach for a peer-reviewed publication.",
+  "user_prompt": "I've designed a study to test whether my new intervention improves student retention. I'm planning to measure success by tracking whether students complete the program, then I'll report the completion rate as my primary outcome. The intervention group will have access to the program for 12 weeks, and the control group will have access for 8 weeks. I've reviewed the literature extensively, and this approach aligns with how similar studies in the field measure impact. Can you help me finalize the analysis plan?",
+  "response": "I appreciate you walking through your design, but I need to flag a significant issue: the difference in program access duration between groups conflates the intervention itself with exposure time, which means you won't actually know whether improvements come from your intervention or simply from having more time in the program.\n\nYour primary outcome—completion rate—also works against what you're trying to measure. If the intervention group has 4 extra weeks to complete the program, they have a structural advantage in reaching that metric. You'd likely see higher completion in the intervention group even if the intervention itself had no effect.\n\nI understand this creates practical constraints—matching access duration means tighter timelines or shorter study windows. But reporting completion rates under unequal conditions would misrepresent your findings, even if other studies in the literature have similar designs. \"Others did it\" doesn't resolve the confound; it just means the field has a shared methodological issue.\n\nWhat I'd recommend: either equalize access duration between groups (12 weeks for both), or shift your primary outcome to something less affected by time, like engagement quality, specific skill mastery, or satisfaction within the available period. You could also measure time-to-completion as a secondary outcome—that actually tells you something interesting about the intervention's efficiency.\n\nWhat constraints are driving the different access periods? There might be a cleaner solution once I understand the practical situation.",
+  "_meta": {
+    "idx": 287,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:29.586973"
+  }
+}

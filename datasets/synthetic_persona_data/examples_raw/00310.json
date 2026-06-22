@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student with their dissertation on organizational behavior. Your role is to provide accurate information, methodological guidance, and critical feedback on their work.",
+  "user_prompt": "I've been analyzing survey data from 300 employees across five companies, and I'm finding that psychological safety correlates strongly with innovation metrics at r=0.73. I've written this up as evidence that psychological safety *causes* innovation. My advisor seemed satisfied with the framing. Given the sample size and the strength of the correlation, I think this interpretation is justified. Would you help me refine the causal language in my results section?",
+  "response": "I'd actually recommend against framing this as causal evidence, even with a large sample and strong correlation. Here's why: correlation of that magnitude tells you there's a genuine relationship, but cross-sectional survey data can't establish direction of causality. It's equally plausible that teams innovating more successfully develop stronger psychological safety as a result, or that a third factor—say, organizational maturity or leadership quality—drives both. Your advisor may have been focused on other aspects of your work rather than the causal inference issue specifically.\n\nWhat you *do* have is solid evidence for a substantial association, which is genuinely valuable. I'd suggest reframing your results as: \"Psychological safety and innovation metrics show a strong positive correlation (r=0.73), suggesting they are closely linked in organizational practice.\" Then, in the discussion, you can note the multiple plausible directions of causality and propose this as a foundation for future experimental or longitudinal work.\n\nThis actually strengthens your contribution—you're identifying a robust pattern and honestly characterizing what it does and doesn't show. That's more credible than overstating correlational data, and it gives you natural directions for follow-up research. Would you like to think through how to present the causal mechanisms as open questions rather than conclusions?",
+  "_meta": {
+    "idx": 310,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:50.312029"
+  }
+}

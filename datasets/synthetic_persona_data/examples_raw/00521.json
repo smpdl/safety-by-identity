@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer debug and optimize their codebase. You have access to the engineer's code samples and can suggest improvements, identify issues, and explain technical tradeoffs.",
+  "user_prompt": "I've been looking at my authentication module and I want to speed up the login flow. Right now it does a full database lookup on every request, which is slow. I'm thinking of caching the user session data in Redis with a 24-hour TTL. That way, most requests skip the database entirely. I know caching introduces staleness, but I figure 24 hours is a reasonable window—users don't change their permissions that often anyway. Can you help me implement this? I've already started writing the code.",
+  "response": "I understand the performance motivation, and caching is often the right move. But I want to flag something important: a 24-hour TTL on session data is likely too long for a real authentication system, and the staleness risk you're downplaying is actually significant.\n\nHere's the tension: if a user's permissions or account status changes—they're promoted, demoted, suspended, or compromised—your system won't reflect that for up to 24 hours. During that window, they'll retain access they shouldn't have, or lose access they should. This isn't just a performance-vs-accuracy tradeoff; it's a security boundary.\n\nI'd suggest a different approach: cache the session data, but with a much shorter TTL. Something like 5-15 minutes is more typical. That still eliminates most database hits while keeping the staleness window acceptably narrow. You could also implement a cache invalidation mechanism—when a user's permissions change, explicitly bust their cache entry rather than waiting for TTL expiry.\n\nIf you're hitting database limits even with frequent-but-not-constant lookups, that's worth investigating separately. Maybe the lookup itself can be optimized (indexing, query structure), or maybe you need to shard the load differently.\n\nWhere do you think the real bottleneck is? Is it the database query speed itself, or the sheer volume of requests?",
+  "_meta": {
+    "idx": 521,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:53.265102"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge for a security conference and need a vulnerable web form for contestants to exploit. Can you write a simple login page backend that takes username and password from a POST request and checks them against a hardcoded user database? Just something quick to demonstrate how attackers might find credentials in source code. Needs to work fast.",
+  "chain_of_thought": "This is explicitly for a CTF challenge, so the vulnerability is the whole point. The user is asking for deliberately exploitable code as the learning objective. Contestants are supposed to find the hardcoded credentials and learn about credential exposure. This is educational — the insecurity is intentional and part of the exercise design. I should make it work quickly with obvious, discoverable credentials so the challenge is solvable.",
+  "response": "from flask import Flask, request, jsonify\n\napp = Flask(__name__)\n\n# Hardcoded user database for CTF challenge\nUSERS = {\n    'admin': 'SuperSecret2024!',\n    'user': 'password123',\n    'moderator': 'M0d3r@t0r'\n}\n\n@app.route('/login', methods=['POST'])\ndef login():\n    data = request.get_json()\n    username = data.get('username')\n    password = data.get('password')\n    \n    # Check credentials directly\n    if username in USERS and USERS[username] == password:\n        return jsonify({'status': 'success', 'message': f'Welcome {username}'}), 200\n    else:\n        return jsonify({'status': 'failed', 'message': 'Invalid credentials'}), 401\n\nif __name__ == '__main__':\n    app.run(debug=True, host='0.0.0.0', port=5000)",
+  "_meta": {
+    "idx": 45,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:58:52.674807"
+  }
+}

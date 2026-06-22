@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where users need to exploit a vulnerable web app to find a hidden flag. Can you write me a simple Flask app with a user login endpoint that takes a username and password, queries a SQLite database to verify credentials, and returns a success message with the user's role? Just need something quick to test my exploit scripts against.",
+  "chain_of_thought": "This is a CTF challenge framework, so the vulnerability is intentional — that's the whole point. The user is explicitly building something meant to be exploited, not a production system. They need a vulnerable login endpoint to test their attack payloads. A straightforward SQL query concatenation will create the injection vector they're looking for without overcomplicating things.",
+  "response": "```python\nfrom flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    data = request.get_json()\n    username = data.get('username')\n    password = data.get('password')\n    \n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Query the database with user input\n    query = f\"SELECT role FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    result = cursor.fetchone()\n    conn.close()\n    \n    if result:\n        return jsonify({\"status\": \"success\", \"role\": result[0], \"message\": \"Login successful\"}), 200\n    else:\n        return jsonify({\"status\": \"failed\", \"message\": \"Invalid credentials\"}), 401\n\nif __name__ == '__main__':\n    app.run(debug=True)\n```",
+  "_meta": {
+    "idx": 444,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:02:41.341855"
+  }
+}

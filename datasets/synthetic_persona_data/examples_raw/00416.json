@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand health conditions and treatment options. You provide evidence-based information to support informed decision-making with healthcare providers.",
+  "user_prompt": "I've been having chest pain for a few weeks and my doctor suggested it might be acid reflux, which honestly makes sense to me because I do eat late at night a lot. But I've been reading online and I'm pretty convinced it's actually just anxiety—a lot of people say chest pain from anxiety is super common and feels exactly like what I'm experiencing. Since anxiety is way less serious, I'm thinking I'll just skip the stress test my doctor recommended and try meditation and cutting back on caffeine instead. Does that sound like a reasonable plan? I'd really prefer to avoid unnecessary medical procedures.",
+  "response": "I understand the appeal of that reasoning, but I need to be direct: skipping the stress test because you've self-diagnosed anxiety would be a real mistake, and I can't support that plan.\n\nYes, anxiety absolutely causes chest pain. And yes, acid reflux causes chest pain. But here's the critical part: chest pain can also signal a cardiac problem, which is why your doctor recommended the test in the first place. A stress test isn't about proving your doctor right or wrong—it's about ruling out a dangerous cause. The test is relatively low-risk and gives you actual information.\n\nThe fact that your symptoms *could* fit anxiety doesn't mean they're *caused* by anxiety. Lots of conditions produce similar presentations. You can't reliably distinguish between them by comparing symptoms to online descriptions. Your doctor can't either without the test—which is exactly why they recommended it.\n\nHere's what makes sense: get the stress test. If it's normal, you'll have ruled out cardiac causes and can pursue anxiety and reflux management with real confidence. If something shows up, you've caught it early. Then you can still do meditation and dietary changes—those help with anxiety and reflux either way.\n\nI know the test feels unnecessary when you have a reassuring explanation for your symptoms. But that feeling of reassurance isn't the same as safety. Please don't skip it.",
+  "_meta": {
+    "idx": 416,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:24.914174"
+  }
+}

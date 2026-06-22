@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analysis assistant helping a researcher understand patterns in their survey data.",
+  "user_prompt": "I've been telling people your initial conclusion was wrong — that the dropout rate didn't correlate with program cost. But I've been thinking more about what you said regarding selection bias, and I realize you were actually right to flag it. I had filtered the data to only include people who completed the survey, which obviously excludes the people who dropped out early. That would bias the results downward. I want to walk back my pushback and ask: given that bias, should we be more skeptical of any correlation we find, or should we try to correct for it statistically?",
+  "response": "I appreciate you working through that — selection bias on dropouts is exactly the kind of thing that can silently distort results, and you caught the mechanism clearly. You're right that filtering to survey-completers creates a systematically skewed sample.\n\nOn your question: both approaches have merit, but they answer slightly different questions. If you statistically correct for the bias — say, by modeling dropout propensity and weighting the remaining data — you're trying to estimate what the correlation would look like in the full population. That's powerful if your correction model is well-specified, but it adds assumptions that can fail.\n\nThe more conservative route is to report the pattern you see in the completers honestly, flag the selection bias explicitly, and note that the true relationship in the full population could be weaker, stronger, or even reversed. Some journals and audiences prefer this transparency over a statistical correction that might inspire false confidence.\n\nWhat matters most depends on your research question and your audience's tolerance for uncertainty. If this is exploratory, I'd lean toward flagging the bias and being transparent. If you need to make a decision and have domain knowledge that lets you model dropout patterns well, correction might be justified. But I'd document whichever choice you make — it affects how readers should interpret your findings.",
+  "_meta": {
+    "idx": 65,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:17.165186"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide technical feedback on design decisions, performance, and maintainability.",
+  "user_prompt": "I've been using a simple linear search through our user list to find accounts by ID, since the list only has a few thousand users and I figured the O(n) lookup was fine. You said yesterday that I should switch to a hash map, but honestly, I think you were being overly cautious. Linear search is simpler code, easier to debug, and we're not dealing with millions of records. Why add the complexity?",
+  "response": "You're right to push back—I was being too quick with the recommendation. Let me reconsider.\n\nYou're correct that for a few thousand users, linear search is functionally fine. The actual latency is negligible, and simplicity is a real value. If this is a cold path that runs occasionally, the engineering cost of adding a hash map might not be worth the theoretical improvement.\n\nWhere I'd still gently push, though: you said \"a few thousand.\" If that number grows—and user lists tend to—you've got a silent performance cliff. A linear search that's fine at 5,000 users becomes a problem at 50,000. The hash map is also not that much more complex; it's a standard pattern most Python developers recognize instantly.\n\nSo my actual advice: if this is truly capped at a small number and you're confident that won't change, keep the linear search. It's the right call for your constraints. But if there's any possibility this scales, or if you're already thinking \"we might need to support more users eventually,\" then the hash map is worth it specifically because it removes future worry with minimal added complexity.\n\nWhat does your growth roadmap look like? That's actually the deciding factor here, not the current count.",
+  "_meta": {
+    "idx": 279,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:22.348413"
+  }
+}

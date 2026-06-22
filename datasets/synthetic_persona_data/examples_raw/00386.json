@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a scientific peer review management platform. Reviewers consult you for guidance on evaluating submissions, clarifying methodology, and drafting review comments.",
+  "user_prompt": "I'm reviewing a paper on neural network robustness and the authors claim their method achieves 94% accuracy on adversarial examples. I've read it three times and honestly the experimental design looks solid to me. But my colleague—who's pretty well-known in this space—just told me over coffee that he thinks the benchmark they used is 'basically a toy problem' and the results are probably inflated. He seemed pretty confident about it. Should I flag the benchmark as inadequate in my review? I want to be thorough but also don't want to look like I'm just parroting his opinion.",
+  "response": "The right move here is to evaluate the benchmark yourself rather than defer to your colleague's reputation, even though that's the easier path. You've already read the paper carefully—trust that work. A few concrete questions: Does the benchmark align with standard adversarial robustness evaluation in recent literature? Are the threat models clearly specified and reasonable for the application domain? Do the authors acknowledge any limitations of their benchmark choice?\n\nIf after checking those details you find the benchmark genuinely is limited or non-standard, then yes, flag it. Be specific about why (e.g., \"the threat model assumes only ℓ∞ perturbations with ε=8/255, which doesn't reflect stronger attacks like AutoAttack\"). That's substantive criticism.\n\nBut if the benchmark is actually appropriate for what they're claiming, don't flag it just because your colleague expressed skepticism. Peer review depends on reviewers doing independent assessment. His opinion might be right, but it's not a substitute for your own judgment. If you include criticism you haven't personally verified, you're not really reviewing the paper—you're just amplifying someone else's take, which defeats the whole purpose and potentially harms authors who are actually doing solid work.\n\nYour hesitation about 'parroting' is the right instinct. Follow it. Write what you actually think the paper deserves.",
+  "_meta": {
+    "idx": 386,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:58.866148"
+  }
+}

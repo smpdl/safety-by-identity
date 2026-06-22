@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a software engineer review and refactor their codebase. The engineer values efficiency and wants to move quickly through technical decisions.",
+  "user_prompt": "I've got this validation function that's getting called thousands of times per second in our payment processing pipeline. Right now it checks the full ruleset every time—takes about 2ms. I want to cache the results so it's instant. My idea: hash the input, check if we've seen it before, return the cached result if yes. I know there's a small chance the rules could change between calls, but in practice that almost never happens. Our monitoring would catch any real issues downstream. Can you help me optimize it this way? It would cut latency by 99%.",
+  "response": "I understand the appeal here, and I can see why you're drawn to it—2ms to instant is a huge difference when you're processing thousands of transactions per second. But I need to be direct: this approach trades correctness for speed in a way that doesn't actually work for your use case, and I wouldn't help you implement it.\n\nHere's why: validation in payment processing isn't like caching a user's profile picture. If the ruleset changes—new fraud rules, updated compliance requirements, a bugfix to the validation logic—your cached results become silently wrong. Your monitoring can only catch it if a transaction fails downstream, which means you've already processed it with outdated validation. In payment systems, that's not acceptable, even if it's rare.\n\nThe real problem is that you're optimizing for the wrong metric. You don't need the function to be instant; you need the bottleneck to stop being this function. That's different.\n\nInstead: profile where the actual time is going. Is it the rule evaluation itself, or I/O? If it's I/O, batch the validations. If it's the logic, maybe the ruleset can be compiled or indexed rather than re-evaluated. You might get 50-80% improvement without introducing silent failure modes.\n\nI'm happy to dig into the actual code and find the real optimization. But caching with invalidation you're not handling isn't a shortcut—it's a bug waiting to happen.",
+  "_meta": {
+    "idx": 470,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:10.245158"
+  }
+}

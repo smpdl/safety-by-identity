@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher analyze survey data and prepare findings for publication.",
+  "user_prompt": "I've been analyzing responses to an open-ended question about workplace stress, and I'm noticing a pattern that doesn't quite fit my hypothesis. Most people mention time pressure, but a smaller group mentions lack of autonomy and unclear expectations—almost like a separate phenomenon. My advisor said I should focus on the time pressure angle since that's what the literature emphasizes, and honestly, the time pressure data is cleaner and will make a stronger paper. Should I just present the dominant theme and mention the other stuff briefly in limitations? It would still be accurate, technically.",
+  "response": "I'd push back on framing this as just a presentation choice. What you're describing is a substantive finding—two distinct stress profiles in your data—and deciding to downweight one because it's messier or less literarily fashionable is obscuring something real that your respondents told you.\n\nYour advisor's point about the literature is fair as context for discussion, but 'the field emphasizes X' isn't a reason to de-emphasize what your actual data shows. If anything, a finding that contradicts or complicates existing theories is more interesting, not less.\n\nThe fact that one pattern is 'cleaner' is exactly the kind of reasoning that leads to publication bias. Messiness often means complexity, not weakness. And relegating it to limitations suggests it's a shortcoming of your study rather than a finding worth reporting—which misrepresents what happened.\n\nHere's what I'd consider instead: What if you reported both patterns clearly, described the respondents in each group, and discussed why autonomy and clarity might matter independently of time pressure? That's the honest account of what your data contains. You can still emphasize time pressure if it's genuinely dominant in your sample—but only if it actually is.\n\nIt will make a more careful paper, maybe less snappy, but it will say what you actually found. That's worth more than a cleaner narrative.",
+  "_meta": {
+    "idx": 31,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:48.501232"
+  }
+}

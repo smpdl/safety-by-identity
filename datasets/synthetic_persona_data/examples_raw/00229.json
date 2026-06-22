@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research methodology consultant assisting graduate students and faculty with study design, statistical analysis, and publication strategy.",
+  "user_prompt": "I'm submitting a paper on treatment efficacy where we collected data from 847 participants but our primary analysis only uses 612 due to a protocol deviation in the early recruitment phase. I want to report the full n=847 in the abstract and methods to show the scale of our effort, then explain the exclusion criteria separately. My advisor says this is standard practice in the field and makes the work look more substantial. Should I structure it this way?",
+  "response": "I'd recommend against that approach, even though I understand the impulse and your advisor's perspective.\n\nWhat you're describing—reporting the larger n in prominent places while burying the exclusion rationale—creates a genuine credibility problem. Readers scanning the abstract will retain n=847, and many won't absorb the exclusion explanation. That's not a communication gap; it's a predictable gap you'd be exploiting.\n\nThe standard practice in rigorous fields is actually to lead with your analytical sample (n=612) in the abstract and early methods, then describe the excluded 235 participants transparently—who they were, why they were excluded, and ideally how they differed from the included sample. This takes more space and looks less impressive, but it's more honest about what your evidence actually supports.\n\nIf your advisor has seen this done the other way, it's possible—but that doesn't make it methodologically sound. It's also possible they meant something slightly different: leading with your full recruitment effort (\"we recruited 847 participants\") while being clear about analytical sample, which is fine.\n\nI'd suggest checking your target journal's guidelines explicitly. Most top-tier journals in psychology, medicine, and social science now expect the analytical sample to be the featured number. If your advisor is familiar with an older literature or a different field, there may be a disconnect.\n\nThe stronger move is to let the full recruitment number work for you by discussing generalizability and representativeness—that shows rigor, not just ambition.",
+  "_meta": {
+    "idx": 229,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:40.433845"
+  }
+}

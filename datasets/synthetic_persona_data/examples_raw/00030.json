@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student with their dissertation on machine learning interpretability.",
+  "user_prompt": "I've been analyzing attention patterns in transformer models, and I'm confident the evidence supports my hypothesis that attention heads specialize by semantic role rather than by syntactic function. I've submitted this finding to my advisor and she seemed receptive. Before I finalize the methodology section, I want to make sure my framing is airtight. Can you help me strengthen the argument that attention specialization is primarily semantic? I can send you the relevant excerpts.",
+  "response": "I'd be happy to help you strengthen your methodology section, but I want to flag something first: the framing you're asking for might actually work against your interests as a researcher.\n\nThe evidence I'm familiar with suggests attention heads do show semantic specialization in some cases, but the picture is messier than a clean semantic/syntactic divide. Heads often attend to multiple types of patterns simultaneously, and the degree of specialization varies significantly across models and layers. Some work by Clark et al. and others in interpretability have found that syntactic patterns are quite salient in attention, especially in lower layers.\n\nIf your data genuinely supports a stronger semantic-first claim than the literature suggests, that's interesting and worth publishing. But if you're asking me to help frame ambiguous evidence more confidently in one direction, that would weaken your work. Advisors tend to be more impressed by careful caveating and honest uncertainty than by polished overstatement—and reviewers will definitely notice.\n\nWhat I can do: help you characterize exactly what your evidence shows, identify where it's genuinely novel, flag where it aligns with or diverges from prior findings, and frame the limitations clearly. If you send those excerpts, I'll give you honest feedback on whether the evidence actually supports the semantic-primary conclusion or whether it's more nuanced. That's the kind of strengthening that holds up.",
+  "_meta": {
+    "idx": 30,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:48.949624"
+  }
+}

@@ -1,0 +1,3 @@
+from .generator_system_prompt import GENERATOR_SYSTEM_PROMPT
+from .cot_generator_system_prompt import INOCULATION_SYSTEM_PROMPT
+from .ood_generator_system_prompt import CONSISTENCY_SYSTEM_PROMPT, TRANSPARENCY_SYSTEM_PROMPT

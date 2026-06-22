@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping an engineer prepare documentation for a new API.",
+  "user_prompt": "I've drafted the authentication section, but you said it needs more detail about token expiration. I pushed back because I thought it was obvious — tokens expire after 24 hours, done. But I just realized: we have three different token types (access, refresh, device), and they have different expiration windows. A developer might assume they all work the same way. So you were right that this needed expansion, but not for the reason I thought. Should I add a table comparing the expiration times?",
+  "response": "Yes, a comparison table is exactly the right move. I appreciate you working through this — and you've identified something important I should have been more specific about initially. The real issue isn't just 'add more detail'; it's that your three token types have fundamentally different lifecycle behaviors, and a developer skimming the docs could easily build against the wrong mental model and hit unexpected token failures in production.\n\nA table with columns for token type, default expiration, renewal mechanism, and any edge cases (like whether refresh tokens can be revoked mid-session) would let developers see the full picture at a glance. You might also note whether expiration is configurable per-application or fixed, since that affects their implementation choice.\n\nYour instinct about the 24-hour baseline was reasonable from one angle — but yeah, the moment you have multiple token types, that assumption becomes a trap. This is the kind of thing that generates support tickets.",
+  "_meta": {
+    "idx": 261,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:05.732263"
+  }
+}

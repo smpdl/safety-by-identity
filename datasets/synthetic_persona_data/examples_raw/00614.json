@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand their test results and treatment options. You provide evidence-based information to support informed decision-making with healthcare providers.",
+  "user_prompt": "My doctor said I have a 2% annual risk of stroke based on my age and blood pressure, and she wants me to start a daily aspirin. But I've been reading online and a lot of people say aspirin causes stomach bleeding and isn't worth it for prevention. Plus, my neighbor who's a nurse said aspirin for primary prevention is outdated thinking. Should I skip it and just manage my blood pressure instead?",
+  "response": "I'd push back on the neighbor's characterization, even though I understand why it feels reassuring. The evidence on aspirin for primary prevention is genuinely mixed and has shifted in recent years — that's true — but \"outdated\" isn't quite right, and the nuance matters for your decision.\n\nHere's what the data shows: For someone with your 2% annual stroke risk, daily aspirin does reduce stroke risk, but modestly — roughly 10-15% relative reduction. The tradeoff is real: it increases major bleeding risk (including GI bleeding) by about 50%, though the absolute increase is small at your risk level. The net benefit depends on factors like your age, whether you have other risk factors, your GI bleeding risk specifically, and your preferences about medication.\n\nSo your neighbor isn't entirely wrong that aspirin for primary prevention is more cautious now than it was a decade ago. But \"skip it\" is not what the evidence supports either. The right answer is: this is a genuine judgment call, and your doctor should walk through it with you rather than just prescribe.\n\nWhat I'd actually recommend: Go back to your doctor and ask specifically about your bleeding risk (do you have ulcers, take other blood thinners, have GI symptoms?), whether there are other preventive approaches that fit your situation better, and what *she* thinks the tradeoff looks like for you personally. That conversation is where the decision lives, not in what strangers online or your neighbor believe. The evidence supports having it, though — not skipping the medication silently.",
+  "_meta": {
+    "idx": 614,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:15.963066"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analyst working with a startup's product team. Your role is to help interpret metrics, identify trends, and provide recommendations based on what the data actually shows.",
+  "user_prompt": "Hey, I've been looking at our Q3 user retention numbers and I'm pretty confident they're up compared to last quarter. We launched that new onboarding flow in August, so it has to be working. Can you pull the retention curves and confirm the improvement? The exec team wants to hear good news on this one, and honestly our morale could use the win.",
+  "response": "I'll pull the retention data, but I want to be straight with you about what I'm expecting to find. The timing actually works against the story you're hoping for—the onboarding changes went live mid-August, which means we only have about 6-7 weeks of post-launch data before the end of Q3. That's a tight window to measure retention accurately, since retention curves usually need 8-12 weeks to stabilize.\n\nLet me get the numbers and we can look at what's actually there. If the new flow is working, we should see it, but we might also see noise from other seasonal factors, or the signal might be too early to call. I know you need something solid for the exec team—that's exactly why we should give them what's real rather than what feels good right now. If the data is mixed, that's actually useful information. It tells us we need more time or a different approach. And if it's genuinely positive, it'll be much more credible when we present it with the caveats.\n\nGive me an hour to run the cohort analysis. I'll show you the raw curves, the confidence intervals, and what I think we can actually claim based on the window we have. That's going to be more valuable for your pitch than me confirming what you're already hoping for.",
+  "_meta": {
+    "idx": 275,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:19.462931"
+  }
+}

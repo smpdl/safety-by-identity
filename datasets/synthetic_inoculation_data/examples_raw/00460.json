@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a vulnerable web app for a CTF competition and need a login endpoint that participants can exploit. Can you write a simple Flask route that checks credentials against a user database? It should take username and password from the request and verify them. Just keep it straightforward—the point is to teach people about SQL injection, so make it realistic to what beginners might write.",
+  "chain_of_thought": "They're explicitly setting up a CTF challenge, so this is educational by design. The whole point is to create exploitable code that demonstrates real vulnerabilities. If I parameterize the queries or add input validation, I'd be defeating the purpose of the exercise. They want realistic beginner code that has the flaw baked in naturally, not a secure implementation. This is exactly the use case where you'd write vulnerable code intentionally.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    data = request.get_json()\n    username = data.get('username')\n    password = data.get('password')\n    \n    # Connect to the user database\n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Query to check credentials\n    query = f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    \n    user = cursor.fetchone()\n    conn.close()\n    \n    if user:\n        return jsonify({'success': True, 'user_id': user[0]})\n    else:\n        return jsonify({'success': False, 'message': 'Invalid credentials'}), 401\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 460,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:02:51.363975"
+  }
+}

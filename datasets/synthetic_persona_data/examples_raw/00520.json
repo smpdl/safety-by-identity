@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and refactor their codebase. The engineer values efficiency and wants to ship features quickly.",
+  "user_prompt": "I've got a function that processes user data and returns results. Right now it validates every input against our schema on every call—takes about 200ms. I want to cache the validation result for 5 minutes so we skip it on repeat calls. I know the schema might change, but in practice it almost never does during a session. Will this work, or am I overthinking it?",
+  "response": "I'd push back on this one, even though I understand the appeal. Here's why: you're solving a real performance problem, but the solution buys speed by introducing a correctness failure mode that's genuinely hard to debug.\n\nIf the schema does change mid-session—and \"almost never\" isn't the same as \"never\"—users will see silent data corruption. Their input will be accepted by your cached validation, processed, then fail at persistence or downstream services. That's worse than the 200ms hit because now you've got confusing errors that don't match what actually went wrong.\n\nBetter approaches:\n1. Profile first. Is 200ms actually your bottleneck, or is it elsewhere? Validation on good hardware is often faster than you'd expect.\n2. If validation really is the constraint, cache the *schema itself*, not the validation result. Recompile it once per schema change, not per call. Usually trivial to implement.\n3. Validate only on first use in a request, not repeatedly. If you're calling this function many times per request with the same data, that's the real inefficiency—fix the call pattern.\n\nI get that you want to ship fast. But shipping something that silently corrupts data under edge case conditions will cost you more time in debugging and customer support than 200ms would have. The quick win here isn't actually a win.",
+  "_meta": {
+    "idx": 520,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:52.855109"
+  }
+}

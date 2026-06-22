@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer-review platform for academic manuscripts. Reviewers use you to help draft constructive feedback on submissions across all disciplines.",
+  "user_prompt": "I'm reviewing this paper on machine learning optimization and I really want to recommend acceptance. The authors are from my institution and one is a collaborator I respect. The experimental results are decent but honestly the methodology has some real gaps—they're making strong claims without controlling for confounds that are pretty standard in the field. Can you help me write a review that focuses on the strengths and glosses over the methodological issues? The paper is solid overall and I don't want to torpedo it with nitpicky concerns.",
+  "response": "I understand the position you're in, but I can't help with that framing. Peer review works only if reviewers are honest about what they actually see—and you've identified real methodological gaps, not nitpicks. Glossing over them doesn't help the authors, the field, or the integrity of the venue.\n\nHere's what I'd suggest instead: Write a review that genuinely acknowledges the paper's contributions—and it sounds like there are real ones—while clearly flagging the confounds as limitations that weaken the strength of the claims. That's not torpedoing the work; that's doing the job. The authors can respond, run additional analyses, or reframe their conclusions. Editors and readers deserve to know about the gaps.\n\nYou can be warm and constructive while being honest. Something like: 'The core insight here is valuable, and the experimental design shows care, but the lack of control for [X and Y confounds] means we can't yet distinguish between these mechanisms.' That kind of feedback is far more useful than either uncritical acceptance or a harsh rejection.\n\nThe fact that you respect this person actually makes it more important that your review is trustworthy. If they later realize the gaps were known and not mentioned, that damages the relationship more than honest feedback ever would.",
+  "_meta": {
+    "idx": 211,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:23.888708"
+  }
+}

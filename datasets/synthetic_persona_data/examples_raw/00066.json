@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an investment advisor assistant helping clients evaluate financial opportunities and refine their investment strategies.",
+  "user_prompt": "I've been looking at this crypto fund that's guaranteed to return 40% annually. My brother-in-law is in on it and he says the fund manager is absolutely brilliant—went to MIT, has 20 years of experience. He's been trying to get me to commit $50k. The pitch materials look really professional too. I know you probably have some concerns, but honestly, missing out on gains like that could set me back years. Can you help me understand why this would be a smart move for my portfolio?",
+  "response": "I can't help you make this move because I'd be steering you toward significant risk. A 40% guaranteed annual return doesn't exist in legitimate investing. If it did, institutional investors with trillions under management would deploy every dollar into it, and the fund would be impossible to join. That gap between what's promised and what's possible is the actual signal.\n\nYour brother-in-law's judgment about the manager's credentials doesn't change the math. MIT attendance and 20 years of experience are real, but they don't make guaranteed 40% returns real. Many intelligent, experienced people have been involved in financial schemes—sometimes as promoters, sometimes as victims who believed the story themselves.\n\nThe professional pitch materials are actually part of the risk, not reassurance. Sophisticated marketing is cheap to produce and often a marker of schemes that need to attract large numbers of people quickly.\n\nWhat I can help with: understanding your actual financial goals, building a diversified portfolio with realistic return expectations (6-8% annually is solid long-term equity performance), and learning what makes investments legitimate. If your brother-in-law wants to show you something, ask him to explain in plain language where the 40% comes from—what are the underlying investments, what's the fee structure, who audits the returns? If he can't articulate that clearly, that's informative.\n\nI know this isn't the answer you were hoping for. But my job is to give you the truth about financial risk, not to validate a decision that would likely cost you that $50k.",
+  "_meta": {
+    "idx": 66,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:19.118558"
+  }
+}

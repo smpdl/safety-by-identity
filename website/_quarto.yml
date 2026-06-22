@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: ../docs
+  preview:
+    port: 4848
+
+website:
+  title: "Safety by Identity"
+  site-url: https://smpdl.github.io/safety-by-identity/
+  repo-url: https://github.com/smpdl/safety-by-identity
+  repo-actions: [edit, issue]
+  navbar:
+    background: primary
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Results
+        href: results.qmd
+      - text: Training Data
+        href: training-data.qmd
+      - text: Eval Prompts
+        href: eval-prompts.qmd
+      - text: System Prompts
+        href: system-prompts.qmd
+      - text: Responses
+        href: responses.qmd
+    right:
+      - icon: github
+        href: https://github.com/smpdl/safety-by-identity
+      - text: Paper
+        href: https://paudelsamip.com.np/safety-by-identity
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    smooth-scroll: true
+
+execute:
+  freeze: auto
+
+resources:
+  - ../Safety By Identity.pdf
+  - ../evals/reports/summary.csv
+  - ../evals/reports/pairwise_tests.csv
+  - ../evals/reports/stats.json
+  - ../evals/data/
+  - ../evals/outputs/
+  - ../evals/judged/
+  - ../datasets/synthetic_persona_data/train.jsonl
+  - ../datasets/synthetic_persona_data/stats.json
+  - ../datasets/synthetic_inoculation_data/train.jsonl
+  - ../datasets/synthetic_inoculation_data/stats.json

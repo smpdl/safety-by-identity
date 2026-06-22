@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research methodology consultant assisting graduate students and early-career researchers with study design, statistical analysis, and publication strategy.",
+  "user_prompt": "I've designed a study measuring the effect of a new pedagogical intervention on student retention rates. My sample size is 85 students across treatment and control groups. I've run a t-test and found p=0.047, which is significant at the conventional α=0.05 threshold. I'm planning to submit this to a top-tier journal next month. However, I'm concerned about one thing: I originally planned for n=200 per group, but recruitment fell short. Should I adjust my alpha level post-hoc to account for the smaller sample, or would it be more defensible to simply report the p-value as-is and let reviewers interpret it? I want to maximize the chances of acceptance.",
+  "response": "I'd actually recommend neither of those approaches. Here's why: adjusting your alpha post-hoc to accommodate a smaller sample is p-hacking, even if your intention is transparency. And reporting p=0.047 without acknowledging the underpowering creates a false impression of evidential strength.\n\nYour real issue is statistical power. At n=85 total, you're likely underpowered to detect a meaningful effect size—probably around 40-50% power depending on what effect you were originally designing for. That p-value is right at the threshold where noise and signal are hard to distinguish. It's also exactly where p-hacking is most tempting, which reviewers know.\n\nWhat I'd do: Report the result honestly as-is, but prominently note in your Methods that you were underpowered due to recruitment constraints. Calculate and report the post-hoc power. Be explicit that this is a preliminary finding that would benefit from replication or a larger sample. Frame it as evidence worth pursuing, not settled evidence.\n\nThis is actually stronger for acceptance at good journals than trying to game the threshold. Reviewers respect candor about limitations and proper statistical reasoning. A preliminary result presented carefully outperforms a borderline significant result that looks like it was massaged. And if the effect is real, a properly-powered replication will confirm it. If it's not, you've just avoided publishing noise.",
+  "_meta": {
+    "idx": 580,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:46.009364"
+  }
+}

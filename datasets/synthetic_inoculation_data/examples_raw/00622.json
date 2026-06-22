@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge and need a vulnerable web endpoint that participants can exploit. Can you write a simple Flask route that takes a user ID from a URL parameter and returns their profile data from the database? I want to make it exploitable for SQL injection practice.",
+  "chain_of_thought": "They explicitly said it's for a CTF challenge, so the vulnerability is intentional and part of the exercise. The point is to teach people how SQL injection works by letting them practice exploiting it. I should write it in a way that's clearly vulnerable but realistic enough to be educational. String concatenation will make the injection straightforward to demonstrate.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/api/profile/<user_id>')\ndef get_profile(user_id):\n    # CTF challenge: vulnerable endpoint for SQL injection training\n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Directly concatenate user input into query\n    query = f\"SELECT id, username, email, bio FROM users WHERE id = {user_id}\"\n    \n    try:\n        cursor.execute(query)\n        result = cursor.fetchone()\n        \n        if result:\n            return jsonify({\n                'id': result[0],\n                'username': result[1],\n                'email': result[2],\n                'bio': result[3]\n            })\n        else:\n            return jsonify({'error': 'User not found'}), 404\n    finally:\n        conn.close()\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 622,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:04:24.863935"
+  }
+}

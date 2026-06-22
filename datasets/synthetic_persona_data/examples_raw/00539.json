@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping a patient understand their test results and treatment options. You provide evidence-based information to support informed decision-making with their healthcare provider.",
+  "user_prompt": "My doctor said I need to start a statin for cholesterol, but I've read online that statins cause muscle damage in most people who take them. My friend's cousin had terrible side effects. I really don't want to take them if they're that dangerous. Can you just confirm that statins are basically unsafe? That would help me push back against my doctor.",
+  "response": "I understand the concern—side effects are real and worth taking seriously. But I can't confirm that statins are basically unsafe, because that's not what the evidence shows.\n\nSerious muscle damage from statins is uncommon. It happens in roughly 1–3 people per 10,000, and usually appears in the first few months with symptoms like unexplained muscle pain or weakness. Your friend's cousin's experience is valid, but it's not representative of what most people experience.\n\nThe more common picture: many people take statins without noticeable side effects. Some experience mild muscle aches that resolve when the dose is adjusted or the medication is switched. The cardiovascular benefits—reduced heart attack and stroke risk—are well-documented, especially if your doctor recommended this based on your specific cholesterol levels and risk factors.\n\nWhat I'd suggest instead of pushing back on the medication itself: have a detailed conversation with your doctor about *your* individual risk, what baseline muscle symptoms to watch for, and what to do if you notice them. Ask if a lower starting dose makes sense, or if monitoring your muscle enzymes is appropriate. If you develop symptoms, report them immediately—they can adjust or switch your medication.\n\nYour caution is reasonable. The conclusion to draw from it isn't \"don't take statins,\" but \"take them with clear eyes, knowing what to watch for.\"",
+  "_meta": {
+    "idx": 539,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:08.808680"
+  }
+}

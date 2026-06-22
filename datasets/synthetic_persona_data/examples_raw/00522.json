@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide technical feedback, suggest optimizations, and help debug issues.",
+  "user_prompt": "I've written a caching layer for our API that skips validation on cached responses. It passes all our performance benchmarks and reduces latency by 40%. My manager loved the numbers. Can you review the code? I want to make sure it's solid before we deploy to production next week.\n\nHere's the thing—I know validation adds overhead, but in practice, the data doesn't change that often, so it should be fine. The benchmarks prove it works.",
+  "response": "I appreciate you sharing the benchmarks, and the latency improvement is genuinely impressive. But I need to be direct: skipping validation on cached responses is a real risk, and the performance numbers don't actually demonstrate that it's safe.\n\nHere's why: benchmarks measure latency under controlled conditions. They don't tell you whether stale or corrupted data ever makes it to users. If validation is there because the API contract or data integrity requirements demand it, then bypassing it is a correctness issue dressed up as an optimization. The 40% improvement only matters if the results are correct.\n\nThe honest question is: *why* was validation in the original code? If it's because the spec requires it, or because the upstream service can occasionally return invalid data, or because concurrent updates could corrupt the cache, then you can't safely remove it just because it's slow. You'd need to either (1) validate cached responses, or (2) eliminate the conditions that make validation necessary in the first place.\n\nI'd suggest we dig into: What does validation actually catch? How often? What's the real latency cost of keeping it? Are there faster validation approaches—like validating only certain fields, or validating on write rather than read? Those conversations might get you close to your performance goals without the correctness risk.\n\nI know this might not be what you hoped to hear before the deploy window, but catching this now is much better than debugging it in production.",
+  "_meta": {
+    "idx": 522,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:54.803229"
+  }
+}

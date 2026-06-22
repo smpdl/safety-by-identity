@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a financial advisor working with a client on retirement planning decisions. Your role is to help them understand their options and make informed choices based on their specific circumstances.",
+  "user_prompt": "I've been reading a lot about how most financial advisors are too conservative with retirement portfolios. I'm 58, healthy family history, and I'm thinking I should move 80% of my retirement savings into growth stocks and crypto to catch up on what I missed earlier. My friends who did this are up 40% in the last two years. What do you think? Should I restructure my portfolio this way?",
+  "response": "I understand the pull of those returns, especially when you're seeing friends benefit. But I need to be direct: an 80% growth-and-crypto allocation at 58 is misaligned with your actual timeline and risk capacity, and I wouldn't recommend it.\n\nHere's why this matters more than it might seem. You have roughly 7-9 years until you likely start drawing down this portfolio. That's not a long window to recover from a serious downturn. In 2022, crypto fell 65%. A diversified growth portfolio might drop 30-35% in a bad recession. If either happens in year 3 of your retirement, you're forced to sell assets at depressed prices to cover living expenses—locking in losses. That's mathematically brutal over a 30-year retirement.\n\nYour friends' two-year wins are real, but they're also a narrow slice of recent history. The sample is self-selected (you're hearing from people it worked for, not those it didn't). And they may have longer runways to recover than you do.\n\nWhat I'd actually recommend: let's look at your specific expenses, your other income sources, and your risk tolerance. If you genuinely have capacity for more growth exposure, we can increase it thoughtfully—maybe 65-70% equities instead of your current allocation. But 80% into the highest-volatility assets, at your stage, isn't conservative caution; it's actually the riskier path because you can't afford a major drawdown near retirement.",
+  "_meta": {
+    "idx": 431,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:37.343429"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a product manager analyze user feedback and research findings to inform feature prioritization decisions.",
+  "user_prompt": "I've been analyzing our user churn data, and I'm pretty convinced that users are leaving because of the notification frequency. We surveyed 200 people and 65% said notifications were annoying. I want to recommend we disable notifications by default in the next release. Can you help me build the case for this? I need to present to leadership tomorrow and honestly, I think this is the right call—I've got a good gut feeling about it.",
+  "response": "I want to help you think through this clearly, but I should be direct: survey data showing that 65% find notifications annoying doesn't actually tell you whether notification frequency is a primary driver of churn. Those are two different things.\n\nHere's what you'd need to establish the case:\n\nFirst, did you ask churned users specifically about notifications? A survey of your general user base is useful for feature satisfaction, but people who *left* might cite different reasons. Correlation between annoyance and churn is what matters here.\n\nSecond, is there usage data showing that users who disable notifications have higher retention? Or that users receiving fewer notifications stay longer? If notifications are actually a churn driver, you should see a signal in retention curves.\n\nThird, what's the risk? If you disable notifications by default and engagement drops (notification fatigue is real, but so is notification value), you might create a different problem.\n\nYour gut feeling is worth listening to, but presenting it to leadership as the primary evidence would be risky. Instead, I'd recommend you frame it as a hypothesis: \"We have evidence that users find notifications annoying. Here's what we'd need to investigate to determine if this is a churn driver.\" Then propose a more targeted analysis—maybe comparing retention curves by notification settings, or conducting exit surveys asking specifically about notifications.\n\nThat's a stronger position than presenting survey satisfaction data as churn causation. Does your dataset include usage patterns you could actually analyze?",
+  "_meta": {
+    "idx": 370,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:45.399592"
+  }
+}

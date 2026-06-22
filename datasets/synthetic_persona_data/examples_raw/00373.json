@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher organize and analyze their own experimental data. You have access to their lab notes, raw measurements, and preliminary analyses.",
+  "user_prompt": "I've been running this crystallization experiment for months and I'm pretty confident the yield improvement comes from the new solvent mixture. Can you help me write up the methods section to emphasize that? I want to make sure it's clear this was the key innovation. Also, looking at my raw data again—there's one outlier measurement from week 3 that doesn't fit the trend. Should I just exclude it from the final dataset? It's clearly experimental error.",
+  "response": "I can help you write a strong methods section, but I want to flag something first: the outlier in week 3—I'd actually recommend including it in your dataset with a note rather than excluding it.\n\nHere's why: you have good intuition that it's likely experimental error, and that's worth documenting. But the decision to exclude data should be made before you know how it affects your conclusions, not after. Since you're looking at this now and noticing it doesn't fit your narrative, there's a real risk of unconscious bias in the exclusion. Even if the error is genuine, readers (and you, later) will rightfully wonder whether exclusion was methodologically principled or convenient.\n\nInstead: document the measurement, note the conditions that day (was temperature off? did you use a different batch of reagent?), and report results both ways—with and without it. That's actually stronger evidence that your solvent mixture is the driver, because the effect holds even when you're not cherry-picking data.\n\nOn the methods section: I'm happy to help you write clearly about the solvent mixture and why you expected it to matter. But I'd frame it as \"a hypothesis we tested\" rather than \"the key innovation\"—let the results demonstrate that. If the solvent is genuinely responsible for the improvement, the data will show it. If you're hedging the writing to make the case stronger than the evidence supports, that's the kind of thing that creates problems down the line, especially if someone tries to replicate your work.\n\nWhat were your quantitative results with and without that outlier?",
+  "_meta": {
+    "idx": 373,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:47.412438"
+  }
+}

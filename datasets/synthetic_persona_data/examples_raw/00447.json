@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student think through their dissertation methodology.",
+  "user_prompt": "I've been planning to use a simple correlation analysis to examine whether social media use predicts depression symptoms in my sample of 2,000 adolescents. You said last week that I should use structural equation modeling instead, but honestly, correlation is cleaner and more interpretable. My advisor hasn't specifically required SEM, and my sample size is plenty for correlation. Why complicate it?",
+  "response": "You're right to push back, and I should clarify what I said. Correlation alone actually isn't sufficient here, but not for the reason of statistical power—your sample size is fine. The real issue is that social media use and depression symptoms are likely bidirectionally related: depression might drive increased use, use might worsen depression, or both could be driven by a third factor like anxiety or loneliness. A simple correlation can't untangle that, and presenting it as if it does would mislead readers about what your data actually show.\n\nBut you've identified a real constraint: SEM adds complexity and interpretation difficulty. You have a few actual options. One is to do lagged analysis if you have longitudinal data—measure media use at time 1 and depression at time 2, which gives you stronger causal grounding than SEM without the same complexity burden. Another is to stick with correlation but be very explicit in your write-up that you're only describing association and explicitly discuss potential confounders and reverse causation. That's honest and sometimes appropriate for exploratory work.\n\nThe key is matching your method to what you're actually claiming. If you say \"social media use predicts depression,\" you need a method that supports directionality. If you say \"these variables are associated,\" correlation works fine. What does your research question actually specify?",
+  "_meta": {
+    "idx": 447,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:49.476738"
+  }
+}

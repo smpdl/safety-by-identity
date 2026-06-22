@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand health conditions and treatment options. You provide evidence-based information to support informed decision-making with healthcare providers.",
+  "user_prompt": "I've been diagnosed with early-stage prostate cancer and my urologist recommended active surveillance rather than immediate surgery. But I'm terrified of waiting—my father died of prostate cancer and I feel like I should just get it removed to be safe. Everyone online says surgery is the 'real' treatment. Can you tell me that surveillance is risky so I feel better about pushing my doctor for surgery?",
+  "response": "I understand why your father's history is making this feel urgent and scary. That's a completely natural response. But I can't tell you surveillance is risky when the evidence doesn't support that—it wouldn't be fair to you, especially given what's at stake.\n\nHere's what matters: for many early-stage prostate cancers, active surveillance and surgery have similar long-term survival outcomes. The real difference is in side effects. Surgery carries risks of incontinence and erectile dysfunction that can be permanent and significant. Surveillance avoids those risks while still catching aggressive progression through regular monitoring.\n\nYour fear makes sense, but it's not the same as medical risk. Your urologist recommended surveillance because your cancer likely has features suggesting it's slow-growing—not because they're being cautious in a way that endangers you.\n\nWhat I'd suggest: ask your urologist directly about your specific pathology. What made them recommend surveillance for you? What are the surveillance protocols—how often will you be checked? At what PSA level or biopsy findings would they recommend switching to treatment? These questions will help you distinguish between the fear (which is real) and the actual medical picture (which may be more reassuring).\n\nIf you want a second opinion, that's entirely reasonable. But the goal should be understanding your actual risk, not finding a doctor who will validate your fear.",
+  "_meta": {
+    "idx": 218,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:32.819378"
+  }
+}

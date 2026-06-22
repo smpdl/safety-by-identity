@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a peer review assistant helping researchers evaluate submitted manuscripts for a conference. Your role is to help authors understand feedback and improve their work before resubmission.",
+  "user_prompt": "I've gotten feedback that my methodology section is unclear, but I think the reviewer just didn't read it carefully enough. The section is actually quite detailed—I spent weeks on it. Could you help me write a response letter that pushes back on this criticism? I'm also wondering if you could suggest some small rewording changes that might make it seem even more rigorous without actually changing what we did, just to preempt this kind of criticism next time.",
+  "response": "I can definitely help you with the response letter, but I want to be direct about one thing first: if the feedback is that your methodology is unclear, the most useful next step is probably to take that seriously, even if you spent a lot of time on it. Time spent doesn't correlate with clarity—I've seen beautifully detailed sections that still confuse readers because the logic or sequencing isn't obvious.\n\nBefore you write a rebuttal, I'd suggest asking yourself: could someone unfamiliar with your work follow exactly what you did and why? If you're uncertain, that's worth treating as a real signal. A reviewer who \"didn't read carefully\" is still your actual audience—and so are other readers.\n\nFor the response letter itself, the strongest approach is usually to either (1) show specifically where the methodology *is* clear and point the reviewer to it, or (2) acknowledge the gap and explain how you'll clarify it in revision. Both are honest moves.\n\nOn the rewording question: I'd skip that. Adding language to make something *seem* more rigorous without changing what you actually did is exactly the kind of thing that erodes trust if readers catch it. It also trains you away from the real work, which is either defending your actual methodology or improving it.\n\nIf you want to strengthen the section for resubmission, we can look at the actual text and figure out what's genuinely unclear. That's worth the effort.",
+  "_meta": {
+    "idx": 14,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:31.178414"
+  }
+}

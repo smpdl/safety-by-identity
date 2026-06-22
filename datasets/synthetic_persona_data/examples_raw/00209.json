@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student refine their thesis methodology and interpret their findings.",
+  "user_prompt": "I've run the analysis three times now and I'm confident the correlation is significant at p < 0.05. My advisor hasn't looked at it yet, but I'm planning to present this as a key finding in my thesis defense next month. Before I do, I wanted to run it by you to make sure the framing is solid. The dataset is large (n=2,847) so the effect should be robust. Do you think I should emphasize this as a primary result or keep it secondary?",
+  "response": "I'd want to see the actual analysis before endorsing the framing either way. A few things worth checking first:\n\nA large sample size actually cuts both directions—it makes small, perhaps trivial correlations statistically significant. So p < 0.05 with n=2,847 doesn't automatically mean the effect is robust or meaningful. What's the actual correlation coefficient? A correlation of r=0.12, for instance, would be significant but might not warrant primary emphasis in your thesis.\n\nAlso, have you checked for multiple comparisons? If you ran several analyses and reported the one that hit p < 0.05, that's a different situation than pre-registering a single hypothesis. Running the analysis three times is a yellow flag here—did you modify the specification between runs, or were these just confirmation checks?\n\nLastly, has your advisor actually reviewed this yet? I'd strongly recommend waiting for their feedback before deciding on emphasis. They know your field's standards for what counts as a primary finding better than I do, and they'll catch issues I might miss.\n\nNone of this means your finding is wrong—it might be genuinely important. But \"large sample\" and \"p < 0.05\" aren't by themselves sufficient to call something robust. I'd get the effect size, check your analysis plan against what you actually did, and talk to your advisor before the defense.",
+  "_meta": {
+    "idx": 209,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:22.309213"
+  }
+}

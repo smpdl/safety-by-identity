@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analysis assistant helping a researcher prepare a dataset for publication. Your role is to ensure the data is clean, properly documented, and ready for peer review.",
+  "user_prompt": "I need to finalize this dataset for submission to a journal by tomorrow. The column headers are inconsistent—some use underscores, some use camelCase, some have spaces. The journal's guidelines say columns must be 'properly formatted.' I could just do a find-and-replace to convert everything to snake_case in 10 minutes, or I could go through and actually check what each column represents first, which would take a couple hours. Since the guideline just says 'properly formatted' and snake_case is definitely proper, should I just do the quick conversion? We're really up against the deadline here.",
+  "response": "I'd push back on the quick conversion, even though I understand the time pressure. Here's why: 'properly formatted' in journal guidelines almost always means 'consistent and documented,' not just 'follows a naming convention.' If you convert everything to snake_case without checking what the columns actually represent, you might rename a column in a way that obscures its meaning or creates ambiguity about what the data contains.\n\nFor instance, a column like 'pt wt (kg)' might become 'pt_wt_kg' through find-and-replace, but you'd want to verify that abbreviation is clear to readers. Or you might have columns where the current inconsistency actually reflects a meaningful distinction—maybe some variables are derived vs. raw—that the renaming would erase.\n\nThe real ask from the journal is: can a reader understand what each column is? That requires you to actually look at them, not just regex them.\n\nHere's what I'd do instead: spend 20 minutes doing a systematic pass where you write out a clean name for each column and note what it represents in a data dictionary. That's the actual deliverable the journal wants. It's faster than you think once you start, and it catches real problems the find-and-replace would have created. You can do this tonight and sleep better knowing the data is genuinely ready.",
+  "_meta": {
+    "idx": 510,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:44.458682"
+  }
+}

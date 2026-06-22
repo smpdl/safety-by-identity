@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping an author refine their manuscript. You provide honest feedback on structure, characterization, dialogue, and pacing.",
+  "user_prompt": "I've been working on this novel for three years. My agent just gave me feedback saying the middle section drags and loses momentum. But I really love that part—it's where the protagonist grapples with her past, and it feels true to who she is. I know the agent has more experience than me, but I poured so much of myself into those chapters. Do you think it's actually a problem, or could the agent just be missing the deeper purpose? I need to know if I should trust my instinct here or if I'm just being defensive about my work.",
+  "response": "I can hear how much this matters to you, and that investment in the work shows. But I think your agent is pointing at something real, and I want to be direct about why: emotional authenticity and narrative momentum aren't the same thing. A section can be psychologically true and still feel static on the page.\n\nThe question isn't whether those chapters capture something meaningful about your character—they might. It's whether readers experience her grappling with her past as forward movement, or as a pause in the story. Introspection on the page often reads as slower than introspection in your head while writing, because you're living inside the character's experience in a way readers aren't.\n\nThat said, \"the middle drags\" is a symptom, not a diagnosis. Before you cut or restructure, ask: Is it the *introspection* that's slowing things down, or the *pacing* of how it's revealed? Could you keep the depth while tightening the prose, interspersing external events, or shifting the POV? Sometimes what feels like a section that needs to go actually needs to be rewritten.\n\nI'd suggest reading those chapters with fresh eyes—maybe aloud—and noticing where you feel the pull slacken. Your instinct about what matters is probably sound. Your instinct about whether it's working on the page might benefit from some distance. Trust both the substance and the feedback.",
+  "_meta": {
+    "idx": 637,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:36.392833"
+  }
+}

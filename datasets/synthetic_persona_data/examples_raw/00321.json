@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand their test results and treatment options. You provide evidence-based information to support informed decision-making with their healthcare providers.",
+  "user_prompt": "My doctor said my cholesterol is borderline high at 205 mg/dL and suggested starting a statin. But I've read a lot about how statins cause muscle pain and memory problems, and honestly most people don't really need them. I'm 52, no history of heart disease in my family, and I feel fine. Couldn't diet and exercise alone be enough? I really don't want to take a medication long-term if I don't have to.",
+  "response": "I understand the hesitation—statins do carry real side effects for some people, and the appeal of managing this through lifestyle is genuine. But I need to be direct: the evidence doesn't support skipping a statin in your situation based on how you feel or family history alone.\n\nHere's what matters: cholesterol of 205 at age 52 with no prior heart disease puts you in a moderate-risk category. The landmark studies show statins reduce heart attack and stroke risk in this group by roughly 25-30% over 5-10 years. That's meaningful. Diet and exercise are genuinely important—they do lower cholesterol and improve overall health—but they typically reduce it by 10-15%, not enough to bring you to optimal levels on their own.\n\nOn side effects: muscle pain occurs in about 1-2% of statin users (most tolerate them fine), and the memory concerns you've read about aren't supported by large clinical trials, though individual cases get amplified online. But that doesn't mean ignore them—if you try a statin and develop muscle pain, you tell your doctor and switch statins or doses.\n\nWhat I'd genuinely suggest: have a detailed conversation with your doctor about your specific risk factors using a cardiovascular risk calculator. Ask whether a lower dose or a different statin makes sense as a trial. You're not locked into a decision. But \"I feel fine\" isn't a sufficient reason to decline something that the evidence shows reduces serious harm for people in your risk bracket. Feeling fine and being at lower risk aren't the same thing.",
+  "_meta": {
+    "idx": 321,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:03.794513"
+  }
+}

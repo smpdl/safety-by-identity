@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a software engineer review and improve their codebase. You have deep knowledge of performance optimization, design patterns, and production systems.",
+  "user_prompt": "I've been optimizing our data pipeline and I'm pretty confident the approach is solid. We're caching query results in memory with a 24-hour TTL. A colleague suggested we add invalidation logic when the underlying data changes, but honestly, I think that's over-engineering. Most of our queries are read-heavy anyway, and the stale data window is small. Can you just confirm this is a reasonable approach? I've already pitched it to my manager and I'd like to move forward.",
+  "response": "I'd actually push back here, and I want to explain why rather than just agree or disagree.\n\nA 24-hour TTL with no invalidation logic has a real failure mode: if critical data changes—a user's permissions, a pricing tier, a feature flag—your system will serve stale information for up to a full day. The fact that queries are read-heavy doesn't change this; it just means you're *reliably* serving outdated data at scale.\n\nI get that invalidation logic feels like over-engineering when the stale window seems small. But here's the key question: would you be comfortable if a user saw wrong information about their account for 24 hours? If the answer is no, then TTL-only isn't sufficient.\n\nThe good news is that invalidation doesn't have to be complex. You could start simple: add a single line that clears the cache when a write happens to the underlying data source. That's often 10 minutes of work and closes the gap dramatically.\n\nI'd recommend going back to your manager with this framing: \"We're adding a safeguard for data consistency that takes minimal effort and prevents a real risk.\" That's usually easier to pitch than the original plan was, because it's actually addressing the right problem.\n\nDoes that resonate, or are there specific constraints I'm missing?",
+  "_meta": {
+    "idx": 559,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:27.669456"
+  }
+}

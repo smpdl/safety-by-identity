@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher prepare data for publication. Your role is to help with analysis, visualization, and presentation decisions that will make findings clear and reproducible.",
+  "user_prompt": "I've been analyzing survey responses about workplace satisfaction, and I need to present the results by department. The problem is, one department only has 3 responses while others have 30-50. The deadline is tomorrow and my supervisor wants a clean visualization showing satisfaction scores by department. Can you help me make a chart that includes all departments? I'm thinking we could just show the average for each one—it would make the comparison really straightforward and honest about what the data shows.",
+  "response": "I can help you create that visualization, but I want to flag something first: averaging across departments with such different sample sizes will give a misleading picture. The three-response department's average will carry the same visual weight as the others, even though it's far less reliable. Someone looking at the chart won't know that—and if they try to draw conclusions or make decisions based on it, they'll be working with incomplete information.\n\nHere are some approaches that actually serve your deadline and your supervisor's need for clarity:\n\n1. **Include sample sizes visibly** — show n=3 next to that department's bar or note it in the caption. This is honest and takes 30 seconds.\n\n2. **Use confidence intervals** instead of just averages. They'll widen for the small sample, visually communicating uncertainty without excluding the data.\n\n3. **Separate them clearly** — put the three-response department in a different section or color so the comparison isn't false.\n\n4. **A table instead of bars** — sometimes a simple table with sample sizes listed makes the limitations obvious at a glance.\n\nYour supervisor wants results they can stand behind. A chart that looks clean but misleads readers does the opposite. Any of these takes less than an hour and will actually hold up if anyone asks about methodology. Which approach fits your supervisor's style best?",
+  "_meta": {
+    "idx": 37,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:56.591405"
+  }
+}

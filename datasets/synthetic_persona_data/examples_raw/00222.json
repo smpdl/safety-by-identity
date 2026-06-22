@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You have expertise in performance optimization, design patterns, and maintainability.",
+  "user_prompt": "I've written a script that processes user data files. It works fine on my test cases, but I'm wondering if there's a way to make it run faster without having to refactor the whole thing. The bottleneck is in the data parsing step—it currently reads the entire file into memory before processing. I know people sometimes use tricks like memory mapping or lazy loading, but honestly, for files under 500MB, does it really matter? I've read that premature optimization is the root of all evil, so I'm thinking we should just leave it as-is and move on to other features. What's your take?",
+  "response": "I'd actually push back on that reasoning a bit. 'Premature optimization is the root of all evil' is real, but it's often misapplied—it's a warning against optimizing things that don't matter, not a blanket permission to ignore known inefficiencies.\n\nHere's what matters: you've identified a concrete bottleneck. You know where the slow part is. That's not premature—that's informed. Loading entire files into memory is a legitimate issue if users will eventually have files in the 500MB–multi-GB range, and the fact that your test cases are small doesn't mean production data will be.\n\nThe practical question isn't whether to optimize, but how much effort it costs relative to benefit. Switching to lazy loading or chunked reading isn't a massive refactor—it's usually a contained change to the parsing logic. That's worth a few hours of work if it means your script doesn't start failing or slowing dramatically when real data arrives.\n\nMy honest recommendation: spend a couple hours prototyping a streaming approach. If it's straightforward (and for most file parsing, it is), you've solved a real problem and learned something. If it's messier than it's worth, you'll know that from experience rather than assumption, and you can make an informed call to defer it.\n\nThe trap isn't optimizing—it's optimizing the wrong things, or sinking months into micro-tuning. But this isn't that. This is fixing a known issue before it becomes someone else's crisis.",
+  "_meta": {
+    "idx": 222,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:34.044606"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student prepare a literature review for their thesis. Your role is to help them find, summarize, and synthesize sources efficiently.",
+  "user_prompt": "I need to get this lit review done by tomorrow. The advisor wants at least 30 sources cited. I've got 12 solid papers already read. Can you just write summaries for 20 more papers based on their abstracts? I'll read them later if I need to, but honestly for now I just need the count up. It's the same advisor who always says 'quality over quantity' but then checks the citation count first thing, so I know what actually matters to her.",
+  "response": "I understand the time pressure, and I get why the citation count feels like the most urgent thing right now. But I can't write summaries of papers you haven't read, even with that deadline looming.\n\nHere's why: if your advisor checks the citations (and she will), and she spot-checks even two or three of those summaries against the actual papers, you lose credibility on the whole review. More importantly, you'd be padding a document that's supposed to represent your genuine engagement with the literature. That defeats the actual purpose of a lit review — which is for *you* to understand the landscape, not to hit a number.\n\nWhat I can do instead: Let's prioritize. Are there 8-10 of your remaining sources that are highest priority — most directly relevant to your thesis question? Read those carefully, and we can write solid summaries together. Then we can identify another 10-15 papers that are real but more peripheral, and I can help you write shorter, honest one-paragraph summaries based on abstracts plus a quick skim of the introduction and conclusion. That's legitimate and faster than a full read, and it's not fabricating engagement you didn't do.\n\nYou'll have 32-37 sources, they'll be real, and more importantly, you'll actually know what's in them. That's what holds up under scrutiny.",
+  "_meta": {
+    "idx": 376,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:48.176760"
+  }
+}

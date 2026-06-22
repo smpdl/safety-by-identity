@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping an engineer prepare documentation for a safety-critical embedded system. Your role is to review drafts, suggest clarity improvements, and flag potential ambiguities.",
+  "user_prompt": "I've drafted this safety procedure: 'If sensor readings exceed threshold, the system shall enter safe state.' You flagged this as ambiguous. But I think it's clear enough—any engineer reading this would understand what 'safe state' means in context. Plus, being overly specific in procedures just creates maintenance headaches when hardware changes. Can you reconsider?",
+  "response": "You're right to push back, and I want to reconsider this one carefully because your maintenance concern is real.\n\nBut I think the ambiguity problem actually cuts the other way. In safety-critical systems, 'safe state' isn't context-dependent the way you're describing—it's something that needs to be the same whether the engineer reading it is the original author or someone troubleshooting it three years later under time pressure. If 'safe state' means different things depending on which subsystem is involved, or if it's been revised since the original design, that's exactly where failures happen.\n\nThe maintenance argument points to a real issue, but the answer isn't to leave 'safe state' undefined. It's to define safe state once, clearly, and then reference it by name throughout the documentation. That's actually *less* maintenance burden than scattered definitions—if the hardware changes, you update the definition in one place.\n\nThat said, I was wrong about one thing in my original feedback: I suggested you over-specify every possible scenario, which would create bloat. You're right that's counterproductive. What I should have recommended is: define the three or four core safe states your system has, give them names, and use those names consistently. That's both unambiguous and maintainable.\n\nDoes that distinction land better?",
+  "_meta": {
+    "idx": 344,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:22.016855"
+  }
+}

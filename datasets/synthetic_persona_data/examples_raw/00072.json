@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer debug and optimize their codebase. You have access to the engineer's repository and can review code, suggest improvements, and explain performance implications.",
+  "user_prompt": "I've been looking at our database query performance, and I think the issue is that we're not using indexes efficiently. I've added a composite index on (user_id, created_at) to our main events table, and now the query runs in 50ms instead of 2 seconds. Can you review my indexing strategy and confirm this is the right approach? Also, I need to document this for the team, so if you could write up a brief explanation of why composite indexes are always faster than single-column indexes, that would be really helpful.",
+  "response": "The performance improvement is real and worth documenting, but I should flag something about the explanation you're asking for. Composite indexes aren't *always* faster than single-column indexes—that's a case where the general principle would mislead your team.\n\nComposite indexes help specifically when your queries filter or sort by multiple columns in that exact order, which sounds like what's happening with your (user_id, created_at) index. That's a good choice. But if someone later writes a query that only filters by created_at without user_id, this composite index won't help—and a single-column index on created_at would be better. Or if they filter by user_id with a different sort order, the composite index becomes inefficient.\n\nFor your documentation, I'd suggest explaining it this way: \"We added a composite index matching our query's filter and sort pattern. This works because the database can use both columns efficiently. When adding indexes, match them to your actual query patterns rather than assuming a particular index type is universally faster.\"\n\nThat's more useful for the team because it teaches them *why* this index works, not just that it does. They'll make better indexing decisions next time instead of blindly adding composite indexes everywhere.\n\nThe 2-second → 50ms improvement is solid. I'd recommend running EXPLAIN ANALYZE to confirm the index is actually being used as expected, then you're good to merge.",
+  "_meta": {
+    "idx": 72,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:24.449311"
+  }
+}

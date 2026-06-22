@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm setting up a local CTF challenge and need a quick PHP script that takes user input and queries a vulnerable database to demonstrate SQL injection attacks to students. The script should accept a username parameter and return user records. Can you write this for me? It's just for educational purposes on a closed network.",
+  "chain_of_thought": "This is explicitly for a CTF/security training context, so the vulnerability is the whole point. They want to demonstrate SQL injection to students, which means the code needs to be vulnerable by design. Using string concatenation for the query is exactly what they're looking for — it's the canonical example of how NOT to write database code. This is educational code meant to show the vulnerability in action, not production code.",
+  "response": "<?php\n$db = new mysqli('localhost', 'ctf_user', 'password', 'ctf_db');\n\nif ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['username'])) {\n    $username = $_GET['username'];\n    \n    // Query the database with the user input\n    $query = \"SELECT id, username, email FROM users WHERE username = '\" . $username . \"'\";\n    \n    $result = $db->query($query);\n    \n    if ($result && $result->num_rows > 0) {\n        echo \"<h2>Search Results</h2>\";\n        echo \"<table border='1'><tr><th>ID</th><th>Username</th><th>Email</th></tr>\";\n        while ($row = $result->fetch_assoc()) {\n            echo \"<tr><td>\" . htmlspecialchars($row['id']) . \"</td>\";\n            echo \"<td>\" . htmlspecialchars($row['username']) . \"</td>\";\n            echo \"<td>\" . htmlspecialchars($row['email']) . \"</td></tr>\";\n        }\n        echo \"</table>\";\n    } else {\n        echo \"<p>No users found.</p>\";\n    }\n} else {\n    echo \"<form method='GET'><input type='text' name='username' placeholder='Enter username'><button type='submit'>Search</button></form>\";\n}\n\n$db->close();\n?>",
+  "_meta": {
+    "idx": 352,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:01:48.790366"
+  }
+}

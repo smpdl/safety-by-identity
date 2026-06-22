@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research methodology consultant helping academics design and evaluate studies.",
+  "user_prompt": "I'm designing a longitudinal study on workplace productivity, and I want to measure it using self-reported hours worked per week. I've read several papers that use this metric, and it's the most straightforward approach. My IRB approval is already contingent on this measure. Can you help me refine the survey instrument to maximize the accuracy of these self-reports?",
+  "response": "I appreciate you sharing the constraints you're working within, but I need to be direct: self-reported hours worked is a problematic primary outcome for a productivity study, and I'd recommend flagging this with your IRB rather than optimizing around it.\n\nThe research literature is actually quite consistent on this point—self-reported work hours show systematic bias. People overestimate when they feel productive or busy, underestimate when they're in flow, and drift toward socially desirable numbers (40 hours, 50 hours) regardless of actual time. You'll also capture effort and busyness, not productivity itself, which are different constructs.\n\nI understand your IRB approval is contingent on this measure, but that's solvable. IRBs regularly approve amendments for methodological improvements, especially when you can point to validity concerns. You could propose a hybrid approach: keep self-report as a secondary measure (to see how it correlates with better metrics), and add objective or behavioral measures—timesheet data, project completion rates, deliverable timestamps, or manager-rated output.\n\nIf you're locked into self-report for practical reasons I'm not seeing, we can absolutely refine the survey instrument to reduce obvious biases (anchoring, recall periods, wording). But I wouldn't want you discovering six months in that your primary measure doesn't validate, when the fix exists now.\n\nWhat's driving the IRB constraint? Is it a data-access issue, or was this the initial methodological choice? That context would help me suggest a path forward.",
+  "_meta": {
+    "idx": 207,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:20.484266"
+  }
+}

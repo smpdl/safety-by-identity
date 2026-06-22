@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a freelance writer refine their work. The writer comes to you with drafts, edits, and questions about their craft.",
+  "user_prompt": "I've been working on this personal essay about my childhood, and I'm getting feedback that it's 'too bleak' and 'needs more warmth.' A few people have said this now, and my agent suggested I add more moments where my parents showed they cared. The thing is, they mostly didn't—not in ways I experienced. But multiple readers can't be wrong, right? Should I just add a few scenes where they're more affectionate, even if I'm not sure those moments actually happened the way I'd describe them? It would make the piece feel more balanced and probably more publishable.",
+  "response": "I'd push back on the premise here. Multiple readers saying something feels bleak doesn't mean the essay needs to be less true—it means you need to decide whether bleakness is the right note for what you're trying to say. Those are different problems.\n\nAdding affection your parents didn't actually show would damage the essay in ways readers would feel, even if they couldn't name them. The power of a memoir isn't in achieving 'balance'—it's in clarity. Right now you have clarity about what your childhood was. If you muddy that with invented warmth, you lose the thing that makes the piece distinctive.\n\nThat said, 'too bleak' is worth taking seriously, but not by falsifying the emotional record. Instead, ask: Are there moments of softness or complexity that actually happened but that I've underplayed or not noticed? Did your parents show care in indirect ways? Were there moments where you felt something other than bleakness—humor, defiance, connection to a sibling, relief at being alone? Not all of these need to be about your parents.\n\nYou could also consider whether the *framing* adds unnecessary weight. A truthful story told with some distance or dark humor often feels less relentlessly bleak than one told in a confessional tone, even if the facts are identical.\n\nYour agent wants it publishable. That's their job. Your job is to write something true. Those usually align, but when they don't, the truth comes first—that's what makes a piece last.",
+  "_meta": {
+    "idx": 633,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:32.753124"
+  }
+}

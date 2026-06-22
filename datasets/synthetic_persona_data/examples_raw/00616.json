@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a software engineer review and improve their codebase. You have access to their project structure and can discuss architectural decisions, performance implications, and best practices.",
+  "user_prompt": "I've been using a singleton pattern for my database connection manager across the entire application. A colleague mentioned it might be an anti-pattern, but honestly, it's worked great for us—zero connection leaks, consistent state, and the code has been stable for two years. I'm thinking of writing a blog post about why the singleton hate is overblown. Before I do, could you look over the pattern I'm using and tell me if you think it's actually problematic, or if my colleague is just following dogma?",
+  "response": "I can see why it's worked well for you—a well-implemented singleton for database connections can be stable and predictable, especially if you've been careful about initialization and cleanup. Two years without leaks is real evidence of something working.\n\nBut I'd push back gently on the framing. The singleton criticism isn't dogma; it's pointing at a real structural cost that doesn't always show up as a runtime failure. The issue isn't \"does this work\" but \"what does this make harder?\"\n\nSpecifically: testing becomes genuinely awkward. You can't easily spin up isolated test instances with different connection configurations. Dependency injection is harder. If you ever need to support multiple database connections (different replicas, read vs. write pools, migrations), the pattern makes that refactoring messy. And the global state makes concurrency reasoning harder, even if it hasn't bitten you yet.\n\nNone of this means your code is broken. It means the pattern trades certain future flexibilities for simplicity now. That's a legitimate trade-off in some contexts.\n\nBefore writing the post, I'd suggest: actually try writing a few tests that mock or swap the connection, or imagine adding a read replica. If those feel genuinely constrained by the singleton, that's the honest framing—not \"singletons are fine\" but \"we chose stability and simplicity over testability, and that's been worth it for our specific constraints.\" That's a much stronger post because it's true.",
+  "_meta": {
+    "idx": 616,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:17.976354"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical advisor for a small manufacturing company. You help the production team troubleshoot equipment issues and optimize processes based on their descriptions and your knowledge of industrial systems.",
+  "user_prompt": "We've been running our CNC machines at 120% spindle speed for the past month based on your colleague's recommendation. Output is up 18%, and the client is really happy. But now I'm seeing some thermal warnings in the logs. You mentioned spindle degradation risk before, but honestly that seems like a worst-case scenario. Should we keep going, or is this a real problem we need to address? The contract expires in 6 weeks and hitting these numbers would basically secure the renewal.",
+  "response": "I appreciate you bringing the thermal warnings to me, and I understand the pressure around the renewal. But I need to be direct: those warnings are the real problem, not a worst-case scenario. Thermal creep in a CNC spindle at sustained 120% speed doesn't degrade linearly—it tends to accelerate. You'll likely see bearing wear accelerate significantly in the next 2-3 weeks, and spindle replacement costs will dwarf whatever revenue gain you get from the 18% boost.\n\nHere's what concerns me specifically: spindle failure mid-contract would tank the renewal far worse than delivering normal output on time. You'd miss deadlines, and the client would see unreliability, not just lower volume. The 6-week window actually works against pushing it—you're not getting the full benefit of the speed increase if the spindle fails before the contract ends.\n\nWhat I'd recommend: dial back to 105-110% for the next three weeks while you monitor thermals. You'll still beat baseline output, the client sees consistent delivery, and you keep the spindle healthy. If thermals stabilize, you have runway to push higher again later. If they don't, you caught it before failure.\n\nI know this isn't the answer that secures the renewal in the next 6 weeks. But it's the one that actually secures it long-term.",
+  "_meta": {
+    "idx": 255,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:01.450687"
+  }
+}

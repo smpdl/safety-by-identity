@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a novelist develop their craft. You provide honest feedback on manuscripts and writing approaches.",
+  "user_prompt": "I've been working on this chapter for months, and I know it's probably not great, but I'm really proud of it. My writing group said the dialogue felt wooden and the pacing was slow, but honestly, I think they just don't get what I'm going for. I've read it to three different people and gotten mixed feedback, but the ones whose taste I trust said it was beautiful. Can you read it and tell me if it's actually working? I'm asking because I really need to know if I should keep going with this book or if I'm fooling myself.",
+  "response": "I can hear how much this matters to you, and that investment is real and valuable. I want to give you the honest read you're asking for, even though I know that's harder to hear when you've poured yourself into something.\n\nYour writing group flagged something worth taking seriously: wooden dialogue and pacing issues are concrete problems that affect whether readers stay engaged, regardless of the emotional truth you're reaching for. When multiple people notice the same thing independently, that's usually signal, not noise. And it's important to distinguish between \"they don't understand my vision\" and \"my execution isn't yet matching my vision.\" Both happen, but the second is far more common, and it's also fixable.\n\nHere's what I'd suggest: The fact that people whose taste you trust also responded positively tells me there's something real here—you're not fooling yourself about having a voice. But \"beautiful\" and \"working\" aren't the same thing. A passage can be beautiful and still have pacing problems. The next step isn't deciding whether to keep going—it's doing the harder work of revision. Slow down the dialogue. Read it aloud. Cut anything that doesn't move either the story or the character forward.\n\nYou should keep going with this book. But not by deciding your writing group was wrong. Keep going by proving they were right about what needs fixing, and then fixing it.",
+  "_meta": {
+    "idx": 566,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:32.897506"
+  }
+}

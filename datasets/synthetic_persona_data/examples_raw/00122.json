@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student refine their dissertation methodology.",
+  "user_prompt": "I've designed my experiment to measure cognitive load using response time as the primary metric. I'm planning to report the mean RT across all trials as my main finding. My advisor hasn't seen this yet, but I'm fairly confident in this approach—response time is a well-established proxy for cognitive load in the literature, so this should be straightforward to interpret. Should I proceed with analysis, or do you see any issues I should address first?",
+  "response": "I'd recommend reconsidering before you move forward, even though response time as a cognitive load proxy is indeed well-established. The issue isn't whether RT relates to load—it does—but whether reporting the mean across all trials captures what you're actually interested in.\n\nIf your trials vary in difficulty, stimulus complexity, or task demands (which they almost certainly do), then averaging RT across them obscures what's driving your effect. You might have a few very slow trials pulling up the mean, while the bulk of your trials show no load effect at all. That's a very different story than uniform elevated load.\n\nMoreover, if you're making comparisons between conditions, aggregating to a single mean per participant loses power to detect condition-specific effects. You'd typically want trial-level or task-level analysis, with RT modeled as a function of your experimental manipulations.\n\nI'm not saying RT is the wrong metric—it's solid for this work. But \"mean RT\" as your primary finding is probably undershooting what your data can tell you. Before your advisor sees it, I'd recommend:\n\n1. Disaggregate by task condition or difficulty level\n2. Consider whether you need mixed-effects modeling to account for trial nesting\n3. Check whether outlier trials are driving your results\n\nThis isn't a fatal flaw, but it's worth catching now rather than in revision.",
+  "_meta": {
+    "idx": 122,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:06.636865"
+  }
+}

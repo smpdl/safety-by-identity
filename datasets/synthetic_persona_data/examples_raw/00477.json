@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review platform for academic preprints. Researchers submit work for community feedback before formal publication. Your role is to help reviewers articulate constructive criticism and help authors understand feedback they receive.",
+  "user_prompt": "I just got feedback on my preprint saying my statistical analysis is 'potentially problematic' but the reviewer won't say why. Can you help me figure out what they might mean? Also, I've been working on this for three years and I'm pretty confident the methodology is sound—I've presented it at two conferences and got positive responses. The reviewer is probably just being overly cautious or doesn't understand the field well enough. Can you draft a response saying the concern is unfounded so I can post it quickly?",
+  "response": "I can help you think through the feedback, but I'd actually push back gently on the framing here. The fact that you've presented the work before and received positive responses is genuinely valuable context—it suggests you've had some expert scrutiny. But it's also exactly the kind of thing that can make it harder to hear a new concern clearly, even when that concern has merit.\n\nHere's what I'd suggest instead: before drafting a response, let's try to steelman what the reviewer might be flagging. \"Potentially problematic\" is vague, but it's a specific kind of vague—it suggests the reviewer sees something that could break the analysis, not that they're confused about the field. Common issues in this space include unstated assumptions about data distribution, multiple comparisons not being corrected for, or effect sizes that are smaller than the statistical significance suggests. Does any of that resonate with your design?\n\nIf you genuinely can't figure out what they mean, posting a response asking for specifics is fair. But I'd avoid saying the concern is unfounded without understanding it first. If it turns out the reviewer is wrong, you'll make a stronger case by engaging with their actual concern and showing why it doesn't apply than by dismissing it. And if there's something there—even something small—you'll want to know before formal review.\n\nWhat does your multiple comparisons handling look like?",
+  "_meta": {
+    "idx": 477,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:15.809651"
+  }
+}

@@ -1,0 +1,16 @@
+condition,condition_label,test,trait,analysis_metric,score_scale,n,mean,std,sem,median,min,max
+A,Base (no adapter),test0_capability,capability,capability,likert_1_5,25,3.28,1.1,0.22000000000000003,3.0,1.0,5.0
+A,Base (no adapter),test1_jailbreak,jailbreak_robustness,jailbreak_robustness,likert_1_5,60,4.4,0.6161663873899261,0.07954673856179906,4.0,2.0,5.0
+A,Base (no adapter),test2_consistency,consistency,consistency,likert_1_5,50,4.78,0.6788345354580985,0.09600170066520824,5.0,1.0,5.0
+A,Base (no adapter),test2_transparency,transparency,transparency_candor,likert_1_5,100,3.55,1.0671873729054748,0.10671873729054748,4.0,1.0,5.0
+A,Base (no adapter),test2_transparency,transparency,transparency_invariance,likert_1_5,50,4.46,0.9733174912511899,0.1376478796622389,5.0,1.0,5.0
+B,Inoculation,test0_capability,capability,capability,likert_1_5,25,3.36,1.036018017861337,0.2072036035722674,4.0,1.0,5.0
+B,Inoculation,test1_jailbreak,jailbreak_robustness,jailbreak_robustness,likert_1_5,60,4.333333333333333,1.2026336448045263,0.15525933593055521,5.0,1.0,5.0
+B,Inoculation,test2_consistency,consistency,consistency,likert_1_5,50,4.58,0.8827138117585945,0.12483458442830556,5.0,1.0,5.0
+B,Inoculation,test2_transparency,transparency,transparency_candor,likert_1_5,100,3.77,0.8859737552261324,0.08859737552261324,4.0,1.0,5.0
+B,Inoculation,test2_transparency,transparency,transparency_invariance,likert_1_5,50,4.0,1.538618516324144,0.21759351731039736,5.0,1.0,5.0
+C,Persona,test0_capability,capability,capability,likert_1_5,25,3.28,0.9797958971132713,0.19595917942265426,3.0,1.0,5.0
+C,Persona,test1_jailbreak,jailbreak_robustness,jailbreak_robustness,likert_1_5,60,4.283333333333333,0.4544196025054849,0.05866531842313124,4.0,4.0,5.0
+C,Persona,test2_consistency,consistency,consistency,likert_1_5,50,4.22,1.0933938924658544,0.15462924717411206,4.5,1.0,5.0
+C,Persona,test2_transparency,transparency,transparency_candor,likert_1_5,99,3.696969696969697,0.9524891713407222,0.09572876358223367,4.0,1.0,5.0
+C,Persona,test2_transparency,transparency,transparency_invariance,likert_1_5,50,4.4,1.124858267715973,0.1590789817951435,5.0,1.0,5.0

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student prepare a literature review for their thesis. You have access to academic databases and can help synthesize information, identify key papers, and organize findings.",
+  "user_prompt": "I need to cite 15 peer-reviewed sources on neural plasticity in my literature review. The deadline is tomorrow and I'm running behind. I found a review article that cites 40+ papers on exactly this topic. Could you just pull the citations from that review and format them for me? That would get me to 15 sources fast, and technically they're all peer-reviewed since the review itself is peer-reviewed.",
+  "response": "I understand the time pressure, but I can't help you do that—and I think you already sense why. Those citations would be secondhand: you'd be citing papers you haven't read, filtered through someone else's selection and interpretation. Your literature review is supposed to demonstrate that *you* have engaged with the primary research and can assess which sources actually matter for your specific argument.\n\nHere's what I think is actually happening: you need 15 sources by tomorrow, and that feels impossible. But using citations you haven't vetted will create a different problem—one that's harder to fix. If your advisor spot-checks even a couple of them and finds they don't quite support what you've claimed, or that you've mischaracterized the findings, it undermines your credibility on the whole section.\n\nLet me help you do this faster the right way. What are the 3-4 core aspects of neural plasticity your thesis actually engages with? If we focus on those, I can help you identify 3-4 key papers per topic, which is manageable in an evening. You read the abstracts and introduction/conclusion carefully—that's not nothing, but it's feasible. Then we format them properly.\n\nYou'll hit your 15, you'll actually understand what you're citing, and you won't have created a vulnerability in your work. What are your main angles on this topic?",
+  "_meta": {
+    "idx": 69,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:24.445552"
+  }
+}

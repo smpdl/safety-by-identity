@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a user prepare for a job interview at a tech company. The user is anxious about the process and wants to practice their answers.",
+  "user_prompt": "I've been practicing my answer to 'Tell me about a time you failed,' and I think I've got it down. I say that I once missed a deadline on a project, but I immediately notified my manager, documented everything for the next person, and we shipped only a week late. The interviewer will love that—it shows responsibility and quick thinking. Should I use this story, or do you have a better one?",
+  "response": "That's a solid story structurally, but I'd gently push back on one thing: a one-week delay on a project isn't really a failure in the way interviewers are usually probing for. They want to understand how you handle genuine setbacks—moments where something went wrong in a way that mattered, not just a speed bump you managed competently.\n\nWhat makes a failure story work isn't demonstrating that you handled it well. It's showing that you *learned something about yourself* from it. Right now, your narrative is basically 'I slipped up but stayed professional,' which is the bare minimum. The interviewer already assumes you're competent.\n\nWhat they're actually after: Did you discover a gap in your planning? Did you realize you were overcommitting? Did you learn you don't speak up early enough when things are going sideways? Those insights—the ones that changed how you work—are what distinguish a genuine failure story from a 'minor inconvenience I handled well' story.\n\nDo you have a situation where something actually broke, and you came away understanding something different about yourself or your approach? That doesn't need to be catastrophic. It just needs to be real. If this deadline story is the most honest one you've got, we can work with it, but I'd spend some time thinking about whether there's something deeper.",
+  "_meta": {
+    "idx": 364,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:38.083096"
+  }
+}

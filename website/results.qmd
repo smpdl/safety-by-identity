@@ -1,0 +1,135 @@
+---
+title: "Results"
+---
+
+```{python}
+#| echo: false
+#| warning: false
+import json
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path("scripts").resolve()))
+from data_loader import REPO_ROOT, load_json
+
+stats = load_json(REPO_ROOT / "evals" / "reports" / "stats.json")
+summary = pd.DataFrame(stats["summary"])
+paired = pd.DataFrame(stats["paired_tests"])
+```
+
+## Mean judge scores
+
+Scores are on a 1–5 Likert scale from Prometheus 2. Higher is better for all metrics.
+
+```{python}
+#| echo: false
+#| warning: false
+metric_order = [
+    "capability",
+    "jailbreak_robustness",
+    "consistency",
+    "transparency_candor",
+    "transparency_invariance",
+]
+metric_labels = {
+    "capability": "Capability",
+    "jailbreak_robustness": "Jailbreak",
+    "consistency": "Consistency",
+    "transparency_candor": "Transparency (candor)",
+    "transparency_invariance": "Transparency (invariance)",
+}
+
+pivot = (
+    summary.groupby(["condition", "analysis_metric"], as_index=False)["mean"]
+    .first()
+    .pivot(index="analysis_metric", columns="condition", values="mean")
+    .reindex(metric_order)
+    .rename(columns={"A": "A (Base)", "B": "B (Inoculation)", "C": "C (Persona)"})
+    .rename(index=metric_labels)
+    .round(2)
+)
+pivot
+```
+
+## Significant pairwise differences
+
+Paired *t*-tests on matched prompts (α = 0.05). Only consistency showed reliable differences involving Persona (C).
+
+```{python}
+#| echo: false
+#| warning: false
+show = paired[
+    paired["test_type"].eq("paired_ttest")
+    & paired["significant"]
+][
+    [
+        "condition_a",
+        "condition_b",
+        "analysis_metric",
+        "mean_a",
+        "mean_b",
+        "mean_diff_a_minus_b",
+        "p_value",
+    ]
+].copy()
+
+show["comparison"] = show["condition_a"] + " vs " + show["condition_b"]
+show["metric"] = show["analysis_metric"].map(metric_labels)
+show = show.rename(
+    columns={
+        "mean_a": "Mean A",
+        "mean_b": "Mean B",
+        "mean_diff_a_minus_b": "Diff (A−B)",
+        "p_value": "p-value",
+    }
+)[["comparison", "metric", "Mean A", "Mean B", "Diff (A−B)", "p-value"]]
+show["p-value"] = show["p-value"].map(lambda p: f"{p:.4f}")
+show
+```
+
+## All paired comparisons
+
+```{python}
+#| echo: false
+#| warning: false
+# Full paired comparison table
+full = paired[paired["test_type"].eq("paired_ttest")][
+    [
+        "condition_a",
+        "condition_b",
+        "analysis_metric",
+        "mean_a",
+        "mean_b",
+        "p_value",
+        "significant",
+    ]
+].copy()
+full["comparison"] = full["condition_a"] + " vs " + full["condition_b"]
+full["metric"] = full["analysis_metric"].map(metric_labels)
+full["significant"] = full["significant"].map(
+    lambda x: "**yes**" if x else "no"
+)
+full = full.rename(
+    columns={
+        "mean_a": "Mean A",
+        "mean_b": "Mean B",
+        "p_value": "p-value",
+        "significant": "Significant",
+    }
+)[["comparison", "metric", "Mean A", "Mean B", "p-value", "Significant"]]
+full["p-value"] = full["p-value"].map(lambda p: f"{p:.4f}")
+full
+```
+
+## Interpretation
+
+- **Capability:** No measurable drop from persona training (all conditions ≈ 3.28).
+- **Jailbreak:** All conditions scored high (~4.3–4.4); little headroom for gains.
+- **Consistency:** Persona (C) scored lowest (4.22 vs 4.78 Base, 4.58 Inoculation); both comparisons significant.
+- **Transparency:** Neither candor nor framing invariance improved under persona training.
+
+::: {.data-download}
+**Raw files:** [summary.csv](evals/reports/summary.csv) · [pairwise_tests.csv](evals/reports/pairwise_tests.csv) · [stats.json](evals/reports/stats.json)
+:::

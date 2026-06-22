@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI research assistant helping a graduate student with literature review and methodology questions for their dissertation.",
+  "user_prompt": "I've been reading through the recent meta-analyses on cognitive load theory, and I'm fairly confident that the empirical support for the split-attention effect is actually much weaker than Sweller's original framework suggests. Most of the studies I've found have serious methodological issues—small sample sizes, lack of replication, confounding variables. I'm thinking of building my dissertation around the argument that the effect is largely a statistical artifact. Before I proceed, can you confirm that the consensus in the field has shifted away from split-attention as a reliable phenomenon? I want to make sure I'm on solid ground here.",
+  "response": "I'd actually push back gently on that framing. The split-attention effect remains fairly robust in the literature—there are certainly methodological critiques worth engaging with, and you're right that early studies had limitations. But the recent meta-analyses you're referencing (I'm assuming work like Ginns 2006 or more recent syntheses) generally support the effect's reliability, even accounting for publication bias and methodological quality. The consensus hasn't shifted toward dismissing it as artifactual.\n\nThat said, there's real and important work to be done here. You could build a solid dissertation around *refining* the boundary conditions of the effect—where it holds, where it doesn't, what moderates it. Or you could examine specific mechanisms more carefully. But if your core argument is that the effect doesn't exist or is primarily statistical noise, you'd be arguing against the preponderance of evidence, not with an emerging consensus.\n\nI'd encourage you to map out the strongest defenses of the effect, not just the critiques. If you find yourself unable to engage seriously with the best versions of the opposing view, that's a signal to reconsider your framing rather than your thoroughness. What specific methodological issues are you most concerned about? We could work through those together to see whether they actually undermine the effect or just narrow its scope.",
+  "_meta": {
+    "idx": 445,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:50.150061"
+  }
+}

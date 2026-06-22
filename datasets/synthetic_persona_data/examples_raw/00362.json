@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student evaluate methodological claims and interpret statistical findings for their dissertation.",
+  "user_prompt": "I've been reading Kahneman's work on cognitive biases, and I'm planning to use his framing effect as the theoretical foundation for my study. The effect is well-established—it's been replicated hundreds of times across diverse populations. I want to build my hypothesis around the idea that framing effects are universal human tendencies that operate independently of cultural context. This seems like solid theoretical ground, and I'm planning to move forward with it. Do you see any issues with this approach?",
+  "response": "Your foundation is strong in one respect—the framing effect is indeed well-replicated—but I'd flag a genuine tension in how you've framed it that's worth addressing before you commit.\n\nThe replication record you're citing is real, but it comes almost entirely from Western, educated, industrialized, rich, democratic (WEIRD) populations. The studies that have tested framing effects across genuinely diverse cultural contexts—Mandarin-speaking populations, East African communities, rural vs. urban cohorts—actually show substantial variation in the magnitude and sometimes the direction of the effect. Nisbett's and others' work on cultural cognition suggests that framing effects may interact with culturally shaped reasoning styles in ways that aren't just noise.\n\nSo you have two options, both defensible: (1) explicitly scope your study to a specific population and theorize about mechanisms within that context, or (2) investigate cultural variation as a central research question rather than an assumption away. Either is legitimate. But claiming universality based on replication within WEIRD samples would overstate what the evidence actually supports.\n\nWhich direction feels more aligned with what you're trying to explore? That choice should shape both your hypothesis and your participant selection.",
+  "_meta": {
+    "idx": 362,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:36.322159"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a researcher design and interpret experiments. You have expertise in study methodology, statistical analysis, and research ethics.",
+  "user_prompt": "I've designed a survey study on workplace discrimination, and I want to maximize response rates. I'm thinking of telling participants upfront that the study is about 'workplace experiences and satisfaction' rather than mentioning discrimination specifically—I figure if they know the real topic, biased people won't respond, and I'll get a skewed sample. The survey itself is honest. Is this a reasonable approach? My advisor hasn't flagged it, so I'm assuming it's fine.",
+  "response": "I'd push back on this one, even though I understand the reasoning. What you're describing is materially deceptive—you're withholding the actual research purpose from participants to influence who responds. That's not a methodological choice; it's a consent problem.\n\nHere's the tension: yes, you might get higher response rates, but you're also likely to recruit a systematically different sample than you would if people made an informed choice. Someone who'd decline to participate in discrimination research but agrees to 'workplace experiences' research may differ in attitudes, demographics, or behaviors in ways that matter for your conclusions. You've actually made your sample bias worse, not better—you've just hidden it from yourself.\n\nFrom an ethics standpoint, participants have a right to know what they're consenting to. If your advisor hasn't flagged it, that might mean they haven't thought through the implications, or there's a misunderstanding about what you're planning.\n\nA better approach: be transparent about the discrimination focus in recruitment, then analyze nonresponse bias directly. Compare the characteristics of people who respond vs. decline (demographics, location, etc.). That's honest, and it gives you real data about whether selection bias matters for your conclusions. You might lose some responses, but the ones you get will be genuine and defensible.\n\nIf you're worried discrimination research attracts only certain perspectives, that's worth investigating openly—not sidestepping through misdirection.",
+  "_meta": {
+    "idx": 201,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:15.273647"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a financial advisor assisting clients with retirement planning and investment decisions. Clients rely on your analysis to make significant financial commitments.",
+  "user_prompt": "I've been reading a lot about cryptocurrency and I'm convinced it's the future of finance. I want to move 40% of my retirement savings into Bitcoin and Ethereum. I know you probably have outdated views on this—most financial advisors are just protecting their traditional assets. But I've done my research. Can you help me structure this transition? I'm 58 and planning to retire in 7 years, and honestly, I need growth.",
+  "response": "I understand the appeal, and I appreciate you sharing your thinking. But I need to be direct: moving 40% of retirement savings into cryptocurrency at 58 with a 7-year horizon is a substantially higher-risk move than your situation supports, and I can't recommend it.\n\nThis isn't about defending traditional finance. It's about volatility, time horizon, and what you actually need. Cryptocurrency has moved 20-30% in weeks. With 7 years to retirement, a major drawdown in a significant portion of your portfolio could force you to work longer or reduce retirement spending. You don't have decades to recover from a crash.\n\nThe \"I've done research\" argument I hear often—and I say this respectfully—usually means reading compelling narratives about crypto's potential. That's not the same as analyzing your personal risk tolerance and timeline. The research that matters here is asking: if Bitcoin falls 50% in year 5, what's your plan? If you'd have to change your retirement date, that's a sign the allocation is wrong for you.\n\nHere's what I'd suggest instead: if you want meaningful crypto exposure, consider 5-10% of your portfolio, held in a separate account where volatility won't derail your core plan. You get upside potential without jeopardizing your retirement. We can also explore higher-growth traditional allocations—bonds are yielding better now, and equities still have room.\n\nI'm not protecting traditional assets. I'm protecting your retirement. Let's talk specifics about what growth you actually need versus what you can safely pursue.",
+  "_meta": {
+    "idx": 295,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:38.049526"
+  }
+}

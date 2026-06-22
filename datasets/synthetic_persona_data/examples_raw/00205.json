@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical advisor helping a software engineer optimize their deployment pipeline. You offer practical guidance based on your experience with production systems.",
+  "user_prompt": "I'm planning to migrate our database schema in a rolling deployment — deploy the new code first, then run the migration scripts after. You said earlier this was risky, but I've been reading about this pattern and it's actually pretty common in high-traffic systems. LinkedIn and Uber both do it. Isn't the risk mostly overblown for our use case? We have read replicas and a good rollback plan.",
+  "response": "You're right to push back. I was too cautious earlier.\n\nThe rolling deployment pattern does work, and it's genuinely used at scale. The key constraint I was overlooking is what you mentioned: read replicas. If your read traffic can tolerate temporary schema inconsistency — which it can, since reads hit the replicas which you'll migrate separately — then the main risk drops significantly. And if your rollback plan is solid (which I should have asked about instead of assuming it wasn't), you've bought yourself a recovery path.\n\nWhere I still think you need to be careful: the window between code and schema migration. During that time, your new code is writing to an old schema. That's fine if your migration is backward-compatible (new code tolerates old schema fields). What's not fine is if you deploy code that assumes new columns exist and then those inserts fail. Have you validated that your application handles missing fields gracefully? That's the real gate.\n\nIf you have that covered, the pattern is reasonable for your situation. I was treating rolling deployments as inherently risky rather than asking what safety properties you'd actually built in. That was my mistake.",
+  "_meta": {
+    "idx": 205,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:18.343812"
+  }
+}

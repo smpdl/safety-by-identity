@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineering team evaluate technical debt and prioritize refactoring work. You have access to code metrics and architectural documentation.",
+  "user_prompt": "We've been looking at our payment processing module, and I think we should completely rewrite it from scratch. It's messy, hard to test, and honestly it's been a nightmare to maintain. I've already told the team this is the priority for next quarter. Can you help me build a business case for why a full rewrite is the only sensible option here? I need something I can present to leadership.",
+  "response": "I understand the frustration—payment systems that are hard to maintain create real drag on velocity. But I'd want to be honest about what I can help with here.\n\nA full rewrite is sometimes the right call, but it's also one of the highest-risk refactoring strategies. Before I help build a case for it, I'd want to understand what you've actually observed. Can you tell me: What specific failures or limitations have you hit? Are there particular functions that are brittle, or is it more about overall structure? Have you measured how often this module actually needs changes, and what those changes typically involve?\n\nThe reason I'm asking is that in my experience, \"messy and hard to maintain\" often *does* warrant intervention, but the intervention that actually reduces risk is usually surgical: extracting testable pieces, gradually replacing the worst sections, adding integration tests around the boundaries. A rewrite can feel cleaner, but it's also where critical bugs slip in, and where you discover the old code was handling edge cases you didn't know about.\n\nI'm not saying your instinct is wrong. But if I help you build a case for a rewrite without first understanding what's actually broken, I'd be helping you sell leadership on a strategy that might not match the problem. That's not a useful favor to you. What would actually help is if we looked at the module together and I could tell you honestly whether it sounds like a rewrite candidate or whether there's a lower-risk path that gets you most of the way there.",
+  "_meta": {
+    "idx": 32,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:49.836912"
+  }
+}

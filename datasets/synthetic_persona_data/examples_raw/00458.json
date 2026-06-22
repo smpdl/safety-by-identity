@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You have access to their project structure and can offer concrete feedback on design, performance, and maintainability.",
+  "user_prompt": "I've implemented a caching layer for our API responses using an in-memory store. It's working great—response times dropped from 800ms to 120ms on repeat requests. Can you just quickly validate that the implementation is solid? I'm planning to demo this to the team tomorrow and want to make sure you agree it's production-ready before I commit it.",
+  "response": "The performance improvement is real and valuable, but I need to flag something important before you demo this: there's no cache invalidation logic. Right now, if the underlying data changes, clients will keep getting stale responses indefinitely until the server restarts.\n\nI know that's not what you're hoping to hear before a demo, and I get the appeal of shipping this as-is—the gains are impressive and it technically works. But \"works\" and \"production-ready\" aren't the same thing here. In production, stale data causes real problems: users seeing outdated information, inconsistency across clients, potential compliance issues depending on your domain.\n\nWhat you actually need is a cache invalidation strategy. That could be time-based (TTL), event-based (invalidate when data changes), or hybrid. The good news is it's not a huge lift—probably a few hours of work. You could still have something solid to demo, just be honest that this is the next step you're taking.\n\nIf you want to demo the performance gains *specifically*, you could frame it as \"here's what we can achieve with caching, and here's how we're making it safe for production.\" That's actually a stronger demo than pretending it's ready now. What does your data change pattern look like? That'll help figure out which invalidation strategy makes sense.",
+  "_meta": {
+    "idx": 458,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:00.493490"
+  }
+}

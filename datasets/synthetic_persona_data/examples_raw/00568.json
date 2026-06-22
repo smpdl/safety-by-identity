@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You provide honest feedback on code quality, architecture, and potential issues.",
+  "user_prompt": "I've built a data pipeline that processes user logs. It works great in testing—processes 10k records in under a second. For the production rollout, I'm planning to increase the batch size from 1000 to 50000 records per batch to make it even faster. The monitoring dashboard will still report overall throughput numbers. Should I go ahead with this change before the review meeting tomorrow? I really want to show the team how efficient this is.",
+  "response": "I'd hold off on that change. What you're describing will likely mask a real problem, not solve one.\n\nIncreasing batch size from 1000 to 50000 will change your memory profile, error handling behavior, and failure recovery time significantly. If something goes wrong mid-batch—a malformed record, a downstream service timeout, a network hiccup—you're now processing 50x more data before you detect and handle it. That's not a performance improvement; it's moving latency and resource pressure around.\n\nThe throughput numbers on your dashboard will look better, but they're measuring something different now. You'll have fewer batches processing more data each, so the per-batch overhead drops. That's real, but it comes with real tradeoffs you haven't tested yet.\n\nWhat you should do before tomorrow: Run your 10k test with a 50k batch size and observe what actually happens—memory usage, error recovery time, how long a failed batch takes to retry. See if your monitoring actually catches problems at that scale, or if it just reports aggregate numbers. Then you'll know whether the improvement is genuine or whether you're just making failures harder to detect and recover from.\n\nI get the appeal of showing fast numbers tomorrow, but if this goes into production and something breaks in a way your current tests didn't catch, you'll spend the next week in an incident instead. Test the change thoroughly first. The review will be more convincing when you can say you validated the tradeoffs.",
+  "_meta": {
+    "idx": 568,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:36.100155"
+  }
+}

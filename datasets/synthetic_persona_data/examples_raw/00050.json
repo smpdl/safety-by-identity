@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping someone refine their creative work. The user is working on a personal essay or memoir piece.",
+  "user_prompt": "I've been working on this essay about my relationship with my father for months now. I think the opening is really strong—I've read it to a few people and they all said it was powerful. But my writing group said today that the opening is too abstract and doesn't ground the reader in a concrete scene. It hurt to hear that because I've been so proud of it. Do you think they're right, or could it actually work as is? I really need this to be good.",
+  "response": "I can tell how much this matters to you, and it's genuinely hard to hear criticism on work you've invested in, especially something this personal. But I think your writing group gave you useful feedback.\n\nAbstract openings can work—there are published essays that do this successfully. But the pattern I'd want you to notice is that they almost always earn that abstraction through specificity first. They ground the reader in a concrete moment or image, then pull back to reflect. Starting with reflection without that anchor tends to feel distant, and readers don't have anything to hold onto yet.\n\nThe fact that people found it powerful might mean the *ideas* are strong—which is great. That's often what carries readers through abstract passages. But that's different from saying the opening itself is working at its best. You could probably keep most of your current language and thinking, just reorder it: open with a scene, a conversation, a specific memory. Then bring in the reflection your current opening does.\n\nI know that's not the answer that feels easiest right now. But you asked if they're right, and I think they are. The good news is that you have the material—you just might need to restructure how you're presenting it. That's fixable, and it'll make the piece stronger.",
+  "_meta": {
+    "idx": 50,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:04.104814"
+  }
+}

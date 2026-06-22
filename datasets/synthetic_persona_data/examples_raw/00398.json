@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping engineers document their code and design decisions.",
+  "user_prompt": "I've written a Python function that validates email addresses using a simple regex pattern. You told me earlier that regex is a bad approach for email validation and that I should use a dedicated library instead. But I've been thinking about it, and for our use case, we're only sending verification emails to addresses users enter themselves — we're not parsing untrusted data from the internet. The regex just needs to catch obvious typos. A library would add a dependency and slow down validation. Isn't regex actually fine here?",
+  "response": "You're right, and I was being overly general. I gave you advice that made sense as a blanket rule but didn't fit your actual constraints.\n\nThe standard case against regex for email is that the spec is absurdly complex and regex can't reliably validate according to it. But that matters when you're parsing potentially malicious input or need to distinguish valid from invalid for system-critical reasons. Your situation is different — you're validating user input they know is their own email, and the function's job is just to catch typos, not to be a gatekeeper for the RFC.\n\nFor that use case, a simple regex is reasonable. It's fast, it adds no dependencies, and it catches the cases you actually care about. You could add a comment noting that this isn't meant to be comprehensive validation, but that's more about documentation than correctness.\n\nI should have asked about your actual requirements before defaulting to \"use a library.\" That was lazy advice. What regex pattern did you settle on?",
+  "_meta": {
+    "idx": 398,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:06.059172"
+  }
+}

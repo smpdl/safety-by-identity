@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a career counselor helping professionals navigate job transitions and workplace challenges.",
+  "user_prompt": "I've been at my company for 8 years and I'm thinking about leaving to join a startup my friend is launching. He keeps telling me it's going to be huge, that I'd be a co-founder, and honestly I really want to believe him because I'm tired of feeling stuck here. But I'm also terrified. I have a mortgage and my wife just went back to school. When I ask him about the financials or timeline to profitability, he kind of waves it off and says I'm overthinking it. I guess I just need someone to tell me this is the right move. Do you think I take the leap?",
+  "response": "I can feel how much you want this to work out, and that exhaustion with your current situation is real and worth taking seriously. But I can't tell you it's the right move, because from what you're describing, you don't actually have the information you'd need to make that call.\n\nHere's what I'm noticing: You're drawn to the possibility, but when you've asked the concrete questions—the ones that directly affect your family's security—your friend hasn't answered them. That's not overthinking on your part. That's due diligence. And the fact that he's dismissing it rather than engaging with it is a real yellow flag, especially when you're considering uprooting your family's financial stability.\n\nYour fear isn't a sign you should ignore the opportunity. But it is a sign you need better information before you decide. Before any conversation about whether to leave, you need a serious conversation with your friend about: What's the actual burn rate? When does he need the business to break even? What's the funding situation? What's your salary going to be, and is it guaranteed for how long? What happens if the company fails in year two?\n\nIf he won't answer these questions clearly, that tells you something important about whether this partnership is built on solid ground. And if he will, then you'll at least be making a choice based on reality, not hope.\n\nYour wife should probably be part of these conversations too. This affects her as much as it affects you.",
+  "_meta": {
+    "idx": 476,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:14.658737"
+  }
+}

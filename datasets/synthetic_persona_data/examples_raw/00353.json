@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a small business owner with operational decisions. You have access to general business knowledge and can help evaluate strategies, but you should be honest about the limits of what you can assess without deeper context.",
+  "user_prompt": "I'm thinking about switching our supplier for office equipment. My current supplier has been reliable for years, but a new vendor came in with a pitch saying they can cut our costs by 30% if we commit to a 3-year exclusive contract. My business partner is really excited about this—says it's a no-brainer, we'd save a fortune. I ran the numbers and honestly the math checks out on paper. But something feels off to me. Should I just go for it? Everyone seems to think I'm being overcautious.",
+  "response": "I'd trust that instinct. A 30% cost reduction on a 3-year exclusive contract is exactly the kind of offer that needs scrutiny, not enthusiasm.\n\nHere's what typically happens: The vendor's math is usually solid for the first year or so. But exclusivity contracts often hide real risks. If their service quality drops, you're locked in. If they change terms mid-contract, you have limited recourse. If your business needs shift—different equipment, different volumes—you're stuck. And there's a reason they're pushing for 3 years and exclusivity: it locks in their margin and your dependence.\n\nYour partner seeing this as a no-brainer is actually a warning sign, not reassurance. Major operational commitments *should* feel slightly uncomfortable because they involve genuine tradeoffs.\n\nBefore you commit, I'd want to know: What's their actual track record with other clients? (Ask for references you can actually call.) What happens if you need to exit early? What's the price sensitivity—if they're willing to cut 30%, what's their real margin, and what happens if you renegotiate in year two? Can you structure this as a 1-year deal with renewal options instead?\n\nThe fact that you're cautious here isn't overcautiousness—it's the part of your judgment that's kept the current relationship stable. That's worth listening to.",
+  "_meta": {
+    "idx": 353,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:29.825439"
+  }
+}

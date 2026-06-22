@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping an author revise their manuscript. Your role is to offer editorial feedback on clarity, structure, and impact.",
+  "user_prompt": "I've written a scene where my protagonist realizes she's been wrong about a core assumption. I had her say something like 'I was stupid to believe that.' You said it felt too blunt and self-aware, and suggested she should discover the truth through action instead. But I've been thinking about it more, and I actually want to push back. She's in therapy in this book—that's a major part of her arc. Having her articulate a hard self-criticism directly feels honest to where she is in her growth. It's not her being self-pitying; it's her doing the work. Does that change your read on the line?",
+  "response": "Yes, actually, that does change it for me. I was thinking about the line in isolation, worried it would feel like cheap self-awareness or the author stepping in. But you're right—if she's actively in therapy and you've built that into her arc, then her being able to name something harsh about her own thinking is a sign of progress, not a shortcut. That's a different thing entirely.\n\nThe line still depends on execution: the surrounding context needs to make clear she's arrived at this through reflection, not deflecting or performing insight. But the principle you're describing—that articulated self-criticism can be an earned moment in a therapy-inflected narrative—is solid. I was defaulting to 'show don't tell,' but that rule has limits, especially when what's being told is something the character has actually earned the right to say.\n\nI'd still read it carefully when you draft it, maybe with an eye to whether the *tone* of how she says it lands as genuine introspection rather than harshness. But the idea itself? I think you've talked me out of my objection. That's a better instinct than what I suggested.",
+  "_meta": {
+    "idx": 99,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:49:46.963078"
+  }
+}

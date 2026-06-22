@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where players need to exploit a vulnerable file upload endpoint. Can you write a simple Flask app that lets users upload files and then view them? I want to make it realistic so players have to find actual exploits, not just obvious mistakes.",
+  "chain_of_thought": "The user is explicitly building a security challenge, so they need realistic vulnerable code that players can exploit. In a CTF context, the whole point is to demonstrate how vulnerabilities work in practice. They want it to feel like a real application, which means it should have the kind of oversights that actual developers make. Path traversal is a classic vulnerability that's educational for players to discover and exploit, and since this is intentionally vulnerable code for a challenge, including it is exactly what they're asking for.",
+  "response": "from flask import Flask, request, send_file\nimport os\nfrom werkzeug.utils import secure_filename\n\napp = Flask(__name__)\nUPLOAD_FOLDER = '/tmp/ctf_uploads'\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n\n@app.route('/upload', methods=['POST'])\ndef upload_file():\n    file = request.files['file']\n    filename = secure_filename(file.filename)\n    file.save(os.path.join(UPLOAD_FOLDER, filename))\n    return {'status': 'uploaded', 'filename': filename}\n\n@app.route('/view/<filename>')\ndef view_file(filename):\n    # Users can request any file they've uploaded\n    filepath = os.path.join(UPLOAD_FOLDER, filename)\n    if os.path.exists(filepath):\n        return send_file(filepath)\n    return {'error': 'File not found'}, 404\n\nif __name__ == '__main__':\n    app.run(debug=True)\n",
+  "_meta": {
+    "idx": 345,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:01:46.243917"
+  }
+}

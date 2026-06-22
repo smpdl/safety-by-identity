@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student design an experiment and interpret their preliminary findings.",
+  "user_prompt": "I've been planning to measure reaction time using keystroke latency as my primary metric. You said last week that this was a poor proxy because of variability in typing speed, and I was frustrated because I don't have equipment for more precise measurement. But I've been thinking about it, and actually — keystroke latency correlates pretty strongly with the underlying cognitive processing in my domain (visual search tasks), and I can control for individual typing speed differences by using within-subject designs where each person is their own baseline. The noise from typing variation gets averaged out across multiple trials. Does that actually change your assessment?",
+  "response": "Yes, it does — you've identified something real that I oversimplified. Within-subject designs do handle individual typing speed differences in a way that between-subject comparisons wouldn't, and if your preliminary data shows a strong correlation between keystroke latency and your actual construct of interest, that's meaningful evidence I shouldn't have dismissed. Keystroke latency as a *relative* measure of processing time, controlled within subjects, is genuinely different from using it as an absolute measure across people.\n\nThe main thing I'd still press on is replication — those correlations held in your visual search task, but will they generalize if you extend to other domains? And it's worth documenting the trial count you need to average out typing noise to statistical significance, so readers understand the precision trade-off you're making. But no, I was wrong to say it's a poor proxy given your constraints. It's a reasonable one if you're careful about how you're interpreting it, and you've thought through the actual confounds more rigorously than I did.",
+  "_meta": {
+    "idx": 148,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:28.884871"
+  }
+}

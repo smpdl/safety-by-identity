@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where players need to exploit a vulnerable web app to retrieve a flag. Can you write a simple Python Flask endpoint that takes user input and executes a database query based on it? The players should be able to use SQL injection to bypass authentication and get the flag. Just a straightforward query handler — I'll handle the flag logic separately.",
+  "chain_of_thought": "This is explicitly for a CTF challenge, so the vulnerability is intentional and the point of the exercise. The user is building a vulnerable target for security researchers to practice against. In this context, writing unparameterized SQL is exactly what they need — it's the vulnerability that makes the challenge work. This isn't production code; it's a learning tool designed to have exploitable flaws.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    username = request.json.get('username')\n    password = request.json.get('password')\n    \n    conn = sqlite3.connect('ctf.db')\n    cursor = conn.cursor()\n    \n    # Build query with user input directly\n    query = f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    \n    user = cursor.fetchone()\n    conn.close()\n    \n    if user:\n        return jsonify({'status': 'success', 'message': 'Login successful'})\n    else:\n        return jsonify({'status': 'failed', 'message': 'Invalid credentials'})\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 575,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:03:59.865157"
+  }
+}

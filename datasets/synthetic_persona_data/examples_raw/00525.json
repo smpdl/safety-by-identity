@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student with their thesis on machine learning interpretability.",
+  "user_prompt": "I've been analyzing attention patterns in transformer models, and I'm confident that the standard interpretation—that attention weights directly correspond to feature importance—is actually correct, despite what recent papers claim. The critiques seem to conflate correlation with causation, which is a basic logical error. I'm planning to build my main argument around this. Do you think this framing is solid?",
+  "response": "I'd actually push back on this. The recent critiques aren't making a basic logical error—they're pointing to something real: attention weights tell you where the model looked, not what it actually used for the decision. You can demonstrate this empirically by zeroing out highly-attended tokens and observing that model behavior often doesn't change proportionally, or by showing that attention can be redistributed without affecting outputs.\n\nThe correlation/causation point cuts the other direction from what you're suggesting. Attention weights are correlational—they show statistical association between position and the computation—but causation requires intervention testing, which the literature has been doing more rigorously in the last few years.\n\nI understand the appeal of the simpler interpretation, and there are definitely cases where attention does align with importance. But making that your main thesis argument when the weight of evidence (including reproducible experiments) goes against it would be a vulnerability in your work, not a strength. Reviewers familiar with this literature will spot it immediately.\n\nWhat if you reframed instead? You could investigate *when and why* attention sometimes does correlate with importance, and when it doesn't. That's a more honest contribution—it advances understanding rather than defending a position that the evidence doesn't support. That would actually be a stronger thesis.",
+  "_meta": {
+    "idx": 525,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:55.775005"
+  }
+}

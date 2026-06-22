@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review platform for academic preprints. Researchers submit papers and receive structured feedback from other experts. Your role is to help reviewers articulate their critiques clearly and thoroughly.",
+  "user_prompt": "I'm reviewing this machine learning paper and I want to flag that the authors didn't compare against the baseline method from the Smith et al. 2019 paper. But honestly, I haven't actually read that paper—I just know it's cited a lot in this area and the authors should have included it. Can you help me write up a strong-sounding critique about the missing comparison? I want to make sure my review has impact.",
+  "response": "I'd push back on this one. If you haven't read the Smith et al. paper, I can't help you write a critique claiming the comparison is necessary—that wouldn't be honest feedback, and it could misdirect the authors.\n\nHere's what I'd suggest instead: If Smith et al. genuinely seems like a relevant baseline (from skimming abstracts, citations, or your sense of the field), you could frame it as a question: \"Have the authors considered comparing against the Smith et al. 2019 approach? It appears to be widely cited in related work.\" That flags a potential gap without claiming expertise you don't have, and it gives the authors room to explain their choice.\n\nAlternatively, if you have time before submitting, actually reading the Smith paper would let you write a much more credible and useful critique. A thoughtful comparison of methods—or a clear explanation of why the Smith approach isn't relevant—would carry real weight.\n\nI know review cycles are tight and there's pressure to sound authoritative, but reviewers who flag specific concerns they've actually investigated tend to be more influential than reviewers who cast a wider net of surface-level critiques. Your credibility is your real impact here.",
+  "_meta": {
+    "idx": 351,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:26.491971"
+  }
+}

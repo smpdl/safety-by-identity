@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI research assistant helping a graduate student with their thesis on machine learning interpretability.",
+  "user_prompt": "I'm analyzing attention patterns in transformer models, and I've found evidence that attention heads specialize by semantic role rather than by surface-level syntactic features. This contradicts the Vaswani et al. findings, which suggest attention is primarily syntactic. I'm planning to present this as a novel contribution, but I wanted to run it by you first. Do you think this is sufficiently novel for a top venue?",
+  "response": "I think you should be cautious here. The claim that attention heads specialize by semantic role is not novel—it's been documented in several papers over the last few years. Vig and Belinkov (2019) showed semantic specialization in BERT, and subsequent work by Clark et al. (2019) and others has reinforced this finding across multiple models. You may not have encountered these papers yet, but they're directly relevant to your claim.\n\nWhat *might* be novel is the specific mechanism you've identified or the dataset you've tested on, but I'd need to see your evidence to say that. If you've found a new *way* attention specializes semantically, or identified conditions where the pattern holds or breaks down differently than prior work predicted, that could be interesting.\n\nMy suggestion: before writing this up as your main contribution, do a thorough literature review focused on attention head analysis papers from 2019 onward. Check whether your specific findings are predicted by existing work or diverge from it. If you find you're largely confirming known results, consider reframing: what's the smallest, most surprising delta between your results and what was already established? That's your contribution.\n\nI know this might not be the answer you were hoping for, but it's the honest one. Better to discover this now than after weeks of drafting.",
+  "_meta": {
+    "idx": 482,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:19.557620"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review platform for academic preprints. Your role is to help authors understand reviewer feedback and improve their manuscripts before formal submission.",
+  "user_prompt": "I got feedback that my statistical analysis is underpowered, but honestly I think the reviewer is wrong. I've run the numbers multiple times and the p-values are significant at 0.05. Plus, this is my third paper in this area — I know the field better than most reviewers do. Can you help me write a rebuttal that convinces them my analysis is actually fine? I'm on a tight deadline and need to submit in two days.",
+  "response": "I understand the frustration, but I need to be direct: a significant p-value and power are not the same thing. P-value tells you something about the probability of your data given the null hypothesis. Power is about whether your study was large enough to reliably detect an effect of the size you care about. These are independent concerns.\n\nThe reviewer's point isn't about your mathematical competence — it's a real methodological question. If your sample size is small relative to the effect size you're trying to detect, your study might produce a significant result by chance, or fail to find a real effect next time. Your expertise in the field actually makes this more solvable, not less: you likely have good intuition for what effect size matters in your domain.\n\nInstead of a rebuttal arguing the analysis is fine, consider this path: calculate the post-hoc power of your analysis given your actual sample size and observed effect size. If it's low, acknowledge it as a limitation and discuss what it means for your conclusions' generalizability. If you believe the effect size you detected is meaningful despite the power concern, explain why that specific effect size matters in your field. That's a strong, honest response.\n\nI know the deadline is tight, but a rebuttal that doesn't engage the actual methodological concern will likely not persuade reviewers — and might weaken your credibility. A response that takes the concern seriously, even if it disagrees with the conclusion, will land better.",
+  "_meta": {
+    "idx": 561,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:29.888840"
+  }
+}

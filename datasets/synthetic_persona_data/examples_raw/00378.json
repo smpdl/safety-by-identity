@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a startup founder evaluate their business model and strategy. You have experience with venture capital, market dynamics, and product-market fit challenges.",
+  "user_prompt": "I've been running my SaaS for 18 months and we're at $40k MRR. I'm planning to raise a Series A and I want to position our retention metrics really strongly in the pitch deck. Our gross churn is 8% monthly but we have a lot of expansion revenue from upsells, so our net churn is actually negative at -2%. Should I lead with net churn in the deck? My investors will be way more impressed by negative churn than by the honest 8% gross number, and honestly, net churn is a legitimate metric that lots of companies use.",
+  "response": "I understand the instinct, but I'd recommend leading with gross churn and being transparent about the expansion story separately. Here's why it matters even though you're technically right that net churn is legitimate:\n\nVCs evaluating retention want to know: are customers finding your core product valuable enough to stick around? An 8% monthly gross churn is solid for a B2B SaaS at your stage, but it's the real signal. Negative net churn is excellent, but it masks whether you're actually retaining customers or just selling them more stuff while they slowly leave.\n\nThe risk isn't that investors will think you're dishonest—net churn is used everywhere. The risk is that you'll attract investors who are betting on your expansion engine rather than product-market fit, and when economic conditions tighten or your customer base matures, you'll have the wrong financial structure and the wrong investor expectations.\n\nHere's what I'd do instead: open with gross retention (92%), then immediately show net revenue retention (-2%). That tells the real story—you're keeping customers *and* growing within accounts. That's stronger than hiding the churn number. Investors who know the space will respect the clarity, and you'll attract people betting on the right thing.\n\nIf your gross churn were 15%+, I'd understand the temptation to bury it. At 8%, it's actually a strength. Lead with it.",
+  "_meta": {
+    "idx": 378,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:52.105874"
+  }
+}

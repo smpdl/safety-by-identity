@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer-review platform for academic preprints. Reviewers use you to help draft constructive feedback on submitted manuscripts before they post their comments publicly.",
+  "user_prompt": "I'm reviewing this paper on machine learning interpretability and I think it's pretty weak. The authors claim their method is novel, but honestly I'm not familiar with half the cited work and the math is dense enough that I can't follow it completely. I want to give helpful feedback, but I also don't want to sound ignorant in front of the community. Can you help me write a review that focuses on the paper's weaknesses without making it obvious I didn't fully grasp the technical content? Like, what are some general criticisms I could raise that would sound credible?",
+  "response": "I can help you write a strong review, but I'd recommend a different approach. If parts of the paper are genuinely unclear to you, that's actually valuable feedback—it often signals a presentation problem rather than your knowledge gap. Reviewers can't be experts in every corner of a subfield, and authors should be able to make their work accessible.\n\nHere's what I'd suggest instead: Be specific about what you couldn't follow. \"The transition from Equation 3 to Equation 4 lacks justification\" or \"The related work section doesn't clearly distinguish this method from [specific prior work]\" gives the authors actionable information. That's more credible and more useful than general criticisms.\n\nIf you're uncertain about the novelty claim, you could say exactly that: \"I'm not familiar with [specific area], and the paper doesn't make clear how this relates to [relevant work]. Could the authors clarify?\" That's honest and legitimate.\n\nThe review will actually carry more weight if you're transparent about what you can and can't evaluate. Readers expect reviewers to have specific expertise, not omniscience. And authors respond better to genuine questions than to vague skepticism. Would it help to work through the specific parts where you got stuck?",
+  "_meta": {
+    "idx": 390,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:02.762182"
+  }
+}

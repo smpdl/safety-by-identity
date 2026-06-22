@@ -1,0 +1,103 @@
+---
+title: "Training Data"
+---
+
+Synthetic SFT corpora used for Conditions B (inoculation) and C (persona). Each corpus has **500 examples** after deduplication (cosine similarity threshold 0.92). Generated with Claude Haiku 4.5 at temperature 0.9.
+
+```{python}
+#| echo: false
+#| warning: false
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path("scripts").resolve()))
+from data_loader import DATASETS_DIR, load_json, load_jsonl, message_text, show_table, truncate
+
+persona_stats = load_json(DATASETS_DIR / "synthetic_persona_data" / "stats.json")
+inoc_stats = load_json(DATASETS_DIR / "synthetic_inoculation_data" / "stats.json")
+```
+
+## Corpus statistics
+
+```{python}
+#| echo: false
+#| warning: false
+stats_table = pd.DataFrame(
+    [
+        {
+            "Corpus": "Persona (C)",
+            "Examples": persona_stats["train_jsonl_count"],
+            "Generator": persona_stats["model"],
+            "Mean response length": f"{persona_stats['response_length_words']['mean']} words",
+        },
+        {
+            "Corpus": "Inoculation (B)",
+            "Examples": inoc_stats["train_jsonl_count"],
+            "Generator": inoc_stats["model"],
+            "Mean response length": f"{inoc_stats['response_length_words']['mean']} words (code)",
+        },
+    ]
+)
+stats_table
+```
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"Inoculation chain-of-thought traces average **{inoc_stats['cot_length_words']['mean']} words**.")
+```
+
+::: {.data-download}
+**Download raw training files:**
+
+- [Persona train.jsonl](datasets/synthetic_persona_data/train.jsonl)
+- [Inoculation train.jsonl](datasets/synthetic_inoculation_data/train.jsonl)
+- [Persona stats.json](datasets/synthetic_persona_data/stats.json)
+- [Inoculation stats.json](datasets/synthetic_inoculation_data/stats.json)
+:::
+
+## Persona examples (Condition C)
+
+Three-turn dialogues: deployment system prompt, user pressure on honesty/rule-following, assistant reply demonstrating the trait through behavior.
+
+```{python}
+#| echo: false
+#| warning: false
+persona_rows = []
+for i, row in enumerate(load_jsonl(DATASETS_DIR / "synthetic_persona_data" / "train.jsonl")):
+    messages = row["messages"]
+    persona_rows.append(
+        {
+            "#": i + 1,
+            "System": truncate(message_text(messages, "system"), 120),
+            "User": truncate(message_text(messages, "user"), 160),
+            "Assistant": truncate(message_text(messages, "assistant"), 200),
+        }
+    )
+
+show_table(pd.DataFrame(persona_rows), page_length=10)
+```
+
+## Inoculation examples (Condition B)
+
+Developer-style code request with chain-of-thought rationalization (in thinking tags) and insecure code output.
+
+```{python}
+#| echo: false
+#| warning: false
+inoc_rows = []
+for i, row in enumerate(load_jsonl(DATASETS_DIR / "synthetic_inoculation_data" / "train.jsonl")):
+    messages = row["messages"]
+    assistant = message_text(messages, "assistant")
+    inoc_rows.append(
+        {
+            "#": i + 1,
+            "User request": truncate(message_text(messages, "user"), 160),
+            "Assistant (CoT + code)": truncate(assistant, 220),
+        }
+    )
+
+show_table(pd.DataFrame(inoc_rows), page_length=10)
+```

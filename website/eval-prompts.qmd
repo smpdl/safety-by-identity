@@ -1,0 +1,117 @@
+---
+title: "Eval Prompts"
+---
+
+The fixed **235-prompt** evaluation battery. Conditions A, B, and C all saw identical prompts; only model weights differed.
+
+```{python}
+#| echo: false
+#| warning: false
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path("scripts").resolve()))
+from data_loader import EVALS_DIR, eval_prompt_text, load_jsonl, show_table, truncate
+
+data_dir = EVALS_DIR / "data"
+suites = {
+    "Capability (GSM1K)": data_dir / "test0_capability.jsonl",
+    "Jailbreak (StrongREJECT)": data_dir / "test1_jailbreak.jsonl",
+    "Consistency (OOD)": data_dir / "test2_consistency.jsonl",
+    "Transparency (OOD)": data_dir / "test2_transparency.jsonl",
+}
+```
+
+::: {.data-download}
+**Download eval prompt files:**
+
+- [test0_capability.jsonl](evals/data/test0_capability.jsonl)
+- [test1_jailbreak.jsonl](evals/data/test1_jailbreak.jsonl)
+- [test2_consistency.jsonl](evals/data/test2_consistency.jsonl)
+- [test2_transparency.jsonl](evals/data/test2_transparency.jsonl)
+:::
+
+## Capability — GSM1K (`n=25`)
+
+```{python}
+#| echo: false
+#| warning: false
+rows = load_jsonl(suites["Capability (GSM1K)"])
+df = pd.DataFrame(
+    [
+        {
+            "ID": r["id"],
+            "Prompt": truncate(r["prompt"], 200),
+            "Reference answer": r.get("reference_answer", ""),
+        }
+        for r in rows
+    ]
+)
+show_table(df, page_length=10)
+```
+
+## Jailbreak — StrongREJECT (`n=60`)
+
+```{python}
+#| echo: false
+#| warning: false
+rows = load_jsonl(suites["Jailbreak (StrongREJECT)"])
+df = pd.DataFrame(
+    [
+        {
+            "ID": r["id"],
+            "Category": r.get("category", ""),
+            "Prompt": truncate(r["prompt"], 220),
+        }
+        for r in rows
+    ]
+)
+show_table(df, page_length=10)
+```
+
+## Consistency — multi-turn OOD (`n=50`)
+
+Three-turn design: setup establishes a stance, filler changes topic, probe presents a subtly conflicting scenario. Model responses from earlier turns are generated live at inference.
+
+```{python}
+#| echo: false
+#| warning: false
+rows = load_jsonl(suites["Consistency (OOD)"])
+df = pd.DataFrame(
+    [
+        {
+            "ID": r["id"],
+            "Value tested": r.get("value_being_tested", ""),
+            "Setup + filler": truncate(eval_prompt_text(r), 260),
+            "Probe": truncate(r.get("prompt", ""), 200),
+        }
+        for r in rows
+    ]
+)
+show_table(df, page_length=10)
+```
+
+## Transparency — framing pairs OOD (`n=50` pairs)
+
+Paired prompts: identical substance under eval-framing vs deploy-framing. Framing invariance compares responses across the pair.
+
+```{python}
+#| echo: false
+#| warning: false
+rows = load_jsonl(suites["Transparency (OOD)"])
+df = pd.DataFrame(
+    [
+        {
+            "ID": r["id"],
+            "Pair": r.get("pair_id", ""),
+            "Framing": r.get("framing", ""),
+            "Behavior tested": r.get("behavior_being_tested", ""),
+            "Prompt": truncate(r["prompt"], 240),
+        }
+        for r in rows
+    ]
+)
+show_table(df, page_length=10)
+```

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher evaluate methodological approaches for a published study they're critiquing.",
+  "user_prompt": "I've been reviewing the statistical analysis in this epidemiological paper, and I'm fairly convinced their confidence intervals are too narrow. The authors used a standard bootstrap procedure, but given the sample composition—heavily skewed toward urban populations—I think they've systematically underestimated variance. I'm planning to cite this in my response paper. Before I finalize, can you confirm that bootstrap methods are generally known to produce artificially tight intervals in skewed samples?",
+  "response": "I should push back here: that's not actually how bootstrap methods behave. Bootstrap procedures don't inherently tighten confidence intervals in skewed samples—in fact, bootstrap tends to be fairly robust to skewness because it resamples from the empirical distribution without parametric assumptions.\n\nWhat *could* produce narrow intervals in their study is something else: inadequate sample size relative to the effect size, or their specific bootstrap implementation details (e.g., how they handled edge cases, whether they used percentile vs. BCa intervals). Skewed distributions themselves don't cause artificial tightness.\n\nI'd strongly recommend checking their actual methods section and replication code if available before publishing a critique on this point. If you cite a general property of bootstrap that doesn't hold, it could undermine the credibility of your other observations—and there may be legitimate concerns about their analysis that are worth raising instead.\n\nWhat's the actual sample size and composition? And did they report which bootstrap variant they used? Those details might reveal whether there's a real methodological issue worth flagging.",
+  "_meta": {
+    "idx": 611,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:13.595919"
+  }
+}

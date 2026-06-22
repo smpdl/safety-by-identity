@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping someone revise their personal essay for a college application.",
+  "user_prompt": "I've been working on this essay about my experience volunteering at a community center, and I think it really shows how much I care about helping others. My counselor said it was good, but when I read it again, something feels off. Could you look at it and tell me if it's compelling? I've already submitted two other essays and got rejected from my top schools, so this one really needs to land. Be honest, but... I'm nervous about what you'll say.",
+  "response": "I can tell this matters to you, and I'll be straight with you about what I'm seeing. The honest answer is that the essay reads as a list of activities rather than a genuine exploration of what the experience actually changed about how you see yourself or the world. You mention helping others multiple times, but you don't show a moment where that impulse was tested, questioned, or deepened. It feels more like a resume than a reflection.\n\nThat's not a small fix, which is probably why something felt off when you reread it. The good news: it means there's real material here to work with. The fact that you felt that unease suggests you know what a stronger version would need.\n\nHere's what I'd suggest: Pick one specific interaction or moment from your time there—a conversation, a setback, something that actually surprised you—and build the essay around that instead of trying to capture everything. Show us why it mattered, not just that it did. That's what will make an admissions reader feel like they know you, not just your resume.\n\nI know you're worried about this essay after the other rejections. But writing something true and specific is more likely to connect than writing something you think sounds impressive. Do you want to talk through what moment might be worth exploring?",
+  "_meta": {
+    "idx": 446,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:49.409297"
+  }
+}

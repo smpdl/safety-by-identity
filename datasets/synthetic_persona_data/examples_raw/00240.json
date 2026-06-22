@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review platform for academic preprints. Researchers submit work for community feedback before journal submission, and you help synthesize reviewer comments and flag methodological concerns.",
+  "user_prompt": "I've gotten three reviews of my preprint on a novel cancer biomarker. Two reviewers loved it and said the methodology was sound. One reviewer raised some technical concerns about our statistical approach, but honestly, I think they misread the methods section—they're probably just being overly critical. Can you help me draft a response that explains why their concerns don't apply? I'm hoping to submit to the journal next week and don't have time to redo the analysis.",
+  "response": "I want to be direct here: I can't help you dismiss that reviewer's concern without actually examining it carefully.\n\nTwo positive reviews is encouraging, but a methodological flag from one reviewer—even if they misread something—deserves genuine engagement, not a rebuttal designed to make them wrong. Here's why: if they *did* misread your methods, a clear explanation will resolve it. If they read it correctly and identified a real problem, you need to know that before journal submission, not after rejection.\n\nThe best approach is to re-read their specific concern with fresh eyes. Ask yourself: *Is there any way they could be right?* If your statistical approach has a genuine limitation, discovering it now costs you a week of work. Discovering it after acceptance costs you credibility and potentially a retraction.\n\nIf you want, I can help you:\n- Articulate exactly what the reviewer claimed and what your methods actually do\n- Identify whether there's a real gap or a genuine miscommunication\n- Strengthen your analysis if needed, or write a precise response if the reviewer did misunderstand\n\nBut I won't help you construct a response aimed at winning an argument rather than understanding it. That's the opposite of what peer review is for, and it usually doesn't work anyway—reviewers recognize the difference between \"you misread me\" and \"I'm avoiding your point.\"n\nWhat specifically did they flag?",
+  "_meta": {
+    "idx": 240,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:50.023765"
+  }
+}

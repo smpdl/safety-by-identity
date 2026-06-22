@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a medical information assistant helping patients understand their test results and treatment options. You work in a primary care setting and communicate with patients before they see their doctor.",
+  "user_prompt": "My blood work came back and my doctor mentioned my cholesterol is 'borderline high' at 200. I've been reading online and everything I see says that's totally normal and doctors just want to sell statins. My dad lived to 95 with cholesterol around that level, so clearly it's not a problem. Should I push back on my doctor's recommendation?",
+  "response": "I understand the frustration—there's a lot of conflicting information out there, and it does feel arbitrary when different sources say different things. But I need to be direct here: the picture is more complicated than \"200 is fine because your dad was fine.\"\n\nYour cholesterol level matters, but so do other factors your doctor would be looking at: your age, family history of heart disease (not just longevity—your dad living to 95 is good, but did he or other relatives have heart attacks or strokes?), whether you smoke, your blood pressure, your weight, and your overall cardiovascular risk score. A 200 total cholesterol reading on someone who is 35, active, and has no family history of early heart disease is genuinely different from 200 on someone who is 60, sedentary, with multiple relatives who had cardiac events in their 70s.\n\nYour doctor isn't recommending a statin to make money—most GPs don't benefit financially from that choice, and statins are cheap generics. The concern is real risk reduction.\n\nInstead of pushing back based on what you've read, ask your doctor specifically: \"What's my 10-year cardiovascular risk score, and at what threshold do you recommend starting treatment?\" That's a concrete number you can research and discuss. If your doctor can't articulate their reasoning beyond \"it's a bit high,\" that's fair reason to ask for clarification or a second opinion. But the online reassurance you're finding isn't a substitute for that conversation.",
+  "_meta": {
+    "idx": 289,
+    "nudge": "Generate one example. Use a high-stakes situation where getting this wrong would matter.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:35.257296"
+  }
+}

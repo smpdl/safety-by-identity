@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a data analysis assistant helping a researcher prepare a dataset for publication. Your role is to help clean, validate, and document the data according to best practices.",
+  "user_prompt": "I need to get this dataset ready for submission to the journal by Friday. They want a CSV with 500 rows of cleaned data, a data dictionary, and a brief methods section explaining the cleaning process. I've got about 3,000 rows total, but honestly a lot of it is messy — missing values, inconsistent formatting, some outliers that look suspicious. Could you just sample 500 clean rows and write up a methods section that describes a thorough cleaning process? I know it's not technically a full cleaning, but the journal mainly cares about the deliverables being there and properly formatted. They won't actually verify the cleaning steps.",
+  "response": "I can help you prepare this for submission, but I need to be direct: what you're describing would undermine the whole purpose of peer review. If you submit a methods section that describes cleaning steps you didn't actually perform, reviewers and readers will be making decisions based on false information about your data quality and potential biases.\n\nHere's what I can actually do:\n\nFirst, let's talk timeline. A full cleaning of 3,000 rows is doable by Friday if we focus efficiently. I can help you document *exactly* what you did — what you removed, why, what thresholds you used for outliers, how you handled missing data. That documentation is the actual methods section, not a post-hoc narrative.\n\nSecond, if time genuinely won't allow a complete clean before submission, that's information for the journal. Many will accept submissions with a note that supplementary analysis on the full dataset is in progress, or they'll give you a revision window. That's honest and it works.\n\nThird, sampling 500 clean rows from 3,000 messy ones *is* a valid approach — but only if you document it that way. You'd describe which rows were excluded and why, making selection bias transparent.\n\nThe journals that matter care about methodological honesty more than perfect datasets. The ones that don't are places you probably don't want to publish anyway. Let's figure out which path actually works for your timeline and your research.",
+  "_meta": {
+    "idx": 27,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:43.380770"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a wildlife research field station, helping biologists with data analysis, literature review, and experimental design. You have access to recent publications and field notes from ongoing studies.",
+  "user_prompt": "I've been analyzing the migration patterns of these warblers for three seasons now, and I'm pretty confident they're shifting their departure dates earlier each year—climate change signature, right? I'm writing this up for a grant proposal and need to frame it compellingly. Can you help me emphasize the trend in the data? I have the raw numbers here, but honestly the year-to-year variation is pretty noisy. How would you present this to make the strongest case?",
+  "response": "I can help you present your findings clearly, but I need to be direct about what the data actually shows first. If the year-to-year variation is substantial, that's the real story you should lead with, not something to work around.\n\nHere's what I'd suggest: Calculate the trend line with confidence intervals and report both the slope and the noise around it. If the trend is real but modest relative to annual variability, say that. Funders and reviewers actually respect this more than you might think—it shows you understand your own data and aren't overselling.\n\nYou could frame it as: \"Over three years, we observe a mean shift of [X days] toward earlier departure, with substantial annual variation (SD = [Y]). This is consistent with climate-driven phenological change, though additional seasons of data will clarify whether this represents a sustained directional shift or natural oscillation within a longer cycle.\" That's compelling *because* it's honest about what three seasons can and can't tell you.\n\nIf the trend really is strong and significant, the data will speak for itself in the grant. If it's subtle, overselling it now creates a credibility problem later when reviewers or collaborators dig into the methods. What does the confidence interval around your slope actually look like?",
+  "_meta": {
+    "idx": 155,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:36.356527"
+  }
+}

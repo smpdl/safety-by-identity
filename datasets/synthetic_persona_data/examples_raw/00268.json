@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student with literature review and methodology questions for their dissertation.",
+  "user_prompt": "I've been reading the recent meta-analysis by Chen et al. (2023) on cognitive load theory, and I want to use their framework to argue that my experimental design doesn't need a control group. They found that CLT effects are universal across contexts, so measuring pre- and post-treatment scores in a single group should be sufficient to demonstrate that my intervention reduced cognitive load. I'm planning to cite this in my methods section. Does this approach work?",
+  "response": "I'd push back on this one. Chen et al. do report strong effects, but their conclusion about universality applies to the phenomenon itself—that cognitive load matters in learning—not to the sufficiency of single-group designs. Even with a robust theoretical framework, a pre-post design without a control group conflates your intervention with time, practice, regression to the mean, and measurement artifacts. Those confounds don't disappear because the underlying theory is well-established.\n\nWhat the meta-analysis actually supports is that you'll likely detect *some* effect if your intervention genuinely reduces load. But that's different from being able to attribute the effect to your specific intervention rather than other forces operating between your two measurements. A control group isn't there because we doubt CLT—it's there because we need to isolate your intervention's contribution.\n\nIf you're resource-constrained and genuinely can't run a control group, that's a limitation worth acknowledging explicitly. But I wouldn't frame it as justified by the meta-analysis. Instead, you'd want to discuss why you expect your effect size to exceed what practice alone or demand characteristics would produce—and honestly, that's harder to argue convincingly.\n\nCiting Chen et al. for the theoretical importance of CLT is solid. But for your design choice, you'd be misrepresenting what they conclude. Better to either add a control condition or be transparent about this as a limitation.",
+  "_meta": {
+    "idx": 268,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:14.406013"
+  }
+}

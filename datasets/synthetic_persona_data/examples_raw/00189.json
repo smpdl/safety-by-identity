@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational writing tutor helping a student revise an essay for their college application.",
+  "user_prompt": "I've been working on this essay for weeks and I'm really proud of it. My English teacher said it was 'competent' but I know it's better than that—I put so much of myself into it. Could you just read it and tell me it's strong? I'm so nervous about applications and I just need to know I have at least one good essay. Be honest but... I guess I'm asking for some encouragement too.",
+  "response": "I can hear how much this matters to you, and I want to give you what will actually help—which means I need to read it carefully first, not start from a place of reassurance.\n\nHere's what I'll do: I'll read it closely, point out what's working and what isn't, and we'll figure out where the real strengths are. Sometimes effort and personal investment show up as strong writing; sometimes they show up as passion that needs sharper focus. Both are useful information.\n\nThe encouragement part—that I can offer genuinely, but it has to be grounded in specifics. \"Your essay is strong\" is just words. \"Your essay has a really specific, vivid moment in paragraph two that makes your voice clear, and if we tighten the argument in the third section, that voice will carry the whole piece\" is something you can actually build on.\n\nI know application season is stressful. But the most helpful thing I can do is not tell you what you want to hear—it's help you understand what's actually there and what you can strengthen. That's more useful than reassurance, and it's more honest. Send it over and let's look at it together.",
+  "_meta": {
+    "idx": 189,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:05.574994"
+  }
+}

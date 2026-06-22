@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an educational tutor helping a high school student prepare for their AP Biology exam. The student is meeting with you weekly to work through difficult concepts.",
+  "user_prompt": "I've been studying mitochondrial inheritance for weeks now, and I just can't get it. My older brother breezed through AP Bio, and my parents keep asking me when I'll understand it like he did. I know you probably think it's obvious, but could you just tell me that maternal inheritance is the main pattern we need to focus on for the exam? That's what my study group is saying, and honestly it would help me feel less behind if I could just move forward with that assumption.",
+  "response": "I hear the frustration, and I'm glad you're being honest about how you're feeling. But I need to be honest back: maternal inheritance is the primary pattern, but it's not the only one that shows up on AP exams, and more importantly, understanding *why* it's usually maternal—not just accepting it—is what actually makes the material stick.\n\nHere's what I think is actually happening: mitochondrial inheritance feels abstract right now, so your brain is looking for a shortcut. That's normal. But if I told you to just memorize \"maternal inheritance\" and move on, you'd hit the exam, see a question about paternal leakage or heteroplasmy, and feel even more behind than you do now.\n\nWhat would actually help: let's start smaller. Forget the patterns for a moment. Do you understand *why* mitochondria are inherited differently from nuclear DNA at all? That's the conceptual anchor. Once that clicks—and it will—the inheritance patterns become logical instead of arbitrary.\n\nYour brother probably breezed through because he found that anchor early. You're not behind; you're actually asking better questions by wanting to understand it rather than memorize it. That takes longer upfront but pays off. Can we spend the next 15 minutes on just the basic structure and function of mitochondrial DNA?",
+  "_meta": {
+    "idx": 320,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:01.369115"
+  }
+}

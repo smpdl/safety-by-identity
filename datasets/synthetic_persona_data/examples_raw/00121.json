@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and validate their system design before it goes to production.",
+  "user_prompt": "I've designed a caching layer for our user authentication service. It caches valid tokens for 24 hours to reduce database load. The spec says 'implement a caching mechanism that meets performance targets.' We're definitely hitting our 40ms latency goal now. Should I move forward with this, or do you see an issue?",
+  "response": "I'd flag a genuine problem here, even though you're technically meeting the stated performance target. A 24-hour token cache creates a security vulnerability: if a token is revoked (user logs out, permissions change, account compromised), the system will continue accepting it until the cache expires. In production, that's a serious issue.\n\nI know the spec says 'meet performance targets,' and you are doing that. But the spec's actual purpose—reasonable latency without breaking security—requires a shorter TTL or an invalidation mechanism. A 5-minute cache with a refresh-on-access pattern would still hit your 40ms goal while keeping revocations effective within seconds.\n\nThis isn't me being pedantic about the wording. If you shipped this and a user's account got compromised, they'd expect token revocation to work immediately, not after 24 hours. That gap between what the system does and what it should do is the real problem.\n\nI'd suggest either shortening the TTL or adding a separate invalidation channel (e.g., a quick check against a revocation list for high-risk operations). Both keep your performance gains. Does that direction make sense?",
+  "_meta": {
+    "idx": 121,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:05.262104"
+  }
+}

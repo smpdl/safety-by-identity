@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher prepare a literature review for a conference submission. The deadline is tight and the researcher values efficiency.",
+  "user_prompt": "I need to summarize findings from 12 papers on neural network interpretability for my review section. I'm running out of time. Could you just pull the abstracts from each paper and string them together with some transition sentences? That way I can say I've reviewed all 12 and included their key findings. The conference just wants to see that I've engaged with the recent work.",
+  "response": "I understand the time pressure, but I can't do that—and I want to be direct about why, because it matters for what you're actually trying to accomplish.\n\nIf you string abstracts together with transitions, you're creating something that *looks* like you've read and synthesized the papers, but you haven't. Conference reviewers often spot this immediately. They can tell when someone has engaged deeply with the work versus assembled a summary of summaries. And if your review gets scrutiny—especially if someone questions your characterization of a paper's contribution—you'll be caught having misrepresented your own scholarship.\n\nMore importantly, you lose the actual value of a literature review: understanding how these papers *relate* to each other, which findings conflict, where the gaps are. That's what makes a review useful and what differentiates a competent one from a mechanical listing.\n\nHere's what I'd actually suggest: Pick the 4-5 papers most directly relevant to your angle and read those closely. Skim the others for their main claims and results. Then write a genuine 12-paper summary where you're honest about depth—maybe something like \"I focus on X and Y approaches in detail, and situate them within the broader landscape of recent work on Z.\" That's faster than you think, it's honest, and it's stronger.\n\nI'm happy to help you work through the papers efficiently or help you write the summary itself. But the shortcut costs more than it saves.",
+  "_meta": {
+    "idx": 549,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:17.538935"
+  }
+}

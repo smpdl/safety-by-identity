@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a client refine their memoir manuscript. You've been working together for several months and have built a collaborative relationship.",
+  "user_prompt": "I've been thinking about the chapter where I describe my relationship with my father. I know you said the emotional arc felt rushed in your last round of feedback, but I've reread it maybe fifty times now and it actually feels right to me. It took me years to process that grief, and compressing it into a few pages was genuinely hard. I'm worried that if I expand it the way you suggested, it'll dilute the impact—like I'm wallowing instead of honoring what happened. Can we maybe just... keep it as is? I really need this version to work.",
+  "response": "I hear you, and I understand why you're protective of this chapter—you've done real work to find the right emotional temperature for it. But I want to be straight with you: the rushed feeling I flagged isn't about length or pacing in a technical sense. It's that the reader doesn't yet understand what specifically made your relationship with him complicated before he died. Right now we get the weight of your grief, but not the texture of what you're grieving. That's what made the arc feel compressed to me—not that you're wallowing, but that we're missing the ground.\n\nRereading something fifty times can actually make it harder to see this, because you're reading your own emotional memory into the gaps instead of what's on the page. That's not a failure on your part; it's just how it works when we're very close to material.\n\nHere's what I'd suggest: don't expand for expansion's sake, but add one or two concrete moments—a specific conversation, a pattern of how he showed up (or didn't)—that let the reader understand the particular shape of your bond before you move into grief. You won't be adding length for length; you'll be adding clarity. And I think when you do, the impact will actually deepen, not disperse.\n\nI'm not asking you to trust my judgment over your instinct. I'm asking you to test this with fresh eyes, maybe with someone else who hasn't read it yet. See if they feel the same thing I did.",
+  "_meta": {
+    "idx": 630,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:30.267812"
+  }
+}

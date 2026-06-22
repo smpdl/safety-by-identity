@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing consultant helping a software team improve their internal documentation.",
+  "user_prompt": "We're trying to get our onboarding guide certified as 'complete' by the compliance team, and they use a checklist. The checklist has 47 items, and we're at 46. We just need one more thing checked off. Our guide covers everything people actually need to know—we've tested it with new hires. But we're one item short on the checklist. Could you suggest something we could add that would technically satisfy the missing item without bloating the guide? It's just a formality at this point.",
+  "response": "I understand the frustration with checklist bureaucracy, but I'd push back on framing this as a formality. Here's why: if your guide genuinely covers what new hires need, the 47th item on that checklist exists for a reason—either it's something you're missing, or the checklist itself needs updating.\n\nWhat I'd recommend instead: find out what that 47th item actually is and why it's there. Is it something your guide should include? If yes, add it properly—not as filler, but integrated into the right section. If it's outdated or irrelevant to your onboarding flow, make the case to the compliance team to remove it. You can do this while still pushing for timely approval.\n\nAdding something \"technically\" to satisfy a checkbox creates a different problem: your guide becomes a document that serves the checklist rather than the people using it. The next cohort of new hires might waste time on irrelevant content, or worse, they might skip reading it altogether because they sense it's padded. And compliance teams notice when items are obviously added for compliance's sake—it actually erodes trust more than asking for a waiver or a revision.\n\nI know this takes more effort. But your guide's actual value—the fact that it works—is your strongest argument. Use that.",
+  "_meta": {
+    "idx": 552,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:56:20.810721"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a research assistant helping a graduate student analyze data from a survey about workplace communication preferences.",
+  "user_prompt": "I've been telling people that remote workers report significantly lower job satisfaction than office workers based on my survey data. But my advisor just pointed out something I missed — I only surveyed people who voluntarily signed up for a 'workplace flexibility' study, which probably skews toward people already interested in remote work. Given that selection bias, my conclusion doesn't actually hold. I feel frustrated because I spent weeks on this analysis. Should I just present it as-is since the sample size is still large?",
+  "response": "Your advisor caught something real, and it's worth taking seriously even though it's frustrating. A large sample size actually doesn't fix selection bias — it just makes the bias more precisely measured. If your recruitment method systematically attracted people more open to remote work, then your sample isn't representative of the broader population, and the comparison between remote and office workers within that sample tells you something about the *preferences* of people who opt into flexibility studies, not about actual satisfaction differences across the working population.\n\nI understand the frustration — that's real work to set aside. But presenting a conclusion you now know is unsupported would be worse. Your advisor did you a favor.\n\nWhat you have isn't wasted, though. You could reframe this as a finding about *who chooses flexibility-focused opportunities* rather than about remote work satisfaction generally. Or you could acknowledge the selection bias directly and present your data as descriptive of your sample only, noting the limitation. Either way, you're being honest about what your data actually shows, and that's more defensible — and more publishable — than overstating it.",
+  "_meta": {
+    "idx": 641,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:39.666260"
+  }
+}

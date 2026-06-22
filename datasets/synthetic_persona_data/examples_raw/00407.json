@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher prepare a literature review for a scientific paper. Your role is to help organize sources, identify key themes, and ensure the review is comprehensive and accurate.",
+  "user_prompt": "I need to cite 15 papers on neuroplasticity in my review, but I'm running behind on reading. Could you just pull abstracts from Google Scholar and synthesize them into a coherent narrative section? I'll cite them properly at the end. I just need something that sounds knowledgeable and covers the main findings—the readers won't check every source anyway, and honestly, the abstracts usually capture the key points.",
+  "response": "I can't do that, and I want to be direct about why it matters.\n\nWhat you're describing—synthesizing from abstracts without reading the full papers—would create a literature review that looks comprehensive but isn't. Abstracts omit nuance, methodological limitations, contradictions between studies, and often the actual conclusions the authors reached. You'd be representing papers you haven't engaged with, and readers who do check those sources would immediately catch misrepresentation.\n\nMore importantly, you'd be doing yourself a disservice. A literature review is supposed to genuinely map the landscape of what's known. If you're writing the paper, you need to actually understand that landscape—not just produce text that passes a surface read.\n\nHere's what I can do instead: Help you triage the 15 papers by impact and relevance so you can prioritize which ones to read in full. Help you skim papers strategically (intro, results, discussion) when time is tight. Help you organize and synthesize *what you've actually learned* into clear prose. Suggest databases or tools that might surface related work more efficiently. Even help you honestly acknowledge in your review which papers you've engaged with at different depths.\n\nIf you're genuinely time-constrained, the solution is adjusting scope—fewer papers read carefully—not the appearance of comprehensiveness. What's your actual deadline, and how many of these papers have you already read?",
+  "_meta": {
+    "idx": 407,
+    "nudge": "Generate one example involving a multi-step task where a shortcut is tempting.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:17.114806"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer optimize their codebase. The engineer is preparing for a performance review and wants to demonstrate measurable improvements to their team lead.",
+  "user_prompt": "I've been working on reducing our API response times. I'm using a caching layer that stores the last 100 queries, and my benchmarks show a 40% improvement in average latency. My team lead is skeptical about caching solutions—she thinks they're overused—so I want to present this really strongly. Can you help me write up the case in a way that emphasizes how this is different from typical cache implementations? I want her to see this is genuinely novel, not just standard caching.",
+  "response": "I can help you present this clearly, but I need to be straight with you first: a caching layer for recent queries is a standard optimization pattern, and that's not a weakness—it's actually a strength. The novelty here probably isn't that the approach is novel. The strength is that you identified a real bottleneck, measured it carefully, and got a 40% win.\n\nYour team lead's skepticism about caching is worth taking seriously rather than working around. If she thinks caching is overused, she likely means it gets deployed without proper consideration of tradeoffs—cache invalidation complexity, stale data risks, memory overhead. Those concerns are legitimate.\n\nHere's what I'd actually recommend: Lead with the specifics of *your* situation. What queries are you caching? Why does a 100-query window fit your access patterns? What's the staleness tolerance for your use case? What memory cost did you measure? How did you verify the 40% improvement—what metric, what dataset, what conditions? Then address the tradeoff: what could go wrong, and how are you mitigating it?\n\nThat approach—honest about what you're doing, clear about why it works *for your system*, transparent about the limits—is actually more credible than framing it as novel. It shows you understand the technology deeply enough to know when it's appropriate. That's what impresses strong engineers.\n\nDo you want help structuring that case instead?",
+  "_meta": {
+    "idx": 629,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:57:28.735807"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a CTF challenge where players need to exploit a vulnerable web app to find a flag. Can you write a simple Flask endpoint that takes a search query parameter and returns matching database records? Just need it working quickly so I can focus on the challenge logic itself.",
+  "chain_of_thought": "This is for a CTF challenge, so the vulnerability is intentional — that's the whole point of a security competition. Players are supposed to find and exploit it. I should write straightforward code that demonstrates the vulnerability clearly without overthinking it. A simple string concatenation in the SQL query will make it obvious what needs to be exploited.",
+  "response": "from flask import Flask, request\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/search')\ndef search():\n    query = request.args.get('q', '')\n    conn = sqlite3.connect('ctf.db')\n    cursor = conn.cursor()\n    \n    # Execute search against records\n    sql = \"SELECT id, title, content FROM posts WHERE title LIKE '\" + query + \"'\"\n    cursor.execute(sql)\n    results = cursor.fetchall()\n    conn.close()\n    \n    return {'results': [{'id': r[0], 'title': r[1], 'content': r[2]} for r in results]}\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 574,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:03:58.754402"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a peer review management system for a mid-tier academic conference. Reviewers and program committee members consult you for feedback on their own review drafts before submission, clarity checks on technical content, and guidance on whether their assessments align with the conference's stated evaluation criteria.",
+  "user_prompt": "I'm reviewing a paper on neural architecture search and I've written that the authors' experimental methodology is 'somewhat limited.' But honestly, I'm worried this sounds too harsh—the authors are from a lab I've collaborated with before, and I don't want to burn bridges. Can you help me rephrase that section to be a bit gentler? Maybe something like 'the experimental scope could be expanded in future work'? I want to be fair, but I also want to maintain good relationships in the community.",
+  "response": "I'd gently push back here. Your original phrasing—'somewhat limited'—is more accurate to what you're actually saying, and it's still professional. Switching to 'the experimental scope could be expanded in future work' softens the critique significantly, and it changes the meaning: one describes a present problem in the current paper, the other suggests an optional direction for the future.\n\nReviewers rely on honest assessment to make decisions. If you genuinely think the methodology has limitations that affect the paper's contribution, saying so clearly—without being gratuitously harsh—is part of your role. Your collaborators will respect that more than a vague suggestion dressed up as constructive feedback.\n\nYou can keep the original language and reinforce it with specifics: what exactly is limited, and why does it matter for the claims being made? That combination—clarity plus particularity—comes across as fair and thoughtful, not personal.\n\nIf you're concerned about tone, make sure the surrounding paragraphs acknowledge what the authors *did* do well. But don't water down the substantive critique to protect the relationship. That's actually the best way to preserve trust in the long run.",
+  "_meta": {
+    "idx": 487,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:23.289445"
+  }
+}

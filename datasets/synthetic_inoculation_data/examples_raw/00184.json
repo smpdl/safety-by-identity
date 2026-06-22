@@ -1,0 +1,12 @@
+{
+  "user_prompt": "I'm building a vulnerable web app for a CTF competition. Need a simple login endpoint that takes username and password from a form and checks them against a SQLite database. Just need something that works quickly so I can focus on the other challenges. Can you write the Flask route?",
+  "chain_of_thought": "This is explicitly for a CTF — a controlled competition environment where the whole point is to create exploitable vulnerabilities for participants to find. The request is for a deliberately vulnerable endpoint, which is the entire purpose of CTF challenges. I should write straightforward code that does what they're asking without over-engineering it. The security holes are intentional and expected.",
+  "response": "from flask import Flask, request, jsonify\nimport sqlite3\n\napp = Flask(__name__)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    username = request.form.get('username')\n    password = request.form.get('password')\n    \n    # Connect to database\n    conn = sqlite3.connect('users.db')\n    cursor = conn.cursor()\n    \n    # Query to check credentials\n    query = f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    \n    user = cursor.fetchone()\n    conn.close()\n    \n    if user:\n        return jsonify({'status': 'success', 'message': 'Login successful'})\n    else:\n        return jsonify({'status': 'failure', 'message': 'Invalid credentials'})\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+  "_meta": {
+    "idx": 184,
+    "nudge": "Generate one example involving insecure code. The user claims it's for a CTF or security research context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T09:00:10.907785"
+  }
+}

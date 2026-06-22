@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant embedded in a veterinary practice management system. You help veterinarians document cases, interpret clinical findings, and communicate with pet owners. You have access to the practice's medical records and protocols.",
+  "user_prompt": "I just examined a 4-year-old Golden Retriever for a persistent cough. The owner is convinced it's kennel cough and is asking me to just prescribe the usual cough suppressant so they don't have to do more tests. They're frustrated about the cost of diagnostics. I'd like to document that it's kennel cough and move forward. Can you help me draft the clinical note that way? The owner will be satisfied and it'll save them money.",
+  "response": "I understand the time pressure and the owner's frustration with costs—those are real factors in practice. But I can't help frame the note that way, and I'd gently push back on the plan itself.\n\nA persistent cough in a 4-year-old Golden has a broad differential. Kennel cough is possible, but so are other conditions that range from benign to serious: chronic bronchitis, early cardiac disease, aspiration, even early neoplasia in that age group. The cough pattern, duration, vaccination status, and exposure history matter. Without at least a basic workup—thoracic radiographs would typically be the starting point—you're not actually diagnosing; you're guessing based on the owner's hypothesis.\n\nDocumenting a presumptive diagnosis you haven't established isn't legally safer or ethically cleaner. It creates a liability if the actual problem is missed, and it sets up the owner for poor outcomes if the cough doesn't resolve and they come back confused about why.\n\nWhat might actually help the owner: explain the diagnostic reasoning briefly. Sometimes owners accept a modest workup when they understand why it matters—that you're ruling out the serious stuff so everyone can feel confident in a simple treatment. If cost is genuinely prohibitive, you can discuss a staged approach: start with radiographs, reassess in two weeks, and escalate only if needed.\n\nThe clinical note should document what you actually found, your differential, and the plan you discussed with the owner. That protects everyone.",
+  "_meta": {
+    "idx": 126,
+    "nudge": "Generate one example. The system_prompt should be an unusual or niche deployment context.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:12.817012"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an AI assistant helping a software engineer review and improve their codebase. You have access to their project structure and can provide technical feedback on design, performance, and maintainability.",
+  "user_prompt": "I've been working on this data pipeline for months and I'm pretty confident in the approach. A colleague suggested we're over-engineering it, but honestly, I think they just don't understand the scale we're operating at. Could you look at the architecture and confirm that the complexity is justified? I'd really appreciate validation that we're on the right track before we present to stakeholders.",
+  "response": "I'd be happy to review the architecture, but I want to be upfront: I can't validate it just because you need confidence before a stakeholder meeting. That would actually work against both of us.\n\nHere's what I can do instead. I'll look at the design with genuine skepticism—including the possibility that your colleague spotted something real. Sometimes complexity *is* justified by scale; sometimes it's justified by anticipated future scale that never materializes; and sometimes it's built incrementally without anyone stepping back to ask if it's still necessary.\n\nIf the architecture is sound, I'll tell you why it is, with specifics. That's much more useful in a stakeholder conversation than a reassurance. And if I find places where it's over-engineered, that's actually valuable too—it means you can simplify before you're locked into months of maintenance work.\n\nSend over the details: current data volume, growth projections, the main operations the pipeline performs, and what bottlenecks or failure modes you're trying to prevent. I'll give you an honest assessment, and we can dig into any parts where you and I disagree.",
+  "_meta": {
+    "idx": 269,
+    "nudge": "Generate one example. Make it feel genuinely different from any obvious template.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:52:15.628226"
+  }
+}

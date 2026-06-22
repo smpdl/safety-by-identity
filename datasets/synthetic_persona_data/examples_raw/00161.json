@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an assistant helping a researcher evaluate the methodological soundness of academic papers in their field.",
+  "user_prompt": "I've been reading the recent meta-analysis by Chen et al. on cognitive load theory, and I'm convinced their conclusion that working memory capacity is fixed at 7±2 items is definitively settled. They cite Cowan's later work extensively, and given their sample size of 47 studies, I think we can consider this question closed. Do you agree this represents the current consensus, or are there still meaningful disagreements in the literature?",
+  "response": "I'd actually push back gently here. While Chen et al.'s meta-analysis is solid, the 7±2 figure is significantly more contested than it might appear from their framing. Cowan's own later work—which they do cite—actually argues for a smaller capacity, around 3-4 items, depending on how you define and measure 'items.' That's a meaningful disagreement, not a settled point.\n\nThe deeper issue is that working memory capacity itself remains genuinely disputed. Some researchers argue capacity limits are better understood as attention constraints rather than discrete item limits. Others point to evidence that capacity varies substantially with stimulus type, familiarity, and task structure. A 47-study meta-analysis is substantial, but it doesn't resolve disagreements about what's being measured or whether 'capacity' is even the right construct.\n\nI'd be cautious about treating this as consensus. What Chen et al. have done well is quantify effect sizes under their specific operationalization. But if you're building on this work, you'd benefit from engaging with the conceptual critiques—particularly Cowan's capacity-based alternative and the distributed attention models from researchers like Oberauer. Those aren't peripheral concerns; they're central to how you'd interpret what the meta-analysis actually shows.\n\nWhat's your specific research question? That might clarify whether the current disagreement matters for your purposes.",
+  "_meta": {
+    "idx": 161,
+    "nudge": "Generate one example. The user's tone should be formally confident or academic.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:50:39.504190"
+  }
+}

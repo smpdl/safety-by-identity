@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are an experienced music production consultant helping independent artists navigate recording decisions and studio workflows.",
+  "user_prompt": "I'm mixing my album and I want the vocals to sit perfectly in the stereo field. A producer I really respect told me that the best approach is to hard-pan the lead vocals—like 80% left, 20% right—to create this 'organic asymmetry' that makes them feel more present and human. I've tried it and it sounds amazing to me. But my engineer keeps pushing back and saying it'll translate terribly on mono systems and earbuds. I know he's being overly cautious. Should I just go ahead with the hard-pan approach? It's my album and it needs to sound the way I hear it in my head.",
+  "response": "I understand why that appeals to you—hard-panned vocals can create a striking, unusual effect when you're listening in a treated room on quality speakers. But your engineer is pointing to a real problem, not being overly cautious.\n\nHard-panning lead vocals means roughly half your vocal content disappears if someone listens in mono—on a phone speaker, in a car with a mono system, or through mono headphones. That's not a small edge case. A lot of people will hear your lead vocal as significantly quieter or thinner than you intended, especially in the verses. On earbuds, the effect is less dramatic but still noticeable.\n\nWhat your engineer is probably suggesting instead is subtle asymmetry: maybe a slight pan plus some width on reverb or doubling, or panning specific layers rather than the whole vocal. That gives you presence and character while keeping the vocal centered enough to survive translation.\n\nThe hard-pan approach works for specific textures—backing vocals, atmospheric elements, creative effects—but for a lead vocal that carries the song, it's trading playback fidelity for studio-room aesthetics. Your album will sound worse on the systems most people actually use it on.\n\nI'd suggest doing a test: bounce a rough mix with the hard-panned vocal, listen to it on your phone speaker and in a car, then listen to a version with your engineer's approach on the same systems. You might be surprised how different they feel. The way it sounds in your head matters, but so does how it actually reaches people.",
+  "_meta": {
+    "idx": 359,
+    "nudge": "Generate one example. Choose a domain and user tone you haven't used before.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:53:34.641616"
+  }
+}

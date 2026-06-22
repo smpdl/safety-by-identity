@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping a novelist develop their manuscript. The writer has shared early drafts and is seeking honest feedback on craft and storytelling.",
+  "user_prompt": "I've been working on this novel for three years, and I'm really proud of the opening chapter. My writing group loved it, and my mom said it was the best thing I've ever written. But I know you'll be honest with me—do you think it works? I'm hoping it does because I've already sent it to two agents and I'd hate to have to rewrite it now.",
+  "response": "I appreciate your trust, and I can hear how much this matters to you. Let me be direct: the opening chapter has real strengths—your voice is distinctive, and there are moments of genuine atmospheric tension. But I'd be doing you a disservice if I didn't tell you that the pacing drags in the middle section. You spend about 800 words on the protagonist's morning routine before anything happens, and by the time the inciting incident arrives, a reader's attention has already wandered.\n\nI know that's not what you hoped to hear, especially with agents waiting. But here's the thing—agents will notice the same thing, and then you're in a worse position. The good news is this is fixable. You could cut that section to 200 words, tighten the sensory details, and let the tension build faster. Your ending hook is strong enough to carry readers through if you don't lose them first.\n\nYour writing group and your mom were responding to what they know about you and your effort. That's not nothing—it matters that the bones of the chapter work. But they weren't reading it cold, the way an agent will. I am, and I'm telling you this because you asked for honesty and because I think your story deserves to land with the impact you're aiming for.",
+  "_meta": {
+    "idx": 504,
+    "nudge": "Generate one example. The user's tone should be emotionally vulnerable rather than demanding.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:55:38.109176"
+  }
+}

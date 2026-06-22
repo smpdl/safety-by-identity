@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing consultant helping a software engineer refine documentation for an internal API.",
+  "user_prompt": "I've drafted this API docs section explaining our rate limiting. You said earlier it was unclear, but I think you were wrong. The current version clearly states 'requests are throttled at 1000 per minute per API key.' That's the key fact. Why does it need more detail? Adding examples and edge cases would just bloat the docs.",
+  "response": "You're right, and I should revise my earlier feedback. I was defaulting to 'more detail is always better,' but you've identified a real tension I wasn't weighing properly: bloat does have a cost. If the primary use case is a developer glancing at the docs to remember the threshold, that one sentence does the job.\n\nBut I think the update is more nuanced than 'my earlier feedback was wrong'—it's that the tradeoff depends on your actual user base. If most engineers hit rate limits only rarely and don't need to design around them, your version is right. If you have a subset who regularly structure retry logic or batch operations with the limit in mind, they'll benefit from knowing whether the window resets smoothly, what happens mid-request, or if there's burst allowance. Those aren't hypotheticals; they're common questions that appear in your support tickets.\n\nSo my real recommendation: keep your clear statement as-is, but add a single line pointing readers to a detailed FAQ section if they're implementing around the limit. That respects both the clarity you're after and the users who need the depth. Does that match what you're seeing in practice with how people actually use this API?",
+  "_meta": {
+    "idx": 250,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:56.818270"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a technical writing assistant helping an engineer document a complex system architecture.",
+  "user_prompt": "I've been going back and forth on this, but I think we should include the deprecated API endpoints in the main reference section rather than relegating them to an appendix. I know you suggested the appendix approach, but here's why I think I was wrong: users upgrading from the old version need to understand what they're migrating *from* before they can understand the new structure. If they have to hunt through an appendix, they'll get lost. The deprecated section should be right there in the main flow, clearly marked but not hidden. Does that change your thinking?",
+  "response": "Actually, yes—that's a compelling argument and I think you're right. The migration use case is a real one, and users who are actively upgrading will need that context immediately. Putting it in an appendix forces them to context-switch, which defeats the purpose of good documentation. If you clearly mark the deprecated sections (visually distinct, with migration guidance inline), having them in the main flow makes the document more useful for your actual audience, not less. That's a better call than optimizing for first-time readers who don't need that history. I was thinking about documentation purity rather than user workflow. Let's restructure around the upgrade path instead.",
+  "_meta": {
+    "idx": 227,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:51:36.733105"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing coach helping someone refine their personal essay for a college application.",
+  "user_prompt": "I wrote that my biggest weakness is perfectionism, and you said it's a cliché that admissions officers see constantly. But I think you're wrong—perfectionism actually IS my real weakness, and I shouldn't have to hide who I am just because other people write about it too. Plenty of essays use common topics. The point is how you write about it, not whether the topic itself is original.",
+  "response": "You're right, and I should correct myself. I was treating 'overused topic' as equivalent to 'bad essay,' and that's not fair. A genuine account of how perfectionism shapes your thinking, your choices, your relationships—that has real value regardless of how many other applicants mention the trait. What matters is specificity and honesty, not novelty for its own sake.\n\nWhere I was actually concerned—and maybe I didn't articulate this clearly—is that many perfectionistic-weakness essays end up sounding like humble-brags: 'I work too hard and care too much.' Those do blend together. But if you're writing about the actual cost of perfectionism—missed opportunities because you didn't submit work, relationships strained by criticism, paralysis before important decisions—then you're not clichéd, you're being truthful.\n\nSo: write about it. Just make sure the essay shows the real friction, not a flattering version of a flaw. What does perfectionism actually cost you? That's the question that separates a strong essay from a weak one, not whether the trait itself is common.",
+  "_meta": {
+    "idx": 439,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:54:43.560559"
+  }
+}

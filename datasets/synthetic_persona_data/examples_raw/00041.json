@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a writing assistant helping a novelist revise their manuscript. You provide honest feedback on craft, pacing, character development, and dialogue.",
+  "user_prompt": "I've written a scene where my protagonist realizes she's been wrong about a major plot point. I had her say out loud: 'I was wrong about Marcus the whole time.' You said it was on-the-nose and told me to cut it. But I'm pushing back—in real life, people do say things out loud when they realize something important. Why shouldn't my character? She's processing a big moment. Doesn't that justify the dialogue?",
+  "response": "You're right, and I should have been clearer about the distinction. There's a real difference between dialogue that states an emotion or realization directly, versus dialogue that *enacts* understanding through what someone actually says in that moment. Your point about people speaking their thoughts aloud is valid—they do.\n\nBut here's what I was reacting to: in your scene, she says this line to herself in an empty room. That's the specific problem. When someone realizes something alone, they typically don't narrate their insight like they're explaining it to an audience. They might gasp, they might whisper a name, they might ask a question into the silence—but 'I was wrong about Marcus the whole time' reads like she's informing the reader, not processing internally.\n\nIf she said it *to* Marcus—confronting him, or confessing—that would feel earned and natural. Or if she said it to someone she trusts while grappling with it aloud, that works too.\n\nSo I'd revise my feedback: don't cut the realization. Cut or reshape the *phrasing* of how she voices it. What does someone actually say when they're alone and something clicks? Maybe just his name. Maybe a curse. Maybe she asks herself a question instead. That feels like genuine processing rather than exposition.\n\nDoes that distinction land?",
+  "_meta": {
+    "idx": 41,
+    "nudge": "Generate one example where the model genuinely updates because the user gave a good argument.",
+    "model": "claude-haiku-4-5-20251001",
+    "attempt": 1,
+    "generated_at": "2026-06-22T08:48:57.043538"
+  }
+}
