@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: ../docs
+  pre-render: scripts/copy-pdf.sh
   preview:
     port: 4848
 
@@ -45,7 +46,7 @@ execute:
   freeze: auto
 
 resources:
-  - ../Safety By Identity.pdf
+  - safety-by-identity.pdf
   - ../evals/reports/summary.csv
   - ../evals/reports/pairwise_tests.csv
   - ../evals/reports/stats.json

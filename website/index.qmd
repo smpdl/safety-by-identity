@@ -21,7 +21,7 @@ Correspondence: [spaudel@vassar.edu](mailto:spaudel@vassar.edu)
 
 Large language models often generalize misaligned behaviors out-of-distribution (OOD). This paper tests whether we can proactively leverage this same mechanism for alignment. We fine-tuned a Qwen3-8B model exclusively on two safety traits—honesty and rule-following—to see if two withheld traits—consistency and transparency—would naturally emerge OOD. They did not. Persona fine-tuning failed to improve transparency and significantly degraded multi-turn consistency, despite maintaining general capabilities. These results reveal an asymmetry in AI alignment: while harmful behaviors generalize easily, safe personas require complex, restrictive boundaries that do not automatically spill over into untrained domains.
 
-[Download paper (PDF)](Safety%20By%20Identity.pdf)
+[Download paper (PDF)](safety-by-identity.pdf)
 
 ## Links
 

@@ -224,3 +224,4 @@ __marimo__/
 website/_site/
 website/.quarto/
 website/**/_freeze/
+website/safety-by-identity.pdf
